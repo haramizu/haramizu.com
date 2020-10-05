@@ -1,15 +1,15 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Shinichi Haramizu',
+  tagline: '原水のメモサイト',
+  url: 'https://www.haramizu.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'haramizu', // Usually your GitHub org/user name.
+  projectName: 'haramizu.com', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Shinichi Haramizu',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -18,12 +18,12 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: '技術メモ',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: 'ブログ', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/haramizu/haramizu.com',
           label: 'GitHub',
           position: 'right',
         },
@@ -33,50 +33,50 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '技術メモ',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Sitecore',
+              to: 'docs/Sitecore/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Docusaurus',
+              to: 'docs/Docusaurus',
+            },
+            {
+              label: 'Netlify',
+              to: 'docs/Netlify/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'コミュニティ',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: '個人サイト',
+              href: 'https://haramizu.jp',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/haramizu',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'その他',
           items: [
             {
-              label: 'Blog',
+              label: 'ブログ',
               to: 'blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/haramizu/haramizu.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Shinichi Haramizu, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -87,13 +87,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/haramizu/haramizu.com/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/haramizu/haramizu.com/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

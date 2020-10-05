@@ -1,17 +1,19 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
-slug: /
+id: Docusaurus-style-guide
+title: スタイルガイド
+sidebar_label: スタイルガイド
+slug: /Docusaurus/Style-Guide
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+このページは標準で提供さているスタイルガイドのページを翻訳しただけのものになります。
 
-## Markdown Syntax
+[GitHub 風の Markdown 構文](https://github.github.com/gfm/) を利用することができます。
 
-To serve as an example page when styling markdown based Docusaurus sites.
+## Markdown 構文
 
-## Headers
+Markdown ベースの Docusaurus サイトをスタイリングする際のサンプルページとして使用します。
+
+## ヘッダー
 
 # H1 - Create the best documentation
 
@@ -27,7 +29,7 @@ To serve as an example page when styling markdown based Docusaurus sites.
 
 ---
 
-## Emphasis
+## 強調
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
@@ -39,7 +41,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ---
 
-## Lists
+## リスト
 
 1. First ordered list item
 1. Another item
@@ -56,7 +58,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ---
 
-## Links
+## リンク
 
 [I'm an inline-style link](https://www.google.com/)
 
@@ -78,7 +80,7 @@ Some text to show that the reference links can follow later.
 
 ---
 
-## Images
+## 画像
 
 Here's our logo (hover to see the title text):
 
@@ -94,7 +96,7 @@ Images from any folder can be used by providing path to file. Path should be rel
 
 ---
 
-## Code
+## コード
 
 ```javascript
 var s = 'JavaScript syntax highlighting';
@@ -119,7 +121,7 @@ function highlightMe() {
 
 ---
 
-## Tables
+## テーブル
 
 Colons can be used to align columns.
 
@@ -129,7 +131,7 @@ Colons can be used to align columns.
 | col 2 is      |   centered    |   \$12 |
 | zebra stripes |   are neat    |    \$1 |
 
-There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+各ヘッダーセルを区切るダッシュが少なくとも3つ必要です。外側のパイプ(|)はオプションで、生のMarkdownをきれいに並べる必要はありません。インラインのMarkdownを使用することもできます。
 
 | Markdown | Less      | Pretty     |
 | -------- | --------- | ---------- |
@@ -138,7 +140,7 @@ There must be at least 3 dashes separating each header cell. The outer pipes (|)
 
 ---
 
-## Blockquotes
+## ブロック引用符
 
 > Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.
 
@@ -148,7 +150,7 @@ Quote break.
 
 ---
 
-## Inline HTML
+## インライン HTML
 
 <dl>
   <dt>Definition list</dt>
@@ -160,7 +162,7 @@ Quote break.
 
 ---
 
-## Line Breaks
+## 改行
 
 Here's a line for us to start with.
 
@@ -170,17 +172,17 @@ This line is also a separate paragraph, but... This line is only separated by a 
 
 ---
 
-## Admonitions
+## 注意書き
 
 :::note
 
-This is a note
+これはメモです
 
 :::
 
 :::tip
 
-This is a tip
+これはヒントです。
 
 :::
 
@@ -192,12 +194,12 @@ This is important
 
 :::caution
 
-This is a caution
+これは重要です
 
 :::
 
 :::warning
 
-This is a warning
+これは警告です
 
 :::

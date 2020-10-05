@@ -8,32 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Sitecore',
+    imageUrl: 'img/sitecore.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        デジタルマーケティング基盤となる Sitecore Experience Platform / Sitecore Content Hub に関して紹介をしています。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Docusaurus',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Facebook が提供している静的サイトを生成するた目のツール、Docusaurus について紹介をしています。
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Netlify',
+    imageUrl: 'img/netlify.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Docusourus で作成したコンテンツのホスティングとして、Netlify を利用しています。
       </>
     ),
   },
@@ -59,7 +56,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`ようこそ ${siteConfig.title} のメモサイトへ`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -71,8 +68,8 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
-              Get Started
+              to={useBaseUrl('blog')}>
+              ブログ
             </Link>
           </div>
         </div>

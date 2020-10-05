@@ -9,9 +9,9 @@ module.exports = {
   projectName: 'haramizu.com', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Shinichi Haramizu',
+      title: '原水商店',
       logo: {
-        alt: 'My Site Logo',
+        alt: '原水商店',
         src: 'img/logo.svg',
       },
       items: [

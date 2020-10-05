@@ -1,5 +1,5 @@
 ---
-slug: Sitecore-Experience-Tokyo-2019
+slug: 2019/12/18/Sitecore-Experience-Tokyo-2019
 title: Sitecore Experience Tokyo 2019 振り返り
 author: Shinichi Haramizu
 author_title: Sitecore Japan

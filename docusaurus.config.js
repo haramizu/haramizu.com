@@ -99,6 +99,13 @@ module.exports = {
             'https://github.com/haramizu/haramizu.com/edit/main/',
         },
         blog: {
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Shinichi Haramizu`,
+          },
+
+          postsPerPage: 5,
+
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:

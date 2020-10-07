@@ -2,6 +2,7 @@
 id: sitecore
 title: サイトコアの製品ラインナップ
 sidebar_label: 製品ラインナップ
+description: Sitecore の製品に関しての紹介をしています。
 slug: /Sitecore
 ---
 

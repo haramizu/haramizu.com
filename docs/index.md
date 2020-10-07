@@ -2,6 +2,7 @@
 id: index
 title: このサイトのコンテンツ
 sidebar_label: コンテンツ一覧
+description: このサイトで紹介している技術メモに関しての一覧となっています。
 slug: /
 ---
 

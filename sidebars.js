@@ -12,7 +12,7 @@ module.exports = {
       "Docusaurus-yarn-start",
       "Docusaurus-site-settings",
       "Docusaurus-plugin",
-      "Docusaurus-side-bars", 
+      "Docusaurus-sidebars", 
       "Docusaurus-docs",
       "Docusaurus-blog",
       "Docusaurus-style-guide",

@@ -2,6 +2,7 @@
 id: Netlify
 title: Netlify について
 sidebar_label: Netlify について
+description: ホスティングサービス、Netlify を利用する際の手順などに関してまとめておきました。
 slug: /Netlify
 ---
 

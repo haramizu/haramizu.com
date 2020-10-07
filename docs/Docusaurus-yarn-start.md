@@ -2,6 +2,7 @@
 id: Docusaurus-yarn-start
 title: プロジェクトを起動する
 sidebar_label: プロジェクトを起動する
+description: Docusaurus のインストール後、起動するまでの手順に関して紹介をしています。
 slug: /Docusaurus/yarn-start
 ---
 

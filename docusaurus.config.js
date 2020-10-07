@@ -1,9 +1,5 @@
 module.exports = {
   // Google Analytics
-  plugins: [
-    '@docusaurus/plugin-google-gtag'
-  ],
-
   title: 'Shinichi Haramizu',
   tagline: '原水のメモサイト',
   url: 'https://www.haramizu.com',

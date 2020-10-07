@@ -83,4 +83,49 @@ projectName: 'docusaurus', // Usually your repo name.
 | organizationName | 組織名                            |
 | projectName      | プロジェクト名                    |
 
-上記項目に関して、必要に応じて作成、ページの要素として更新をしていきましょう。
+### themeConfig
+
+この項目では、テーマに関する設定を入力していくことになります。
+
+#### navbar
+
+navbar の項目に関しては、ナビゲーションバーの項目を設定していきます。
+
+| パラメーター | 値                                   |
+|--------------|--------------------------------------|
+| title        | サイトのタイトル名                   |
+| logo         | 左上に表示されるロゴ                 |
+| items        | ナビゲーションに配置するメニュー項目 |
+
+```javascript
+navbar: {
+  title: '原水商店',
+  logo: {
+    alt: '原水商店',
+    src: 'img/logo.svg',
+  },
+  items: [
+    {
+      to: 'docs/',
+      activeBasePath: 'docs',
+      label: '技術メモ',
+      position: 'left',
+    },
+    {to: 'blog', label: 'ブログ', position: 'left'},
+    {
+      href: 'https://github.com/haramizu/haramizu.com',
+      label: 'GitHub',
+      position: 'right',
+    },
+  ],
+},
+```
+
+#### footer
+
+フッターエリアに並べられているアイテムの設定をしています。
+これらの項目は `src/pages/index.js` で定義されているデータを入力しているだけとなりますので、サンプルのコードはそちらと合わせて確認してください。
+
+### presets
+
+これは、各ページの GitHub で展開しているコードをそのまま参照できるようにする機能です。自分がアップしている GitHub のリポジトリの URL を指定しましょう。

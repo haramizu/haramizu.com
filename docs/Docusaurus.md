@@ -50,7 +50,7 @@ Docusaurus v2 は以下の機能が実装されるように開発が進められ
 npx @docusaurus/init@next init [name] [template]
 ```
 
-name は作成するプロジェクトのフォルダ、template にはテンプレート名を指定します。私は以下のように実行しました。
+name は作成するプロジェクトのディレクトリ、template にはテンプレート名を指定します。私は以下のように実行しました。
 
 ```
 npx @docusaurus/init@next init haramizu.com classic

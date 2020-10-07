@@ -28,4 +28,3 @@ build
 ## Visual Studio Code を利用して同期する
 
 ここでは Visual Studio Code を利用した同期の手順を紹介する予定です。
-

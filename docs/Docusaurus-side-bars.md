@@ -6,7 +6,7 @@ description:
 slug: /Docusaurus/sidebars
 ---
 
-Docusaurus にコンテンツを追加していく場合は、サイドバーのファイルを変更していきます。
+Docusaurus にコンテンツを追加していく場合は、 `sidebars.js` のファイルにドキュメントを追加していきます。
 
 ## sidebars.js の変更
 
@@ -55,7 +55,8 @@ module.exports = {
 };
 ```
 
-これにより、左側のメニューは以下のようになりました。
+上記のように変更をすると、左側のメニューに対して各 Markdown のファイルで定義した sidebar_label を利用してメニューが作成されます。
 
 ![img](../static/img/docusause/sidebars.png)
 
+注意点としては、 `slug:` で他の Markdown ファイルで定義が被らないようにすること、また `id:` に関しても同様に被らないようにしないといけません。ファイル名と `id` は揃える必要はありませんが、別にして作っていくと対象のコンテンツを見つけるのが難しくなるので、合わせることを推奨します。

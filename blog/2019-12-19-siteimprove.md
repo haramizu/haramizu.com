@@ -1,5 +1,5 @@
 ---
-slug: siteimprove
+slug: 2019/12/19/siteimprove
 title: パートナーソリューション - Siteimprove
 author: Shinichi Haramizu
 author_title: Sitecore Japan

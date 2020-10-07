@@ -18,9 +18,9 @@ module.exports = {
     },
 
     navbar: {
-      title: 'Shinichi Haramizu',
+      title: '原水商店',
       logo: {
-        alt: 'サイトのロゴ',
+        alt: '原水商店',
         src: 'img/logo.svg',
       },
       items: [

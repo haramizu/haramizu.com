@@ -2,11 +2,10 @@ module.exports = {
   someSidebar: {
     目次: ["index"],
     Sitecore: [
-      "Sitecore",
+      "sitecore",
       "sitecore-webinar",
       "sitecore-content-hub",
-      "sitecore-products",
-      "sitecore-quickstart"
+      "sitecore-docs"
     ],
     Docusaurus: [
       "Docusaurus",

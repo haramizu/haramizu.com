@@ -2,7 +2,7 @@
 id: Docusaurus
 title: Docusaurus について
 sidebar_label: Docusaurus について
-description: ここでは、Docusaurus について簡単に紹介をしながらツールのインストールに関して紹介をしています。
+description: ここでは、Facebook が提供しているドキュメント生成ツール、Docusaurus について紹介をしています。このページでは、まず最初にインストールの手順を取り上げています。
 slug: /Docusaurus
 ---
 

@@ -2,10 +2,11 @@
 id: Docusaurus-site-settings
 title: サイトの設定について
 sidebar_label: サイトの設定について
+description: サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。
 slug: /Docusaurus/Site-Settings
 ---
 
-サンプルサイトが立ち上がったあと、自分で作りたいサイトにカスタマイズしていきましょう。
+サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。
 
 ## サイトの構成ファイル
 
@@ -82,3 +83,4 @@ projectName: 'docusaurus', // Usually your repo name.
 | organizationName | 組織名                            |
 | projectName      | プロジェクト名                    |
 
+上記項目に関して、必要に応じて作成、ページの要素として更新をしていきましょう。

@@ -2,25 +2,27 @@
 id: Docusaurus-side-bars
 title: サイドバーの設定
 sidebar_label: サイドバーの設定
-slug: /Docusaurus/Side-bars
+description: 
+slug: /Docusaurus/sidebars
 ---
 
 Docusaurus にコンテンツを追加していく場合は、 `sidebars.js` のファイルにドキュメントを追加していきます。
 
 ## sidebars.js の変更
 
-今回は、Docusaurus に関する文書を追加するために、以下のファイルを追加していきます。
+今回は、Docusaurus に関するドキュメントを複数のページに分けて作っています。このため、以下のファイルをサイドバーに追加していきます。
 
 * Docusaurus.md
 * Docusaurus-yarn-start.md
 * Docusaurus-site-settings.md
-* Docusaurus-create-doc.md
-* Docusaurus-side-bars.md
-* Docusaurus-style-guide.md
+* Docusaurus-plugin.md
+* Docusaurus-side-bars.md 
+* Docusaurus-docs.md
 * Docusaurus-blog.md
-* Docusaurus-github.md
+* Docusaurus-style-guide.md
+* Docusaurus-github"
 
-デフォルトの値は sidebars.js の中身は以下のようになります。
+デフォルトの値は sidebars.js の中身は以下のような状態です。
 
 ```javascript
 module.exports = {
@@ -30,8 +32,9 @@ module.exports = {
   },
 };
 ```
+![img](../static/img/docusause/sidebar-before.png)
 
-上記のファイルを以下のように書き換えます。
+基本的には .md ファイルに定義されている id を並べる形となっています。このため、今回は以下のように書き換えます。
 
 ```javascript
 module.exports = {
@@ -40,8 +43,9 @@ module.exports = {
       "Docusaurus",
       "Docusaurus-yarn-start",
       "Docusaurus-site-settings",
-      "Docusaurus-create-doc",
+      "Docusaurus-plugin",
       "Docusaurus-side-bars", 
+      "Docusaurus-docs",
       "Docusaurus-blog",
       "Docusaurus-style-guide",
       "Docusaurus-github"
@@ -53,6 +57,6 @@ module.exports = {
 
 上記のように変更をすると、左側のメニューに対して各 Markdown のファイルで定義した sidebar_label を利用してメニューが作成されます。
 
-![img](../static/img/docusause/sidebarupdate.png)
+![img](../static/img/docusause/sidebars.png)
 
 注意点としては、 `slug:` で他の Markdown ファイルで定義が被らないようにすること、また `id:` に関しても同様に被らないようにしないといけません。ファイル名と `id` は揃える必要はありませんが、別にして作っていくと対象のコンテンツを見つけるのが難しくなるので、合わせることを推奨します。

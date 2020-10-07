@@ -11,8 +11,9 @@ module.exports = {
       "Docusaurus",
       "Docusaurus-yarn-start",
       "Docusaurus-site-settings",
-      "Docusaurus-create-doc",
+      "Docusaurus-plugin",
       "Docusaurus-side-bars", 
+      "Docusaurus-docs",
       "Docusaurus-blog",
       "Docusaurus-style-guide",
       "Docusaurus-github"

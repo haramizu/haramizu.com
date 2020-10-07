@@ -57,7 +57,7 @@ function Home() {
   return (
     <Layout
       title={`ようこそ ${siteConfig.title} のメモサイトへ`}
-      description="Description will go into a meta tag in <head />">
+      description="このサイトは原水が作成しているメモとブログのサイトです。">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>

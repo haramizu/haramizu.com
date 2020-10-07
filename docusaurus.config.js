@@ -1,4 +1,9 @@
 module.exports = {
+  // Google Analytics
+  plugins: [
+    '@docusaurus/plugin-google-gtag'
+  ],
+
   title: 'Shinichi Haramizu',
   tagline: '原水のメモサイト',
   url: 'https://www.haramizu.com',
@@ -8,10 +13,18 @@ module.exports = {
   organizationName: 'haramizu', // Usually your GitHub org/user name.
   projectName: 'haramizu.com', // Usually your repo name.
   themeConfig: {
+
+    // Google Analytics
+    gtag: {
+      trackingID: 'UA-4471333-3',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
+
     navbar: {
       title: 'Shinichi Haramizu',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'サイトのロゴ',
         src: 'img/logo.svg',
       },
       items: [
@@ -98,6 +111,8 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        // Will be passed to @docusaurus/plugin-content-sitemap (false to disable)
+        sitemap: {},
       },
     ],
   ],

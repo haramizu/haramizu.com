@@ -12,8 +12,12 @@ module.exports = {
       "Docusaurus",
       "Docusaurus-yarn-start",
       "Docusaurus-site-settings",
+      "Docusaurus-plugin",
       "Docusaurus-side-bars", 
-      "Docusaurus-style-guide"
+      "Docusaurus-docs",
+      "Docusaurus-blog",
+      "Docusaurus-style-guide",
+      "Docusaurus-github"
     ],
     Netlify: [
       "Netlify"

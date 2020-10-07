@@ -1,8 +1,8 @@
 ---
-id: Docusaurus-side-bars
+id: Docusaurus-sidebars
 title: サイドバーの設定
 sidebar_label: サイドバーの設定
-description: 
+description: Docusaurus を利用してサイトを作成した際の、左側のメニューとなるサイドバーの設定について説明をしています。
 slug: /Docusaurus/sidebars
 ---
 

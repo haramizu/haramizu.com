@@ -6,6 +6,7 @@ author_title: Sitecore Japan
 author_url: https://www.haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [docusaurus]
+description: このサイトは 2020年10月5日に Facebook が提供している文書生成ツールの Docusaurus に切り替え、またホスティングに関しても Netlify に切り替えました。これに伴い、Docusaurus に関してまとめている記事を掲載してみました。随時更新していきます。
 ---
 
 このサイトは 2020年10月5日に Facebook が提供している文書生成ツールの Docusaurus に切り替え、またホスティングに関しても Netlify に切り替えました。
@@ -22,7 +23,7 @@ tags: [docusaurus]
 
 - macOS Catalina 10.15.7
 - Visual Studio Code
-- Docusaurus
+- Docusaurus v2 alpha 64
 
 作成したサイトはローカルで検証することが可能です。そして必要なソースコードを GitHub に送信、そのデータを Netlify が自動的に取得してビルド、サイトがリニューアルされるという形です。GitHub に書いたファイルを送信するだけでページが更新されるので、日頃のページの更新に関して Markdown でメモを書いておいて、修正してアップするだけ、というシンプルな手順にできる気がします。更新頻度をあげることができればいいのですが。
 

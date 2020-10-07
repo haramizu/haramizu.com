@@ -2,6 +2,7 @@
 id: sitecore-webinar
 title: Master Sitecore Webinar シリーズ
 sidebar_label: Webinar シリーズ
+description: Sitecore が過去に実施した Webinar に関して、一覧で紹介をしています。
 slug: /Sitecore/Master-Sitecore-Season-1
 ---
 

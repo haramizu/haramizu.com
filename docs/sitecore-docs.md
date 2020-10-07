@@ -2,6 +2,7 @@
 id: sitecore-docs
 title: Sitecore オンラインガイド
 sidebar_label: オンラインガイド
+description: Sitecore が提供しているドキュメントシリーズに関して紹介をしています。
 slug: /Sitecore/Quick-Start
 ---
 

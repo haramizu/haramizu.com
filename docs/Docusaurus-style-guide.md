@@ -2,6 +2,7 @@
 id: Docusaurus-style-guide
 title: スタイルガイド
 sidebar_label: スタイルガイド
+description: Docusaurus に付属しているスタイルガイドについて、簡単に翻訳した形で掲載しています。
 slug: /Docusaurus/Style-Guide
 ---
 

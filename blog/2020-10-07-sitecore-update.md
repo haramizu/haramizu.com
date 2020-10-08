@@ -1,12 +1,13 @@
 ---
-slug: 2020/10/07/sitecore-update
 title: Sitecore に関するブログの移行完了
 author: Shinichi Haramizu
 author_title: Sitecore Japan
-author_url: https://www.haramizu.jp/
+author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
-tags: [docusaurus]
+tags: [Sitecore]
 description: 以前に展開していた Wordpress のサイトで展開していたコンテンツを、すべて移行しました。合わせて Sitecore に関する情報を少し追加します。
+image: 
+slug: 2020/10/07/sitecore-update
 ---
 
 10月5日にツールの変更をして、以前のサイトにあった少ないコンテンツではありますが、すべてこのサイトに移行完了となりました。URL が以前とは変わってしまいましたが、基本的には同じコンテンツが展開されています。

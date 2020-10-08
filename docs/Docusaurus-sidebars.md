@@ -32,7 +32,7 @@ module.exports = {
   },
 };
 ```
-![img](../static/img/docusause/sidebar-before.png)
+![img](img/docusause/sidebar-before.png)
 
 基本的には .md ファイルに定義されている id を並べる形となっています。このため、今回は以下のように書き換えます。
 
@@ -57,6 +57,6 @@ module.exports = {
 
 上記のように変更をすると、左側のメニューに対して各 Markdown のファイルで定義した sidebar_label を利用してメニューが作成されます。
 
-![img](../static/img/docusause/sidebars.png)
+![img](img/docusause/sidebars.png)
 
 注意点としては、 `slug:` で他の Markdown ファイルで定義が被らないようにすること、また `id:` に関しても同様に被らないようにしないといけません。ファイル名と `id` は揃える必要はありませんが、別にして作っていくと対象のコンテンツを見つけるのが難しくなるので、合わせることを推奨します。

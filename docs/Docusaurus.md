@@ -56,7 +56,7 @@ name は作成するプロジェクトのディレクトリ、template にはテ
 npx @docusaurus/init@next init haramizu.com classic
 ```
 
-![img](../static/img/docusause/docusaurusinit.gif)
+![img](img/docusause/docusaurusinit.gif)
 
 テンプレートに関してはいくつか用意されていますが、今回は classic を指定しました。
 

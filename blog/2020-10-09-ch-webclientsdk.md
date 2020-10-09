@@ -4,7 +4,7 @@ author: Shinichi Haramizu
 author_title: Sitecore Japan
 author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
-tags: [Sitecore]
+tags: [Content Hub]
 description: Sitecore Content Hub の開発をする際に利用する Web Client SDK を利用できるように、Visual Studio の環境を整える手順を紹介します。
 image: 
 slug: 2020/10/09/ch-webclientsdk
@@ -51,6 +51,6 @@ https://slpartners.myget.org/F/m-public/api/v3/index.json
 ![プロジェクト作成](img/2020/10/createprojects.gif "プロジェクト作成")
 
 
-## 参考サイト
+## 関連情報
 
 * [Web Client SDK - Getting started](https://docs.stylelabs.com/content/3.4.x/integrations/web-sdk/getting-started.html?tabs=tabid-1)

@@ -19,7 +19,10 @@ module.exports = {
       "Docusaurus-github"
     ],
     Netlify: [
-      "Netlify"
+      "Netlify",
+      "Netlify-build",
+      "Netlify-domain",
+      "Netlify-staging"
     ],
     便利サイト: [
       "bookmark"

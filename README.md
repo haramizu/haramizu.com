@@ -1,2 +1,2 @@
 # haramizu.com
-原水商店 haramizu.com のソースコードをそのまま公開しています
+原水商店 http://haramizu.com のソースコードをそのまま公開しています

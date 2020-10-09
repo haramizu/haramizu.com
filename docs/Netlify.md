@@ -18,15 +18,15 @@ GitHub のアカウントと連携させる
 
 ## ドメインの設定
 
-![img](../static/img/netlify/netlify11.png)
+![img](img/netlify/netlify11.png)
 
-![img](../static/img/netlify/netlify12.png)
+![img](img/netlify/netlify12.png)
 
 Check DNS Configuration を立ち上げる
 
 DNS の設定が表示されます
 
-![img](../static/img/netlify/netlify13.png)
+![img](img/netlify/netlify13.png)
 
 ```
 dns1.p01.nsone.net

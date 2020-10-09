@@ -67,7 +67,7 @@ projectName: 'docusaurus', // Usually your repo name.
 
 実際に表示されているホームページのタグラインは以下のようになります。
 
-![img](../static/img/docusause/tagline.png)
+![img](img/docusause/tagline.png)
 
 ## サイト構成
 

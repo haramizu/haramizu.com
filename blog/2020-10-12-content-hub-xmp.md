@@ -1,5 +1,5 @@
 ---
-title: アセットのメタデータ拡張 (XMP 対応)
+title: Content Hub - アセットのメタデータ拡張 (XMP 対応)
 author: Shinichi Haramizu
 author_title: Sitecore Japan
 author_url: https://haramizu.jp/

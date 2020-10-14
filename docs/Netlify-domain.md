@@ -10,6 +10,12 @@ Netlify で立ち上げたサイトに、独自ドメインを割り当てる方
 
 ## ドメインの設定に関して
 
+### DNS サーバーの設定
+
+
+
+### DNS サーバーごと移管
+
 サイトを立ち上げると、新しく作成したサイトの Overview の画面に、*Set up a custom domain* というメニューが表示されているのがわかります。
 
 ![img](img/netlify/netlify09.png)

@@ -12,7 +12,25 @@ Netlify で立ち上げたサイトに、独自ドメインを割り当てる方
 
 ### DNS サーバーの設定
 
+DNS のレコードを書き換えることで、Netlify において独自ドメインで Web サイトの運用をすることができます。ドメイン名を入力したあと、以下のような画面になります。
 
+![DNS のチェック](img/netlify/domainharamizujp1.png "DNS のチェック")
+
+**Check DNS configuration** の項目をチェックすると、レコードとして登録する情報が表示されます。
+
+![DNSレコードに関して](img/netlify/domainharamizujp2.png "DNSレコードに関して")
+
+ここで表示されているのは 2 つのタイプです。1 つ目は ALIAS のレコードの追加となります。
+
+```
+haramizu.jp ALIAS brave-curran-5af078.netlify.app.
+```
+
+この ALIAS の指定ができると CDN も含めた機能を利用することができます。ドメインの管理先によっては、この ALIAS のレコードを追加できない場合があります。その際には、 A レコードに IP アドレスを指定することで独自ドメイン名を利用できます。あとは www に関するレコードを追加したあと、次の証明書の手続きに進んでください。
+
+A レコードを指定した場合に関しては、継続して **Check DNS configuration** の警告が引き続き出ますが、動作していれば問題ありません。
+
+![警告](img/netlify/domainharamizujp3.png "警告")
 
 ### DNS サーバーごと移管
 

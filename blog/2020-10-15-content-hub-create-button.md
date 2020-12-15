@@ -6,7 +6,7 @@ author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [Content Hub]
 description: 今回は、Sitecore Content Hub のスクリプトを実行するために、ページにボタンを配置して、スクリプトを実行するための手順を紹介します。これにより、定型的なタスクをスクリプトで作成し、簡単に処理することができるようになります。
-slug: 2020/10/15/2020-10-15-content-hub-custom-button
+slug: 2020/10/15/content-hub-custom-button
 ---
 
 今回は、Sitecore Content Hub のスクリプトを実行するために、ページにボタンを配置して、スクリプトを実行するための手順を紹介します。これにより、定型的なタスクをスクリプトで作成し、簡単に処理することができるようになります。今回は、公開リンクを自動的に作るスクリプトを準備して、そのスクリプトのボタンを配置する手順を紹介する形です。

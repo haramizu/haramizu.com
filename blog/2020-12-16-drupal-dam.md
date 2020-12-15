@@ -6,7 +6,7 @@ author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [Content Hub]
 description: Sitecore Content Hub と Drupal の連携に関して、サンプルが提供されており動作確認をすることができる様になっています。今回はどういう形の連携になるのかについて、紹介をします。
-slug: 2020/12/18/sitecore-docker-kubernetes
+slug: 2020/12/16/drupal-dam
 ---
 
 Sitecore Content Hub と Drupal の連携に関して、サンプルが提供されており動作確認をすることができる様になっています。今回はどういう形の連携になるのかについて、紹介をします。

@@ -142,7 +142,3 @@ MClient.Logger.Info($"Public Link {publicLinkId} created.");
 今回は、作成したスクリプトの処理として公開リンクを自動的に作成するものを作りました。このスクリプトを、アセット詳細のページに割り当てることでアセットの公開リンクを自動的に作ることができました。例えば、Web でよく利用するサイズが決まっていれば、ボタンを押すだけで複数の公開リンクが自動的に出来上がる、という処理ができます。
 
 合わせて、同じスクリプトを利用して一括処理をすることができるようになりました。これにより、複数のアセットに対してまとめて公開リンクを作成する、という処理を、比較的簡単に追加できたこともご理解いただけるかと思います。
-
-## 参考サイト
-
-* [Creating a single click action button for speeding up creation of a preview public link](https://support.stylelabs.com/hc/en-us/articles/360023244211-Creating-a-single-click-action-button-for-speeding-up-creation-of-a-preview-public-link)

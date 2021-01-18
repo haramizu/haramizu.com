@@ -1,0 +1,60 @@
+---
+title: Sitecore JSS - React プロジェクトで Tailwind CSS を利用する
+author: Shinichi Haramizu
+author_title: Sitecore Japan
+author_url: https://haramizu.jp/
+author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
+tags: [Content Hub]
+description: Sitecore JavaScript Service を利用することで、JavaScript を利用してサイトの開発、展開をすることができます。今回は React のサンプルプロジェクトと互換性のある Tailwind CSS を組み合わせたサンプルサイトを構築します。
+slug: 2021/01/05/jss-tailwind
+---
+
+Sitecore JavaScript Service を利用することで、JavaScript を利用してサイトの開発、展開をすることができます。今回は React のサンプルプロジェクトと互換性のある Tailwind CSS を組み合わせたサンプルサイトを構築します。
+
+<!--truncate-->
+
+## Sitecore JavaScript Services
+
+Web サイトの開発として JavaScript のフレーム〜ワークを活用して開発、運用をすることができる仕組みとなります。作り方全般に関しては、簡単な動画を Sitecore の YouTube のチャンネルで展開しています。
+
+* [動画リスト](https://www.youtube.com/watch?v=bw_5MIGvKwY&list=PL35wZQvLcxOisI2D_0VFpmjzd255StIwg)
+
+    * [reactstrap](https://reactstrap.github.io) 動画とかでも紹介をしています
+    * [![](https://img.youtube.com/vi/eyxuFdIS7Hs/0.jpg)](https://www.youtube.com/watch?v=eyxuFdIS7Hs)
+
+上記のサンプルでは React のコンポーネントを入れて利用する、というシナリオですが、今回は CSS フレームワークとの連携という形で説明を進めていきます。
+
+## Tailwind CSS とは
+
+サイトを構築する際のフレームワークとして CSS のフレームワークがいくつかリリースされています。CSS のフレームワークを利用するメリットとしては、デザイナーがいなくてもそれなりのデザインのサイトを作れることがあげられます。
+
+* [BootStrap](https://getbootstrap.com) : Twitter 社が開発したフレームワークで、Sitecore Experience Accelerator でも利用可能です
+* [Foundation](https://get.foundation) : カスタマイズがしやすいフレームワークとして人気、社が開発したフレームワークで、Sitecore Experience Accelerator でも利用可能です
+* [Materialize UI](https://materializecss.com) : Material UI がベースになっているCSSフレームワーク
+* [Tailwind CSS](https://tailwindcss.com) : クラス名などを変更することでデザインを変更することが可能
+
+こんかいは Tailwind CSS を利用したサイトのサンプルを提供しているコンポーネント集、[Tailwind UI](https://tailwindui.com/components) を利用してサンプルサイトを作る手順に入ります。なお、今回は Tailwind UI に関しては有償プランで提供されているものも含まれています。
+
+## プロジェクトの準備
+
+### React プロジェクトの作成
+
+すでに JavaScript Service を利用できる状況が前提
+
+```
+jss create tailwindcssjss react
+```
+
+プロジェクトができたタイミングで
+
+```
+cd tailwindcssjss
+jss start
+```
+
+### React プロジェクトのクリーンナップ
+
+
+
+npm install tailwindcss
+

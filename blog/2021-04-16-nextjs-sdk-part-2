@@ -9,7 +9,7 @@ description:
 slug: 2021/04/14/nextjs-sdk-part-2
 ---
 
-[前回](https://haramizu.com/blog/2021/04/13/nextjs-sdk-part-1)は、Next.js のテンプレートからサンプルデータを削除して、日本語のコンテンツを表示するところまで紹介をしました。今回は、このサンプルのサイトを Sitecore Experience Platform と連携させる手順を紹介します。
+[前回](2021-04-13-nextjs-sdk-part-1.md)は、Next.js のテンプレートからサンプルデータを削除して、日本語のコンテンツを表示するところまで紹介をしました。今回は、このサンプルのサイトを Sitecore Experience Platform と連携させる手順を紹介します。
 
 <!--truncate-->
 

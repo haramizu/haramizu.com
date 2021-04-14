@@ -5,11 +5,13 @@ author_title: Sitecore Japan
 author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [Sitecore,VMWare Fusion]
-description: Sitecore JSS の開発をする場合、Node.js が動けば問題ないため macOS の環境でも開発が可能です。しかしながら、Sitecore は Windows の環境で動作する形となるため、別途環境を整える必要があります。今回は、VMWare Fusion を利用して Sitecore JSS の開発をするための環境を整える方法を紹介します。
-slug: 2021/04/13/sitecore-on-macos-part1
+description: 前回は Sitecore をインストールするための環境として、 VMware Fusion で仮想マシンを構築しました。今回は、Sitecore Experience Platform 10.1 をインストール、最終的に macOS からアクセスできるようにします。
+slug: 2021/04/15/sitecore-on-macos-part2
 ---
 
+[前回](2021-04-14-sitecore-on-macos-part1.md) は Sitecore をインストールするための環境として、 VMware Fusion で仮想マシンを構築しました。今回は、Sitecore Experience Platform 10.1 をインストール、最終的に macOS からアクセスできるようにします。
 
+<!--truncate-->
 
 ## Sitecore Experience Platform 10.1 インストール
 
@@ -94,12 +96,17 @@ XP0-SingleDeveloper.ps1
 
 ![Sitecore](img/2021/04/sia08.png "Sitecore")
 
-## macOS から仮想マシンの Sitecore にアクセスする
+## macOS から仮想マシンの Sitecore にアクセスできるようにする
 
 
 
 ## モジュールのインストール
 
 
-## 動作確認
+## 日本語環境の整備
+
+
+## まとめ
+
+今回の手順で、Sitecore Headless Services を利用することができる環境を仮想マシンに準備をしました。次回はもう一度、Next.js で作成しているアプリの環境に戻して、Sitecore と連携させるところを紹介します。
 

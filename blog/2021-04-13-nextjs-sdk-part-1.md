@@ -5,7 +5,7 @@ author_title: Sitecore Japan
 author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [JSS,NextJS]
-description: 
+description: Sitecore 10.1 から Sitecore Headless Service は標準機能として提供することになりました。合わせて静的サイトに対応した React ベースの Next.js の SDK もリリースをしました。今回から数回に分けて、Next.JS SDK を利用してサンプルサイトを構築する手順をブログでシリーズ化して紹介をしていきます。
 slug: 2021/04/13/nextjs-sdk-part-1
 ---
 

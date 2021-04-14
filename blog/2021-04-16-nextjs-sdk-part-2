@@ -1,0 +1,139 @@
+---
+title: Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.2
+author: Shinichi Haramizu
+author_title: Sitecore Japan
+author_url: https://haramizu.jp/
+author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
+tags: [JSS,NextJS]
+description: 
+slug: 2021/04/14/nextjs-sdk-part-2
+---
+
+[前回](https://haramizu.com/blog/2021/04/13/nextjs-sdk-part-1)は、Next.js のテンプレートからサンプルデータを削除して、日本語のコンテンツを表示するところまで紹介をしました。今回は、このサンプルのサイトを Sitecore Experience Platform と連携させる手順を紹介します。
+
+<!--truncate-->
+
+## 前提条件
+
+今回は Sitecore と Next.js のアプリを接続するために、以下の環境を準備しました。
+
+* Sitecore Experience Platform 10.1
+* Sitecore PowerShell Extensions 6.2
+* Sitecore Experience Accelerator 10.1
+* Sitecore Headless Services Server for Sitecore 10.1.0 XP 16.0.0
+
+また、作業をしやすくするためにドメイン名などは以下の様に設定、ワイルドカード証明書を利用しています。
+
+* jss.cmsdemo.jp （Sitecore Experience Platform)
+* id.cmsdemo.jp ( Sitecore Identity Server )
+
+このドキュメント作成の作成に関しては、仮想マシンに上記の環境を構築し、hosts を書き換えて Sitecore にアクセスできるように設定しています。
+
+## Sitecore 環境の確認
+
+Sitecore をクリーンインストールして、上記のモジュールを入れた場合は、英語のコンテンツのみを管理する設定になっています。このため、日本語の言語を追加できるようにします。
+
+1. コントロールパネルを開きます
+2. グローバリゼーションにある **システムに言語を追加する** を選択します
+3. **Japanese(Japan):日本語(日本)** を選択してください
+
+![addjajp](img/2021/04/addjajp.png "addjajp")
+
+4. 次へ、を押して進めてください。
+
+最後に、言語が追加されました、とダイアログが表示されれば言語の追加が完了となります。
+
+## JSS サイトの作成
+
+作成している Next.js のアプリと連携するサイトの設定を作成していきます。
+
+### テナントの作成
+
+まず JSS のサイトを管理するためのテナントを作成します。
+
+1. コンテンツエディターを開きます
+2. Sitecore - Content のアイテムを選択して右クリックします
+3. JSS テナント を選択します
+
+![sitecorejss](img/2021/04/jsssite01.png "sitecorejss")
+
+4. テナント名を入力します（今回は demo とします）
+
+![sitecorejss](img/2021/04/jsssite02.png "sitecorejss")
+
+しばらくすると、以下の様にテナントのアイテムが出来上がります。
+
+![sitecorejss](img/2021/04/jsssite03.png "sitecorejss")
+
+### JSS サイトの作成
+
+続いて JSS のサイトをテナントに追加します。手順は以下の様になります。
+
+1. 先ほど作成したアイテムを右クリックします
+2. 挿入 - JSS サイトを選択します
+
+![sitecorejss](img/2021/04/jsssite04.png "sitecorejss")
+
+3. サイト作成のダイアログが開きます。サイト名、ホスト名などを設定してください。
+
+![sitecorejss](img/2021/04/jsssite05.png "sitecorejss")
+
+![sitecorejss](img/2021/04/jsssite06.png "sitecorejss")
+
+これで、Sitecore のサイトに JSS のサイトが出来上がりました。
+
+![sitecorejss](img/2021/04/jsssite07.png "sitecorejss")
+
+## Next.js アプリと Sitecore を連携させる
+
+作成している Next.js のアプリと Sitecore を連携させるための手順に進めていきます。
+
+### API Key の準備
+
+Next.js のアプリの設定に関して、API Key を用意する必要があります。このキーは以下の様に作成できます。
+
+1. コンテンツエディターを開きます
+2. sitecore - system - Settings - Services - API Keys のアイテムを選択します
+
+![sitecorejss](img/2021/04/jsssite08.png "sitecorejss")
+
+3. 上記の画面の場合は API キーのボタンを、画面が異なる場合はツリーにある API Keys を右クリックして新規 API キーを作成します
+4. API キーの名前を入力します
+
+![sitecorejss](img/2021/04/jsssite09.png "sitecorejss")
+
+5. CORS Origins と認められたコントローラーのどちらの項目にも * を設定してください。
+
+![sitecorejss](img/2021/04/jsssite10.png "sitecorejss")
+
+作成をした API Key の Item ID がキーになります。
+
+### Next.js アプリの設定
+
+続いて作成した API キーを利用してセットアップを開始します。Next.js のアプリのフォルダーに移動して、JSS のコマンドを実行します。
+
+```
+jss setup
+```
+
+聞かれる項目は以下の通りです。
+
+* Sitecore のインスタンスはこのマシン、もしくはネットワークで共有されているかを聞かれます。
+    * 今回は別のマシンで動かしているため、n を選択します。
+* 続いてホスト名に関する情報が表示されます。
+    * 今回は、 https://jss.cmsdemo.jp を入力します
+* インポートのサービスの URL が表示されます
+    * デフォルトのままで問題ありません
+* API Key の確認となります
+    * 事前に作成した API キーを入力します
+* 展開用の秘密鍵の確認が表示されます
+    * ランダムの文字列を自動生成するので空欄のまま
+
+上記の作業が完了すると、必要なファイルが生成されます。
+
+![sitecorejss](img/2021/04/jsssite11.png "sitecorejss")
+
+上記のメッセージを参照すると、展開のための秘密鍵は sitecore/config/nextjs-app.deploysecret.config の中のファイルに記載されていることがわかります。
+
+
+

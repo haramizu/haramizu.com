@@ -1,0 +1,14 @@
+---
+title: Sitecore JSS - React SDK を利用してサンプルサイトを構築 - Part.1
+author: Shinichi Haramizu
+author_title: Sitecore Japan
+author_url: https://haramizu.jp/
+author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
+tags: [JSS,NextJS]
+description: これまで何回かに分けて Next.js のアプリに関して紹介をしていましたが、Next.js は React を利用して構築されたフレームワークで、React に関しても理解しておくほうが良いので、しばらく React に関しての紹介をしていきます。今回は、React のアプリを起動するところまで進めます。
+slug: 2021/04/21/react-sdk-part-1
+---
+
+これまで何回かに分けて Next.js のアプリに関して紹介をしていましたが、Next.js は React を利用して構築されたフレームワークで、React に関しても理解しておくほうが良いので、しばらく React に関しての紹介をしていきます。今回は、React のアプリを起動するところまで進めます。
+
+<!--truncate-->

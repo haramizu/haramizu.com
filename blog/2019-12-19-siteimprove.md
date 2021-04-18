@@ -6,7 +6,7 @@ author_title: Sitecore Japan
 author_url: https://www.haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [Partner,Content Hub]
-description: 
+description: Sitecore と連携するソリューションを提供している Siteimprove についてご紹介します。
 ---
 
 Sitecore と連携するソリューションを提供している Siteimprove についてご紹介します。

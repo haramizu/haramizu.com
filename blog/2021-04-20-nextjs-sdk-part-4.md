@@ -1,0 +1,50 @@
+---
+title: Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.4
+author: Shinichi Haramizu
+author_title: Sitecore Japan
+author_url: https://haramizu.jp/
+author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
+tags: [JSS,NextJS]
+description: 前回はエクスペリエンスエディターを利用した設定に関して紹介をしました。Next.js のアプリを作っていく際に、Sitecore で管理しているコンテンツを使いながら開発することはできるのでしょうか？今回は開発中に Sitecore のデータを参照する設定について、紹介します。
+slug: 2021/04/20/nextjs-sdk-part-4
+---
+
+前回はエクスペリエンスエディターを利用した設定に関して紹介をしました。Next.js のアプリを作っていく際に、Sitecore で管理しているコンテンツを使いながら開発することはできるのでしょうか？今回は開発中に Sitecore のデータを参照する設定について、紹介します。
+
+<!--truncate-->
+
+## 前提条件
+
+今回の設定をするにあたって、[前回](2021-04-19-nextjs-sdk-part-3.md)の環境まで整っていることとします。
+
+* Sitecore のインスタンスが起動している
+* Next.js のアプリを立ち上げることができる
+
+## 動作環境を変更する
+
+接続する Sitecore のインスタンスに関する情報は、**scjssconfig.json** に入っています。ここのパラメーターをみながら、 **.env** ファイルの以下の２箇所を変更してください。
+
+```
+SITECORE_API_KEY= apiKey
+SITECORE_API_HOST= 接続する Sitecore サーバーの URL ( http から )
+```
+
+## アプリを起動する
+
+上記の設定に関して、間違いがないか（ すでにここまで進んでいる場合は大丈夫ですが、これだけの検証の場合は API キーのパブリッシュなどを忘れているかもしれません）確認をした上で、起動します。
+
+```
+jss start
+```
+
+しばらくすると、ローカルのコンテンツではなく Sitecore で管理しているコンテンツが表示されます。
+
+![localhost](img/2021/04/localhost.png "localhost")
+
+ブラウザの URL のところが localhost になっている点、前回のエクスペリエンスエディターで編集した文字が表示されている点を確認することができます。
+
+## まとめ
+
+上記のように Next.js のアプリ開発に関して、ローカルで作成、Sitecore にインポート、エクスペリエンスエディターと連携、Sitecore で編集したデータをローカルの開発でも利用する、という形の流れを紹介していきました。
+
+Next.js ならではの静的サイト構築、Vercel に展開するなどの Tips もいずれは紹介したいと考えています。その前に Next.js のベースとなる React を利用した開発について紹介を、次回から進めていきます。

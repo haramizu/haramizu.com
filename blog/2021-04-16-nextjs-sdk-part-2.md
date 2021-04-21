@@ -121,3 +121,5 @@ jss deploy items -c -d
 ## まとめ
 
 今回は Next.js のアプリで持っているデータを、Sitecore の中にインポートをする手順を紹介しました。Next.js と Sitecore の連携に関してはまだいくつか Tips がありますので、あと数回に分けて紹介をしていきます。
+
+* [Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.3](2021-04-19-nextjs-sdk-part-3.md)

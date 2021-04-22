@@ -5,7 +5,7 @@ author_title: Sitecore Japan
 author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [JSS,React]
-description: これまで何回かに分けて Next.js のアプリに関して紹介をしていました。Next.js は React を利用して構築されたフレームワークで、React に関しても理解しておくほうが良いです。ということで、このブログでは基本に立ち戻って、しばらく React に関しての紹介をしていきます。今回は、React のアプリを起動するところまで進めます。
+description: 前回は JSS のサンプルアプリとして提供されている React のアプリを起動、Sitecore に React アプリの展開という手順を紹介しました。今回は、サンプルデータの削除、日本語データの追加という手順を紹介します。
 slug: 2021/04/22/react-sdk-part-2
 ---
 

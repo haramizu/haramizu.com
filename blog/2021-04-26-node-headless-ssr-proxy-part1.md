@@ -4,9 +4,9 @@ author: Shinichi Haramizu
 author_title: Sitecore Japan
 author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
-tags: [JSS,React,netlify,azure]
+tags: [JSS,React,headless ssr]
 description: 今回は JSS のアプリの展開方法について紹介をします。利用するのは前回までの JSS のアプリ、そして Sitecore のインスタンスを利用して、Node.js のアプリケーションホスティングを利用して、サイトを公開する形です。
-slug: 2021/04/26/react-sdk-part-4
+slug: 2021/04/26/jss-headless-ssr-part-1
 ---
 
 今回は JSS のアプリの展開方法について紹介をします。利用するのは前回までの JSS のアプリ、そして Sitecore のインスタンスを利用して、Node.js のアプリケーションホスティングを利用して、サイトを公開する形です。

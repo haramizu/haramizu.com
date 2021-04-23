@@ -129,3 +129,8 @@ npm run start
 
 ![headless](img/2021/04/headless09.png "headless")
 
+## まとめ
+
+これで動作確認が完了しました。次回はこのプロジェクトを各種プラットフォームに展開していきたいと思います。
+
+* [Sitecore JSS - Headless SSR - Part.2](2021-04-27-node-headless-ssr-proxy-part2.md)

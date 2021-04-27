@@ -116,13 +116,17 @@ npm-debug.log
 dist
 ```
 
+### イメージを作り直す
+
 この状態で再度イメージを作成しなおします。
 
 ```
 docker build . -t reactappcd
 ```
 
-続いて、react-app のプロジェクトに移動をして、docker-compose.xml ファイルを新規に作成し、以下のコードを記述します。
+### docker-compose.xml の作成
+
+react-app のプロジェクトに移動をして、docker-compose.xml ファイルを新規に作成し、以下のコードを記述します。
 
 ```
 version: '3'

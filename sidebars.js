@@ -3,6 +3,8 @@ module.exports = {
     目次: ["index"],
     Sitecore: [
       "sitecore",
+      "sitecore-jss",
+      "moosend",
       "sitecore-webinar",
       "sitecore-content-hub",
       "sitecore-docs"

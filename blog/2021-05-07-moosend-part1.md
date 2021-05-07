@@ -1,12 +1,12 @@
 ---
-title: Moosend の使い方 Part 1
+title: Moosend - Moosend ってどんなサービス？
 author: Shinichi Haramizu
 author_title: Sitecore Japan
 author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [Moosend]
 description: 電子メールを利用したマーケティングツールは数多くありますが、その中の一つ Moosend に関してしばらくブログにまとめていきたいと思います。今回は Moosend のサービスはどんなものか？というのを Web サイトを見ながら確認していきます。
-slug: 2021/05/07/moosend-part-1
+slug: 2021/05/07/moosend-overview-part-1
 ---
 
 電子メールを利用したマーケティングツールは数多くありますが、その中の一つ Moosend に関してしばらくブログにまとめていきたいと思います。今回は Moosend のサービスはどんなものか？というのを Web サイトを見ながら確認していきます。

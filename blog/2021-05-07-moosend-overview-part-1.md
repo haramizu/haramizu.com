@@ -19,7 +19,7 @@ slug: 2021/05/07/moosend-overview-part-1
 
 * [Moosend 公式サイト] (https://moosend.com)
 
-![Moosend](img/2021/05/Moosend01.png "Moosend")
+![Moosend](img/2021/05/moosendoverview01.png "Moosend")
 
 機能一覧としてはこんな感じでしょうか。
 
@@ -56,7 +56,7 @@ Moosend の価格に関して、購読者のボリュームによって変わる
 
 機能の違いはどんな感じでしょうか？以下のようなものになります。
 
-![Moosend](img/2021/05/Moosend02.png "Moosend")
+![Moosend](img/2021/05/moosendoverview02.png "Moosend")
 
 フリープランだと
 

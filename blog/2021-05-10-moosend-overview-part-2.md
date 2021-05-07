@@ -11,6 +11,8 @@ slug: 2021/05/10/moosend-overview-part-2
 
 [前回](2021-05-07-moosend-overview-part-1.md)は Web サイトを見ながらどんなサービスか、というのを確認してみました。1000 Subscriber なら無料で利用できるということで、今回はアカウントを作成してみます。
 
+<!--truncate-->
+
 ## 無料登録
 
 Web サイトの右上に、**Register for free** と記載されているアイコンがありますので、これをまずはクリックします。

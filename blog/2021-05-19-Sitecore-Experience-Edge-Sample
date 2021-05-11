@@ -1,0 +1,16 @@
+---
+title: Content Hub - Sitecore Experience Edge for Content Hub デモ
+author: Shinichi Haramizu
+author_title: Sitecore Japan
+author_url: https://haramizu.jp/
+author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
+tags: [Content Hub]
+description: Sitecore Content Hub の機能として提供している Content Marketing Platform - CMP を利用して、静的なサイトを構築するための仕組み、Sitecore Experience Edge for Content Hub というソリューションの提供を開始しました。今回は、このソリューションを紹介するデモを動かしてみました。
+slug: 2021/05/18/Sitecore-Experience-Edge-For-Content-Hub
+---
+
+Sitecore Content Hub の機能として提供している Content Marketing Platform - CMP を利用して、静的なサイトを構築するための仕組み、Sitecore Experience Edge for Content Hub というソリューションの提供を開始しました。今回は、このソリューションを紹介するデモを動かしてみました。
+
+<!--truncate-->
+
+https://github.com/Sitecore/edge-portal

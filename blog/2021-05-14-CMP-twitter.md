@@ -1,0 +1,33 @@
+---
+title: Content Hub - CMP Twitter 連携
+author: Shinichi Haramizu
+author_title: Sitecore Japan
+author_url: https://haramizu.jp/
+author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
+tags: [Content Hub]
+description: Sitecore Content Hub で提供するコンテンツ管理機能、Content Marketing Platform の機能を利用して、Twitter のつぶやきを作成、公開をする手順について今回は紹介をします。
+slug: 2021/05/13/CMP-2-Twitter
+---
+
+Sitecore Content Hub で提供するコンテンツ管理機能、Content Marketing Platform の機能を利用して、Twitter のつぶやきを作成、公開をする手順について今回は紹介をします。
+
+<!--truncate-->
+
+## Content Marketing Platform - CMP とは？
+
+ずいぶん前になりますが、Sitecore Content Hub - CMP に関して紹介している記事を書きました。
+
+* [Sitecore Content Hub CMP 概要](2020-03-25-sitecore-content-hub-cmp-overview.md)
+
+今回は、コンテンツのタイプとして Twitter を追加して、入力したデータを Twitter につぶやく、というシナリオのデモを作成していきます。
+
+## コンテンツタイプの追加
+
+私の手元で利用しているデモ環境では、以下のような形でコンテンツのタイプを選択することができます。
+
+![twitter](img/2021/05/twitter01.png "twitter")
+
+この定義を追加する手順としては、管理ツールの画面に移動して、**コンテンツタイプ** を選択してください。
+
+![twitter](img/2021/05/twitter02.png "twitter")
+

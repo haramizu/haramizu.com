@@ -1,0 +1,14 @@
+---
+title: Content Hub - CMP 機械翻訳連携
+author: Shinichi Haramizu
+author_title: Sitecore Japan
+author_url: https://haramizu.jp/
+author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
+tags: [Content Hub]
+description: Sitecore Content Hub のコンテンツ作成において、多言語のコンテンツを作成したいケースがあります。実際に翻訳をするのも良しですが、機械翻訳と連携するシナリオを実装していきます。
+slug: 2021/05/13/CMP-Translation
+---
+
+Sitecore Content Hub のコンテンツ作成において、多言語のコンテンツを作成したいケースがあります。実際に翻訳をするのも良しですが、機械翻訳と連携するシナリオを実装していきます。
+
+<!--truncate-->

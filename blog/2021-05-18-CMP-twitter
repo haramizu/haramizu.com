@@ -6,10 +6,10 @@ author_url: https://haramizu.jp/
 author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
 tags: [Content Hub]
 description: Sitecore Content Hub で提供するコンテンツ管理機能、Content Marketing Platform の機能を利用して、Twitter のつぶやきを作成、公開をする手順について今回は紹介をします。
-slug: 2021/05/13/CMP-2-Twitter
+slug: 2021/05/18/CMP-2-Twitter
 ---
 
-Sitecore Content Hub で提供するコンテンツ管理機能、Content Marketing Platform の機能を利用して、Twitter のつぶやきを作成、公開をする手順について今回は紹介をします。
+Sitecore Content Hub で提供するコンテンツ管理機能、Content Marketing Platform の機能を利用して、Twitter のつぶやきを作成、公開をする手順について今回は紹介をします。ここ2回ほどで Instagram 連携の紹介をしましたが、もう少し簡単な連携を１から作り上げていく形です。
 
 <!--truncate-->
 

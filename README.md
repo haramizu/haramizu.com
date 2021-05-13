@@ -1,2 +1,1 @@
-# haramizu.com
-原水商店 http://haramizu.com のソースコードをそのまま公開しています
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).

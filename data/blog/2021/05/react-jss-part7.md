@@ -1,0 +1,445 @@
+---
+title: Sitecore JSS - React SDK を利用してサンプルサイトを構築 - Part.7
+date: '2021-05-11'
+tags: ['JSS', 'React', 'Carousel']
+draft: false
+summary: 今回はこれまで2回に分けて作成してきた２つのコンポーネントに対して、reactstrap のコンポーネントを適用してカルーセルとして動作させるように仕上げていきます。
+---
+
+[前々回の記事](2021-05-07-react-jss-part5.md)ではカルーセルのアイテムを、[前回の記事](2021-05-10-react-jss-part6.md) ではカルーセルのアイテムを管理するコンポーネントを作成しました。今回はこの２つのコンポーネントに対して、react-bootstrap のコンポーネントを適用してカルーセルとして動作させるように仕上げていきます。
+
+
+## React Bootstrap
+
+Sitecore JSS の react のサンプルは bootstrap をベースに構築されています。今回は、React の UI フレームワークの１つ、React Bootstrap のカルーセルを実装していきます。React Bootstrap に関しての情報は以下のサイトに掲載されています。
+
+* [React Bootstrap](https://react-bootstrap.github.io)
+
+まず最初に、React Bootstrap に必要な設定を追加します。作業は非常にシンプルで、以下のコマンドを実行するだけです。
+
+```
+npm install react-bootstrap
+```
+
+今回のケースでは、package.json ファイルに１行追加される形です。
+
+![carousel](/static/images/2021/05/carousel06.png "carousel")
+
+## React Bootstrap のコードを実装
+
+今回はカルーセルの中でも、コントロールのできる項目実装していきます。
+
+* https://react-bootstrap.github.io/components/carousel/#controlled
+
+サンプルのソースコードは、以下のようになっています（上記のページからそのまま参照）。
+
+```JavaScript
+function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="holder.js/800x400?text=First slide&bg=373940"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="holder.js/800x400?text=Second slide&bg=282c34"
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="holder.js/800x400?text=Third slide&bg=20232a"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+render(<ControlledCarousel />);
+```
+
+コードを見ていくと、以下のような内容で分割できます。
+
+* Carousel.Item でスライドのデータを定義しています
+* Carousel の中で処理が行われています
+
+### CarouselItem の更新
+
+上記のコードを適用していきます。まずはスライドとなるアイテムの項目です。
+
+* src/components/CarouselItem/index.js
+
+```JavaScript
+import React from 'react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
+
+const CarouselItem = (props) => (
+  <div>
+    <img src={props.fields.src.value} alt={props.fields.altText.value} />
+    <Text tag="p" field={props.fields.caption} />
+  </div>
+);
+
+export default CarouselItem;
+```
+
+import の行に Carousel を追加し、表示する内容を書き換えていきます。適用済みのコードは以下の通りです。
+
+```JavaScript
+import React from 'react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { Carousel } from 'react-bootstrap'
+
+const CarouselItem = (props) => (
+  <Carousel.Item>
+    <img
+      src={props.fields.src.value}
+      alt={props.fields.altText.value}
+    />
+    <Carousel.Caption>
+      <h3>{props.fields.altText.value}</h3>
+      <p>
+      props.fields.caption
+      </p>
+    </Carousel.Caption>
+  </Carousel.Item>
+);
+
+export default CarouselItem;
+```
+
+すでにコンポーネントで呼び出していたテキストデータをそのまま適用する形としました。
+
+### CarouselContainer の更新
+
+続いて CarouselContainer の更新です。return の外で定義されている呼び出しを組み合わせて記載する必要があります。更新するファイルは以下の通りです。
+
+* src/components/CarouselContainer/index.js
+
+適用したコードは以下のようになります。
+
+```JavaScript
+import React from 'react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
+
+class CarouselContainer extends React.Component {
+  constructor() {
+      super()
+      this.state = {}
+  }
+
+  render(){
+      return (                 
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12">
+                      <h3 class="center-block centered-text"><Text field={this.props.fields.heading} /></h3>
+                  </div>
+              </div>
+          </div>
+      )
+  }
+}
+export default CarouselContainer;
+```
+
+以下のファイルに、作成したコンポーネントを追加します。
+
+/data/routes/ja-JP.yml
+
+CarouselContainer の記載のある３行です
+
+```yaml
+placeholders:
+  jss-main:
+    - componentName: CarouselContainer
+      fields:
+        heading: コンテナのテスト
+        
+    - componentName: ContentBlock
+      fields:
+        heading: ようこそ Sitecore JSS
+```
+
+コードを追加した後、実行してください。
+
+```
+jss start
+```
+
+以下のようにコンポーネントが動いているのが確認できます。
+
+![carousel](/static/images/2021/05/carousel02.png "carousel")
+
+## サンプルのカルーセルのデータをインポートする
+
+```JavaScript
+var carouselSlides = {
+  "slideObjs" : [
+    {
+      src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+      altText: 'Slide 1',
+      caption: 'Caption1'
+    },
+    {
+      src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+      altText: 'Slide 2',
+      caption: 'Caption 2'
+    },
+    {
+      src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+      altText: 'Slide 3',
+      caption: 'Caption 3'
+    }],
+};
+```
+
+/src/components/CarouselContainer/index.js
+
+```JavaScript
+class ControlledCarousel extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.handleSelect = this.handleSelect.bind(this);
+
+        this.state = {
+        index: 0,
+        direction: null,
+        };
+    }
+
+    handleSelect(selectedIndex, e) {
+        this.setState({
+        index: selectedIndex,
+        direction: e.direction,
+        });
+    }
+
+    render() {
+    const { index, direction } = this.state;
+
+    //slides is an array of rendered slide markup
+    const slides = this.props.carouselData.slideObjs.map((slideData) =>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={slideData.src}
+                    alt={slideData.altText}
+                />
+                <Carousel.Caption>
+                    <h3>{slideData.altText}</h3>
+                    <p>{slideData.caption}</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        );
+
+        return (
+        <Carousel activeIndex={index} direction={direction} onSelect={this.handleSelect}>
+            {slides}
+        </Carousel>
+        );
+    }
+}
+```
+
+
+import { Carousel } from 'react-bootstrap'
+
+useState を react から追加
+
+画像や文字列に関して、若干変更をして以下のコードになります
+
+```JavaScript
+import React, {useState} from 'react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { Carousel } from 'react-bootstrap';
+
+const CarouselContainer = (props) => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+          alt="Slide 1"
+        />
+        <Carousel.Caption>
+          <h3>Slide 1</h3>
+          <p>Caption 1</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+          alt="Slide 2"
+        />
+
+        <Carousel.Caption>
+          <h3>Slide 2</h3>
+          <p>caption 2</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+          alt="Slide  3"
+        />
+
+        <Carousel.Caption>
+          <h3>Slide  3</h3>
+          <p>
+            Caption 3
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export default CarouselContainer;
+```
+
+### ページデータを編集する
+
+コンポーネントを追加する
+
+/data/routes/ja-JP.yml
+
+```yaml
+placeholders:
+  jss-main:
+    - componentName: CarouselContainer
+```
+
+```
+jss start
+```
+
+![carousel](/static/images/2021/05/carousel02.gif "carousel")
+
+## CarouselItem の作成
+
+```
+jss scaffold CarouselItem
+```
+
+/src/components/CarouselItem/index.js
+
+### CarouselItem を更新する
+
+/sitecore/definitions/components/CarouselItem.sitecore.js
+
+```JavaScript
+    fields: [
+      { name: 'src', type: CommonFieldTypes.SingleLineText },
+      { name: 'altText', type: CommonFieldTypes.SingleLineText },
+      { name: 'caption', type: CommonFieldTypes.SingleLineText },
+    ],
+```
+
+/src/components/CarouselItem/index.js
+
+```JavaScript
+import React from 'react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
+
+const CarouselItem = (props) => (
+  <div>
+    <img src={props.fields.src.value} alt={props.fields.altText.value}  />
+    <Text tag="p" field={props.fields.caption} />
+  </div>
+);
+
+export default CarouselItem;
+```
+
+ja-JP.yml ファイルの編集
+
+```yaml
+    - componentName: CarouselItem
+      fields:
+        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'
+        altText: 'Slide 1'
+        caption: 'Caption1'
+
+    - componentName: CarouselItem
+      fields:
+        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'
+        altText: 'Slide 2'
+        caption: 'Caption 2'
+
+    - componentName: CarouselItem
+      fields:
+        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'
+        altText: 'Slide 3'
+        caption: 'Caption 3'
+```
+
+![carousel](/static/images/2021/05/carousel03.gif "carousel")
+
+
+## placeholder を追加する
+
+/sitecore/definitions/components/CarouselContainer.sitecore.js
+
+```JavaScript
+export default function(manifest) {
+  manifest.addComponent({
+    name: 'CarouselContainer',
+    icon: SitecoreIcon.DocumentTag,
+    placeholders: ['jss-carousel-slide']
+    /*
+    If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
+    register it here, or components added to that placeholder will not be returned by Sitecore:
+    placeholders: ['exposed-placeholder-name']
+    */
+  });
+}
+```
+
+/src/components/CarouselContainer/index.js
+
+import { withPlaceholder } from '@sitecore-jss/sitecore-jss-react';
+
+## 参考ページ
+
+* [Getting into Sitecore JSS, Part 2: UI Frameworks](https://www.techguilds.com/blog/2018/12/sitecore-jss-part-2-ui-frameworks)
+* [Getting into Sitecore JSS, Part 3: NPM and JSS](https://www.techguilds.com/Blog/2018/12/sitecore-jss-part-3-npm)

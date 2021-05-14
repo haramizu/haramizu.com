@@ -24,17 +24,17 @@ yarn start
 
 しばらくすると、Node.js のインスタンスが起動してブラウザの画面にページが表示されます。
 
-![img](img/docusause/yarnstart.gif)
+![img](/static/images/docusause/yarnstart.gif)
 
 ### ファイルの中身を変更する
 
 上記のようにコマンドを実行して、ブラウザでページを表示したままコードを書き換えてみましょう。まず、メニューの **Docs** を選択して、Style Guide のページに移動します。
 
-![img](img/docusause/styleguide.png)
+![img](/static/images/docusause/styleguide.png)
 
 続いて、docs フォルダにある `doc1.md` を開いてください。
 
-![img](img/docusause/opendoc1.png)
+![img](/static/images/docusause/opendoc1.png)
 
 ここで、ページのタイトル、およびサイドメニューのタイトルを変更します。`doc1.md` のファイルの最初の定義は以下のようになっています。
 
@@ -60,6 +60,6 @@ slug: /
 
 保存をすると、ブラウザの表示が変わることがわかります。
 
-![img](img/docusause/edittext.gif)
+![img](/static/images/docusause/edittext.gif)
 
 Visual Studio Code の markdown のプレビュー機能を利用しながらページを作成していくのも非常に便利ですが、合わせてサイトの仕上がりに関してローカルで確認することができます。ファイルを保存したタイミングで、新しいデータを読み込んで表示する形になります。

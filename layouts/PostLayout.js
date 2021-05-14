@@ -80,7 +80,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                      Tags
+                      タグ
                     </h2>
                     <div className="flex flex-wrap">
                       {tags.map((tag) => (
@@ -94,7 +94,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                     {prev && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                          Previous Article
+                          前回の記事
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
@@ -104,7 +104,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                     {next && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                          Next Article
+                          次の記事
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
@@ -119,7 +119,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   href="/blog"
                   className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 >
-                  &larr; Back to the blog
+                  &larr; ブログに戻る
                 </Link>
               </div>
             </footer>

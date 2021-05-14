@@ -1,8 +1,8 @@
 ---
 title: Sitecore JSS - React SDK を利用してサンプルサイトを構築 - Part.7
-date: '2021-05-11'
+date: '2021-06-03'
 tags: ['JSS', 'React', 'Carousel']
-draft: false
+draft: true
 summary: 今回はこれまで2回に分けて作成してきた２つのコンポーネントに対して、reactstrap のコンポーネントを適用してカルーセルとして動作させるように仕上げていきます。
 ---
 
@@ -112,7 +112,7 @@ const CarouselItem = (props) => (
 export default CarouselItem;
 ```
 
-import の行に Carousel を追加し、表示する内容を書き換えていきます。適用済みのコードは以下の通りです。
+最初の　import の行に Carousel を追加し、表示する内容を書き換えていきます。適用済みのコードは以下の通りです。
 
 ```JavaScript
 import React from 'react';

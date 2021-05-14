@@ -1,20 +1,9 @@
 ---
-slug: 2019/12/18/Sitecore-Experience-Tokyo-2019
 title: Sitecore Experience Tokyo 2019 振り返り
-author: Shinichi Haramizu
-author_title: Sitecore Japan
-author_url: https://www.haramizu.jp/
-author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
-tags: [Event, Sitecore, Content Hub]
-description: 2019年12月17日にサイトコア株式会社として4回目の年次イベントを開催しました。昨年から開始した Developer Track にて2つのセッションを担当しました。今回の実施にあたって、セッション中のデモはすべて動画を使う形としていたので、セッション終了後に新作のデモ動画ということで YouTube にアップしました。
----
-
----
-title: Sample .md file
-date: '2016-03-08'
-tags: ['markdown', 'code', 'features']
+date: '2019-12-18'
+tags: ['Event', 'Sitecore', 'Content Hub']
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+summary: 2019年12月17日にサイトコア株式会社として4回目の年次イベントを開催しました。昨年から開始した Developer Track にて2つのセッションを担当しました。今回の実施にあたって、セッション中のデモはすべて動画を使う形としていたので、セッション終了後に新作のデモ動画ということで YouTube にアップしました。
 ---
 
 2019年12月17日にサイトコア株式会社として4回目の年次イベントを開催しました。昨年から開始した Developer Track にて2つのセッションを担当しました。今回の実施にあたって、セッション中のデモはすべて動画を使う形としていたので、セッション終了後に新作のデモ動画ということで YouTube にアップしました。

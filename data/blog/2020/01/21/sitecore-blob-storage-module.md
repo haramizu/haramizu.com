@@ -1,7 +1,7 @@
 ---
 title: Sitecore blob storage モジュール
 date: '2020-01-21'
-tags: ['Sitecore']
+tags: ['Sitecore','Azure']
 draft: false
 summary: Sitecore 9.3 以降からはメディアのファイルの保存場所として、Azure Storage を利用できるようになりました。このモジュールを利用することで、以下のようなメリットを得ることができます。
 ---

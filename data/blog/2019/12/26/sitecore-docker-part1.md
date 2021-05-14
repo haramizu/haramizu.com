@@ -1,21 +1,9 @@
 ---
-slug: 2019/12/26/sitecore-docker-part1
 title: Sitecore を Docker で動かす – Part 1
-author: Shinichi Haramizu
-author_title: Sitecore Japan
-author_url: https://www.haramizu.jp/
-author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
-tags: [Sitecore containers]
-description: Sitecore を Docker の上で動かすことができるのをご存知でしょうか？今回は Docker で動かすための手順を紹介する最初のステップ、Docker の設定からイメージのビルドまで紹介をします。
-image: /static/img/blog/2019/12/sitecore-docker.png
----
-
----
-title: Sample .md file
-date: '2016-03-08'
-tags: ['markdown', 'code', 'features']
+date: '2019-12-26'
+tags: ['Sitecore containers']
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+summary: Sitecore を Docker の上で動かすことができるのをご存知でしょうか？今回は Docker で動かすための手順を紹介する最初のステップ、Docker の設定からイメージのビルドまで紹介をします。
 ---
 
 :::tip

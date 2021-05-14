@@ -14,7 +14,7 @@ XMP （Extensible Metadata Platform）をサポートするためには、デジ
 
 なお、標準でインポートしたあとのファイルのプロパティとして表示されるのは以下のようなデータとなります。
 
-![プロパティ](img/2020/10/fileproperties.png "プロパティ")
+![プロパティ](/static/images/2020/10/fileproperties.png "プロパティ")
 
 ## 今回のシナリオ
 
@@ -41,7 +41,7 @@ XMP （Extensible Metadata Platform）をサポートするためには、デジ
 
 これにより、スキーマが拡張された形となります。
 
-![スキーマの拡張](img/2020/10/schemacamerabrand.gif "スキーマの拡張")
+![スキーマの拡張](/static/images/2020/10/schemacamerabrand.gif "スキーマの拡張")
 
 ## スクリプトの作成
 
@@ -51,7 +51,7 @@ XMP （Extensible Metadata Platform）をサポートするためには、デジ
 
 コードをまずはそのまま貼り付けます。（細かい処理に関する解説はページにありますので、ここでは処理内容のみを紹介します）。
 
-```C#
+```
 using System.Linq;
 
 var masterFileRelation = await Context.File.GetRelationAsync<IChildToManyParentsRelation>("MasterFile");
@@ -82,7 +82,7 @@ await MClient.Entities.SaveAsync(Context.Asset);
 
 このスクリプトは、メタデータの情報を CSV として取得して、アセットの Metadata プロパティに出力しています。この部分に関して、JSON のデータとして処理をして、JToken を使って処理をしていきます。JToken を利用する際には、まず using に Newtonsoft.Json.Linq; を追加します。そして JSON のデータの中で、カメラブランドは *make* として記載されているので、定義を追加しておきます。
 
-```C#
+```
 using System.Linq;
 using Newtonsoft.Json.Linq;
 
@@ -118,11 +118,11 @@ await MClient.Entities.SaveAsync(Context.Asset);
 
 スクリプトを登録する際、今回はメディア処理で実行するスクリプトになるため、メタデータ処理のタイプを選択する必要があります。
 
-![メタデータ処理](img/2020/10/brandname.png "メタデータ処理")
+![メタデータ処理](/static/images/2020/10/brandname.png "メタデータ処理")
 
 あとはスクリプトを登録、ビルド、有効にする手順を進めていきます。
 
-![スクリプトの登録](img/2020/10/registscript.gif "スクリプトの登録")
+![スクリプトの登録](/static/images/2020/10/registscript.gif "スクリプトの登録")
 
 登録が終わった段階で、スクリプトを有効にしておきましょう。
 
@@ -130,7 +130,7 @@ await MClient.Entities.SaveAsync(Context.Asset);
 
 スクリプトが有効になっている段階で、設定は完了しています。処理としてはトリガーとかの設定は不要で、ファイルをアップロードした時のメディア処理の際に、登録したスクリプトが実行される形となります。このため、テストとしてはファイルをアップロードすると、自動的に *make* の項目から、スキーマとして拡張した項目にデータが設定されるようになります。
 
-![カメラブランド](img/2020/10/brandcameraupdate.png "カメラブランド")
+![カメラブランド](/static/images/2020/10/brandcameraupdate.png "カメラブランド")
 
 ## まとめ
 

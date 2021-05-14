@@ -1,17 +1,5 @@
 ---
 title: Content Hub - Web Client SDK の設定
-author: Shinichi Haramizu
-author_title: Sitecore Japan
-author_url: https://haramizu.jp/
-author_image_url: https://avatars3.githubusercontent.com/u/5026348?s=400&v=4
-tags: [Content Hub]
-description: Sitecore Content Hub の開発をする際に利用する Web Client SDK を利用できるように、Visual Studio の環境を整える手順を紹介します。
-image: 
-slug: 2020/10/09/ch-webclientsdk
----
-
----
-title: Content Hub - Web Client SDK の設定
 date: '2020-10-09'
 tags: ['Content Hub']
 draft: false

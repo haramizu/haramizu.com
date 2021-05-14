@@ -1,0 +1,18 @@
+{
+  "title": "原水商店",
+  "author": "Shinichi Haramizu",
+  "headerTitle": "原水商店",
+  "description": "原水のメモサイト",
+  "language": "ja",
+  "siteUrl": "https://www.haramizu.com",
+  "siteRepo": "https://github.com/haramizu/haramizu.com",
+  "image": "https://avatars3.githubusercontent.com/u/5026348?s=400&v=4",
+  "socialBanner": "/static/images/twitter-card.png",
+  "email": "blog@haramizu.com",
+  "github": "https://github.com/haramizu",
+  "twitter": "https://twitter.com/haramizu",
+  "facebook": "https://facebook.com",
+  "youtube": "https://youtube.com/haramizu",
+  "linkedin": "https://www.linkedin.com/in/haramizu",
+  "locale": "ja-JP"
+}

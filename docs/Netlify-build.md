@@ -12,21 +12,21 @@ slug: /Netlify/build
 
 管理画面の右上に表示されている `New site from Git` のボタンをクリックしてください。サイト追加のための手順がスタートします。
 
-![img](img/netlify/netlify03.png)
+![img](/static/images/netlify/netlify03.png)
 
 サイトを作成する際の Git プロバイダーを指定する画面が表示されます。
 
-![img](img/netlify/netlify04.png)
+![img](/static/images/netlify/netlify04.png)
 
 このサイトのコード自体は、 https://github.com/haramizu/haramizu.com という形ですべてのコードを公開しています。ということで、今回は GitHub のリポジトリを選択します。
 
-![img](img/netlify/netlify05.png)
+![img](/static/images/netlify/netlify05.png)
 
 すでにアカウントは GitHub のアカウントでログインをしているため、私が持っているリポジトリ一覧が表示される形です。一覧を見ると、プライベートリポジトリが表示されていることもわかります。サイトの運用という点では、コードは別に公開する必要はないため、プライベートリポジトリと連携して、という運用でもいいのではないでしょうか。
 
 今回は、 *haramizu.com* のリポジトリを指定しました。
 
-![img](img/netlify/netlify06.png)
+![img](/static/images/netlify/netlify06.png)
 
 続いて、どのブランチを利用してサイトを公開するのか、を指定できるようになります。ここでは、当然ながら *main* を指定します。
 
@@ -48,11 +48,11 @@ build
 
 基本的には、`Deploy site` のボタンを押すと展開が開始となります。以下の画面に表示されている、Site deploy in progress のメッセージが展開が完了すると URL に切り替わります。
 
-![img](img/netlify/netlify07.png)
+![img](/static/images/netlify/netlify07.png)
 
 URL が表示されたあと、クリックをすると実際にサイトが立ち上がっているのがわかるかと思います。
 
-![img](img/netlify/netlify08.png)
+![img](/static/images/netlify/netlify08.png)
 
 サーバーの設定とかはほとんど気にすることなく、GitHub に展開しているコードを利用して Build、Deploy を自動化することができます。
 

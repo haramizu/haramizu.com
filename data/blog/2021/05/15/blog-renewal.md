@@ -39,7 +39,6 @@ Docusaurus も v2 beta になったのと慣れはし始めたのですが、お
 
 ブログをアップすると LinkedIn / Twitter につぶやくボットを動かしているのですが、それのパスも変更をしておきました。
 
-
 ## Netlify から Vercel に変更
 
 これまでホスティングに関しては Netlify を利用していましたが、Next.js と相性の良い Vercel に切り替えることにしました。手順としては以下のような感じです。
@@ -52,6 +51,6 @@ Docusaurus も v2 beta になったのと慣れはし始めたのですが、お
 
 ![vercel](/static/images/2021/05/vercel01.png "vercel")
 
-これで Staging にアップされている状況を確認して、問題なければ切り替えるという形です。
+これで Staging にアップされている状況を確認して、問題なければ切り替えるという形です。staging のサーバーで Next.js の新しいサイトを見ることができたので、 main のブランチのバックアップとして docusaurus というのを作成し、staging から pull request で main に反映させました。
 
-DNS の変更が伴うので、作業をした形です。
+DNS の変更もこの作業をやっているうちに変更されたので、スムーズに切り替えることができました。

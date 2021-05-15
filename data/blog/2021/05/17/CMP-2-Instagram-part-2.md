@@ -4,6 +4,7 @@ date: '2021-05-17'
 tags: ['Content Hub', 'Instagram']
 draft: false
 summary: 前回は、Facebook for Developer のサイトでのアプリ作成、権限の設定、そして Web サービス経由で Instagram に投稿という流れで、基本的な動作を説明しました。今回は、後半の Web サービス経由で投稿する部分を活用して、Sitecore Content Hub - CMP との連携を実装していきます。
+images: ['/static/images/2021/05/instagram60.jpg']
 ---
 
 [前回](/blog/2021/05/14/CMP-2-Instagram-part-1)は、Facebook for Developer のサイトでのアプリ作成、権限の設定、そして Web サービス経由で Instagram に投稿という流れで、基本的な動作を説明しました。今回は、後半の Web サービス経由で投稿する部分を活用して、Sitecore Content Hub - CMP との連携を実装していきます。

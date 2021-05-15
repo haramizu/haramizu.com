@@ -18,7 +18,7 @@ public/sitemap.xml
 /build
 *.xml
 # rss feed
-/public/index.xml 
+/public/rss.xml 
 
 # misc
 .DS_Store

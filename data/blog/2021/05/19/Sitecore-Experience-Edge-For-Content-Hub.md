@@ -12,8 +12,8 @@ Sitecore Content Hub の機能として提供している Content Marketing Plat
 
 今回の内容において、、以下のことを理解していることを前提とします。
 
-* [Content Hub - 4.0 新機能について](2021-05-20-Content-Hub-4-update.md)
-* [Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.1](2021-04-13-nextjs-sdk-part-1.md)
+* [Content Hub - 4.0 新機能について](/blog/2021/05/18/content-hub-4-update)
+* [Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.1](/blog/2021/04/13/nextjs-sdk-part-1)
 
 またライセンスとしては、以下のライセンスが必要となります。
 
@@ -78,7 +78,7 @@ Sitecore の開発で共通点としては、Sitecore Experience Platform と連
 
 ### Sitecore Content Hub の準備
 
-[前回](2021-05-20-Content-Hub-4-update.md) の記事で動作している Sitecore Content Hub の環境を用意してください。
+[前回](/blog/2021/05/18/content-hub-4-update) の記事で動作している Sitecore Content Hub の環境を用意してください。
 
 * 設定で publishing が有効になっていること
 * 有効な API キーが準備できている

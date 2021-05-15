@@ -12,7 +12,7 @@ Sitecore Content Hub で提供するコンテンツ管理機能、Content Market
 
 ずいぶん前になりますが、Sitecore Content Hub - CMP に関して紹介している記事を書きました。
 
-* [Sitecore Content Hub CMP 概要](2020-03-25-sitecore-content-hub-cmp-overview.md)
+* [Sitecore Content Hub CMP 概要](/blog/2020/03/25/sitecore-content-hub-cmp-overview)
 
 今回は、コンテンツのタイプとして Twitter を追加して、入力したデータを Twitter につぶやく、というシナリオのデモを作成していきます。
 

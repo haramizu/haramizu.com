@@ -4,6 +4,7 @@ date: '2021-05-12'
 tags: ['Moosend']
 draft: false
 summary: 前回、送信者に関しての設定およびリストの作成まで進めました。今回はリストの作成、送信テストまで進めていきます。
+images: ['/static/images/2021/05/moosendoverview43.png']
 ---
 
 [前回](/blog/2021/05/11/moosend-overview-part-3)、送信者に関しての設定およびリストの作成まで進めました。今回はリストの作成、送信テストまで進めていきます。

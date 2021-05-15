@@ -4,6 +4,7 @@ date: '2021-05-10'
 tags: ['Moosend']
 draft: false
 summary: 前回は Web サイトを見ながらどんなサービスか、というのを確認してみました。1000 Subscriber なら無料で利用できるということで、今回はアカウントを作成してみます。
+images: ['/static/images/2021/05/moosendoverview11.png']
 ---
 
 [前回](/blog/2021/05/07/moosend-overview-part-1)は Web サイトを見ながらどんなサービスか、というのを確認してみました。1000 Subscriber なら無料で利用できるということで、今回はアカウントを作成してみます。

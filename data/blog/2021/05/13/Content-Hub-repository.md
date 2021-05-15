@@ -4,6 +4,7 @@ date: '2021-05-13'
 tags: ['Content Hub']
 draft: false
 summary: Sitecore Content Hub のアセットを管理しているストレージはどういう管理になっているのでしょうか？今回は、リポジトリという概念について紹介をして、実際の検証方法に関しても合わせて紹介をします。
+images: ['/static/images/2021/05/repository11.png']
 ---
 
 Sitecore Content Hub のアセットを管理しているストレージはどういう管理になっているのでしょうか？今回は、リポジトリという概念について紹介をして、実際の検証方法に関しても合わせて紹介をします。

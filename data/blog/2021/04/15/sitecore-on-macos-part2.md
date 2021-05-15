@@ -6,7 +6,7 @@ draft: false
 summary: 前回は Sitecore をインストールするための環境として、 VMware Fusion で仮想マシンを構築しました。今回は、Sitecore Experience Platform 10.1 をインストール、最終的に macOS からアクセスできるようにします。
 ---
 
-[前回](2021-04-14-sitecore-on-macos-part1.md) は Sitecore をインストールするための環境として、 VMware Fusion で仮想マシンを構築しました。今回は、Sitecore Experience Platform 10.1 をインストール、最終的に macOS からアクセスできるようにします。
+[前回](/blog/2021/04/14/sitecore-on-macos-part1) は Sitecore をインストールするための環境として、 VMware Fusion で仮想マシンを構築しました。今回は、Sitecore Experience Platform 10.1 をインストール、最終的に macOS からアクセスできるようにします。
 
 ## Sitecore Experience Platform 10.1 インストール
 

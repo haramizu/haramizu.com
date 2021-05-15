@@ -128,4 +128,4 @@ npm run start
 
 これで動作確認が完了しました。次回はこのプロジェクトを各種プラットフォームに展開していきたいと思います。
 
-* [Sitecore JSS - Headless SSR - Part.2](2021-04-27-node-headless-ssr-proxy-part2.md)
+* [Sitecore JSS - Headless SSR - Part.2](/blog/2021/04/27/jss-headless-ssr-part-2)

@@ -1,7 +1,7 @@
 ---
 title: Sitecore を Docker で動かす – Part 1
 date: '2019-12-26'
-tags: ['Sitecore containers']
+tags: ['Sitecore containers','docker']
 draft: false
 summary: Sitecore を Docker の上で動かすことができるのをご存知でしょうか？今回は Docker で動かすための手順を紹介する最初のステップ、Docker の設定からイメージのビルドまで紹介をします。
 ---

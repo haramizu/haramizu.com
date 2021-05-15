@@ -220,4 +220,4 @@ Translator をクリックするとリソースの説明画面となります。
 
 今回は前編ということで、Microsoft Azure のリソースグループの作成、および Logic App で利用するリソースの準備、Sitecore Content Hub 側の準備まで完了させました。次回は後編ということで、Logic App での処理を実装していきます。
 
-[後編 自動タグの翻訳連携を実装する - 後編](2021-01-19-dam-auto-tag-translation2.md) へ続く。
+[後編 自動タグの翻訳連携を実装する - 後編](/blog/2021/01/19/dam-auto-tag-translation2) へ続く。

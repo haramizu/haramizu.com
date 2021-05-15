@@ -1,7 +1,7 @@
 ---
 title: Sitecore を Docker で動かす – Part 2
 date: '2020-01-08'
-tags: ['Sitecore containers']
+tags: ['Sitecore containers','docker']
 draft: false
 summary: 前回に続いて、Sitecore を Docker コンテナを利用して展開するための手順を紹介します。今回は2回目です。
 ---
@@ -14,7 +14,7 @@ summary: 前回に続いて、Sitecore を Docker コンテナを利用して展
 
 前回に続いて、Sitecore を Docker コンテナを利用して展開するための手順を紹介します。今回は2回目です。
 
-* [Sitecore を Docker で動かす – Part 1](2019-12-26-sitecore-docker-part1.md)
+* [Sitecore を Docker で動かす – Part 1](/blog/2019/12/26/sitecore-docker-part1)
 * Sitecore を Docker で動かす – Part 2
 
 

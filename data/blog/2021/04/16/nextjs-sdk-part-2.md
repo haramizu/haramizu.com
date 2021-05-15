@@ -1,7 +1,7 @@
 ---
 title: Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.2
 date: '2021-04-16'
-tags: ['JSS', 'NextJS']
+tags: ['JSS', 'Next.js']
 draft: false
 summary: 前回は、Next.js のテンプレートからサンプルデータを削除して、日本語のコンテンツを表示するところまで紹介をしました。今回は、このサンプルのサイトを Sitecore Experience Platform と連携させる手順を紹介します。
 ---
@@ -117,4 +117,4 @@ jss deploy items -c -d
 
 今回は Next.js のアプリで持っているデータを、Sitecore の中にインポートをする手順を紹介しました。Next.js と Sitecore の連携に関してはまだいくつか Tips がありますので、あと数回に分けて紹介をしていきます。
 
-* [Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.3](2021-04-19-nextjs-sdk-part-3.md)
+* [Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.3](/blog/2021/04/19/nextjs-sdk-part-3)

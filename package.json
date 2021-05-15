@@ -7,8 +7,7 @@
     "dev": "next dev",
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
-    "analyze": "env ANALYZE=true next build",
-    "prepare": "husky install"
+    "analyze": "env ANALYZE=true next build"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.6.0",

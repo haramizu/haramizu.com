@@ -2,8 +2,9 @@
 title: Content Hub - 4.0 新機能について
 date: '2021-05-20'
 tags: ['Content Hub']
-draft: true
+draft: false
 summary: Sitecore Content Hub のコンテンツ作成において、多言語のコンテンツを作成したいケースがあります。実際に翻訳をするのも良しですが、機械翻訳と連携するシナリオを実装していきます。
+images: ['/static/images/2021/05/ch407.png']
 ---
 
 Sitecore Content Hub はデジタルアセット管理の機能を基盤として、企業で求められるサービスを実装しています。今回は Sitecore Content Hub 4.0 でリリースされた新機能について紹介をしていきます。

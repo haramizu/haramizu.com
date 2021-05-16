@@ -4,6 +4,7 @@ date: '2020-10-10'
 tags: ['Content Hub']
 draft: false
 summary: Sitecore Content Hub のメールテンプレートの利用して、スクリプトでメールを送信する手順を紹介しています。
+images: ['/static/images/2020/10/emailtemplatebuild.png']
 ---
 
 Sitecore Content Hub では、メールのテンプレートを利用することが可能です。また、スクリプトを利用してメールを制御することもできます。ここでは、既存のメールのテンプレートの利用方法を紹介します。

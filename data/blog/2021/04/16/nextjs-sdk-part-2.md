@@ -4,6 +4,7 @@ date: '2021-04-16'
 tags: ['JSS', 'Next.js']
 draft: false
 summary: 前回は、Next.js のテンプレートからサンプルデータを削除して、日本語のコンテンツを表示するところまで紹介をしました。今回は、このサンプルのサイトを Sitecore Experience Platform と連携させる手順を紹介します。
+images: ['/static/images/2021/04/jsssite11.png']
 ---
 
 [前回](/blog/2021/04/13/nextjs-sdk-part-1)は、Next.js のテンプレートからサンプルデータを削除して、日本語のコンテンツを表示するところまで紹介をしました。今回は、このサンプルのサイトを Sitecore Experience Platform と連携させる手順を紹介します。

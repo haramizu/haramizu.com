@@ -4,6 +4,7 @@ date: '2020-03-15'
 tags: ['Content Hub']
 draft: false
 summary: ここでは Sitecore Content Hub のページの考え方について紹介をしています。管理画面のページの構成を変更したい、その場合ページのツールでどのように変更すのがいいか？という点を簡単に紹介しています。
+images: ['/static/images/2020/03/managepage.png']
 ---
 
 ここでは Sitecore Content Hub のページの考え方について紹介をしています。管理画面のページの構成を変更したい、その場合ページのツールでどのように変更すのがいいか？という点を簡単に紹介しています。

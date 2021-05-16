@@ -4,6 +4,7 @@ date: '2020-01-24'
 tags: ['Sitecore','Salesforce']
 draft: false
 summary: Sitecore 9.3 以降からはメディアのファイルの保存場所として、Azure Storage を利用できるようになりました。このモジュールを利用することで、以下のようなメリットを得ることができます。
+images: ['https://img.youtube.com/vi/pyr4RBGbs_4/0.jpg']
 ---
 
 Sitecore と CRM を接続するためのコネクターを提供しています。対応している CRM は Microsoft Dynamics CRM と Salesforce CRM の２つになります。コネクターのインストール手順に関して、Sitecore 9.3 に対応したページも用意しました。

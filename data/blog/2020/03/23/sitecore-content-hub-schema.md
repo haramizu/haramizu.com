@@ -4,6 +4,7 @@ date: '2020-03-23'
 tags: ['Content Hub']
 draft: false
 summary: 今回は開発、テストをする際に便利な Postman を紹介します。このツールは、Sitecore Content Hub や Sitecore Experience Platform / Commerce でも Web サービス連携での開発の際に、非常に便利なツールとなっています。
+images: ['/static/images/2020/03/schemaaddmember.png']
 ---
 
 Sitecore Content Hub は拡張可能なスキーマ定義を提供しており、これにより企業が利用したいデータの構造に合わせた形で、データの定義ができます。今回はスキーマに関しての内容を簡単に紹介をします。

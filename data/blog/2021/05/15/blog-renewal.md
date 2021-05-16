@@ -4,6 +4,7 @@ date: '2021-05-15'
 tags: ['Next.js']
 draft: false
 summary: Docusaurus も v2 beta になったのと慣れはし始めたのですが、お仕事で Next.js を利用することが増えてきそうなので、ベースを切り替えてみました。
+images: ['/static/images/2021/05/vercel01.png']
 ---
 
 Docusaurus も v2 beta になったのと慣れはし始めたのですが、お仕事で Next.js を利用することが増えてきそうなので、ベースを切り替えてみました。

@@ -4,6 +4,7 @@ date: '2021-05-14'
 tags: ['Content Hub', 'Instagram']
 draft: false
 summary: 今回は、Sitecore Content Hub - CMP を利用して、Instagram に写真を投稿する手順に関して紹介をする前編となります。事前の投稿に関する手順の説明が長くなってしまいましたので、慣れている人はサクサクと読んでいただいて、後編に進んでいただければと思います。
+images: ['/static/images/2021/05/instagram21.jpg']
 ---
 
 今回は、Sitecore Content Hub - CMP を利用して、Instagram に写真を投稿する手順に関して紹介をする前編となります。事前の投稿に関する手順の説明が長くなってしまいましたので、慣れている人はサクサクと読んでいただいて、後編に進んでいただければと思います。

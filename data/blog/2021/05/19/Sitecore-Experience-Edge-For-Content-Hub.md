@@ -4,6 +4,7 @@ date: '2021-05-21'
 tags: ['Content Hub', 'Experience Edge']
 draft: true
 summary: Sitecore Content Hub の機能として提供している Content Marketing Platform - CMP を利用して、静的なサイトを構築するための仕組み、Sitecore Experience Edge for Content Hub というソリューションの提供を開始しました。今回は、このソリューションを紹介するデモを動かしてみました。
+images: ['/static/images/2021/05/caas_architecture.png']
 ---
 
 Sitecore Content Hub の機能として提供している Content Marketing Platform - CMP を利用して、静的なサイトを構築するための仕組み、Sitecore Experience Edge for Content Hub というソリューションの提供を開始しました。今回は、このソリューションを紹介するデモを動かしてみました。

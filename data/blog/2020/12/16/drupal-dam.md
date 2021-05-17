@@ -4,6 +4,7 @@ date: '2020-12-16'
 tags: ['Content Hub', 'drupal']
 draft: false
 summary: Sitecore Content Hub と Drupal の連携に関して、サンプルが提供されており動作確認をすることができる様になっています。今回はどういう形の連携になるのかについて、紹介をします。
+images: ['/static/images/2020/12/drupalwithchdam.gif']
 ---
 
 Sitecore Content Hub と Drupal の連携に関して、サンプルが提供されており動作確認をすることができる様になっています。今回はどういう形の連携になるのかについて、紹介をします。

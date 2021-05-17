@@ -4,6 +4,7 @@ date: '2019-12-19'
 tags: ['Partner', 'Content Hub']
 draft: false
 summary: Sitecore と連携するソリューションを提供している Siteimprove についてご紹介します。
+images: ['/static/images/2019/12/sitecore-content-editor-page-japanese.png']
 ---
 
 Sitecore と連携するソリューションを提供している Siteimprove についてご紹介します。

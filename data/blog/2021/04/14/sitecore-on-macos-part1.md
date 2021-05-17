@@ -4,6 +4,7 @@ date: '2021-04-14'
 tags: ['Sitecore', 'VMWare Fusion']
 draft: false
 summary: Sitecore JSS の開発をする場合、Node.js が動けば問題ないため macOS の環境でも開発が可能です。しかしながら、Sitecore は Windows の環境で動作する形となるため、別途環境を整える必要があります。今回は、VMWare Fusion を利用して Sitecore JSS の開発をするための環境を整える方法を紹介します。
+images: ['/static/images/2021/04/vmware01.png']
 ---
 
 Sitecore JSS の開発をする場合、Node.js が動けば問題ないため macOS の環境でも開発が可能です。しかしながら、Sitecore は Windows の環境で動作する形となるため、macOS で開発をするためには別途環境を整える必要があります。今回は、VMWare Fusion を利用して Sitecore JSS の開発をするための環境を整える方法を紹介します。Windows の場合も Hyper-V で同様のことができますが、今回は macOS で環境を整える方法として紹介をします。

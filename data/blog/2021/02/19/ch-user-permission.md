@@ -4,6 +4,7 @@ date: '2021-02-19'
 tags: ['Content Hub']
 draft: false
 summary: 今回は Sitecore Content Hub のユーザー権限について簡単に紹介をします。
+images: ['/static/images/2021/02/usergroup3.png']
 ---
 
 Sitecore Content Hub のユーザー権限は、ユーザーグループに所属する形で付与されます。権限に関しては追加されていく形の権限設定となります。今回はこれに関して簡単に紹介をします。

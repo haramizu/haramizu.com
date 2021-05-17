@@ -4,6 +4,7 @@ date: '2020-03-13'
 tags: ['Content Hub']
 draft: false
 summary: 今回は Sitecore Content Hub の管理画面に関する手順を紹介します。Sitecore Content Hub は管理画面として、英語のユーザーインターフェイスを提供しています。今回は、日本語のユーザーインターフェイスを追加する手順を紹介します。
+images: ['/static/images/2020/03/changelanguage.gif']
 ---
 
 今回は Sitecore Content Hub の管理画面に関する手順を紹介します。Sitecore Content Hub は管理画面として、英語のユーザーインターフェイスを提供しています。今回は、日本語のユーザーインターフェイスを追加する手順を紹介します。

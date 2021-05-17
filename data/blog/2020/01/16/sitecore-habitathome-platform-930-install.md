@@ -4,6 +4,7 @@ date: '2020-01-16'
 tags: ['Demo', 'Sitecore']
 draft: false
 summary: Sitecore のデモサイトとしてイベントなどでも紹介している、Sitecore HabitatHome Platform は Github にてすべてのソースコードが展開されています。インストールの手順も半自動化しているため、慣れてしまえば半日もあればデモサイトの準備をすることができます。
+images: ['https://img.youtube.com/vi/G53Uc4kDJVA/0.jpg']
 ---
 
 Sitecore のデモサイトとしてイベントなどでも紹介している、Sitecore HabitatHome Platform は Github にてすべてのソースコードが展開されています。インストールの手順も半自動化しているため、慣れてしまえば半日もあればデモサイトの準備をすることができます。

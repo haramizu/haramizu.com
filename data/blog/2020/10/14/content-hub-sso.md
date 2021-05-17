@@ -4,8 +4,8 @@ date: '2020-10-14'
 tags: ['Content Hub']
 draft: false
 summary: Sitecore Content Hub にログインをして利用する際に、シングルサインオンの仕組みとの連携が可能となっています。ここでは、SSOCircle の仕組みを利用して、実際にシングルサインオンに関する検証手順について紹介をしています。
+images: ['/static/images/2020/10/ssocirclemetadata1.png']
 ---
-
 
 Sitecore Content Hub にログインをして利用する際に、シングルサインオンの仕組みとの連携が可能となっています。ここでは、SSOCircle の仕組みを利用して、実際にシングルサインオンに関する検証手順について紹介をしています。
 

@@ -4,6 +4,7 @@ date: '2021-04-22'
 tags: ['JSS', 'React']
 draft: false
 summary: 前回は JSS のサンプルアプリとして提供されている React のアプリを起動、Sitecore に React アプリの展開という手順を紹介しました。今回は、サンプルデータの削除、日本語データの追加という手順を紹介します。
+images: ['/static/images/2021/04/reactsample19.png']
 ---
 
 前回は JSS のサンプルアプリとして提供されている React のアプリを起動、Sitecore に React アプリの展開という手順を紹介しました。今回は、サンプルデータの削除、日本語データの追加という手順を紹介します。

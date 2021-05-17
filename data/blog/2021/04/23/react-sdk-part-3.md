@@ -4,6 +4,7 @@ date: '2021-04-23'
 tags: ['JSS', 'React']
 draft: false
 summary: 今回は、Sitecore JavaScript Services の動作モードに関して紹介をしていきます。サンプルは Part 2 で作成した空のテンプレートをベースに、接続モードを説明していく形です。
+images: ['/static/images/2021/04/reactsample11.png']
 ---
 
 今回は、Sitecore JavaScript Services の動作モードに関して紹介をしていきます。サンプルは Part 2 で作成した空のテンプレートをベースに、接続モードを説明していく形です。

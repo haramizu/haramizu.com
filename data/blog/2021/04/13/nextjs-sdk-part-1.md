@@ -4,6 +4,7 @@ date: '2021-04-13'
 tags: ['JSS', 'Next.js']
 draft: false
 summary: Sitecore 10.1 から Sitecore Headless Service は標準機能として提供することになりました。合わせて静的サイトに対応した React ベースの Next.js の SDK もリリースをしました。今回から数回に分けて、Next.JS SDK を利用してサンプルサイトを構築する手順をブログでシリーズ化して紹介をしていきます。
+images: ['/static/images/2021/04/jsssetup02.png']
 ---
 
 Sitecore 10.1 から Sitecore Headless Service は標準機能として提供することになりました。合わせて静的サイトに対応した React ベースの Next.js の SDK もリリースをしました。今回から数回に分けて、Next.JS SDK を利用してサンプルサイトを構築する手順をブログでシリーズ化して紹介をしていきます。

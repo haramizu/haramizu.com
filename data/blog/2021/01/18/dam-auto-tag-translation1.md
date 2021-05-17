@@ -4,6 +4,7 @@ date: '2021-01-18'
 tags: ['Content Hub']
 draft: false
 summary: Sitecore Content Hub で便利な機能として、アセットのタグ付けを自動的に実行する Cognitive Service 連携の機能があります。このタグに関しては標準で英語のタグを紐づける動きをします。この実装に関しては、2回に分けて紹介をします。今回は前編として、Azure のリソースの作成、および Content Hub のアクション、トリガーの作成まで紹介します。
+images: ['/static/images/2021/01/triggervision.png']
 ---
 
 Sitecore Content Hub で便利な機能として、アセットのタグ付けを自動的に実行する Cognitive Service 連携の機能があります。このタグに関しては標準で英語のタグを紐づける動きをします。この実装に関しては、2回に分けて紹介をします。今回は前編として、Azure のリソースの作成、および Content Hub のアクション、トリガーの作成まで紹介します。

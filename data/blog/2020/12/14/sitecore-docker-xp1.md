@@ -4,6 +4,7 @@ date: '2020-12-14'
 tags: ['Sitecore containers', 'Docker']
 draft: false
 summary: Sitecore Experience Platform 10.0 において対応を始めた Docker 対応、前回は XP0 の環境を立ち上げる手順を紹介しました。今回は、XP1 の環境とドメイン名の設定の変更をしてみます。
+images: ['/static/images/2020/12/welcomecms2.png']
 ---
 
 Sitecore Experience Platform 10.0 において対応を始めた Docker 対応、前回は XP0 の環境を立ち上げる手順を紹介しました。今回は、XP1 の環境とドメイン名の設定の変更をしてみます。

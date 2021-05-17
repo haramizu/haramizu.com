@@ -4,6 +4,7 @@ date: '2020-01-21'
 tags: ['Sitecore','Azure']
 draft: false
 summary: Sitecore 9.3 以降からはメディアのファイルの保存場所として、Azure Storage を利用できるようになりました。このモジュールを利用することで、以下のようなメリットを得ることができます。
+images: ['https://img.youtube.com/vi/dqm7Tkc2a5g/0.jpg']
 ---
 
 Sitecore 9.3 以降からはメディアのファイルの保存場所として、Azure Storage を利用できるようになりました。このモジュールを利用することで、以下のようなメリットを得ることができます。

@@ -1,6 +1,6 @@
 ---
 title: Sitecore JSS - React SDK を利用してサンプルサイトを構築 - Part.5
-date: '2021-06-01'
+date: '2021-06-07'
 tags: ['JSS', 'React', 'Carousel']
 summary: 前回の記事では、新しいコンポーネントを追加しました。今回から数回に分けて、カルーセルのコンポーネントを作成していきます。ということで、今回はカルーセルで回す基本的なアイテムのコンポーネントを作成したいと思います。
 draft: true
@@ -17,7 +17,7 @@ draft: true
 jss scaffold CarouselSlide
 ```
 
-![CarouselItem](/static/images/2021/05/CarouselItem01.png "CarouselItem")
+![CarouselItem](/static/images/2021/06/CarouselItem01.png "CarouselItem")
 
 
 コマンドを実行すると、以下の２つのファイルが生成されます。
@@ -92,7 +92,7 @@ jss start
 
 実行結果は以下のようになります。
 
-![CarouselItem](/static/images/2021/05/CarouselItem02.png "CarouselItem")
+![CarouselItem](/static/images/2021/06/CarouselItem02.png "CarouselItem")
 
 今回はカルーセルで利用する画像の部分を Text で引っ張ってきていますが、これは後々変更するので気にしないでください。
 

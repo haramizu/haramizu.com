@@ -6,7 +6,7 @@ draft: true
 summary: 今回はこれまで2回に分けて作成してきた２つのコンポーネントに対して、reactstrap のコンポーネントを適用してカルーセルとして動作させるように仕上げていきます。
 ---
 
-[前々回の記事](2021-05-07-react-jss-part5.md)ではカルーセルのアイテムを、[前回の記事](2021-05-10-react-jss-part6.md) ではカルーセルのアイテムを管理するコンポーネントを作成しました。今回はこの２つのコンポーネントに対して、react-bootstrap のコンポーネントを適用してカルーセルとして動作させるように仕上げていきます。
+[前々回の記事](/blog/2021/06/07/react-jss-part5)ではカルーセルのアイテムを、[前回の記事](/blog/2021/06/08/react-jss-part6) ではカルーセルのアイテムを管理するコンポーネントを作成しました。今回はこの２つのコンポーネントに対して、react-bootstrap のコンポーネントを適用してカルーセルとして動作させるように仕上げていきます。
 
 
 ## React Bootstrap
@@ -23,7 +23,7 @@ npm install react-bootstrap
 
 今回のケースでは、package.json ファイルに１行追加される形です。
 
-![carousel](/static/images/2021/05/carousel06.png "carousel")
+![carousel](/static/images/2021/06/Carousel06.png "carousel")
 
 ## React Bootstrap のコードを実装
 
@@ -198,7 +198,7 @@ jss start
 
 以下のようにコンポーネントが動いているのが確認できます。
 
-![carousel](/static/images/2021/05/carousel02.png "carousel")
+![carousel](/static/images/2021/06/Carousel02.png "carousel")
 
 ## サンプルのカルーセルのデータをインポートする
 
@@ -353,7 +353,7 @@ placeholders:
 jss start
 ```
 
-![carousel](/static/images/2021/05/carousel02.gif "carousel")
+![carousel](/static/images/2021/06/Carousel02.gif "carousel")
 
 ## CarouselItem の作成
 
@@ -413,7 +413,7 @@ ja-JP.yml ファイルの編集
         caption: 'Caption 3'
 ```
 
-![carousel](/static/images/2021/05/carousel03.gif "carousel")
+![carousel](/static/images/2021/06/Carousel03.gif "carousel")
 
 
 ## placeholder を追加する

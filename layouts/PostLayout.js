@@ -68,11 +68,11 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug).replaceAll('%2C','%2F')} rel="nofollow">
+                <Link href={discussUrl(slug).replace(/%2C/g,'%2F')} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName).replaceAll(',','/')}>{'View on GitHub'}</Link>
+                <Link href={editUrl(fileName).replace(/,/g,'/')}>{'View on GitHub'}</Link>
               </div>
             </div>
             <footer>

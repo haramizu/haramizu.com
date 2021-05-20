@@ -62,6 +62,14 @@ class MyDocument extends Document {
             integrity="sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw"
             crossOrigin="anonymous"
           />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4471333-3"></script>
+          <script  dangerouslySetInnerHTML={{ __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-4471333-3');`,}} />
+
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYBMDRMJLX"></script>
           <script dangerouslySetInnerHTML={{ __html: `
             window.dataLayer = window.dataLayer || [];

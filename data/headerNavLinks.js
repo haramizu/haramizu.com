@@ -1,7 +1,7 @@
 const headerNavLinks = [
   { href: '/blog', title: 'ブログ' },
   { href: '/tags', title: 'タグ' },
-  { href: '/projects', title: 'Projects' },
+  { href: '/projects', title: 'シリーズ' },
   { href: '/about', title: 'このサイトについて' },
 ]
 

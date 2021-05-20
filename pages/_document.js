@@ -1,12 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
-    const GA_TRACKING_ID = 'GTM-MQSXXN7'
-    const gtmScript = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GA_TRACKING_ID}');`
-    const gtmFrame = `<iframe src="https://www.googletagmanager.com/ns.html?id=${GA_TRACKING_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+    const GA_TRACKING_ID = 'UA-4471333-3'
+    const googleTag = `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-4471333-3');</script>`
 
     return (
-      <Html lang="en">
+      <Html lang="ja">
         <Head>
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link
@@ -65,10 +64,9 @@ class MyDocument extends Document {
             integrity="sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw"
             crossOrigin="anonymous"
           />
-          <script dangerouslySetInnerHTML={{ __html: gtmScript }} />
+          <script dangerouslySetInnerHTML={{ __html: googleTag }} />
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
-        <noscript dangerouslySetInnerHTML={{ __html: gtmFrame }} />
           <Main />
           <NextScript />
         </body>

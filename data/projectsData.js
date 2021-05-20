@@ -1,11 +1,9 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What is you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Moosend シリーズ',
+    description: `マーケティングオートメーションツールの Moosend に関して、アカウントの作成から使い方まで色々とブログで紹介をしています。このページでは、各種ページへのリンクを用意しています`,
+    imgSrc: '/static/images/2021/05/moosendoverview01.png',
+    href: '/blog/moosend',
   },
   {
     title: 'The Time Machine',

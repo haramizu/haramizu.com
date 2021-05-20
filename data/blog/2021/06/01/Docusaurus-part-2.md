@@ -1,9 +1,10 @@
 ---
-id: Docusaurus-yarn-start
-title: プロジェクトを起動する
-sidebar_label: プロジェクトを起動する
-description: Docusaurus のインストール後、起動するまでの手順に関して紹介をしています。
-slug: /Docusaurus/yarn-start
+title: Docusaurus - プロジェクトを起動する
+date: '2021-06-01'
+tags: ['Docusaurus']
+draft: true
+summary: プロジェクトができたところで、実際に手元で起動するところまで進めていきます。
+images: ['/static/images/docusause/edittext.gif']
 ---
 
 プロジェクトができたところで、実際に手元で起動するところまで進めていきます。

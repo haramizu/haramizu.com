@@ -1,9 +1,10 @@
 ---
-id: Netlify-build
-title: 新規サイトの追加
-sidebar_label: 新規サイトの追加
-description: Netlify に GitHub で作成している Docusaurus のリポジトリを同期する手順に関して、紹介をしています。
-slug: /Netlify/build
+title: Netlify - 新規サイトの追加
+date: '2021-06-08'
+tags: ['Netlify']
+draft: true
+summary: Netlify は、ホスティング環境を提供しており、標準で CDN が搭載されているなど非常に便利なホスティング環境です。
+images: ['/static/images/netlify/netlify07.png']
 ---
 
 ここでは、実際にサイトを登録していく手順に関して紹介をしていきます。すでにホスティングするためのデータが GitHub のリポジトリに登録されていることを前提として進めていきます。

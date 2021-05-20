@@ -1,6 +1,6 @@
 ---
 title: Content Hub - 4.0.1 デモ環境における日本語リソース
-date: '2021-05-21'
+date: '2021-06-11'
 tags: ['Content Hub']
 draft: true
 summary: この記事を書いている段階では最新版のデモ環境は Sitecore Content Hub 4.0.1 で動作するようになっています。日本語のリソースに関して、一部インポートに関しての手順でハマることがあるので、今後のためにメモとして共有しておきます。
@@ -21,7 +21,7 @@ images: ['/static/images/2021/05/caas_architecture.png']
 
 全てのリソースを用意した後、インポートをすると以下のようなエラーが発生します。
 
-![ch401ja](/static/images/2021/05/ch401ja01.png "ch401ja")
+![ch401ja](/static/images/2021/06/ch401ja01.png "ch401ja")
 
 この項目はコンテンツ配信で必要となるリソースで、システムがリソースを持っているためインポートでは書き込むことができません。
 

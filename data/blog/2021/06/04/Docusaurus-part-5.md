@@ -1,9 +1,9 @@
 ---
-id: Docusaurus-sidebars
-title: サイドバーの設定
-sidebar_label: サイドバーの設定
-description: Docusaurus を利用してサイトを作成した際の、左側のメニューとなるサイドバーの設定について説明をしています。
-slug: /Docusaurus/sidebars
+title: Docusaurus - サイドバーの設定
+date: '2021-06-04'
+tags: ['Docusaurus']
+draft: true
+summary: Docusaurus にコンテンツを追加していく場合は、 `sidebars.js` のファイルにドキュメントを追加していきます。
 ---
 
 Docusaurus にコンテンツを追加していく場合は、 `sidebars.js` のファイルにドキュメントを追加していきます。

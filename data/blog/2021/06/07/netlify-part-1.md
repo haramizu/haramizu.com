@@ -1,15 +1,15 @@
 ---
-id: Netlify
-title: Netlify について
-sidebar_label: Netlify について
-description: ホスティングサービス、Netlify を利用する際の手順などに関してまとめておきました。
-slug: /Netlify
+title: Netlify の紹介
+date: '2021-06-07'
+tags: ['Netlify']
+draft: true
+summary: Netlify は、ホスティング環境を提供しており、標準で CDN が搭載されているなど非常に便利なホスティング環境です。
+images: ['/static/images/netlify/netlify01.png']
 ---
 
 Netlify は、ホスティング環境を提供しており、標準で CDN が搭載されているなど非常に便利なホスティング環境です。
 
 ![img](/static/images/netlify/netlify01.png)
-
 
 ## 無料なのに非常に強力
 

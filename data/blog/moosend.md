@@ -3,7 +3,7 @@ title: Moosend シリーズ
 date: '2021-05-21'
 lastmod: '2021-05-21'
 tags: ['Moosend']
-draft: false
+draft: true
 summary: 電子メールマーケティングツールである Moosend に関する情報をお届けしているブログのまとめ一覧のページを作成しました。今後新しい記事を掲載した際には、このページを随時更新していきます。
 images: ['/static/images/2021/05/moosendoverview01.png']
 ---

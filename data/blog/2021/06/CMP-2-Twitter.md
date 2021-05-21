@@ -1,6 +1,6 @@
 ---
 title: Content Hub - CMP Twitter 連携
-date: '2021-05-25'
+date: '2021-06-25'
 tags: ['Content Hub', 'Twitter']
 draft: true
 summary: Sitecore Content Hub で提供するコンテンツ管理機能、Content Marketing Platform の機能を利用して、Twitter のつぶやきを作成、公開をする手順について今回は紹介をします。
@@ -20,7 +20,7 @@ Sitecore Content Hub で提供するコンテンツ管理機能、Content Market
 
 私の手元で利用しているデモ環境では、以下のような形でコンテンツのタイプを選択することができます。
 
-![twitter](/static/images/2021/05/twitter01.png "twitter")
+![twitter](/static/images/2021/06/twitter01.png "twitter")
 
 この定義を追加する手順としては、管理ツールの画面に移動して、**コンテンツタイプ** を選択してください。
 

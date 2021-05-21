@@ -1,9 +1,9 @@
 ---
-id: Docusaurus-plugin
-title: プラグインの追加
-sidebar_label: プラグインの追加
-description: ここでは、Docusaurus を利用しているサイトに関して Google Analytics およびサイトマップを追加するためのプラグイン実装について紹介しています。
-slug: /Docusaurus/plugin
+title: Docusaurus - プラグインの追加
+date: '2021-06-03'
+tags: ['Docusaurus']
+draft: true
+summary: ここではサイトを運用していく上ではやっておいた方がいい手順、ということで Google Analytics およびサイトマップを追加するためのプラグイン実装について紹介しています。
 ---
 
 ここではサイトを運用していく上ではやっておいた方がいい手順、ということで Google Analytics およびサイトマップを追加するためのプラグイン実装について紹介しています。

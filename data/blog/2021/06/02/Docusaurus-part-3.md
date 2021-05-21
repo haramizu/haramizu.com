@@ -1,9 +1,10 @@
 ---
-id: Docusaurus-site-settings
-title: サイトの設定について
-sidebar_label: サイトの設定について
-description: サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。
-slug: /Docusaurus/Site-Settings
+title: Docusaurus - サイトの設定について
+date: '2021-06-02'
+tags: ['Docusaurus']
+draft: true
+summary: サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。
+images: ['/static/images/docusause/tagline.png']
 ---
 
 サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。

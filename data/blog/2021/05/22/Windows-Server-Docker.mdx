@@ -1,0 +1,143 @@
+---
+title: Windows Server で Docker の環境を整える 
+date: '2021-05-22'
+lastmod: '2021-05-22'
+tags: ['Docker','Demo']
+draft: false
+summary: 今回は、Microsoft Azure 上で展開する仮想環境にて、Docker が動く環境を整備していきます。Windows 10 Pro では Docker for Desktop を利用する形が一番シンプルですが、今回は Windows Server 2019 ベースでの環境を整えていきます。
+images: ['/static/images/2021/05/docker04.png']
+---
+
+今回は、Microsoft Azure 上で展開する仮想環境にて、Docker が動く環境を整備していきます。Windows 10 Pro では Docker for Desktop を利用する形が一番シンプルですが、今回は Windows Server 2019 ベースでの環境を整えていきます。
+
+## 前提条件
+
+今回、作業をしていく上での前提条件は以下のようにします。Azure での環境の整備なので、以下のようなマシンを準備しました。
+
+* Windows Server 2019
+* マシンサイズ Standard D8s v3
+    * 8 vcpu
+    * メモリ 32GB
+
+<Image alt="server" src="/static/images/2021/05/server01.png" width={640} height={261} />
+
+マシンの作成が完了したあと、リモートデスクトップでアクセスをしてください。Server Manager を起動して、メニューの Manage - Add Roles and Features を選択して、以下の機能を追加します。
+
+まず最初に、Server Roles の画面で Hyper-V のチェックをします。
+
+<Image alt="server" src="/static/images/2021/05/server02.png" width={640} height={456} />
+
+続いて Features の画面で、Containers および Windows Subsystem for Linux を選択します。
+
+<Image alt="server" src="/static/images/2021/05/server03.png" width={640} height={456} />
+
+<Image alt="server" src="/static/images/2021/05/server04.png" width={640} height={456} />
+
+Hyper-V に関してはデフォルトの設定でインストールを進めていきます。最後に Install のボタンを押して、インストールを完了させてください。インストールが完了すると、再起動して、Windows Server 2019 の環境に関しては準備が調います。
+
+## Docker の環境を整える
+
+Windows Server で Docker を動かすための手順は、マイクロソフトの以下のサイトが参考になります。
+
+* [作業の開始:コンテナー用の Windows を準備する](https://docs.microsoft.com/ja-jp/virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-Server)
+
+PowerShell を管理者の権限で開き、PowerShell のギャラリーから、Docker-Microsoft PackageManagement Provider をインストールします。
+
+```powershell
+Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+```
+
+<Image alt="docker" src="/static/images/2021/05/docker01.png" width={640} height={184} />
+
+PackageManagement PowerShell モジュールを使用して、最新バージョンの Docker をインストールします。
+
+```powershell
+Install-Package -Name docker -ProviderName DockerMsftProvider
+```
+
+<Image alt="docker" src="/static/images/2021/05/docker02.png" width={640} height={184} />
+
+Sitecore のデモでは Linux のイメージも利用するため、LinuxKit をインストールします。まず、以下のサイトから release.zip をダウンロードします。
+
+* [LinuxKit](https://github.com/linuxkit/lcow/releases)
+
+ダウンロードしたファイルは、 C:\\Program Files\\Linux Containers のフォルダを作成して展開します。コピーしたファイルはダウンロード後ブロックされているため、ファイルのプロパティを開いて、ダイアログの一番下のチェックボックスをチェックして適用して、ブロックを解除してください。
+
+<Image alt="docker" src="/static/images/2021/05/docker03.png" width={320} height={437} />
+
+![linuxkit](/static/images/2021/05/linuxkit01.png "linuxkit")
+
+Windows コンテナと Linux コンテナを同時に動かすために、Experimental の設定を変更します。この設定は、 C:\ProgramData\docker\config\daemon.json のファイルを新規作成して、以下のコードを書き込んでください。ProgramData のフォルダは隠しフォルダになっていますので、直接 Explorer にパスを入れるなどで表示してください。
+
+```json
+{
+    "experimental": true
+}
+```
+
+![experimental を有効にする](/static/images/2021/05/docker04.png "experimental を有効にする")
+
+Docker の必要なモジュールのインストールが完了した段階で、一度再起動してください。
+
+## 追加ソフトウェアのインストール
+
+今回利用するソフトウェアのインストールに関して、chocolatey というツールを利用して進めていきます。
+
+* [Chocolatey](https://chocolatey.org)
+
+インストールの方法はシンプルで、PowerShell コンソールを管理者権限で開き、以下のコマンドを実行してください。
+
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+![Chocolatey インストール](/static/images/2021/05/choco01.png)
+
+コマンドラインで choco を実行するとバージョンが表示されれば、インストールは成功しています。
+
+![Choco のバージョンを確認](/static/images/2021/05/choco02.png)
+
+Github のリポジトリを利用するため、最初に git for Windows をインストールします。
+
+```powershell
+choco install git
+```
+
+![git for Windows](/static/images/2021/05/choco03.png)
+
+Dokcer を利用するためのコマンド、 docker-compose を有効にするために、以下のコマンドを実行します。
+
+```powershell
+choco install docker-compose
+```
+
+![docker-compose](/static/images/2021/05/choco04.png)
+
+続いてコードの変更などで便利なので、Visual Studio Code をインストールします。
+
+```powershell
+choco install vscode
+```
+
+![Visual Studio Code](/static/images/2021/05/choco05.png)
+
+ブラウザを動かすことができるように、Google Chrome をインストールします。
+
+```powershell
+choco install googlechrome
+```
+
+![Google Chrome](/static/images/2021/05/choco06.png)
+
+Github Desktop をインストールしておくと便利なので、これは任意でご利用ください（今回の手順として特に必須ではありません）。
+
+```powershell
+choco install github-desktop
+```
+
+![Github Desktop](/static/images/2021/05/choco07.png)
+
+## まとめ
+
+今回は Windows Server 2019 の上で Docker が動く環境まで整備をしました。これで Sitecore が提供するデモなど手軽に検証することができるようになりました。

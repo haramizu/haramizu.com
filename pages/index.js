@@ -91,7 +91,7 @@ export default function Home({ posts }) {
             className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
             aria-label="all posts"
           >
-            All Posts &rarr;
+            すべての投稿 &rarr;
           </Link>
         </div>
       )}

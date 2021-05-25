@@ -6,12 +6,10 @@ const projectsData = [
     href: '/blog/moosend',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten handphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Sitecore JSS シリーズ',
+    description: `ここでは過去に紹介した Sitecore JavaScript Service に関して紹介をしている記事一覧を紹介しています。今後も新しいトピックが随時掲載されていくため、最新情報を確認するためには JSS のタグを利用してください。`,
+    imgSrc: '/static/images/2021/05/scaffold02.png',
+    href: '/blog/sitecore-jss',
   },
 ]
 

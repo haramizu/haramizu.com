@@ -11,6 +11,12 @@ const projectsData = [
     imgSrc: '/static/images/2021/05/scaffold02.png',
     href: '/blog/sitecore-jss',
   },
+  {
+    title: 'オンラインガイド',
+    description: `サイトコアの製品に関する情報を手に入れるためのサイトを紹介しています。このページは随時更新をしています。`,
+    imgSrc: '/static/images/docsitecorecom.png',
+    href: '/blog/sitecore-docs',
+  },
 ]
 
 export default projectsData

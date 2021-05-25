@@ -73,7 +73,7 @@ export default function Home({ posts }) {
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                           aria-label={`Read "${title}"`}
                         >
-                          Read more &rarr;
+                          記事を読む &rarr;
                         </Link>
                       </div>
                     </div>

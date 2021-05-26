@@ -1,6 +1,6 @@
 ---
 title: Docusaurus - サイドバーの設定
-date: '2021-06-04'
+date: '2021-06-07'
 tags: ['Docusaurus']
 draft: true
 summary: Docusaurus にコンテンツを追加していく場合は、 `sidebars.js` のファイルにドキュメントを追加していきます。

@@ -1,6 +1,6 @@
 ---
 title: Docusaurus について
-date: '2021-05-31'
+date: '2021-06-01'
 tags: ['Docusaurus']
 draft: true
 summary: Docusaurus は Facebook が提供しているドキュメント生成ツールで、マニュアルなどのドキュメントサイトを構築するなどの際に利用されていますDocusaurus の正式リリース版は v1 が提供されており、v2 が開発中という形で提供されています。

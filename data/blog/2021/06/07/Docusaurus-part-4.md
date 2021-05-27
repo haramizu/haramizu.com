@@ -1,6 +1,6 @@
 ---
 title: Docusaurus - プラグインの追加
-date: '2021-06-04'
+date: '2021-06-07'
 tags: ['Docusaurus']
 draft: true
 summary: ここではサイトを運用していく上ではやっておいた方がいい手順、ということで Google Analytics およびサイトマップを追加するためのプラグイン実装について紹介しています。

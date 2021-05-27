@@ -3,7 +3,7 @@ title: Docker で展開しているサイトのドメイン名を変更する
 date: '2021-05-31'
 lastmod: '2021-05-31'
 tags: ['Sitecore','Demo']
-draft: true
+draft: false
 summary: Sitecore のデモの構築に関して2回ほど手順を紹介していきました。どちらの手順でも、Docker の環境ファイルとして .env ファイルに値が設定して動作するようにしています。今回は、この項目の変更として、ドメインに関する部分を変更する手順を紹介します。
 images: ['/static/images/2021/05/openssl.png']
 ---

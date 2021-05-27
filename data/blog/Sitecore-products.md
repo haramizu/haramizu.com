@@ -3,7 +3,7 @@ title: サイトコアの製品ラインナップ
 date: '2021-05-27'
 lastmod: '2021-05-27'
 tags: ['Sitecore','Boxever','Four51','Moosend']
-draft: true
+draft: false
 summary: Sitecore に関連する情報をまとめているサイトに関して、オンラインガイドをいくつか提供しています。参考にしてください。
 images: ['/static/images/sitecorecom.png']
 ---

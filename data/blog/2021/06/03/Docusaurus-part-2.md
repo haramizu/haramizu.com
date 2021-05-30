@@ -1,6 +1,6 @@
 ---
 title: Docusaurus - プロジェクトを起動する
-date: '2021-06-02'
+date: '2021-06-03'
 tags: ['Docusaurus']
 draft: true
 summary: プロジェクトができたところで、実際に手元で起動するところまで進めていきます。

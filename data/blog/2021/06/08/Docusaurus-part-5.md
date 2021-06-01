@@ -3,7 +3,8 @@ title: Docusaurus - サイドバーの設定
 date: '2021-06-08'
 tags: ['Docusaurus']
 draft: true
-summary: Docusaurus にコンテンツを追加していく場合は、 `sidebars.js` のファイルにドキュメントを追加していきます。
+summary: Docusaurus にコンテンツを追加していく場合は、 sidebars.js のファイルにドキュメントを追加していきます。
+images: ['/static/images/docusause/sidebars.png']
 ---
 
 Docusaurus にコンテンツを追加していく場合は、 `sidebars.js` のファイルにドキュメントを追加していきます。

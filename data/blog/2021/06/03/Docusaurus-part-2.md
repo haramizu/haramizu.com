@@ -3,17 +3,17 @@ title: Docusaurus - プロジェクトを起動する
 date: '2021-06-03'
 tags: ['Docusaurus']
 draft: true
-summary: プロジェクトができたところで、実際に手元で起動するところまで進めていきます。
-images: ['/static/images/docusause/edittext.gif']
+summary: 前回の記事で、１つプロジェクトを作成しましたので、カスタマイズをするにあたって必要となる手順をすすめていきます。
+images: ['/static/images/docusause/styleguide.png']
 ---
 
-プロジェクトができたところで、実際に手元で起動するところまで進めていきます。
+前回の記事で、１つプロジェクトを作成しましたので、カスタマイズをするにあたって必要となる手順をすすめていきます。
 
 ## ディレクトリ構造を確認する
 
 コマンドを利用してプロジェクトを作成したあとのディレクトリ構成は、以下のようになっています。
 
-<img src="/docs/img/docusause/initialfiles.png" alt="drawing" width="250"/>
+![img](/static/images/docusause/initialfiles.png)
 
 ## ローカルで実行する
 

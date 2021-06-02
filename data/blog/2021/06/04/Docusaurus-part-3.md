@@ -2,7 +2,7 @@
 title: Docusaurus - サイトの設定について
 date: '2021-06-04'
 tags: ['Docusaurus']
-draft: true
+draft: false
 summary: サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。
 images: ['/static/images/docusause/tagline.png']
 ---

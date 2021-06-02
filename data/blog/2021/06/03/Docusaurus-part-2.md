@@ -2,7 +2,7 @@
 title: Docusaurus - プロジェクトを起動する
 date: '2021-06-03'
 tags: ['Docusaurus']
-draft: true
+draft: false
 summary: 前回の記事で、１つプロジェクトを作成しましたので、カスタマイズをするにあたって必要となる手順をすすめていきます。
 images: ['/static/images/docusause/styleguide.png']
 ---

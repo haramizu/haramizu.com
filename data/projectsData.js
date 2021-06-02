@@ -12,6 +12,12 @@ const projectsData = [
     href: '/blog/sitecore-jss',
   },
   {
+    title: 'Sitecore デモシリーズ',
+    description: `この記事では Sitecore のデモ環境の構築およびデモの手順などをまとめていきます。`,
+    imgSrc: '/static/images/2021/05/docker10.png',
+    href: '/blog/sitecore-demo',
+  },
+  {
     title: 'オンラインガイド',
     description: `サイトコアの製品に関する情報を手に入れるためのサイトを紹介しています。このページは随時更新をしています。`,
     imgSrc: '/static/images/docsitecorecom.png',

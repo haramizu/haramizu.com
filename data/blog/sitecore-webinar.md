@@ -1,7 +1,7 @@
 ---
 title: Sitecore Webinar シリーズ 
-date: '2021-06-04'
-lastmod: '2021-06-04'
+date: '2021-06-08'
+lastmod: '2021-06-08'
 tags: ['Sitecore','Event']
 draft: true
 summary: Sitecore はオンラインセミナーを実施しており、過去の Webinar に関しても参照することができます。ここでは参照できる Webinar のシリーズを一覧で紹介しており、新しいコンテンツが公開されたら随時追加しています。
@@ -9,6 +9,21 @@ images: ['/static/images/sitecorewebinar.png']
 ---
 
 Sitecore はオンラインセミナーを実施しており、過去の Webinar に関しても参照することができます。ここでは参照できる Webinar のシリーズを一覧で紹介しており、新しいコンテンツが公開されたら随時追加しています。
+
+## Sitecore Webinar シリーズ
+
+私がセッションを担当した Webinar シリーズを紹介しています。
+
+* 2021年 6月 3日 [ポストCookie時代のCMSを活用したデジタルマーケティング](https://www.sitecore.com/ja-jp/webinars/2021/06/1st-party-cookie)
+* 2020年 9月28日 [デジタルプレゼンス向上](https://www.sitecore.com/ja-jp/webinars/2020/rdp-brightcove)
+* 2020年 9月24日 [チェンジマネジメントをITで支える](https://www.sitecore.com/ja-jp/webinars/2020/ic2)
+
+## デジタルプレゼンス再考シリーズ
+
+* 2020年 8月27日 [膨大な製品点数を誇る製造業、コンテンツ管理はどうすればいい？](https://www.sitecore.com/ja-jp/webinars/2020/rdp4)
+* 2020年 8月20日 [コンテンツってどのくらい必要？　どのくらいの周期で作ってる？](https://www.sitecore.com/ja-jp/webinars/2020/rdp3)
+* 2020年 7月28日 [MAの効果が見えないのはなぜ？ MAとWebサイトを連動させる利点とは？](https://www.sitecore.com/ja-jp/webinars/2020/rdp2-ma)
+* 2020年 7月16日 [Webサイトの役割って変わった？ 変わる？ よいWebサイトって何？](https://www.sitecore.com/ja-jp/webinars/2020/rdp1-web)
 
 ## Master Sitecore シリーズ
 

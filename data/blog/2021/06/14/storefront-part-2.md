@@ -1,0 +1,116 @@
+---
+title: Storefront の設定変更 - その２
+date: '2021-06-14'
+lastmod: '2021-06-14'
+tags: ['Sitecore','Demo','Install','Commerce','Storefront']
+draft: true
+summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
+images: ['/static/images/2021/06/storefront14.png']
+---
+
+前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
+
+## ログインページ、アカウント
+
+まず、右上にあるボタンにマウスカーソルを当てても、メニューの項目が表示されません。英語では２つのメニューが表示されています。
+
+![storefront](/static/images/2021/06/storefront09.png)
+
+![storefront](/static/images/2021/06/storefront08.png)
+
+今回は、関連するページのリソースを準備していきます。
+
+アカウント管理のページは、以下のアイテムの配下に準備されています。
+
+* /sitecore/content/Sitecore/Storefront/Home/accountmanagement
+
+ここのアイテムの日本語アイテムを準備してください。
+
+続いて、英語のページで参照をすると、ログイン、ギフトカードのページになっています。以下の２つのアイテムになります。
+
+* /sitecore/content/Sitecore/Storefront/Home/login
+* /sitecore/content/Sitecore/Storefront/Home/buygiftcard
+
+ページの準備ができれば、リンクの調整となります。
+
+まず、この TopBar で利用しているリンク一覧は以下で定義されています。
+
+* /sitecore/content/Sitecore/Storefront/Data/Links/TopBar
+
+ここのリソースに日本語を追加すると、実際のトップバーのリンクを修正します。
+
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Top Bar Links/Top Bar Links
+
+この際、リンクは以下のように設定をします。
+
+![storefront](/static/images/2021/06/storefront10.png)
+
+これで一通り設定が完了しました。作成したアイテムをパブリッシュすると、サイトでメニューが有効になりました。
+
+![storefront](/static/images/2021/06/storefront11.png)
+
+## ユーザー登録のページ
+
+ログインのページを表示すると、英語のページではユーザー登録もしくはゲストというのが記載されていますが、今の段階では含まれていません。
+
+![storefront](/static/images/2021/06/storefront12.png)
+
+この２つのアイテムは、以下で定義されています。
+
+* /sitecore/content/Sitecore/Storefront/Data/Links/Register New Account Link
+* /sitecore/content/Sitecore/Storefront/Data/Links/Checkout As Guest Link
+
+この機会に、他のリンクも含めてすべて日本語のリソースをこの機会にすべて翻訳をしていきます。
+
+![storefront](/static/images/2021/06/storefront13.png)
+
+## Commerce のリソースを有効にする
+
+標準で提供されているリソースをすでにインポートしていますが、コンテンツツリーで参照できない形になっています。これを修正していきます。
+
+* /sitecore/content/Sitecore/Storefront/Data/Commerce
+
+の配下にあるアイテムで日本語のリソースを追加すると、自動的に日本語のデータが設定されていきます。設定されない項目や好みでは無い英語の場合は、日本語を変更してください。以下のアイテムに関しては、空欄のものがあるので、その部分を埋めてください。
+
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Cart/Free Gift Selection
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Cart/Minicart
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Catalog/Commerce Search Results/Default
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Relationships/Installation Product
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Relationships/Related Product
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Relationships/Training Product
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Relationships/Warranty Product
+
+またカートの遷移に合わせた文字列の定義は以下のアイテムになります。
+
+* /sitecore/content/Sitecore/Storefront/Data/Commerce/Checkout/Step Indicator
+
+変更点としては、以下の画像のようにラベルを設定すると、カートの遷移の際に利用するラベルの設定ができます。
+
+![storefront](/static/images/2021/06/storefront14.png)
+
+## カートページの修正
+
+ショッピングカートのページのヘッダーアイテムが不足しています。以下のアイテムを選択してください。
+
+* /sitecore/content/Sitecore/Storefront/Presentation/Partial Designs/Shopping Cart Page Header
+
+設定項目は、データの項目を英語と同じ値にすることで、有効になります。
+
+## 日本語の修正
+
+販売に関するステップのラベルに関して、以下のアイテムを編集します。
+
+以下のアイテムの表示名を変更してください
+
+* /sitecore/system/Settings/Buckets/Search Types/Commerce Brand
+* /sitecore/system/Settings/Buckets/Search Types/Commerce Definition Name
+* /sitecore/system/Settings/Buckets/Search Types/Commerce On Sale
+* /sitecore/system/Settings/Buckets/Search Types/Commerce Rating
+* /sitecore/system/Settings/Buckets/Search Types/Commerce Search Item Type
+
+## 動作確認
+
+上記のリソースの準備ができたタイミング
+
+## まとめ
+

@@ -12,6 +12,11 @@ const projectsData = [
     href: '/blog/sitecore-jss',
   },
   {
+    title: 'Webinar シリーズ',
+    description: `この記事では Sitecore が展開している Webinar のうち、私が登壇したセッションを一覧で紹介しています。`,
+    imgSrc: '/static/images/2021/05/cookie-seminar.png',
+    href: '/blog/webinar',
+  },  {
     title: 'Sitecore デモシリーズ',
     description: `この記事では Sitecore のデモ環境の構築およびデモの手順などをまとめていきます。`,
     imgSrc: '/static/images/2021/05/docker10.png',

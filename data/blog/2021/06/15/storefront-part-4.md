@@ -1,7 +1,7 @@
 ---
-title: Storefront の設定変更 - その４
-date: '2021-06-14'
-lastmod: '2021-06-14'
+title: Storefront - カタログの更新
+date: '2021-06-15'
+lastmod: '2021-06-15'
 tags: ['Sitecore','Demo','Install','Commerce','Storefront']
 draft: true
 summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
@@ -13,6 +13,17 @@ images: ['/static/images/2021/06/storefront07.png']
 ## 通貨の設定
 
 ## カタログデータの取得
+
+カタログデータを編集するために、Postman を利用します。Postman のインストールの手順は以前に紹介しています。
+
+* [Postman の活用](/blog/2020/03/19/postman)
+
+choco を利用してインストールすることもできます。
+
+```powershell
+choco install postman
+```
+
 /sitecore/system/Settings/Buckets/Facets
 
 ## カタログデータの編集

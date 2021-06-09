@@ -1,14 +1,14 @@
 ---
-title: Sitecore デモシリーズ 
+title: Sitecore インストールシリーズ 
 date: '2021-06-01'
-lastmod: '2021-06-10'
-tags: ['Sitecore','Demo']
+lastmod: '2021-06-11'
+tags: ['Sitecore','Demo','Install']
 draft: false
-summary: この記事では Sitecore のデモ環境の構築およびデモの手順などをまとめていきます。最新のデモに関連するコンテンツは、Demo のタグを参照すると見ることで確認ができます。
+summary: この記事では Sitecore のデモ環境の構築、デモの手順などをまとめていきます。また各種インストールに関しても紹介をします。最新のデモに関連するコンテンツは、Demo のタグを参照すると見ることで確認ができます。
 images: ['/static/images/2021/05/docker10.png']
 ---
 
-この記事では Sitecore のデモ環境の構築およびデモの手順などをまとめていきます。最新のデモに関連するコンテンツは、[Demo](/tags/demo) のタグを参照すると見ることで確認ができます。
+この記事では Sitecore のデモ環境の構築、デモの手順などをまとめていきます。また各種インストールに関しても紹介をします。最新のデモに関連するコンテンツは、[Demo](/tags/demo) および　[install](/tags/install)  のタグを参照すると見ることで確認ができます。
 
 ## Sitecore インストール
 
@@ -18,6 +18,7 @@ Sitecore のインストール手順に関して紹介しています。
 
 * [Sitecore Experience Platform を仮想マシンで動かす](/blog/2021/06/09/sitecore-experience-platform-101)
 * [Sitecore Experience Commerce を動かす](/blog/2021/06/10/sitecore-experience-commerce-101)
+* [Storefront - ホームページの表示](/blog/2021/06/11/storefront-part-1)
 
 ## Sitecore 基本デモ
 

@@ -3,7 +3,7 @@ title: Sitecore Experience Commerce を動かす
 date: '2021-06-10'
 lastmod: '2021-06-10'
 tags: ['Sitecore','Demo','Install','Commerce']
-draft: true
+draft: false
 summary: 今回は Sitecore が提供する Commerce 製品の一つ、Sitecore Experience Commerce のインストールに関する手順を紹介します。
 images: ['/static/images/2021/06/commerce11.png']
 ---
@@ -208,6 +208,12 @@ Sitecore Experience Commerce 10.1 の[ファイルをダウンロード](https:/
 6. 上記の言語インポートの手順と同様に、ダウンロードしたリソースをインポートする
 
 ![commerce](/static/images/2021/06/commerce10.png)
+
+7. SXA のアップデートリソース **SXA-ja-JP-update.xml** を以下からダウンロードしてインポートします
+    * https://github.com/SitecoreJapan/InstallScript/tree/master/101
+
+8. Commerce のアップデートリソース、**BusinessTools-ja-JP-update.xml** と **Storefront-ja-JP-update.xml** をダウンロード、インポートします。
+    * https://github.com/SitecoreJapan/InstallScript/tree/master/XC101
 
 上記のリソースが全てインストールが終わると、日本語の画面になりました。
 

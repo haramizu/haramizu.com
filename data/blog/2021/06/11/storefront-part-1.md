@@ -1,5 +1,5 @@
 ---
-title: Storefront の設定変更 - その１
+title: Storefront - ホームページの表示
 date: '2021-06-11'
 lastmod: '2021-06-11'
 tags: ['Sitecore','Demo','Install','Commerce','Storefront']

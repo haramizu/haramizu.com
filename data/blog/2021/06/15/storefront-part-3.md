@@ -1,17 +1,35 @@
 ---
-title: Storefront の設定変更 - その３
-date: '2021-06-14'
-lastmod: '2021-06-14'
+title: Storefront - カタログの更新
+date: '2021-06-15'
+lastmod: '2021-06-15'
 tags: ['Sitecore','Demo','Install','Commerce','Storefront']
 draft: true
 summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
 images: ['/static/images/2021/06/storefront07.png']
 ---
 
-Storefront を動かすにあたって、テンプレートが拡張されています。今回は、作業などをしやすくするために、テンプレートで不足している項目を変更していきます。
+これまで、Storefront のカタログ、ショップの情報は標準のままで動かしていましたが、この部分に関しての多言語データの持ち方を紹介します。
 
-## テンプレートの変更
+## 通貨の設定
+
+## カタログデータの取得
+
+カタログデータを編集するために、Postman を利用します。Postman のインストールの手順は以前に紹介しています。
+
+* [Postman の活用](/blog/2020/03/19/postman)
+
+choco を利用してインストールすることもできます。
+
+```powershell
+choco install postman
+```
+
 /sitecore/system/Settings/Buckets/Facets
+
+## カタログデータの編集
+
+
+## カタログデータのアップロード
 
 ## まとめ
 

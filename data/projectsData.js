@@ -17,8 +17,8 @@ const projectsData = [
     imgSrc: '/static/images/2021/05/cookie-seminar.png',
     href: '/blog/webinar',
   },  {
-    title: 'Sitecore デモシリーズ',
-    description: `この記事では Sitecore のデモ環境の構築およびデモの手順などをまとめていきます。`,
+    title: 'Sitecore インストールシリーズ',
+    description: `この記事では Sitecore のインストール、デモ環境の構築およびデモの手順などをまとめていきます。`,
     imgSrc: '/static/images/2021/05/docker10.png',
     href: '/blog/sitecore-demo',
   },

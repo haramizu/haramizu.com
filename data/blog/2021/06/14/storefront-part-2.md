@@ -4,11 +4,11 @@ date: '2021-06-14'
 lastmod: '2021-06-14'
 tags: ['Sitecore','Demo','Install','Commerce','Storefront']
 draft: true
-summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
+summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトでリソースが不足していて表示されていない部分を確認しながら、不足しているリソースを追加して、正しく動作するように調整をしていきます。
 images: ['/static/images/2021/06/storefront14.png']
 ---
 
-前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
+前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトでリソースが不足していて表示されていない部分を確認しながら、不足しているリソースを追加して、正しく動作するように調整をしていきます。
 
 ## ログインページ、アカウント
 
@@ -18,15 +18,13 @@ images: ['/static/images/2021/06/storefront14.png']
 
 ![storefront](/static/images/2021/06/storefront08.png)
 
-今回は、関連するページのリソースを準備していきます。
-
-アカウント管理のページは、以下のアイテムの配下に準備されています。
+対象となるリソースを追加する前に、関連するページのリソースを準備していきます。アカウント管理のページは、以下のアイテムの配下に準備されています。
 
 * /sitecore/content/Sitecore/Storefront/Home/accountmanagement
 
-ここのアイテムの日本語アイテムを準備してください。
+ここのアイテムの日本語アイテムを準備してください。タイトルおよびナビゲーションのリンクキャプション、表示名ぐらいの設定で進めていけます。
 
-続いて、英語のページで参照をすると、ログイン、ギフトカードのページになっています。以下の２つのアイテムになります。
+続いて、英語のページでメニュー項目を参照をすると、ログイン、ギフトカードのページになっています。以下の２つのアイテムになります。
 
 * /sitecore/content/Sitecore/Storefront/Home/login
 * /sitecore/content/Sitecore/Storefront/Home/buygiftcard
@@ -37,7 +35,10 @@ images: ['/static/images/2021/06/storefront14.png']
 
 * /sitecore/content/Sitecore/Storefront/Data/Links/TopBar
 
-ここのリソースに日本語を追加すると、実際のトップバーのリンクを修正します。
+今回利用する内容以外にもリンクが多くありますので、日本語リソースを作るために、前回の手順と同じようにエクスポート、インポートで一通り日本語のリソースを用意してください。
+
+リンクリストのデータが日本語になったときに
+ここのリソースに日本語を追加すると、実際のトップバーのリンクが修正される形となります。
 
 * /sitecore/content/Sitecore/Storefront/Data/Commerce/Top Bar Links/Top Bar Links
 
@@ -94,7 +95,11 @@ images: ['/static/images/2021/06/storefront14.png']
 
 * /sitecore/content/Sitecore/Storefront/Presentation/Partial Designs/Shopping Cart Page Header
 
-設定項目は、データの項目を英語と同じ値にすることで、有効になります。
+設定項目は、データの項目を英語と同じ値にすることで、有効になります。合わせて、以下のパーシャルデザインの日本語リソースも作っておきましょう。
+
+* /sitecore/content/Sitecore/Storefront/Presentation/Partial Designs/Commerce Header
+* /sitecore/content/Sitecore/Storefront/Presentation/Partial Designs/Commerce Metadata
+* /sitecore/content/Sitecore/Storefront/Presentation/Partial Designs/Commerce Metadata For Catalog Items
 
 ## 日本語の修正
 
@@ -108,9 +113,13 @@ images: ['/static/images/2021/06/storefront14.png']
 * /sitecore/system/Settings/Buckets/Search Types/Commerce Rating
 * /sitecore/system/Settings/Buckets/Search Types/Commerce Search Item Type
 
+## パブリッシュ
+
+上記の項目の設定がすべて完了した段階で、パブリッシュを実行してください。これで設定が反映されます。
+
 ## 動作確認
 
-上記すべてのリソースの調整ができ、パブリッシュされている状態であれば、以下手順が動作します。
+この段階で、Sitecore Experience Commerce の Storefront として、以下手順の動作確認ができるようになります。
 
 * ユーザー登録（ログインの画面から移動）
 * アカウントの確認
@@ -120,7 +129,7 @@ images: ['/static/images/2021/06/storefront14.png']
 * オーダープロセス
 * 注文一覧にオーダーした結果が表示される
 
-決済の部分は Braintree の sandbox を利用して作成したキーで実行、検証することができます。
+動作に関しては別途紹介をしたいと思いますが、とりあえず試していただくとわかると思います。なお、決済の部分は Braintree の sandbox を利用して作成したキーで実行、検証することができます。
 
 ## まとめ
 

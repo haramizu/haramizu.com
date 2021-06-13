@@ -3,7 +3,7 @@ title: Storefront - ログイン、ショッピング
 date: '2021-06-14'
 lastmod: '2021-06-14'
 tags: ['Sitecore','Demo','Install','Commerce','Storefront']
-draft: true
+draft: false
 summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトでリソースが不足していて表示されていない部分を確認しながら、不足しているリソースを追加して、正しく動作するように調整をしていきます。
 images: ['/static/images/2021/06/storefront14.png']
 ---

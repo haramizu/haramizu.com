@@ -3,7 +3,7 @@ title: Storefront - カタログの更新
 date: '2021-06-22'
 lastmod: '2021-06-22'
 tags: ['Sitecore','Demo','Install','Commerce','Storefront']
-draft: false
+draft: true
 summary: これまで Storefront の動作において、カタログデータは英語のカタログのまま利用していました。今回は、日本語のカタログデータの作り方に関して紹介をしていきます。なお、英語のデータもそのまま残していくため、多言語でのカタログ管理が可能になるのがわかります。
 images: ['/static/images/2021/06/storefront07.png']
 ---

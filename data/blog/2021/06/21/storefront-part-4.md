@@ -3,7 +3,7 @@ title: Storefront - Postman を利用してアクセスをする
 date: '2021-06-21'
 lastmod: '2021-06-21'
 tags: ['Sitecore','Demo','Install','Commerce','Storefront','Postman']
-draft: false
+draft: true
 summary: Sitecore Experience Commerce は Web API を用意しており、API を利用することでさまざまなことが可能です。今回は、この Web API の動作を確認するために、Postman を利用していくつかのシナリオを実施していきます。
 images: ['/static/images/2021/06/storefront07.png']
 ---

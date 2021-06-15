@@ -28,11 +28,13 @@ Sitecore Content Hub CMP と Sitecore CMS を連携させるにあたって、Mi
 
 ![cmpinstall](/static/images/2021/06/chcmp04.png)
 
-続いて、共有アクセスポリシーを作成します。hub_out のトピックの左側のメニューにある、共有アクセスポリシーをクリックします。追加、を選択して、必要な項目を選択してください。
+同じ設定で **hub_out** と同じ様に **hub_in** を作成して、トピックを２つとします。
 
 ![cmpinstall](/static/images/2021/06/chcmp05.png)
 
-これで Azure Service Bus の最初の設定が完了しました。
+hub_out のサブスクリプションを選択し、メッセージの転送先を hub_in に設定をします。
+
+![cmpinstall](/static/images/2021/06/chcmp05a.png)
 
 ## Sitecore Content Hub CMP の設定
 
@@ -70,7 +72,7 @@ Sitecore Content Hub CMP と Sitecore CMS を連携させるにあたって、Mi
 | 送信タイプ | トピック |
 | 送信先 | hub_out |
 
-接続文字列に関しては、hub_out の共有アクセスポリシーを作成していると思いますので、それを選択すると次の様な画面になります。
+接続文字列に関しては、Azure Service Bus の共有アクセスポリシーが作成されており、*RootManageSharedAccessKey* を選択、**プライマリ接続文字列**を選択してください。
 
 ![cmpinstall](/static/images/2021/06/chcmp10.png)
 
@@ -127,12 +129,22 @@ Sitecore Content Hub CMP と Sitecore CMS を連携させるにあたって、Mi
 | Password | 作成した管理者のパスワード |
 | Content Hub URI | Content Hub のサーバー URL |
 | Connection String | Service Bus の Endpont |
-| Incoming topic name | hub_out |
+| incoming topic name | hub_in の接続文字列 |
+| outcoming topic name | hub_out の接続文字列 |
 | Incoming subscription name | sitecore |
 
 Client Seacret に関しては、Sitecore Content Hub の管理画面、**Oauth クライアント**を開きます。すると、LogicApp の設定を参照できます。
 
 ![cmpinstall](/static/images/2021/06/chcmp16.png)
+
+上記の値を設定一通り設定した画面は参考までに以下の様になります。
+
+```xml
+<add name="CMP.ContentHub" connectionString="ClientId=LogicApp;ClientSecret=xxxxxxx-xxxx-xxxx-xxx-xxxxxxxxxxxx;UserName=CMPDemo;Password=Password;URI=https://yourdemo.stylelabs.io;" />
+<add name="CMP.ServiceBusEntityPathIn" connectionString="Endpoint=sb://demodemo.servicebus.windows.net/;SharedAccessKeyName=hub_in;SharedAccessKey=hereiskenumberforhubin;EntityPath=hub_in" />
+<add name="CMP.ServiceBusSubscription" connectionString="Sitecore" />
+<add name="CMP.ServiceBusEntityPathOut" connectionString="Endpoint=sb://demodemo.servicebus.windows.net/;SharedAccessKeyName=hub_out;SharedAccessKey=itishuboutsharedaccesskey=;EntityPath=hub_out" />
+```
 
 ### テンプレートの作成
 
@@ -140,7 +152,7 @@ CMP から提供されるアイテムを保存するために、/sitecore/conten
 
 ![cmpinstall](/static/images/2021/06/chcmp17.png)
 
-続いてこのアイテムのテンプレートを作成します。テンプレートの /sitecore/templates/User Defined の直下で Blog テンプレートを作ります。今回は、タイトル（１行テキスト）と本文（複数行テキスト）のフィールドを作成しました。
+続いてこのアイテムのテンプレートを作成します。テンプレートの /sitecore/templates/User Defined の直下で Blog テンプレートを作ります。今回は、タイトル（１行テキスト）と本文（リッチテキスト）のフィールドを作成しました。
 
 ![cmpinstall](/static/images/2021/06/chcmp18.png)
 
@@ -174,9 +186,78 @@ EntityTypeSchema は、Content Hub のタクソノミーにあるコンテンツ
 
 ![cmpinstall](/static/images/2021/06/chcmp24.png)
 
-バケットは事前に作ったバケットのアイテムを、テンプレートも事前に作成をしたテンプレートを指定します。最後の項目はアイテム名に関する定義となります。今回は、仕上がりはこんな形です。
+バケットは事前に作ったバケットのアイテムを、テンプレートも事前に作成をしたテンプレートを指定します。最後の項目はアイテム名に関する定義となります。これは Content Hub で作成をするアイテム名が適用されるように、**ItemNameProperty** には **Content.Name** を設定します。今回は、仕上がりはこんな形です。
 
 ![cmpinstall](/static/images/2021/06/chcmp25.png)
 
-続いて、フィールドを指定していきます。
+### フィールドの追加
 
+続いて、フィールドを指定していきます。まず Content Hub のデータスキーマを確認するために、ブログのコンテンツを作成します。作成をしているブログの URL を確認すると、例えば以下の様になります。
+
+* https://yourinsctance.io/ja-jp/content/detail/37649
+
+上記の URL に対して、 /ja-jp/content/detail/ の部分を /api/entities/ に書き換えると、作成中のエンティティのデータを参照できる様になります。
+
+* https://yourinsctance.io/api/entities/37649
+
+![cmpinstall](/static/images/2021/06/chcmp26.png)
+
+Json のデータを参照すると、properties - Content.Name がすでに作成されていることがわかります。ブログに関しては、以下の項目が対象となります。
+
+```json
+"Blog_Title": null,
+"Blog_Quote": null,
+"Blog_Body": null,
+```
+
+今回はこのうち、Blog_Title と Blog_Body の２つを連携させたいと考えています。
+
+もう一度 Sitecore の環境に戻ります。今回は２つのフィールドを追加して、Content Hub のスキーマの名前と Sitecore のフィールドの名前を合わせる形の設定を追加します。以下が今回設定をしている内容となります。
+
+![cmpinstall](/static/images/2021/06/chcmp27.png)
+
+![cmpinstall](/static/images/2021/06/chcmp28.png)
+
+これで設定が完了となります。
+
+## 動作検証
+
+Sitecore Content Hub のコンテンツメニューを開き、 **+コンテンツ** をクリックして新しいコンテンツの作成を始めます。
+
+![cmpinstall](/static/images/2021/06/chcmp29.png)
+
+作成を開始すると、ブログなのでタイトル、記事のエリアが表示されます。今回は以下の様に入力してみました。
+
+![cmpinstall](/static/images/2021/06/chcmp30.png)
+
+コンテンツの設定はもう少し本来はやったほうがいいのですが、テストなのでこの項目だけで進めていきます。ワークフローを進めていきます。
+
+1. 開始
+2. レビューに送る
+3. 承認
+
+承認をクリックすると、以下のようなダイアログが表示されます。
+
+![cmpinstall](/static/images/2021/06/chcmp32.png)
+
+確認をクリックすると、コンテンツの状態は*公開準備完了*に切り替わります。この変更がトリガーとなり、アクションが動いているはずですので、管理 - アクションを開き、監査を開いてください。ここでは一番上に表示されているのが、実行されたアクションのログとなります。
+
+![cmpinstall](/static/images/2021/06/chcmp33.png)
+
+CMS の画面に切り替えると、CMP のアイテムの下のアイテムバケットに１つのサブアイテムが生成されていることがわかります。
+
+![cmpinstall](/static/images/2021/06/chcmp34.png)
+
+Blog のアイテムを選択して、Test で検索をするとバケットの中にアイテムが生成されていることがわかります。
+
+![cmpinstall](/static/images/2021/06/chcmp35.png)
+
+アイテムを選択すると、CMP で作成した名前がアイテム名に、ブログのタイトルおよび記事のタイトルに Blog_Title のデータが、またBody には Blog の本文が入っていることがわかります。
+
+![cmpinstall](/static/images/2021/06/chcmp36.png)
+
+また識別子もアイテムに含まれており、この識別子は CMP で作成したアイテムの識別子と同じ値が入っていることがわかります。
+
+## まとめ
+
+このように、Sitecore Content Hub CMP で作成したコンテンツを Sitecore CMS のアイテムとして作成することができました。定型的なコンテンツであれば、CMP でページを作成する形の運用が可能となります。また、CMP で作成することができるコンテンツタイプも増やすことができます。

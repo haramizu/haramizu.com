@@ -1,0 +1,2 @@
+https://chrisperks.com/sitecore_deploy_to_kubernetes_eks/
+https://chrisperks.com/sitecore_10_production_aws_deploys

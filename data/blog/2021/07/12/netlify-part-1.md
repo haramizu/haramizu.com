@@ -1,8 +1,8 @@
 ---
 title: Netlify の紹介
-date: '2021-06-23'
+date: '2021-07-12'
 tags: ['Netlify']
-draft: true
+draft: false
 summary: Netlify は、ホスティング環境を提供しており、標準で CDN が搭載されているなど非常に便利なホスティング環境です。
 images: ['/static/images/netlify/netlify01.png']
 ---

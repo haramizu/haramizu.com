@@ -1,8 +1,8 @@
 ---
 title: Netlify - 新規サイトの追加
-date: '2021-06-24'
+date: '2021-07-16'
 tags: ['Netlify']
-draft: true
+draft: false
 summary: Netlify は、ホスティング環境を提供しており、標準で CDN が搭載されているなど非常に便利なホスティング環境です。
 images: ['/static/images/netlify/netlify07.png']
 ---

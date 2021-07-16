@@ -74,7 +74,19 @@ PS C:\projects\certs> openssl pkcs12 -in cmsdemo20210302.pfx -nocerts -nodes -ou
 Enter Import Password:
 ```
 
-Import Password を聞いてくるときは、pfx 型式のファイルのパスワードを入力してください。
+Import Password を聞いてくるときは、pfx 型式のファイルのパスワードを入力してください。上記のファイルができた後は、
+
+```
+C:\projects\sitecore.demo.platform\data\traefik\certs
+```
+
+にファイルをコピーします。また、証明書を有効にするために、
+
+```
+C:\projects\sitecore.demo.platform\data\traefik\config\dynamic\certs_config.yaml
+```
+
+で指定しているファイル名を変更してください。
 
 ## 変更を反映させる
 

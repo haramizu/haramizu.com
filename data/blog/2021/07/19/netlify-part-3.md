@@ -2,7 +2,7 @@
 title: Netlify - ドメインの割り当て
 date: '2021-06-28'
 tags: ['Netlify']
-draft: true
+draft: false
 summary: Netlify で立ち上げたサイトに、独自ドメインを割り当てる方法について、このページでは紹介をします。ドメインの設定に関してある程度知識がある人であればスムーズに進めることができます。手順としては、DNS のサーバーを Netlify に変更してあとはお任せ、という感じの設定にしました。
 images: ['/static/images/netlify/netlify15.png']
 ---

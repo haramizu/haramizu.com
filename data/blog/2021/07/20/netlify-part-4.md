@@ -1,8 +1,8 @@
 ---
 title: Netlify - ステージング環境の構築
-date: '2021-06-28'
+date: '2021-07-20'
 tags: ['Netlify']
-draft: true
+draft: trie
 summary: Netlify と連携しているリポジトリに関して、デフォルトではすべてのブランチに対して自動的に Build を実行するようになっています。もちろん、事前に設定しているブランチのみが公式サイト、という形になりますが、ステージングのブランチを作っておくことで、Web サイトを公開する前に確認をするためのステージングを用意することができます。
 images: ['/static/images/netlify/deploysummary.png']
 ---

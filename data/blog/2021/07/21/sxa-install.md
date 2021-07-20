@@ -2,7 +2,7 @@
 title: Sitecore Experience Accelerator インストール
 date: '2021-07-21'
 tags: ['Sitecore','SXA','Install']
-draft: true
+draft: false
 summary: Sitecore のモジュール集となる Sitecore Experience Accelerator のモジュールのインストール方法をここでは紹介をしています。
 images: ['/static/images/2021/07/sxa09.png']
 ---

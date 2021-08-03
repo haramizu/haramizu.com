@@ -2,7 +2,7 @@
 title: Sitecore Experience Accelerator スタイルガイドインストール
 date: '2021-08-04'
 tags: ['Sitecore','SXA','Install']
-draft: false
+draft: true
 summary: Sitecore Experience Accelerator のモジュールで作成をしているサンプルサイト、スタイルガイドのインストール方法を紹介します。
 images: ['/static/images/2021/07/styleguide05.png']
 ---

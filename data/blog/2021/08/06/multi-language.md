@@ -1,6 +1,6 @@
 ---
 title: Sitecore における多言語コンテンツの管理
-date: '2021-07-27'
+date: '2021-08-06'
 tags: ['Sitecore','MultiLanguage']
 draft: true
 summary: Sitecore Experience Accelerator のモジュールで作成をしているサンプルサイト、スタイルガイドのインストール方法を紹介します。

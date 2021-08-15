@@ -1,18 +1,18 @@
 ---
 title: Global Link モジュールのインストール
-date: '2021-07-28'
+date: '2021-08-23'
 tags: ['Sitecore','MultiLanguage','Global Link']
 draft: true
 summary: 
 images: ['/static/images/netlify/deploysummary.png']
 ---
 
-
+今回は Stiecore の
 
 ## モジュールのインストール
 
 
-![GlobalLinkModule](/static/images/2021/07/GlobalLink01.png)
+![GlobalLinkModule](/static/images/2021/08/GlobalLink01.png)
 
 
 ## データベースの作成
@@ -22,9 +22,9 @@ App_Data
 GlobalLink_Extension_DB_Script_9.3.6.sql
 のスクリプトを実行します。
 
-![GlobalLinkModule](/static/images/2021/07/GlobalLink02.png)
+![GlobalLinkModule](/static/images/2021/08/GlobalLink02.png)
 
-![GlobalLinkModule](/static/images/2021/07/GlobalLink03.png)
+![GlobalLinkModule](/static/images/2021/08/GlobalLink03.png)
 
 
 

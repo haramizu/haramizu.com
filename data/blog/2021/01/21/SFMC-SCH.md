@@ -130,4 +130,4 @@ https://your-sitecore-instance.io/en-us/salesforce-connect/salesforce-connect-ap
 
 ## 参考資料
 
-* [Sitecore Connect™ for Salesforce Marketing Cloud](https://docs.stylelabs.com/content/3.4.x/user-documentation/content-user-manual/integrate/sitecore-connect-for-salesforce-marketing-cloud/overview.html)
+* [Sitecore Connect™ for Salesforce Marketing Cloud](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/user-documentation/content-user-manual/integrate/sitecore-connect-for-salesforce-marketing-cloud/overview.html?rp=true&rv=true)

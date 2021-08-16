@@ -48,4 +48,5 @@ https://slpartners.myget.org/F/m-public/api/v3/index.json
 
 ## 関連情報
 
+* [Web クライアント SDK - 開始方法](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/integrations/web-sdk/getting-started.html?rp=true&rv=true)
 * [Web Client SDK - Getting started](https://docs.stylelabs.com/content/3.4.x/integrations/web-sdk/getting-started.html?tabs=tabid-1)

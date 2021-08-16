@@ -15,7 +15,7 @@ images: ['/static/images/2021/08/config01.png']
 
 このため変更をした点を明確にするために、パッチファイルを作成してマージすることが可能です。これに関しては以下のドキュメントで紹介されています。
 
-* [Configuration patch file examples](https://doc.sitecore.com/en/developers/101/platform-administration-and-architecture/configuration-patch-file-examples.html)
+* [設定パッチ ファイルの例](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/configuration-patch-file-examples.html)
 
 設定ファイルに関しては、/App_Config/Include の下に差分の設定ファイルを配置して、起動時に設定を変更するという流れになります。
 

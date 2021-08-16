@@ -50,7 +50,7 @@ jss start
 
 Sitecore のモジュール集と同じ様に JSS のアプリを管理することができる機能を提供しています。
 
-* [Managing JSS apps with SXA](https://doc.sitecore.com/developers/sxa/19/sitecore-experience-accelerator/en/managing-jss-apps-with-sxa.html)
+* [SXA による JSS アプリの管理](https://doc.sitecore.com/ja/developers/sxa/101/sitecore-experience-accelerator/managing-jss-apps-with-sxa.html)
 
 今回はこの手順で、作成をしたアプリを Sitecore に展開します。
 
@@ -143,7 +143,7 @@ jss setup
 配置シークレットのキーを JSS のサイトに適用しただけでは GraphQL が有効にならないため、config ファイルを作成する必要があります。
 サンプルのコードは以下のサイトで提供されています。
 
-* [Import a JSS app into your JSS site](https://doc.sitecore.com/developers/sxa/101/sitecore-experience-accelerator/en/import-a-jss-app-into-your-jss-site.html)
+* [JSS アプリを JSS サイトにインポートする](https://doc.sitecore.com/ja/developers/sxa/101/sitecore-experience-accelerator/import-a-jss-app-into-your-jss-site.html)
 
 Sitecore のインスタンスのディレクトリで、 App_Config\Include に zzz というフォルダを作成して、react-app.config を作成してください。このファイルのコードとしては、上記のページ 5 の項目にあるコードをコピーします。
 

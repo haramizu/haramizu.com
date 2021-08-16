@@ -13,7 +13,7 @@ Sitecore のユーザー向けドキュメントとして、10.1 最新版に対
 
 サイトは以下の URL で公開されています。
 
-* [Sitecore ドキュメント][https://doc.sitecore.com/ja/]
+* [Sitecore ドキュメント](https://doc.sitecore.com/ja/)
 
 ![docs](/static/images/2021/08/docs01.png)
 

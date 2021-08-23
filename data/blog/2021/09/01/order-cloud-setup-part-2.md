@@ -2,7 +2,7 @@
 title: Sitecore OrderCloud - HeadStart セットアップ - Part 2
 date: '2021-09-02'
 tags: ['OrderCloud','Demo']
-draft: true
+draft: false
 summary: 
 images: ['/static/images/2021/09/lang08.png']
 ---

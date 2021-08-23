@@ -2,7 +2,7 @@
 title: Sitecore OrderCloud - HeadStart Part 1 準備
 date: '2021-09-01'
 tags: ['OrderCloud','Demo']
-draft: true
+draft: false
 summary: Sitecore が提供する新しいソリューションの一つ、Sitecore OrderCloud のデモ環境を作る手順を紹介したいと思います。この OrderCloud は、ヘッドレスコマースのソリューションとなっており、これのデモとして提供している HeadStart があります。これから何回かに分けて、実際のデモを動かす手順を紹介していきます。
 images: ['/static/images/2021/09/ordercloud16.png']
 ---

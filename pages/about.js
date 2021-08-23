@@ -33,10 +33,13 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              デジタルマーケティング基盤となる Sitecore Experience Platform / Sitecore Content Hub など、サイトコア株式会社が提供するサービスに関する Tips をまとめています。
+              デジタルマーケティング基盤となる Sitecore Experience Platform / Sitecore Content Hub
+              など、サイトコア株式会社が提供するサービスに関する Tips をまとめています。
             </p>
             <p>
-              このサイトは Next.js で構築しており、 [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) をベースにカスタマイズをして運用しています。
+              このサイトは Next.js で構築しており、 Tailwind Nextjs Starter Blog -
+              https://github.com/timlrx/tailwind-nextjs-starter-blog
+              をベースにカスタマイズをして運用しています。
             </p>
           </div>
         </div>

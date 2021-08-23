@@ -1,7 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
-
     return (
       <Html lang="ja">
         <Head>
@@ -63,20 +62,23 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4471333-3"></script>
-          <script  dangerouslySetInnerHTML={{ __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-4471333-3');`,}} />
-
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-4471333-3');`,
+            }}
+          />
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYBMDRMJLX"></script>
-          <script dangerouslySetInnerHTML={{ __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-TYBMDRMJLX');`,}} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TYBMDRMJLX');`,
+            }}
+          />
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
           <Main />

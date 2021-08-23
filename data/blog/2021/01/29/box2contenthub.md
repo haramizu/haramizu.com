@@ -247,7 +247,7 @@ HTTP を指定すると、いくつかのアクションが表示されます。
 
 新しいエンティティを作成する方法は以下の URL で紹介されています。
 
-* [Create an entity](https://docs.stylelabs.com/content/3.4.x/integrations/rest-api/entities/create-entity.html)
+* [エンティティ クライアント](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/integrations/script-common-documentation/clients/entities-client.html)
 
 この Json を本文に記載してください。
 
@@ -329,7 +329,8 @@ properties にはファイルの属性を定義することになります。今
 
 作成したエンティティに、事前に Azure のストレージにアップロードしているファイルに更新を実行します。この実行方法に関しては、以下の URL の処理を実行することになります。
 
-* [Create a new Fetch Job](https://docs.stylelabs.com/content/3.4.x/integrations/rest-api/fetch/create-fetch-job.html)
+* [新しいフェッチ ジョブの作成](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/integrations/rest-api/fetch/create-fetch-job.html)
+
 
 ポストする本文のサンプルは以下の通りです。
 

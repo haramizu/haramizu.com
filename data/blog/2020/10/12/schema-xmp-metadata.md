@@ -48,7 +48,7 @@ XMP （Extensible Metadata Platform）をサポートするためには、デジ
 
 メタデータの処理に関するサンプルのスクリプトを、以下のサイトで紹介をしています。
 
-* [Media processing script example](https://docs.stylelabs.com/content/3.4.x/integrations/scripting-api/scripting-examples/media-processing-example.html?redirect=true)
+* [メディア処理スクリプトの例](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/integrations/scripting-api/scripting-examples/media-processing-example.html?rp=true&rv=true)
 
 コードをまずはそのまま貼り付けます。（細かい処理に関する解説はページにありますので、ここでは処理内容のみを紹介します）。
 
@@ -139,5 +139,5 @@ await MClient.Entities.SaveAsync(Context.Asset);
 
 ## 参考サイト
 
-* [Media processing script example](https://docs.stylelabs.com/content/3.4.x/integrations/scripting-api/scripting-examples/media-processing-example.html?redirect=true)
+* [メディア処理スクリプトの例](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/integrations/scripting-api/scripting-examples/media-processing-example.html?rp=true&rv=true)
 * [Viewing Asset XMP Data in Sitecore Content Hub](https://www.cmsbestpractices.com/viewing-asset-xmp-data-in-sitecore-content-hub/)

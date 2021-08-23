@@ -31,7 +31,7 @@ Sitecore Content Hub の機能として提供している Content Marketing Plat
 
 コンテンツデリバリーに関しては以下のページが参考になります。
 
-* [Content Delivery](https://docs.stylelabs.com/content/4.0.x/user-documentation/experience-edge/content-delivery/content-delivery.html)
+* [コンテンツの配信](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/user-documentation/experience-edge/content-delivery/content-delivery.html?rp=true&rv=true)
 
 このページで紹介されている画像を抜き出してみました。
 
@@ -49,7 +49,7 @@ Sitecore Content Hub の機能として提供している Content Marketing Plat
 
 Sitecore CMP の新しい仕組みとして、コンテンツコレクションが追加されました。
 
-* [Quickstart guide](https://docs.stylelabs.com/content/4.0.x/user-documentation/experience-edge/content-delivery/quickstart-guide.html)
+* [クイックスタート ガイド](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/user-documentation/experience-edge/content-delivery/quickstart-guide.html?rp=true&rv=true)
 
 ここに追加されるコンテンツが、Delivery Platform を通じて公開するコンテンツ管理をすることができます。もちろん、ここに追加するコンテンツに関してもワークフローが提供されており、承認が完了したコンテンツのみ、展開するという流れになっています。
 

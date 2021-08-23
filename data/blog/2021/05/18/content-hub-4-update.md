@@ -94,7 +94,7 @@ https://{youe-instance}/api/graphql/preview/ide/
 
 また左側には Query を入力します。取り急ぎ、Query のサンプルページのコードを参照します。
 
-* [GraphQL examples](https://docs.stylelabs.com/content/4.0.x/user-documentation/experience-edge/content-delivery/graphql/graphql-examples.html)
+* [GraphQL の例](https://docs.stylelabs.com/ja-jp/contenthub/4.0.x/content/user-documentation/experience-edge/content-delivery/graphql/graphql-examples.html?rp=true&rv=true)
 
 今回は以下のコードを左側に設定しました。
 

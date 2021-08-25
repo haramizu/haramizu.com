@@ -1,7 +1,7 @@
 ---
 title: Sitecore 権限の確認 - 権限設定のコツ
 date: '2021-08-25'
-tags: ['']
+tags: ['Sitecore']
 draft: false
 summary: 前回は、Sitecore 権限の確認 - アクセスビューアーの活用ということで、２つの権限を作成してそれぞれ異なる権利を付与、またそれをユーザーに割り当てた時にどういう形になるのか、というのを紹介しました。今回は、ロールを組み合わせて権限を設定していくコツに関して紹介をしていきます。
 images: ['/static/images/2021/08/accessviewer16.png']

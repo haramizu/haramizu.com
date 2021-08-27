@@ -1,13 +1,13 @@
 ---
-title: Sitecore OrderCloud HeadStart - Part 3 展開
+title: Sitecore OrderCloud HeadStart - Part 3 ローカルでの展開
 date: '2021-09-03'
 tags: ['OrderCloud','Demo']
 draft: false
-summary: これまで２回で環境の準備、設定と進めていきました。今回から、すでにダウンロード済みのソースコードを利用して環境に展開をしていきます。
-images: ['/static/images/2021/09/lang08.png']
+summary: これまで OrderCloud HeadStart として提供されているサンプルを立ち上げるために、２回に分けて、環境の準備、設定と進めていきました。今回はすでにダウンロードしていたソースコードを利用して、ローカルでの展開手続きを進めていきます。
+images: ['/static/images/2021/09/ordercloud34.png']
 ---
 
-これまで２回で環境の準備、設定と進めていきました。今回から、すでにダウンロード済みのソースコードを利用して環境に展開をしていきます。
+これまで OrderCloud HeadStart として提供されているサンプルを立ち上げるために、２回に分けて、環境の準備、設定と進めていきました。今回はすでにダウンロードしていたソースコードを利用して、ローカルでの展開手続きを進めていきます。
 
 ## Middleware をローカルで実行する
 
@@ -89,12 +89,85 @@ Postman の画面では以下の通りです（項目はいくつか表示して
 
 ![OrderCloud](/static/images/2021/09/ordercloud29.png) 
 
-
-
-
-
 ## Buyer Storefront のビルド
 
+続いて Visual Studio Code でリポジトリの \src\UI のフォルダを開きます。
 
+![OrderCloud](/static/images/2021/09/ordercloud30.png) 
 
-https://himadritechblog.wordpress.com/2021/05/04/exploration-of-four51-ordercloud-its-architecture-and-headstart-setup/#setting-up-headstart
+ターミナルを開いて、SDK のフォルダに移動して、npm install を実行します。
+
+```powershell
+cd SDK
+npm install
+```
+
+コマンドが終了したタイミングで、**npm run build** を実行して SDK のビルドを実行します。
+
+![OrderCloud](/static/images/2021/09/ordercloud31.png) 
+
+完了すると、次は buyer のディレクトリに移動をして、**npm install** を実行します。
+
+```powershell
+cd ..
+cd Buyer
+npm install
+```
+
+![OrderCloud](/static/images/2021/09/ordercloud32.png) 
+
+続いて、 Buyer\src\environments\environment.local.ts のファイルを開きます。このファイルの次の項目
+
+* useLocalMiddleware
+* useLocalBuyerApiClient
+
+の false の値を true にしてください。設定後、 **npm run start** を実行します。
+
+![OrderCloud](/static/images/2021/09/ordercloud33.png) 
+
+コンパイルが完了すると、ブラウザが立ち上がってデモサイトが起動します。
+
+![OrderCloud](/static/images/2021/09/ordercloud34.png) 
+
+ビルドを確認したら、Ctrl+C で停止させ、またブラウザを閉じて次のステップに進みます。
+
+## Seller Admin の設定
+
+続いて管理画面となる Seller をビルドしていきます。まず最初に、以下のように対象となるディレクトリに移動して、**npm install** を実行してください。
+
+```powershell
+cd ..
+cd Seller
+npm install
+```
+
+続いて Buyer の時と同じように、 Seller\src\environments\environment.local.ts のファイルを開きます。このファイルの次の項目
+
+* useLocalMiddleware
+
+を true に変更します。
+
+![OrderCloud](/static/images/2021/09/ordercloud35.png) 
+
+Seller Admin に関しては次のステップに向けて準備ができました。
+
+## Buyer および Seller をローカルで実行する
+
+ここまで手順を進めていたものに関して、順番に起動をしていきます。
+
+* Middleware の起動
+* Buyer Storefront の起動
+* Seller Admin の起動
+
+![OrderCloud](/static/images/2021/09/ordercloud36.gif) 
+
+これで主なコンポーネントがローカルで動くようになりました。
+
+## まとめ
+
+実際の開発にあたってはローカルで開発をして、動作確認をしたコードをコミット、テストという感じで開発をしていきます。このため最初のステップはローカルで動く環境を準備した形です。次回は、今回セットアップした環境を少しみていきたいと思います。
+
+## 参考資料
+
+* [GitHub ordercloud-api / headstart](https://github.com/ordercloud-api/headstart)
+* [Exploration of Four51 OrderCloud, its architecture, and Headstart setup](https://himadritechblog.wordpress.com/2021/05/04/exploration-of-four51-ordercloud-its-architecture-and-headstart-setup/)

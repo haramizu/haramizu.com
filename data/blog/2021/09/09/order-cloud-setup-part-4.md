@@ -1,6 +1,6 @@
 ---
 title: Sitecore OrderCloud HeadStart - Part 4 環境の確認
-date: '2021-09-06'
+date: '2021-09-09'
 tags: ['OrderCloud','Demo']
 draft: false
 summary: ローカルで OrderCloud のデモ環境、HeadStart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。
@@ -13,7 +13,7 @@ images: ['/static/images/2021/09/ordercloud40.png']
 
 今回、デモサイトを起動したときに以下のようにエラーが表示されているのがわかります。
 
-![OrderCloud](/static/images/2021/09/ordercloud37.png) 
+![OrderCloud](/static/images/2021/09/ordercloud37.png)
 
 画面に表示されている文字を見ると、パラメーターになっているのがわかります。それではこの部分を改善するためにどうすればいいでしょうか？前回、ローカルで動かすための設定ファイル、Buyer\src\environments\environment.local.ts を参照しにいくと、以下のコードがあります。
 
@@ -71,13 +71,13 @@ const apps = {
 
 さまざまな値が設定されていますが、translateBlobUrl に翻訳リソースに関する１行が設定されています。Azure のストレージを見にいくと、 middleware をビルドした際にファイルが追加されていることがわかります。
 
-![OrderCloud](/static/images/2021/09/ordercloud38.png) 
+![OrderCloud](/static/images/2021/09/ordercloud38.png)
 
 ここのパラメーターを Azure から取得して変更、保存をします。また、clientID に関しては、Postman で初期化した時に返ってきた clientID ( buyer 向け）の値を設定します。
 
 変更完了後、**npm run start** で実行してみます。
 
-![OrderCloud](/static/images/2021/09/ordercloud39.png) 
+![OrderCloud](/static/images/2021/09/ordercloud39.png)
 
 言語リソースが読み込まれて、エラーもなくページが開くようになりました。
 
@@ -103,11 +103,11 @@ const apps = {
 
 **npm run start** を実行すると以下のように管理画面のエラーも治ります。
 
-![OrderCloud](/static/images/2021/09/ordercloud40.png) 
+![OrderCloud](/static/images/2021/09/ordercloud40.png)
 
 これで前回画面に表示されていたエラーが消えました。また、初期設定をした Admin アカウントとパスワードを利用してログインをします。
 
-![OrderCloud](/static/images/2021/09/ordercloud41.png) 
+![OrderCloud](/static/images/2021/09/ordercloud41.png)
 
 初期管理者アカウントでログインが出来ました。
 
@@ -124,8 +124,12 @@ const apps = {
 
 この２つのキーは、Azure にアップロードをしている設定の２つの項目に設定をする形となります。
 
-![OrderCloud](/static/images/2021/09/ordercloud42.png) 
+![OrderCloud](/static/images/2021/09/ordercloud42.png)
 
 ## まとめ
 
 今回は、起動したストアに関してエラーが発生している部分を修正しました。次回は、Azure の環境に展開をしていきます。
+
+## 参考資料
+
+* [GitHub ordercloud-api / headstart](https://github.com/ordercloud-api/headstart)

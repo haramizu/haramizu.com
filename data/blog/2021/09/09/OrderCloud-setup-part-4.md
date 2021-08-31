@@ -4,7 +4,7 @@ date: '2021-09-09'
 tags: ['OrderCloud','Demo']
 draft: false
 summary: ローカルで OrderCloud のデモ環境、HeadStart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。
-images: ['/static/images/2021/09/ordercloud41.png']
+images: ['/static/images/2021/09/ordercloud40.png']
 ---
 
 ローカルで OrderCloud のデモ環境、HeadStart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。

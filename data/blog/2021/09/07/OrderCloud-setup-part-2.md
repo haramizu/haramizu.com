@@ -2,7 +2,7 @@
 title: Sitecore OrderCloud HeadStart - Part 2 設定
 date: '2021-09-07'
 tags: ['OrderCloud','Demo']
-draft: false
+draft: true
 summary: 前回は Sitecore OrderCloud のサンプルサイトを展開するための準備まで進めていきました。今回は、展開をする手前となる HeadStart のデモを動かすための設定について、紹介をしていきます。
 images: ['/static/images/2021/09/ocappconfig02.png']
 ---

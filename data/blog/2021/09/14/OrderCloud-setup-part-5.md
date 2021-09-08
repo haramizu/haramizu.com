@@ -1,6 +1,6 @@
 ---
 title: Sitecore OrderCloud HeadStart - Part 5 Azure への展開
-date: '2021-09-13'
+date: '2021-09-14'
 tags: ['OrderCloud','Demo','HeadStart']
 draft: true
 summary: 前回まで、ローカルでインスタンスが起動するところを紹介していました。今回は、Azure に展開をして OrderCloud HeadStart のデモが立ち上がるまで進めていきましょう。

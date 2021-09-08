@@ -1,6 +1,6 @@
 ---
 title: Sitecore OrderCloud HeadStart - Part 4 環境の確認
-date: '2021-09-10'
+date: '2021-09-13'
 tags: ['OrderCloud','Demo','HeadStart']
 draft: true
 summary: ローカルで OrderCloud のデモ環境、HeadStart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。

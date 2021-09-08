@@ -1,6 +1,6 @@
 ---
 title: Sitecore OrderCloud HeadStart - Part 3 ローカルでの展開
-date: '2021-09-08'
+date: '2021-09-09'
 tags: ['OrderCloud','Demo','HeadStart']
 draft: true
 summary: これまで OrderCloud HeadStart として提供されているサンプルを立ち上げるために、２回に分けて、環境の準備、設定と進めていきました。今回はすでにダウンロードしていたソースコードを利用して、ローカルでの展開手続きを進めていきます。

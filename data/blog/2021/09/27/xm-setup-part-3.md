@@ -123,22 +123,72 @@ C:\inetpub\wwwroot\sitecorepublishing
 
 ![XM](/static/images/2021/09/xm26.png)
 
-これで
+これでインストールが完了となりました。
 
 ## Sitecore Publishing Service Module 10.1.0
 
+### モジュールのインストール
+
+続いて Sitecore のモジュールとなる Sitecore Publishing Services Module をインストールします。モジュールは以下のサイトからダウンロードできます。
+
 * [Sitecore Publishing Service Module 10.1.0](https://dev.sitecore.net/Downloads/Sitecore_Publishing_Service_Module/10x/Sitecore_Publishing_Service_Module_1010.aspx)
-
-
-上記のページから、以下のリンクをクリックしてモジュールをダウンロードします。
 
 * Sitecore Publishing Service Module
     * Sitecore Publishing Module 10.1.0 rev. 00585.zip
 
+モジュールのインストールは、管理画面のコントロールパネルから管理 - パッケージをインストールするを選択し、モジュールをアップロードして指定をします。
+
+![XM](/static/images/2021/09/xm27.png)
+
+インストールの途中、手順が出てきますが、その部分はこのあと随時紹介をしていきます。
+
+### 設定の変更
+
+インストールが完了したあと、以下のファイルを参照すると PublishingService.UrlRoot の項目があることがわかります。
+
+* App_Config\Modules\PublishingService\Sitecore.Publishing.Service.Config
+
+![XM](/static/images/2021/09/xm28.png)
+
+この項目を変更するために、\App_Config\Include\zz のフォルダに Sitecore.Publishing.Service.Config を作成して、値を変更するパッチを作成します。
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+    <sitecore>
+    <settings>
+        <setting name="PublishingService.UrlRoot">http://sitecore.publishing/</setting>
+    </settings>
+    </sitecore>
+</configuration>
+```
+
+### コンテンツ配信サーバー
+
+コンテンツ配信サーバーで Publishing Service を利用できるように、以下のファイルをコピーします。
+
+1. App_Config/Modules/PublishingService ディレクトリを作成
+2. 以下のファイルをコピーする
+    * Sitecore.Publishing.Service.Delivery.config 
+    * Sitecore.Publishing.Service.SingleLinkDatabase.config 
+3. bin ディレクトリに以下のファイルをコピーする
+    * Sitecore.Publishing.Service.dll
+    * Sitecore.Publishing.Service.Abstractions.dll
+    * Sitecore.Publishing.Service.Delivery.dll
+
+注意 : ドキュメントでは bin/Sitecore.Framework.Conditions.dll のファイルも表記されていますが、元々の XM1 のインストールですでに入っているため、コピーをする必要はありません
+
+上記の設定が完了したところで、development モードで起動します
+
+```powershell
+.\Sitecore.Framework.Publishing.Host.exe --environment development
+```
 
 
 
 ## スタイルガイドのインストール
+
+
 
 以前のブログ投稿ですが、SXA スタイルガイドのインストール手順を紹介しています。
 
@@ -156,3 +206,4 @@ C:\inetpub\wwwroot\sitecorepublishing
 * [Sitecore Publishing Service のインストールおよび設定ガイド](https://doc.sitecore.com/ja/resources/SC-Publishing-Service-5.0-Install-Guide-JA.pdf)
 * [Sitecore Publishing Service モジュールのインストールおよび設定ガイド](https://doc.sitecore.com/ja/resources/SC-Publishing-Service-Module-10.1-Install-&-Config-Guide-JA.pdf) PDF ファイル
 * [Publishing Service v2.0 - Quick Start Guide](http://www.stephenpope.co.uk/publishing)
+* [パッチ ファイルを使用して Sitecore 設定をカスタマイズする](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/use-a-patch-file-to-customize-the-sitecore-configuration.html)

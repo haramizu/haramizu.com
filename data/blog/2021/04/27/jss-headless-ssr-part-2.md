@@ -1,7 +1,7 @@
 ---
 title: Sitecore JSS - Headless SSR - Part.2
 date: '2021-04-27'
-tags: ['JSS', 'React', 'Headless SSR']
+tags: ['JSS', 'React', 'Headless']
 draft: false
 summary: 前回は手元で Headless SSR のプロジェクトを動作させて、ページが表示できるのかどうかを確認しました。今回は、各種プラットフォームに展開をする手順に関して紹介をしていきます。
 images: ['/static/images/2021/04/delivery23.png']

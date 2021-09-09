@@ -1,7 +1,7 @@
 ---
 title: Sitecore JSS - Headless SSR - Part.1
 date: '2021-04-26'
-tags: ['JSS', 'React', 'Headless SSR']
+tags: ['JSS', 'React', 'Headless']
 draft: false
 summary: 今回は JSS のアプリの展開方法について紹介をします。利用するのは前回までの JSS のアプリ、そして Sitecore のインスタンスを利用して、Node.js のアプリケーションホスティングを利用して、サイトを公開する形です。
 images: ['/static/images/2021/04/headless01.png']

@@ -2,9 +2,9 @@
 title: Sitecore XM シリーズ - Sitecore Publishing Service インストール
 date: '2021-09-27'
 tags: ['Sitecore','Install','XM']
-draft: true
+draft: false
 summary: コンテンツの公開速度を改善することができる Sitecore Publishing Service を今回の XM1 の環境にインストールしていきます。
-images: ['/static/images/2021/09/macos11.png']
+images: ['/static/images/2021/09/xm30.png']
 ---
 
 コンテンツの公開の速度を改善することができる Sitecore Publishing Service を今回の XM1 の環境にインストールしていきます。
@@ -123,7 +123,17 @@ C:\inetpub\wwwroot\sitecorepublishing
 
 ![XM](/static/images/2021/09/xm26.png)
 
-これでインストールが完了となりました。
+これでインストールが完了となりました。動作確認のために、以下の URL にアクセスをします。
+
+* http://sitecore.publishing/api/publishing/operations/status
+
+結果として、
+
+```
+{"status":0}
+```
+
+が表示されれば、Publishing Service が動いている形となります。
 
 ## Sitecore Publishing Service Module 10.1.0
 
@@ -156,12 +166,20 @@ C:\inetpub\wwwroot\sitecorepublishing
 <?xml version="1.0" encoding="utf-8"?>
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
     <sitecore>
-    <settings>
-        <setting name="PublishingService.UrlRoot">http://sitecore.publishing/</setting>
-    </settings>
+        <settings>
+            <setting name="PublishingService.UrlRoot" value="http://sitecore.publishing/"/>
+        </settings>
     </sitecore>
 </configuration>
 ```
+
+設定が完了したあと、Sitecore の管理画面に移動をします。コンテンツ管理のツールの項目にパブリッシュが追加されていることがわかります。
+
+![XM](/static/images/2021/09/xm29.png)
+
+ツールを開くと、パブリッシュのダッシュボードが開きます。これで管理サーバーの設定は完了です。
+
+![XM](/static/images/2021/09/xm30.png)
 
 ### コンテンツ配信サーバー
 
@@ -178,28 +196,36 @@ C:\inetpub\wwwroot\sitecorepublishing
 
 注意 : ドキュメントでは bin/Sitecore.Framework.Conditions.dll のファイルも表記されていますが、元々の XM1 のインストールですでに入っているため、コピーをする必要はありません
 
-上記の設定が完了したところで、development モードで起動します
+## 公開のテスト
 
-```powershell
-.\Sitecore.Framework.Publishing.Host.exe --environment development
-```
+今回作業をしている環境は、まだ XM をインストールしてすぐのため Home アイテムのみがあります。そこで以下のように作業をしました。
 
+* Home をコピーして、子アイテムとして保存
+    * Home Sub とする
+    * Home へのリンクを貼る
+* Home のバージョン 2 を作成
+    * タイトルにバージョンの数字を入れる
+    * Sub への保存をする
 
+上記の作業が完了したコンテンツエディターのツリーが以下のようになります。
 
-## スタイルガイドのインストール
+![XM](/static/images/2021/09/xm31.png)
 
+アイテムをパブリッシュします。
 
+![XM](/static/images/2021/09/xm32.png)
 
-以前のブログ投稿ですが、SXA スタイルガイドのインストール手順を紹介しています。
+ダッシュボードを開くと、処理内容が表示されます。
 
+![XM](/static/images/2021/09/xm33.png)
 
-*
-* [Sitecore Experience Accelerator スタイルガイドインストール](/blog/2021/08/04/sxa-styleguide)
+完了したあとサイトを参照しにいくと、ページが更新されていることがわかります。
 
+![XM](/static/images/2021/09/xm34.png)
 
 ## まとめ
 
-
+今回 Publishing Service は同じサーバーにインストールをしましたが、手順を見るとわかるようにサイトは別で起動しており、かつデータベース接続を通じて処理をしているため、編集サーバー以外に別途入れることも可能です。リソースの割り当てなどを考えるときに、どのようにインストールをするのかは都度考慮していく形となります。デモ環境などでも、Publishing Service が入っていると公開などの処理も速くなるので、便利なのでこの機会にぜひ試してみてください。
 
 ## 参考資料
 

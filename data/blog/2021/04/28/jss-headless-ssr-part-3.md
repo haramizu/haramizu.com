@@ -1,7 +1,7 @@
 ---
 title: Sitecore JSS - Headless SSR - Part.3
 date: '2021-04-28'
-tags: ['JSS', 'React', 'Headless SSR']
+tags: ['JSS', 'React', 'Headless']
 draft: false
 summary: Headless SSR の動作に関して紹介をしていきました。これを手元で簡単に利用できるように、3回目としては Docker のコンテナを作成して利用する方法を紹介します。
 images: ['/static/images/2021/04/docker12.png']

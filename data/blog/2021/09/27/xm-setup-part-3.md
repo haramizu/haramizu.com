@@ -2,7 +2,7 @@
 title: Sitecore XM シリーズ - Sitecore Publishing Service インストール
 date: '2021-09-27'
 tags: ['Sitecore','Install','XM']
-draft: false
+draft: true
 summary: コンテンツの公開速度を改善することができる Sitecore Publishing Service を今回の XM1 の環境にインストールしていきます。
 images: ['/static/images/2021/09/xm30.png']
 ---

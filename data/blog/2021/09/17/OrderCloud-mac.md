@@ -2,7 +2,7 @@
 title: Sitecore OrderCloud HeadStart - macOS で動作させる
 date: '2021-09-16'
 tags: ['OrderCloud','Demo','HeadStart']
-draft: true
+draft: false
 summary: これまで Sitecore OrderCloud の展開に関して、このブログでは Windows の環境で Visual Studio を動かして手順を紹介していました。これは macOS の上でも動くでしょうか？今回は、環境を macOS に変更をして、前回まで動かしていたリポジトリのソースコードを使いながら確認をしていきたいと思います。
 images: ['/static/images/2021/09/macos11.png']
 ---

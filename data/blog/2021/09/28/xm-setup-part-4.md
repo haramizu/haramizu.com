@@ -20,10 +20,14 @@ images: ['/static/images/2021/09/macos11.png']
 * Sitecore 10.1.1 
     * XM1 の構成（CD / CM を分離）している構成
 
+## モジュールのダウンロード & インストール
+
 インストールは以下のモジュールを利用します。
 
 * [Sitecore Headless Rendering 18.0.0](https://dev.sitecore.net/Downloads/Sitecore_Headless_Rendering/18x/Sitecore_Headless_Rendering_1800.aspx)
 
-## モジュールのダウンロード & インストール
+管理画面に入り、コントロールパネル - 管理 - パッケージをインストールするを選択して、ダウンロードしたファイルをインポートします。
+
+![XM](/static/images/2021/09/xm35.png)
 
 

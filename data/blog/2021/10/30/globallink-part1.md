@@ -1,6 +1,6 @@
 ---
 title: Global Link モジュールのインストール
-date: '2021-08-23'
+date: '2021-10-30'
 tags: ['Sitecore','MultiLanguage','Global Link']
 draft: true
 summary: 
@@ -30,13 +30,16 @@ GlobalLink_Extension_DB_Script_9.3.6.sql
 
 ## サーバー接続
 
-\App_Config\Include TranslateApp.config
+\App_Config\Include\TranslateApp.config
 
 ```
 <setting name="GlobalLink_connection_string" value=""/>
 ```
 
+      <setting name="GlobalLink_connection_string" value="user id=shinichi_sitecore;password=Welcome1!;Data Source=localhost;Database=master;MultipleActiveResultSets=True;"/>"/>
+	
 
+## Scheduler Agents
 
 ## 日本語リソースのインストール
 
@@ -51,3 +54,14 @@ core database
 /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/GlobalLink
 
 /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/GlobalLink/Translation/AddtoList
+
+add Recursive
+
+## セットアップ
+
+Globallink のタブを開く
+
+セットアップを開く
+
+GlobalLink URL などをセットアップ
+

@@ -33,12 +33,44 @@ images: ['/static/images/2021/09/macos11.png']
 モジュールのインストールが終わった後、API キーを作成します。
 
 1. コンテンツエディターを開きます
-2. 
+2. システム - 設定 - サービス - API Keys を選択します
+3. 新しい API キーを作成
+4. CORS Origines / 認められたコントローラーには * を設定、偽装ユーザーは extranet¥anonymous を指定します
 
-API キーを利用して、キーが有効になっているか以下のような URL でアクセスをして確認をします。
+![XM](/static/images/2021/09/xm36.png)
+
+5. 作成をした API キーをパブリッシュして有効にします
+
+作成をしたアイテム ID が API キーになります。この作成された API キーを利用して、キーが有効になっているか以下のような URL でアクセスをして確認をします。Json のデータが表示されれば、API キーが有効になりました。
 
 ```
 http://your-sitecore-instance/sitecore/api/layout/render/jss?item=/&sc_apikey=TEST
 ```
 
+![XM](/static/images/2021/09/xm37.png)
 
+## CD サーバーへの展開
+
+パッケージをインストールした段階で、ヘッドレスの機能はCM サーバーで動くようになりましたが CD サーバーでも利用したい、というケースでは、以下のように手作業でインストールをします。
+
+1. モジュールのファイルを解凍、その中から出てくる Package.zip も解凍します
+2. files フォルダにある App_Config、bin , sitecore, Views にあるファイルを CD サーバーに展開します
+3. web.config の <handlers> 以下の行を追加します。
+
+```xml
+<add verb="*" path="sitecorejss_media.ashx" type="Sitecore.JavaScriptServices.Media.MediaRequestHandler, Sitecore.JavaScriptServices.Media" name="Sitecore.JavaScriptServices.Media.MediaRequestHandler" />
+```
+
+CD サーバーを再起動して手順は完了となります。動作確認としては、改めて CD サーバーで動作しているかどうか確認をしてください。
+
+```
+http://your-cd-instance/sitecore/api/layout/render/jss?item=/&sc_apikey=TEST
+```
+
+## まとめ
+
+これらの設定でヘッドレス CMS として動かすための手順が完了しました。CD サーバーでも動かすときには手作業でモジュールを入れる形で紹介をしました。実際のエンドポイントをどこに置くのかで、CM サーバーのみでいくか、CD サーバーを利用するのかは変わってくる形です。
+
+## 参考情報
+
+* [JSS Server Setup](https://jss.sitecore.com/docs/client-frameworks/getting-started/jss-server-install)

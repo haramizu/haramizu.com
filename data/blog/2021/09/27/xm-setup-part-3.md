@@ -118,7 +118,7 @@ C:\inetpub\wwwroot\sitecorepublishing
 これで設定関連は完了しました。以下のコマンドを実行して設定を反映させます。
 
 ```powershell
-.\Sitecore.Framework.Publishing.Host.exe iis install –-force
+.\Sitecore.Framework.Publishing.Host.exe iis install --force
 ```
 
 ![XM](/static/images/2021/09/xm26.png)

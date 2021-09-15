@@ -30,4 +30,15 @@ images: ['/static/images/2021/09/macos11.png']
 
 ![XM](/static/images/2021/09/xm35.png)
 
+モジュールのインストールが終わった後、API キーを作成します。
+
+1. コンテンツエディターを開きます
+2. 
+
+API キーを利用して、キーが有効になっているか以下のような URL でアクセスをして確認をします。
+
+```
+http://your-sitecore-instance/sitecore/api/layout/render/jss?item=/&sc_apikey=TEST
+```
+
 

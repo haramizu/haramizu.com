@@ -2,7 +2,7 @@
 title: Sitecore XM シリーズ - Sitecore Headless Rendering インストール
 date: '2021-09-28'
 tags: ['Sitecore','Install','Headless','XM']
-draft: true
+draft: false
 summary: 今回は Sitecore Experience Manager (XM) の環境にヘッドレスのモジュールをインストールする手順を紹介していきます。すでに紹介したように、XM をインストールアシスタントを利用してインストールをすると、 CM / CD と分かれた環境が展開されます。この環境で、Sitecore ヘッドレスに関するモジュールをインストールする手順を紹介していきます。
 images: ['/static/images/2021/09/macos11.png']
 ---
@@ -55,7 +55,7 @@ http://your-sitecore-instance/sitecore/api/layout/render/jss?item=/&sc_apikey=TE
 
 1. モジュールのファイルを解凍、その中から出てくる Package.zip も解凍します
 2. files フォルダにある App_Config、bin , sitecore, Views にあるファイルを CD サーバーに展開します
-3. web.config の <handlers> 以下の行を追加します。
+3. web.config の &lt;handlers&gt; に以下の行を追加します。
 
 ```xml
 <add verb="*" path="sitecorejss_media.ashx" type="Sitecore.JavaScriptServices.Media.MediaRequestHandler, Sitecore.JavaScriptServices.Media" name="Sitecore.JavaScriptServices.Media.MediaRequestHandler" />

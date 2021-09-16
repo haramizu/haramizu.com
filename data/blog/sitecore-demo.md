@@ -26,6 +26,7 @@ Sitecore Experience Platform のデモ環境を構築する手順となります
 
 * [Windows Server で Docker の環境を整える](/blog/2021/05/22/Windows-Server-Docker)
 * [Sitecore Demo Platform を動かす](/blog/2021/05/28/sitecore-demo-platform)
+    * [ページ作成の確認](/blog/2021/09/21/create-new-page)
 * [Headless デモを動かしてみる](/blog/2021/05/24/headless-demo)
 
 ![demo](/static/images/2021/05/docker10.png)

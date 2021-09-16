@@ -20,6 +20,7 @@ EC サイトのデモとして提供している HeadStart セットアップに
 5. [Azure への展開](/blog/2021/09/14/OrderCloud-setup-part-5)
 6. [展開後の調整](/blog/2021/09/15/OrderCloud-setup-part-6)
 
+* [macOS で動作させる](/blog/2021/09/17/OrderCloud-mac)
 
 ## Sitecore HeadStart 
 

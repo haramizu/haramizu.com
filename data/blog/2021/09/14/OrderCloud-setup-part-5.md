@@ -72,8 +72,6 @@ No hosted parallelism has been purchased or granted. To request a free paralleli
 
 [![](https://img.youtube.com/vi/gUdmVrY_nm0/0.jpg)](https://www.youtube.com/watch?v=gUdmVrY_nm0)
 
-[![](https://img.youtube.com/vi/Bcjf2MjWvkk/0.jpg)](https://www.youtube.com/watch?v=Bcjf2MjWvkk)
-
 ダイジェストとしては以下の画面が参考になります。
 
 ![OrderCloud](/static/images/2021/09/ordercloud52.gif)

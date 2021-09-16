@@ -2,9 +2,9 @@
 title: Sitecore OrderCloud シリーズ
 date: '2021-09-16'
 tags: ['OrderCloud']
-draft: true
+draft: false
 summary: Sitecore OrderCloud に関する記事を以下のように公開しました。今後も引き続き情報を追加していきたいと思います。
-images: ['/static/images/2021/09/ordercloud16.png']
+images: ['/static/images/2021/09/ordercloud81.png']
 ---
 
 Sitecore OrderCloud に関する記事を以下のように公開しました。今後も引き続き情報を追加していきたいと思います。

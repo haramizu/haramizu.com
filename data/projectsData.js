@@ -12,6 +12,12 @@ const projectsData = [
     href: '/blog/sitecore-jss',
   },
   {
+    title: 'XM シリーズ',
+    description: `Sitecore XM の環境を作って検証をするための手順の記事を紹介しています。`,
+    imgSrc: '/static/images/2021/09/xm09.png',
+    href: '/blog/Sitecore-XM',
+  },
+  {
     title: 'OrderCloud シリーズ',
     description: `Sitecore が提供するコマース環境に関する SaaS 製品、OrderCloud に関して記載している記事一覧を紹介しています。`,
     imgSrc: '/static/images/2021/09/ordercloud81.png',

@@ -9,7 +9,7 @@ const projectsData = [
     title: 'Sitecore ヘッドレス シリーズ',
     description: `ここでは Sitecore ヘッドレスに関する記事を紹介しています。基本的には React および Next.js を利用する手順に関して紹介をしています。`,
     imgSrc: '/static/images/2021/05/scaffold02.png',
-    href: '/blog/sitecore-jss',
+    href: '/blog/Sitecore-Headless',
   },
   {
     title: 'XM シリーズ',

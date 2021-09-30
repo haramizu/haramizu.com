@@ -9,7 +9,13 @@ const projectsData = [
     title: 'Sitecore ヘッドレス シリーズ',
     description: `ここでは Sitecore ヘッドレスに関する記事を紹介しています。基本的には React および Next.js を利用する手順に関して紹介をしています。`,
     imgSrc: '/static/images/2021/05/scaffold02.png',
-    href: '/blog/sitecore-jss',
+    href: '/blog/Sitecore-Headless',
+  },
+  {
+    title: 'XM シリーズ',
+    description: `Sitecore XM の環境を作って検証をするための手順の記事を紹介しています。`,
+    imgSrc: '/static/images/2021/09/xm09.png',
+    href: '/blog/Sitecore-XM',
   },
   {
     title: 'OrderCloud シリーズ',
@@ -21,7 +27,7 @@ const projectsData = [
     title: 'Moosend シリーズ',
     description: `マーケティングオートメーションツールの Moosend に関して、アカウントの作成から使い方まで色々とブログで紹介をしています。このページでは、各種ページへのリンクを用意しています`,
     imgSrc: '/static/images/2021/05/moosendoverview01.png',
-    href: '/blog/moosend',
+    href: '/blog/Sitecore-Send',
   },
   {
     title: 'Webinar シリーズ',

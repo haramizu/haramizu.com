@@ -1,7 +1,7 @@
 ---
 title: Moosend - 初期設定を進めていく 前編
 date: '2021-05-11'
-tags: ['Moosend']
+tags: ['Sitecore Send']
 draft: false
 summary: 無料のアカウントが出来上がったので、続いて初期設定をしていきます。もちろん、色々な設定項目は後で変更していくことができますが、画面に従って初期に必要とされる設定を入れていきましょう。
 images: ['/static/images/2021/05/moosendoverview27.png']

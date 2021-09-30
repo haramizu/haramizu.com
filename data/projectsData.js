@@ -18,6 +18,12 @@ const projectsData = [
     href: '/blog/Sitecore-XM',
   },
   {
+    title: 'Sitecore Content Hub クイックガイド',
+    description: `Sitecore Content Hub に関する記事をまとめてみました。`,
+    imgSrc: '/static/images/2020/03/sitecorecontenthub-default.png',
+    href: '/blog/Sitecore-Content-Hub',
+  },
+  {
     title: 'OrderCloud シリーズ',
     description: `Sitecore が提供するコマース環境に関する SaaS 製品、OrderCloud に関して記載している記事一覧を紹介しています。`,
     imgSrc: '/static/images/2021/09/ordercloud81.png',

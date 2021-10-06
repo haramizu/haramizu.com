@@ -17,4 +17,26 @@ images: ['/static/images/2021/10/license.png']
 
 まず最初に、Google Tag Manager の管理サイトにログインをしてください。
 
+```javascript
+<script>
+    ( function() {
+        window._boxever_settings = {
+           client_key: "boxever5xx33zz44gggydzk",
+           target: "https://api.boxever.com/v1.x",
+           cookie_domain: "boxever.com",
+           javascriptLibraryVersion: "1.4.X",
+           pointOfSale: "boxever.com",
+           web_flow_target: "https://abcdef.cloudfront.net" 
+        }
+        // load boxever.js
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://abcdef.cloudfront.net/boxever-' + window._boxever_settings.javaScriptLibraryVersion + 'mini.js';
+        ver x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s,x);
+    })();
+</script>
+```
+
 * [How to send data to Sitecore CDP via Google Tag Manager](https://sitecore.cdpknowledgehub.com/docs/how-to-send-data-to-boxever-via-google-tag-manager)

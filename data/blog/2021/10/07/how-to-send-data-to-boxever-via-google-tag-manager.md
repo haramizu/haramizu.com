@@ -15,7 +15,27 @@ images: ['/static/images/2021/10/license.png']
 
 ## タグマネージャとの連携
 
-まず最初に、Google Tag Manager の管理サイトにログインをしてください。
+まず最初に、Google Tag Manager の管理サイトにログインをしてください。例えば私のサイトだと以下のようになります。
+
+![GTM](/static/images/2021/10/gtm01.png)
+
+新規ボタンをクリックします。
+
+![GTM](/static/images/2021/10/gtm02.png)
+
+まず、トリガーを作成します。上記画面の下部にあるトリガーをクリックします。
+
+![GTM](/static/images/2021/10/gtm03.png)
+
+今回は DOM Ready を対象としたトリガーを作るため、右上の + をクリックします。トリガーの設定をクリックすると以下の画面に切り替わります。
+
+![GTM](/static/images/2021/10/gtm04.png)
+
+一番上にある DOM Ready を選択して、トリガーの名前も DOM Ready にします。
+
+![GTM](/static/images/2021/10/gtm05.png)
+
+
 
 ```javascript
 <script>

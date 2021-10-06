@@ -70,15 +70,6 @@ class MyDocument extends Document {
               gtag('config', 'UA-4471333-3');`,
             }}
           />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYBMDRMJLX"></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-TYBMDRMJLX');`,
-            }}
-          />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

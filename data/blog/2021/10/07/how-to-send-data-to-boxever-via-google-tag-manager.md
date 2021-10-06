@@ -4,7 +4,7 @@ date: '2021-10-07'
 tags: ['CDP']
 draft: false
 summary: 今年、買収をした CDP の会社の製品は、Sitecore CDP という製品名となってリリースされることになります。今後は CDP のタグを利用して、ブログでも紹介していけたらと考えています。今回は、Google Tag Manager を通じて CDP のタグを挿入する手順について紹介をします。
-images: ['/static/images/2021/10/license.png']
+images: ['/static/images/2021/10/gtm11.png']
 ---
 
 今年、買収をした CDP の会社の製品は、Sitecore CDP という製品名となってリリースされることになります。今後は CDP のタグを利用して、ブログでも紹介していけたらと考えています。今回は、Google Tag Manager を通じて CDP のタグを挿入する手順について紹介をします。

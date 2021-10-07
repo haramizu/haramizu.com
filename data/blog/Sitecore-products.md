@@ -2,7 +2,7 @@
 title: サイトコアの製品ラインナップ 
 date: '2021-05-27'
 lastmod: '2021-08-20'
-tags: ['Sitecore','CDP','OrderCloud','Sitecore Send']
+tags: ['Sitecore','Sitecore CDP','OrderCloud','Sitecore Send']
 draft: false
 summary: Sitecore に関連する情報をまとめているサイトに関して、オンラインガイドをいくつか提供しています。参考にしてください。
 images: ['/static/images/sitecorecom.png']

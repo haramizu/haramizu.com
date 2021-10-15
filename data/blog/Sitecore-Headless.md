@@ -10,11 +10,13 @@ images: ['/static/images/2021/05/scaffold02.png']
 
 ここでは Sitecore ヘッドレスに関する記事を紹介しています。基本的には React および Next.js を利用する手順に関して紹介をしています。タグは[Headless](/tags/headless)を利用した形です。以前は、Sitecore JSS（JavaScript Service）として紹介をしていたため、[JSS](/tags/jss) のタグを利用していました。
 
+## Sitecore ヘッドレス と Next.js でサイト構築
+
+Next.js + Vercel を組み合わせた構成をもとに Sitecore JSS の基本的なことを紹介していくシリーズです。
+
+* [環境の構築](/blog/2021/09/09/nextjs-vercel-part-1)
+
 ## Next.js SDK を利用してサンプルサイトを構築
-
-Next.js + Vercel を組み合わせた構成をもとに紹介をしていくシリーズです。
-
-* [Sitecore ヘッドレス と Next.js でサイト構築 - Part 1](/blog/2021/09/09/nextjs-vercel-part-1)
 
 Next.js SDK の基本的な設定について紹介をするシリーズです。上のシリーズの前段ですが、手順とかは Vercel シリーズで紹介しているやつの詳細という感じです。
 

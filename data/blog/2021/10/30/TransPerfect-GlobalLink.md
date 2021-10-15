@@ -1,5 +1,5 @@
 ---
-title: Global Link モジュールのインストール
+title: GlobalLink モジュールのインストール
 date: '2021-10-30'
 tags: ['Sitecore','MultiLanguage','GlobalLink']
 draft: true
@@ -59,8 +59,8 @@ images: ['/static/images/2021/10/GlobalLink13.png']
 続いてもう一つの設定ファイル、**\App_Config\Include\Translate.config** を確認します。設定項目は以下の３つです。
 
 * **RetrieveAgent** 翻訳されたデータを Sitecore にダウンロードするための頻度を設定します。デフォルトでは 5 分に設定されています。
-* **ExportLowPriorityAgent** 優先順位が中および低となっているアイテムを GlobalProtect に送信します。デフォルトでは 3 分に設定されています。
-* **ExportHighPriorityAgent** 優先順位が高となっているアイテムを GlobalProtect に送信をします。デフォルトでは 5 分に設定されています。
+* **ExportLowPriorityAgent** 優先順位が中および低となっているアイテムを GlobalLink に送信します。デフォルトでは 3 分に設定されています。
+* **ExportHighPriorityAgent** 優先順位が高となっているアイテムを GlobalLink に送信をします。デフォルトでは 5 分に設定されています。
 
 設定としては hh:mm:ss という形で記載します。今回はデフォルトのままで進めるため、特に変更せず確認だけしました。
 

@@ -1,5 +1,5 @@
 ---
-title: Sitecore ヘッドレス と Next.js でサイト構築 - Part 1
+title: Sitecore ヘッドレス と Next.js でサイト構築 - 環境の構築
 date: '2021-09-09'
 tags: ['JSS','Next.js','Headless']
 draft: false

@@ -2,7 +2,7 @@
 title: Sitecore ヘッドレス と Next.js でサイト構築 - 空プロジェクトの作成
 date: '2021-10-20'
 tags: ['JSS','Next.js','Headless']
-draft: false
+draft: true
 summary: 前回は Sitecore のインスタンスの設定および Vercel での動作まで進めました。今回は立ち上げたサンプルのサイトに関して、すでに入っているコンテンツの整理、またそれを表示するために定義されている内容などを削除して、空っぽのプロジェクトまで仕上げていきます。
 images: ['/static/images/2021/10/nextjs202.png']
 ---

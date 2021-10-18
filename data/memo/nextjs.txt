@@ -1,0 +1,3 @@
+
+How to build a simple navigation with Sitecore JSS using GraphQL connected
+https://www.coforge.com/blog/how-build-simple-navigation-sitecore-jss-using-graphql-connected

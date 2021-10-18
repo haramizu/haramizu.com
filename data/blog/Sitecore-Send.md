@@ -1,7 +1,7 @@
 ---
 title: Sitecore Send シリーズ 
 date: '2021-05-21'
-lastmod: '2021-05-21'
+lastmod: '2021-10-18'
 tags: ['Sitecore Send','Moosend']
 draft: false
 summary: 電子メールマーケティングツールである Siteccore Send ( Moosend ) に関する情報をお届けしているブログのまとめ一覧のページを作成しました。今後新しい記事を掲載した際には、このページを随時更新していきます。
@@ -10,7 +10,7 @@ images: ['/static/images/2021/05/moosendoverview01.png']
 
 電子メールマーケティングツールの Sitecore SEnd ( Moosend ) に関する情報をブログで紹介していきます。随時記事は追加されるので、[Sitecore Send](/blog/tags/sitecore-send/)のタグを随時追いかけていただくのがいいと思います。
 
-### Moosend 概要
+## Moosend 概要
 
 Moosend を使い始めるための最初のガイドになります。
 
@@ -19,7 +19,13 @@ Moosend を使い始めるための最初のガイドになります。
 * [初期設定を進めていく 前編](https://haramizu.com/blog/2021/05/11/moosend-overview-part-3)
 * [初期設定を進めていく 後編](https://haramizu.com/blog/2021/05/12/moosend-overview-part-4)
 
-### Moosend 活用
+## Moosend 日本語化
+
+Moosend の管理画面が 2021 年 10 月に日本語化されました。
+
+* [Moosend 管理画面の日本語化](/blog/2021/10/18/moosend-ui-update)
+
+## Moosend 活用
 
 Moosend を使うための Tips をまとめていきます。
 

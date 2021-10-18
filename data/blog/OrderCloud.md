@@ -9,7 +9,13 @@ images: ['/static/images/2021/09/ordercloud81.png']
 
 Sitecore OrderCloud に関する記事を以下のように公開しました。今後も引き続き情報を追加していきたいと思います。
 
-## セットアップシリーズ
+## Next.js Commerce と Sitecore OrderCloud の連携
+
+HeadStart のデモで EC サイトとなる部分を Next.js Commerce を利用して展開することが可能となりました。その手順を以下のページで紹介をしています。
+
+* [Next.js Commerce と OrderCloud の連携](/blog/2021/10/19/Nextjs-Commerce-OrderCloud)
+
+## HeadStart セットアップ
 
 EC サイトのデモとして提供している HeadStart セットアップに関して今後以下のように紹介をしました。
 

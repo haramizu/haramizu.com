@@ -4,7 +4,7 @@ date: '2021-10-21'
 tags: ['JSS','Next.js','Headless']
 draft: true
 summary: 前回は Sitecore のインスタンスの設定および Vercel での動作まで進めました。今回は立ち上げたサンプルのサイトに関して、すでに入っているコンテンツの整理、またそれを表示するために定義されている内容などを削除して、空っぽのプロジェクトまで仕上げていきます。
-images: ['/static/images/2021/10/nextjs202.png']
+images: ['/static/images/2021/10/nextjs303.png']
 ---
 
 Sitecore JSS で開発をしていくときに、コンポーネントを追加するためのコマンド jss scaffold が用意されています。今回はこれを元に、１つコンポーネントを作成していきます。

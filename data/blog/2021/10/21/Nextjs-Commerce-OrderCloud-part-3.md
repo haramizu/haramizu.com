@@ -2,7 +2,7 @@
 title: Next.js Commerce と OrderCloud の連携 - Middleware と Seller の追加（後編）
 date: '2021-10-21'
 tags: ['OrderCloud','Next.js','Headless']
-draft: true
+draft: false
 summary: Next.js Commerce と Sitecore OrderCloud の連携で簡単にサイトに管理画面を追加する手順、前回はローカルで動くところまででしたので、今回は最後まで進めていきたいと思います。
 images: ['/static/images/2021/10/nextjscommerce34.png']
 ---

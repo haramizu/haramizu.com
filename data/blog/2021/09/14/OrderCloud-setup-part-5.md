@@ -132,7 +132,13 @@ Add のボタンをクリックすると左側に Bash Script の項目が追加
 
 ![OrderCloud](/static/images/2021/09/ordercloud65.png)　
 
-この項目を Deploy Azure App Service の上に移動をして、 seller のフォルダを Advanced を開き、フォルダとして Seller のフォルダを選択します。
+この項目の Type を Script を選択し、Script は以下のコードを記載してください。
+
+```
+node inject-appconfig defaultadmin-test
+```
+
+Deploy Azure App Service の上に移動をして、 seller のフォルダを Advanced を開き、フォルダとして Seller のフォルダを選択します。
 
 ![OrderCloud](/static/images/2021/09/ordercloud66.gif)　
 
@@ -178,7 +184,7 @@ Buyer Test に関しても同様の設定を入れます。
 
 ![OrderCloud](/static/images/2021/09/ordercloud75.png)
 
-Pipeline としては Middleware Test を選択、あとは Create ボタンをクリックするだけです。
+Pipeline としては Middleware Test を選択、あとは Create ボタンをクリックして作成、Middleware Test の上にマウスカーソルを合わせた際に、Deploy のボタンが表示されます。クリックをすると、展開が開始します。
 
 ![OrderCloud](/static/images/2021/09/ordercloud76.png)
 

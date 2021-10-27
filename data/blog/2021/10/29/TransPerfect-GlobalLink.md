@@ -1,34 +1,34 @@
 ---
-title: GlobalLink モジュールのインストール
-date: '2021-10-30'
+title: GlobalLink パッケージのインストール
+date: '2021-10-29'
 tags: ['Sitecore','MultiLanguage','GlobalLink']
 draft: true
-summary: 今回は Stiecore と連携が可能な翻訳サービス、TransPerfect 社の GlobalLink 翻訳管理システムと Sitecore の連携モジュールのインストール手順を紹介します。サービスの詳細は、TransPerfect までデモリクエストが可能ですので、直接お問い合わせください。
+summary: 今回は Stiecore と連携が可能な翻訳サービス、TransPerfect 社の GlobalLink 翻訳管理システムと Sitecore の連携パッケージのインストール手順を紹介します。サービスの詳細は、TransPerfect までデモリクエストが可能ですので、直接お問い合わせください。
 images: ['/static/images/2021/10/GlobalLink13.png']
 ---
 
-今回は Stiecore と連携が可能な翻訳サービス、TransPerfect 社の GlobalLink 翻訳管理システムと Sitecore の連携モジュールのインストール手順を紹介します。サービスの詳細は、以下のサイトから参照してください。
+今回は Stiecore と連携が可能な翻訳サービス、TransPerfect 社の GlobalLink 翻訳管理システムと Sitecore の連携パッケージのインストール手順を紹介します。サービスの詳細は、以下のサイトから参照してください。
 
 * [TransPerfect 公式サイト](https://www.transperfect.com/ja/home)
 * [デモの申し込み](https://www.transperfect.com/ja/technology)
 
 なお今回はデモ・検証用ということで TransPerfect 社から特別にアカウントを発行していただくことができました。このため、実際に評価したいという場合は、上記のページからお問い合わせください。
 
-## モジュールのインストール
+## パッケージのインストール
 
-システムを連携するためのモジュールをインストールする必要があります。このツールはコンテンツ管理サーバーにて動作するだけで良いため、以下の手順でモジュールをインストールしていきます。
+システムを連携するためのパッケージをインストールする必要があります。このツールはコンテンツ管理サーバーにて動作するだけで良いため、以下の手順でパッケージをインストールしていきます。
 
 1. コントロールパネルを開く
 2. 管理 - パッケージをインストールする を選択
-3. モジュールをアップロードして、インストールを進める
+3. パッケージをアップロードして、インストールを進める
 
 ![GlobalLinkModule](/static/images/2021/10/GlobalLink01.png)
 
-モジュールのインストールが完了したあと、以下の手順を進めていきます。
+パッケージのインストールが完了したあと、以下の手順を進めていきます。
 
 ## データベースの作成
 
-モジュールが処理をする上で必要となるデータベースを作成していきます。今回はデータベースは (local) となりますが、別のサーバーで運用している場合は SQL Server に管理ツールから接続して作業を進めてください。
+パッケージが処理をする上で必要となるデータベースを作成していきます。今回はデータベースは (local) となりますが、別のサーバーで運用している場合は SQL Server に管理ツールから接続して作業を進めてください。
 
 1. SQL Serer Management Studio して、データベースに接続します
 2. App_Data フォルダにある GlobalLink_Extension_DB_Script_9.3.6.sql を開きます
@@ -42,7 +42,7 @@ images: ['/static/images/2021/10/GlobalLink13.png']
 
 これで Sitecore のサーバーに関しての設定は完了です。
 
-## モジュールの設定ファイルを更新
+## パッケージの設定ファイルを更新
 
 続いて、Sitecore と GlobalLink を接続する形となります。連携をするための設定ファイルは、 **\App_Config\Include\TranslateApp.config** を編集することになります。このファイルは、以下の項目を編集することになります。
 
@@ -66,7 +66,7 @@ images: ['/static/images/2021/10/GlobalLink13.png']
 
 ## 日本語リソースのインストール
 
-モジュールには日本語のリソースが含まれていないため、日本語の管理画面ではメニューが表示されない形となります。今回テストをしたモジュールに関しての日本語リソースを作成して、GitHub にリソースファイルをアップロードしておきました。
+パッケージには日本語のリソースが含まれていないため、日本語の管理画面ではメニューが表示されない形となります。今回テストをしたパッケージに関しての日本語リソースを作成して、GitHub にリソースファイルをアップロードしておきました。
 
 * https://github.com/SitecoreJapan/InstallScript/tree/master/demo/TransPerfect
 

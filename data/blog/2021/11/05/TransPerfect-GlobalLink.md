@@ -1,6 +1,6 @@
 ---
 title: GlobalLink パッケージのインストール
-date: '2021-10-29'
+date: '2021-11-05'
 tags: ['Sitecore','MultiLanguage','GlobalLink']
 draft: true
 summary: 今回は Stiecore と連携が可能な翻訳サービス、TransPerfect 社の GlobalLink 翻訳管理システムと Sitecore の連携パッケージのインストール手順を紹介します。サービスの詳細は、TransPerfect までデモリクエストが可能ですので、直接お問い合わせください。

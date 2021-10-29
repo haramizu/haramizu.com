@@ -1,10 +1,10 @@
 ---
-title: Content Hub のアセット Excel エクスポートの調整
+title: Content Hub - アセットに関する Excel エクスポートの項目を調整する
 date: '2021-11-01'
 tags: ['Content Hub']
 draft: false
 summary: 前回は Sitecore のインスタンスの設定および Vercel での動作まで進めました。今回は立ち上げたサンプルのサイトに関して、すでに入っているコンテンツの整理、またそれを表示するために定義されている内容などを削除して、空っぽのプロジェクトまで仕上げていきます。
-images: ['/static/images/2021/10/nextjs303.png']
+images: ['/static/images/2021/11/chexportexcel11.png']
 ---
 
 Sitecore Content Hub で管理をしているデータのメタデータをエクスポートをする機能があります。この項目を変更するためには、管理ツールで提供されているエクスポートプロファイルの機能を利用することで、出力する項目を変更することができます。

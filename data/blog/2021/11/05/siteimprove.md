@@ -1,6 +1,6 @@
 ---
 title: Siteimprove パッケージのインストール
-date: '2021-11-04'
+date: '2021-11-05'
 tags: ['Sitecore','Siteimprove']
 draft: true
 summary: 今回は Stiecore と連携が可能なサイト最適化ツール Siteimprove との連携方法に関して紹介をしていきます。ここではパッケージのインストール、設定までとなりますので、サービスの詳細は、Siteimprove まで直接お問い合わせください。

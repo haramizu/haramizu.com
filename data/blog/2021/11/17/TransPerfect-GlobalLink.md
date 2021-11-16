@@ -1,11 +1,16 @@
 ---
 title: GlobalLink パッケージのインストール
-date: '2021-11-05'
+date: '2021-11-17'
 tags: ['Sitecore','MultiLanguage','GlobalLink']
-draft: true
+draft: false
 summary: 今回は Stiecore と連携が可能な翻訳サービス、TransPerfect 社の GlobalLink 翻訳管理システムと Sitecore の連携パッケージのインストール手順を紹介します。サービスの詳細は、TransPerfect までデモリクエストが可能ですので、直接お問い合わせください。
 images: ['/static/images/2021/10/GlobalLink13.png']
 ---
+
+最初にセミナー開催の告知を入れさせていただきます（この告知はセミナー終了後オンデマンドになるため最後に移動する予定です）。今回紹介をしているデモを 2021 年 11 月 26日（金）のセミナーでもご覧いただけます。ぜひ、ご参加ください。
+
+* [クッキーレス時代に企業サイトでグローバルビジネスを牽引](https://sitecore-japan.seminar-manager.com/web-1126/event?camp=7013m000000zCzoAAE&utm_medium=SM&utm_source=Sitecore&utm_asset=WB_Joint_Webinar_Nov_26&utm_campaign=NA&utm_region=apj_jp
+)
 
 今回は Stiecore と連携が可能な翻訳サービス、TransPerfect 社の GlobalLink 翻訳管理システムと Sitecore の連携パッケージのインストール手順を紹介します。サービスの詳細は、以下のサイトから参照してください。
 
@@ -13,6 +18,7 @@ images: ['/static/images/2021/10/GlobalLink13.png']
 * [デモの申し込み](https://www.transperfect.com/ja/technology)
 
 なお今回はデモ・検証用ということで TransPerfect 社から特別にアカウントを発行していただくことができました。このため、実際に評価したいという場合は、上記のページからお問い合わせください。
+
 
 ## パッケージのインストール
 

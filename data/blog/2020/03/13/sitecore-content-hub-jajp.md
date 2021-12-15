@@ -9,6 +9,11 @@ images: ['/static/images/2020/03/changelanguage.gif']
 
 今回は Sitecore Content Hub の管理画面に関する手順を紹介します。Sitecore Content Hub は管理画面として、英語のユーザーインターフェイスを提供しています。今回は、日本語のユーザーインターフェイスを追加する手順を紹介します。
 
+## 補足
+
+日本語のリソースデータが 4.0.x 向けのものが 2021年12月10日に公開をしました。
+
+* [Add a language](https://docs.stylelabs.com/contenthub/4.0.x/content/user-documentation/manage/portal/languages/add-a-language.html)
 
 ## 言語の追加
 Sitecore Content Hub の新しいインスタンスを立ち上げると、以下のように英語のユーザーインターフェイスになっています。

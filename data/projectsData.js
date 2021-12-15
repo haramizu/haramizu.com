@@ -21,7 +21,7 @@ const projectsData = [
     title: 'Sitecore Content Hub クイックガイド',
     description: `Sitecore Content Hub に関する記事をまとめてみました。`,
     imgSrc: '/static/images/2020/03/sitecorecontenthub-default.png',
-    href: '/blog/Sitecore-Content-Hub',
+    href: '/blog/sitecore-content-hub',
   },
   {
     title: 'OrderCloud シリーズ',

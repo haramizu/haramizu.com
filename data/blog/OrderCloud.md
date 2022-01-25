@@ -11,15 +11,15 @@ Sitecore OrderCloud に関する記事を以下のように公開しました。
 
 ## Next.js Commerce と Sitecore OrderCloud の連携
 
-HeadStart のデモで EC サイトとなる部分を Next.js Commerce を利用して展開することが可能となりました。その手順を以下のページで紹介をしています。
+Headstart のデモで EC サイトとなる部分を Next.js Commerce を利用して展開することが可能となりました。その手順を以下のページで紹介をしています。
 
 * [Next.js Commerce と OrderCloud の連携](/blog/2021/10/19/Nextjs-Commerce-OrderCloud-part-1)
 * [Middleware と Seller の追加（前編）](/blog/2021/10/20/Nextjs-Commerce-OrderCloud-part-2)
 * [Middleware と Seller の追加（後編）](/blog/2021/10/21/Nextjs-Commerce-OrderCloud-part-3)
 
-## HeadStart セットアップ
+## Headstart セットアップ
 
-EC サイトのデモとして提供している HeadStart セットアップに関して今後以下のように紹介をしました。
+EC サイトのデモとして提供している Headstart セットアップに関して今後以下のように紹介をしました。
 
 1. [準備](/blog/2021/09/06/OrderCloud-setup-part-1)
 2. [設定](/blog/2021/09/08/OrderCloud-setup-part-2)
@@ -30,8 +30,8 @@ EC サイトのデモとして提供している HeadStart セットアップに
 
 * [macOS で動作させる](/blog/2021/09/17/OrderCloud-mac)
 
-## Sitecore HeadStart 
+## Sitecore Headstart 
 
-Sitecore OrderCloud HeadStart は以下のサイトで公開をしています。
+Sitecore OrderCloud Headstart は以下のサイトで公開をしています。
 
-* [GitHub ordercloud-api / headstart](https://github.com/ordercloud-api/headstart)
+* [GitHub ordercloud-api / Headstart](https://github.com/ordercloud-api/Headstart)

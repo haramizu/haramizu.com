@@ -4,7 +4,7 @@ date: '2022-02-03'
 tags: ['Sitecore','OrderCloud']
 draft: false
 summary: コードの準備ができたので、まずは手元でミドルウェアを起動するところまで進めていきます。そのためには、Microsoft Azure の環境にいくつかリソースを準備していく形となるため、この部分の手順も併せて紹介をしていきます。
-images: ['/static/images/2022/02/createaccount01.png']
+images: ['/static/images/2022/02/azure17.png']
 ---
 
 コードの準備ができたので、まずは手元でミドルウェアを起動するところまで進めていきます。そのためには、Microsoft Azure の環境にいくつかリソースを準備していく形となるため、この部分の手順も併せて紹介をしていきます。

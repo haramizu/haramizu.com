@@ -2,7 +2,7 @@
 title: Headstart デモ環境を構築する - Part 11 環境のチェック
 date: '2022-02-15'
 tags: ['Sitecore','OrderCloud']
-draft: false
+draft: true
 summary: これまでローカルで Headstart のデモを動かし、GitHub を通じて Microsoft Azure にリソースを展開しました。今回は最後のステップとして展開済みの環境に関して動作を確認していきたいと思います。
 images: ['/static/images/2022/02/release27.png']
 ---

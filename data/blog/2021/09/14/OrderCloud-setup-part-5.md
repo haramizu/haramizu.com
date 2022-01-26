@@ -122,15 +122,15 @@ Clone をクリックしてStage の名前を Seller Test に変更、1 Job 1 Ta
 
 続いて、左側に表示されている Run on agent の項目にある + のボタンをクリックしてください。
 
-![OrderCloud](/static/images/2021/09/ordercloud63.png)　
+![OrderCloud](/static/images/2021/09/ordercloud63.png)
 
 bash を検索して候補を表示します。マウスカーソルを合わせると Add のボタンが表示されます。
 
-![OrderCloud](/static/images/2021/09/ordercloud64.png)　
+![OrderCloud](/static/images/2021/09/ordercloud64.png)
 
 Add のボタンをクリックすると左側に Bash Script の項目が追加されます。
 
-![OrderCloud](/static/images/2021/09/ordercloud65.png)　
+![OrderCloud](/static/images/2021/09/ordercloud65.png)
 
 この項目の Type を Script を選択し、Script は以下のコードを記載してください。
 
@@ -140,7 +140,7 @@ node inject-appconfig defaultadmin-test
 
 Deploy Azure App Service の上に移動をして、 seller のフォルダを Advanced を開き、フォルダとして Seller のフォルダを選択します。
 
-![OrderCloud](/static/images/2021/09/ordercloud66.gif)　
+![OrderCloud](/static/images/2021/09/ordercloud66.gif)
 
 続いて、左側に表示されている Deploy Azure App Service をクリックして、設定画面を切り替えます。リソースグループ、Slot およびパッケージフォルダを指定してください。
 

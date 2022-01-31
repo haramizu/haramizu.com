@@ -1,7 +1,7 @@
 ---
 title: Moosend 管理画面の日本語化
 date: '2021-10-18'
-tags: ['Sitecore Send','Moosend']
+tags: ['Moosend']
 draft: false
 summary: Moosend の管理画面で言語の切り替えができるようになりました。まだベータ版みたいな感じの日本語の管理画面（あちこち英語が残ってる）ですが、この部分はフィードバックをして直していきたいと思います。とはいえ、日本語で使えるようになるのは嬉しいですね！
 images: ['/static/images/2021/10/Moosend02.png']

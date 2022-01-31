@@ -1,7 +1,7 @@
 ---
-title: Sitecore OrderCloud HeadStart - macOS で動作させる
+title: Sitecore OrderCloud Headstart - macOS で動作させる
 date: '2021-09-17'
-tags: ['OrderCloud','Demo','HeadStart']
+tags: ['OrderCloud','Demo','Headstart']
 draft: false
 summary: これまで Sitecore OrderCloud の展開に関して、このブログでは Windows の環境で Visual Studio を動かして手順を紹介していました。これは macOS の上でも動くでしょうか？今回は、環境を macOS に変更をして、前回まで動かしていたリポジトリのソースコードを使いながら確認をしていきたいと思います。
 images: ['/static/images/2021/09/macos11.png']
@@ -120,4 +120,4 @@ npm run start
 
 ## まとめ
 
-HeadStart のデモは .NET Core 3.1 ベースのため macOS でも動作するはず、ということで動かしただけの記事となりますが、開発をする人にとっては OS を選択しないという点では大変便利な部分となります。
+Headstart のデモは .NET Core 3.1 ベースのため macOS でも動作するはず、ということで動かしただけの記事となりますが、開発をする人にとっては OS を選択しないという点では大変便利な部分となります。

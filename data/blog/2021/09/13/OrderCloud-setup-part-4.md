@@ -1,13 +1,13 @@
 ---
-title: Sitecore OrderCloud HeadStart - Part 4 環境の確認
+title: Sitecore OrderCloud Headstart - Part 4 環境の確認
 date: '2021-09-13'
-tags: ['OrderCloud','Demo','HeadStart']
+tags: ['OrderCloud','Demo','Headstart']
 draft: false
-summary: ローカルで OrderCloud のデモ環境、HeadStart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。
+summary: ローカルで OrderCloud のデモ環境、Headstart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。
 images: ['/static/images/2021/09/ordercloud40.png']
 ---
 
-ローカルで OrderCloud のデモ環境、HeadStart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。
+ローカルで OrderCloud のデモ環境、Headstart を起動しましたが、エラーが出ていて少し作業をする必要があります。そこで、今回はどこにどの設定ファイルがあるのか、というのを確認していきます。
 
 ## Buyer Storefront の設定
 
@@ -59,7 +59,7 @@ const apps = {
   "middlewareUrl": "https://my-hosted-middleware.com",
   "creditCardIframeUrl": "https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html",
   "translateBlobUrl": "https://MYSTORAGEACCOUNTNAME.blob.core.windows.net/ngx-translate/i18n/",
-  "sellerID": "HEADSTARTDEMO_TEST",
+  "sellerID": "HeadstartDEMO_TEST",
   "sellerName": "Headstart Demo Seller",
   "orderCloudApiUrl": "https://sandboxapi.ordercloud.io",
   "theme": {
@@ -132,4 +132,4 @@ const apps = {
 
 ## 参考資料
 
-* [GitHub ordercloud-api / headstart](https://github.com/ordercloud-api/headstart)
+* [GitHub ordercloud-api / Headstart](https://github.com/ordercloud-api/Headstart)

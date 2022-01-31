@@ -11,10 +11,19 @@ images: ['/static/images/2022/01/ordercloudevent.png']
 
 ## 紹介された記事一覧
 
-* ZDNet Japan [小売事業者の「4つの課題」を解決--サイトコアがECソリューション提供](https://japan.zdnet.com/article/35182720/)
-* Web 担当者 Forum [サイトコアがSaaSベースの次世代ECソリューション「Sitecore OrderCloud」を提供開始](https://webtan.impress.co.jp/n/2022/01/28/42278)
+今日までに Sitecore のニュースリリース以外では、以下の記事が掲載されました。
+
 * マイナビ [サイトコア、ヘッドレスコマース「Sitecore OrderCloud」を提供開始](https://news.mynavi.jp/techplus/article/20220127-2258429/)
-ここに記事一覧を書く
+
+Sitecore OrderCloud に関する記事として比較的細かく紹介してくれています。ぜひご覧ください。
+
+* ZDNet Japan [小売事業者の「4つの課題」を解決--サイトコアがECソリューション提供](https://japan.zdnet.com/article/35182720/)
+
+ZDNet の記事はマイナビの記事とはまた違う点をピックアップしてくれています。併せて参照してください。
+
+* Web 担当者 Forum [サイトコアがSaaSベースの次世代ECソリューション「Sitecore OrderCloud」を提供開始](https://webtan.impress.co.jp/n/2022/01/28/42278)
+
+ニュースリリースに関する内容を取り上げていただいています。多くのサイトでも参照されている記事です。
 
 ![OrderCloud](/static/images/2022/01/ordercloudevent.png)
 

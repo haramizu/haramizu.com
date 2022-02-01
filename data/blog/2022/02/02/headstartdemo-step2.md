@@ -2,7 +2,7 @@
 title: Headstart デモ環境を構築する - Part 2 サンプルコードを準備する
 date: '2022-02-02'
 tags: ['Sitecore','OrderCloud']
-draft: true
+draft: false
 summary: 前回はデモ環境を構築するための前提条件の紹介、そして OrderCloud のアカウントの作成まで紹介をしました。今回は、デモ環境のサンプルソースコードを手元に準備して GitHub のリポジトリと連携するところまで紹介をします。
 images: ['/static/images/2022/02/download07.png']
 ---

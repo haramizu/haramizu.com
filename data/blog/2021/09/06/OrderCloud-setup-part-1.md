@@ -14,6 +14,7 @@ Sitecore が提供する新しいソリューションの一つ、Sitecore Order
 Sitecore OrderCloud のセットアップに関して、手順をもう少し細かく記載している記事を準備しました。このページではなく新しい記事を参考にしてください。
 
 * [Part 1 環境を整備する](/blog/2022/02/01/headstartdemo-step1)
+* [Part 2 サンプルコードを準備する](/blog/2022/02/02/headstartdemo-step2)
 
 ## Headstart について
 

@@ -9,6 +9,14 @@ images: ['/static/images/2021/09/ocappconfig02.png']
 
 前回は Sitecore OrderCloud のサンプルサイトを展開するための準備まで進めていきました。今回は、展開をする手前となる Headstart のデモを動かすための設定について、紹介をしていきます。
 
+ここで紹介をしている手順は、少し古いもので新しい手順は以下のページで紹介をしています。
+
+* [Part 3 Azure の環境を準備する（その１）](/blog/2022/02/03/headstartdemo-step3)
+
+一覧では以下のページが見やすくなっています。
+
+* [Sitecore OrderCloud シリーズ](/blog/OrderCloud)
+
 ## アプリの設定
 
 アプリの設定ファイルのテンプレートが src / Middleware / src / Headstart.Common に AppSettingConfigTemplate.json が展開されています。

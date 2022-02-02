@@ -84,4 +84,4 @@ Next.js を利用している場合でも、みたまま編集となるエクス
 
 ## 参考ページ
 
-* [Walkthrough: Connect your Next.js App to the Experience Editor](https://jss.sitecore.com/docs/nextjs/experience-editor/walkthrough)
+* [Walkthrough: Connecting a Next.js JSS app to Sitecore editors](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/walkthrough--connecting-a-next-js-jss-app-to-sitecore-editors.html)

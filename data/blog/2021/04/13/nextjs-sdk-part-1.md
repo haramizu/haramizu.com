@@ -22,7 +22,7 @@ Sitecore 10.1 から Sitecore Headless Service は標準機能として提供す
 
 まずサンプルが動作しなければ意味がありませんので、サンプルのダウンロード、実行をします。
 
-* [Walkthrough: Using the JSS CLI to Get Started with JSS and Next.js](https://jss.sitecore.com/docs/nextjs/getting-started-nextjs/walkthrough-jsscreate)
+* [Walkthrough: Using the JSS CLI to Get Started with JSS and Next.js](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/walkthrough--creating-a-jss-next-js-application-with-the-jss-cli.html)
 
 初めて Sitecore JSS を利用する際にはコマンドラインをインストールする必要があります。以下の様なコマンドとなります。
 

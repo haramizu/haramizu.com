@@ -16,6 +16,10 @@ Sitecore OrderCloud のセットアップに関して、手順をもう少し細
 * [Part 1 環境を整備する](/blog/2022/02/01/headstartdemo-step1)
 * [Part 2 サンプルコードを準備する](/blog/2022/02/02/headstartdemo-step2)
 
+一覧では以下のページが見やすくなっています。
+
+* [Sitecore OrderCloud シリーズ](/blog/OrderCloud)
+
 ## Headstart について
 
 Sitecore OrderCloud のサンプルサイトとして Headstart というデモを GitHub のリポジトリで展開をしています。

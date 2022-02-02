@@ -2,7 +2,7 @@
 title: Storefront - ホームページの表示
 date: '2021-06-11'
 lastmod: '2021-06-11'
-tags: ['Sitecore','Demo','Install','Commerce','Storefront']
+tags: ['Sitecore','デモ','インストール','Commerce','Storefront']
 draft: false
 summary: Sitecore Experience Commerce 10.1 に関するインストールの手順を2回に分けて紹介をしました。今回から数回に分けて、標準で実装されている Commerce のモックとなるサイト、Storefront の設定について紹介をしていきます。
 images: ['/static/images/2021/06/storefront07.png']

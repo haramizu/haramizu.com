@@ -1,7 +1,7 @@
 ---
 title: Sitecore Experience Tokyo 2019 振り返り
 date: '2019-12-18'
-tags: ['Event', 'Sitecore', 'Content Hub']
+tags: ['イベント', 'Sitecore', 'Content Hub']
 draft: false
 summary: 2019年12月17日にサイトコア株式会社として4回目の年次イベントを開催しました。昨年から開始した Developer Track にて2つのセッションを担当しました。今回の実施にあたって、セッション中のデモはすべて動画を使う形としていたので、セッション終了後に新作のデモ動画ということで YouTube にアップしました。
 images: ['https://img.youtube.com/vi/Bcjf2MjWvkk/0.jpg']

@@ -1,7 +1,7 @@
 ---
 title: ページ作成の確認
 date: '2021-09-21'
-tags: ['Sitecore','Demo']
+tags: ['Sitecore','デモ']
 draft: false
 summary: 以前に Sitecore のデモ環境として Sitecore Demo Platform の立ち上げ方について紹介をしました。今回は、この環境を利用してページの作成、編集が可能なアカウントを作成して、確認をするための手順を紹介していきます。
 images: ['/static/images/2021/09/demo06.png']

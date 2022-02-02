@@ -1,7 +1,7 @@
 ---
 title: Webinar - 話題のヘッドレスCMS、その特長と運用の利点を解説
 date: '2022-02-03'
-tags: ['Sitecore','webinar']
+tags: ['Sitecore','イベント']
 draft: false
 summary: 2月17日にサイトコアの Webinar としてヘッドレス CMS を取り上げるセミナーに登壇することになりました。ヘッドレス CMS ってどういう実装になるの？それに伴ってどういうメリットがあるの？という話を短い時間ですが紹介をします。ぜひご参加ください。
 images: ['/static/images/2022/02/webinar01.png']

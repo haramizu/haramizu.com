@@ -35,9 +35,11 @@ jss create nextjs.test nextjs
 
 最後に表示されている Next.js sample app のパラメーターに説明が記載されています。
 
+```
 * --fetchWith {REST|GraphQL} : Specifies how Sitecore data (layout, dictionary) is fetched. Default is REST.
 * --prerender {SSG|SSR} : Specifies the Next.js pre-rendering form for the optional catch-all route. Default is SSG.
 * --empty {true|false} : Specifies whether the sample should be empty. Disconnected mode and styleguide components will be removed. Default is false.
+```
 
 3つ目の --empty を利用するとサンプルデータが削除された形で実装される形となる点が紹介されています。ということで、改めて今回は以下のようにパラメーターをつけてプロジェクトを作成します。
 

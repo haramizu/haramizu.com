@@ -1,12 +1,13 @@
 ---
 title: Headstart デモ環境を構築する - Part 9 Azure DevOps と GitHub 連携
-date: '2022-02-11'
+date: '2022-02-15'
 tags: ['Sitecore','OrderCloud']
 draft: true
 summary: ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer およびEC サイトの管理画面となる seller のサイトをローカルで起動していきます。
 images: ['/static/images/2022/02/dev10.png']
 ---
 
+ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer およびEC サイトの管理画面となる seller のサイトをローカルで起動していきます。
 
 ## 連携前の作業として
 

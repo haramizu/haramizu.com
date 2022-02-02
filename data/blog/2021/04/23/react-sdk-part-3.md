@@ -13,7 +13,7 @@ images: ['/static/images/2021/04/reactsample11.png']
 
 JSS で開発をする際のモードとして、4 つのモードを用意しています。今回はこのモードに関して説明をしていきます。詳しくは、以下のページで紹介しています。。
 
-* [JSS application modes](https://jss.sitecore.com/docs/fundamentals/application-modes)
+* [Application modes](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/application-modes.html)
 
 接続モードに関しては４つ、それぞれ必要な環境は以下の通りです。
 

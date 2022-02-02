@@ -14,6 +14,8 @@ Sitecore OrderCloud に関する記事を以下のように公開しました。
 Sitecore OrderCloud のデモ、Headstart に関するセットアップの手順をより詳細に紹介をしています。
 
 * [Part 1 環境を整備する](/blog/2022/02/01/headstartdemo-step1)
+* [Part 2 サンプルコードを準備する](/blog/2022/02/02/headstartdemo-step2)
+* [Part 3 Azure の環境を準備する（その１）](/blog/2022/02/04/headstartdemo-step3)
 
 ## Headstart サンプルサイト
 

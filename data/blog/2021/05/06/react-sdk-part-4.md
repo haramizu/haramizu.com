@@ -156,6 +156,6 @@ placeholders:
 次回はこの作成したコンポーネントを編集して、アイテムの編集項目に関しての定義をもう少し追加していきます。
 
 ## 参考ページ
-* [Building your first JSS component](https://jss.sitecore.com/docs/client-frameworks/getting-started/first-component)
+* [UI Components in the JSS React sample app](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/ui-components-in-the-jss-react-sample-app.html)
 
 

@@ -2,7 +2,7 @@
 title: Sitecore Demo Platform を動かす 
 date: '2021-05-28'
 lastmod: '2021-05-28'
-tags: ['Sitecore','Demo']
+tags: ['Sitecore','デモ']
 draft: false
 summary: Sitecore のデモ環境である Sitecore.Demo.Platform のソースコードを利用して、デモ環境を立ち上げたいと思います。環境はすでに Windows Server で Docker の環境を整える まで終わっていることを想定して進めていきます。
 images: ['/static/images/2021/05/docker09.png)']

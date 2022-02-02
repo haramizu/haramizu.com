@@ -12,7 +12,9 @@ export default function FourZeroFour() {
         <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
           申し訳ありませんが、このページは見つかりませんでした。
         </p>
-        <p className="mb-8">しかし、心配しないでください、私たちのホームページには他にもたくさんのものがあります。</p>
+        <p className="mb-8">
+          しかし、心配しないでください、私たちのホームページには他にもたくさんのものがあります。
+        </p>
         <Link href="/">
           <button className="focus:shadow-outline-blue inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500">
             ホームに戻る

@@ -8,16 +8,18 @@ summary: 電子メールマーケティングツールである Siteccore Send (
 images: ['/static/images/2021/05/moosendoverview01.png']
 ---
 
-電子メールマーケティングツールの Sitecore SEnd ( Moosend ) に関する情報をブログで紹介していきます。随時記事は追加されるので、[Sitecore Send](/blog/tags/sitecore-send/)のタグを随時追いかけていただくのがいいと思います。
+電子メールマーケティングツールの Moosend に関する情報をブログで紹介していきます。随時記事は追加されるので、[Moosend](/tags/moosend/)のタグを随時追いかけていただくのがいいと思います。
 
 ## Moosend 概要
 
 Moosend を使い始めるための最初のガイドになります。
 
-* [Moosend ってどんなサービス？](https://haramizu.com/blog/2021/05/07/moosend-overview-part-1)
-* [Moosend の無料アカウントを作ってみる](https://haramizu.com/blog/2021/05/10/moosend-overview-part-2)
-* [初期設定を進めていく 前編](https://haramizu.com/blog/2021/05/11/moosend-overview-part-3)
-* [初期設定を進めていく 後編](https://haramizu.com/blog/2021/05/12/moosend-overview-part-4)
+* [Moosend ってどんなサービス？](/blog/2021/05/07/moosend-overview-part-1)
+* [Moosend の無料アカウントを作ってみる](/blog/2021/05/10/moosend-overview-part-2)
+* [初期設定を進めていく 前編](/blog/2021/05/11/moosend-overview-part-3)
+* [初期設定を進めていく 後編](/blog/2021/05/12/moosend-overview-part-4)
+
+**注意** 無料プランは 2022年1月の段階で廃止され、機能制限のないサービスを30日限定で利用することができるようになりました。詳細は後日別途紹介します。
 
 ## Moosend 日本語化
 

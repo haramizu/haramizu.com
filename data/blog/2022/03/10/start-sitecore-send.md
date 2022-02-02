@@ -36,7 +36,7 @@ Moosend と Sitecore Send の違いは契約形態となります。基本的に
 
 ## 30日評価版から始めよう
 
-
+Sitecore Send および Moosend に関して
 
 ## まとめ
 

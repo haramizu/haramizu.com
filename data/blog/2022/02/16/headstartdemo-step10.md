@@ -1,6 +1,6 @@
 ---
 title: Headstart デモ環境を構築する - Part 10 リリースの作成と動作確認
-date: '2022-02-14'
+date: '2022-02-16'
 tags: ['Sitecore','OrderCloud']
 draft: true
 summary: 前回の記事で Azure DevOps と GitHub に展開しているリポジトリの連携の設定、ビルドまで進めました。今回は、実際にビルドしたデータを Azure の各リソースに展開するための手順を紹介していきます。

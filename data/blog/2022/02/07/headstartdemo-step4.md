@@ -1,6 +1,6 @@
 ---
 title: Headstart デモ環境を構築する - Part 4 ミドルウェアの起動
-date: '2022-02-04'
+date: '2022-02-07'
 tags: ['Sitecore','OrderCloud']
 draft: false
 summary: 今回は、前回準備した Azure のリソースを利用しながら、ローカルの環境でミドルウェアを起動する手順を紹介します。ミドルウェアの手順に関しては、Visual Studio を利用して作業をする形となります。

@@ -9,7 +9,6 @@ images: ['/static/images/2021/05/ch407.png']
 
 Sitecore Content Hub はデジタルアセット管理の機能を基盤として、企業で求められるサービスを実装しています。今回は Sitecore Content Hub 4.0 でリリースされた新機能について紹介をしていきます。
 
-
 ## 新しく提供するライセンス
 
 これまで Sitecore Content Hub 3.4.x までで提供していたライセンスは以下の通りです。
@@ -128,7 +127,7 @@ Sitecore Content Hub で提供している IDE 以外からのアクセスとし
 新しいクエリを利用して、以下のように設定を進めてください。
 
 * リクエスト方法は POST を選択
-* エンドポイントは https://{youe-instance}/api/graphql/preview/v1
+* エンドポイントは https://youe-instance/api/graphql/preview/v1
 * Headers に KEY として X-GQL-Token を、Value に作成したキーを設定
 
 ![ContentHub4](/static/images/2021/05/ch410.png "ContentHub4")

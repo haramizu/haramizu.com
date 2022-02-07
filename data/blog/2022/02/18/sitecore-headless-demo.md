@@ -111,7 +111,7 @@ https://yourhostname/sitecore/api/layout/render/jss?item=/&sc_apikey={YOUR_API_K
 
 ![nextjs demo](/static/images/2022/02/nextjs03.png)
 
-結果が表示されれば、次のステップに進めていきます。
+結果が表示されれば、次のステップに進めていきます。表示されない場合は、キーをパブリッシュしているかどうか確認をしてください。
 
 ### Sitecore XM と連携する
 

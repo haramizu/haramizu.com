@@ -2,7 +2,7 @@
 title: Headstart デモ環境を構築する - Part 6 Sendgrid にサンプルのメールを設定する
 date: '2022-02-09'
 tags: ['Sitecore','OrderCloud']
-draft: true
+draft: false
 summary: Sitecore Headstart のデモは Sendgrid を利用してメールを送信する形で構築されています。この部分は将来的には Sitecore Send に置き換えることも可能ですが、現状では Sendgrid のメールをセットアップしておくことでいくつかのメールが自動的に動くようになっています。今回はこれのセットアップに関して説明をします。
 images: ['/static/images/2022/02/sendgrid08.png']
 ---

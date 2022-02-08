@@ -4,7 +4,7 @@ date: '2022-02-21'
 tags: ['Sitecore','Headless','Next.js']
 draft: true
 summary: 前回の記事で、Next.js のサンプルを Sitecore に展開、また実際のデリバリーとして Vercel と連携する形まで用意をしました。今回は、もう少しテスト、検証をしやすくするためにプロダクションとステージング環境を分けて、ローカルでもテストする手順を紹介をしていきます。
-images: ['/static/images/2022/02/release27.png']
+images: ['/static/images/2022/02/vercel18.png']
 ---
 
 前回の記事で、Next.js のサンプルを Sitecore に展開、また実際のデリバリーとして Vercel と連携する形まで用意をしました。今回は、もう少しテスト、検証をしやすくするためにプロダクションとステージング環境を分けて、ローカルでもテストする手順を紹介をしていきます。

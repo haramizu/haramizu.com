@@ -1,5 +1,5 @@
 ---
-title: Sitecore Send をリリースしました
+title: Moosend のアップグレード
 date: '2022-03-11'
 tags: ['Sitecore Send','Moosend']
 draft: true

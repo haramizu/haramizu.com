@@ -2,7 +2,7 @@
 title: Headstart デモ環境を構築する - Part 8 Azure の環境を準備する（その２）
 date: '2022-02-14'
 tags: ['Sitecore','OrderCloud']
-draft: true
+draft: false
 summary: ローカルでの動作確認ができたので、次は Azure にミドルウェア、Buyer および Seller を展開していきます。実はまだミドルウェアのみインスタンスを作っていただけですので、ここで Buyer および Seller のインスタンスを追加していきます。
 images: ['/static/images/2022/02/azure24.png']
 ---

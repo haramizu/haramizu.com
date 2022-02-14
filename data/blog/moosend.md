@@ -4,7 +4,7 @@ date: '2021-05-21'
 lastmod: '2021-10-18'
 tags: ['Moosend']
 draft: false
-summary: 電子メールマーケティングツールである Siteccore Send ( Moosend ) に関する情報をお届けしているブログのまとめ一覧のページを作成しました。今後新しい記事を掲載した際には、このページを随時更新していきます。
+summary: 電子メールマーケティングツールである Moosend に関する情報をお届けしているブログのまとめ一覧のページを作成しました。今後新しい記事を掲載した際には、このページを随時更新していきます。
 images: ['/static/images/2021/05/moosendoverview01.png']
 ---
 
@@ -12,10 +12,10 @@ images: ['/static/images/2021/05/moosendoverview01.png']
 
 ## Moosend 概要
 
-Moosend を使い始めるための最初のガイドになります。
+Moosend を使い始めるための最初のガイドになります。Moosend に関してはブログ記事を note にまとめることにしました。ここではそのリンクを紹介しています。
 
-* [Moosend ってどんなサービス？](/blog/2021/05/07/moosend-overview-part-1)
-* [Moosend の無料アカウントを作ってみる](/blog/2021/05/10/moosend-overview-part-2)
+* [Moosend ってどんなサービス？](https://note.com/haramizu3/n/ne799f8ac66fa)
+* [Moosend のアカウントを作成する](https://note.com/haramizu3/n/n0aab120474f5)
 * [初期設定を進めていく 前編](/blog/2021/05/11/moosend-overview-part-3)
 * [初期設定を進めていく 後編](/blog/2021/05/12/moosend-overview-part-4)
 
@@ -29,6 +29,6 @@ Moosend の管理画面が 2021 年 10 月に日本語化されました。
 
 ## Moosend 活用
 
-Moosend を使うための Tips をまとめていきます。
+Moosend を使うための Tips も掲載しています。
 
-* 現在鋭意執筆中
+* [iOS 15アップデート後のメールマーケティング戦略の最適化方法【2022年版】](https://note.com/haramizu3/n/nd32417aa880b)

@@ -92,9 +92,7 @@ export default function Home({ posts }) {
         </div>
       )}
       {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
+        <div data-mooform-id="ed482aea-3ede-4d3f-9708-14d1a304d113" />
       )}
     </>
   )

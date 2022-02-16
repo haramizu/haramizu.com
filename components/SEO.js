@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
-import GTMScript from '@/components/analytics/GoogleTagManager'
 
 const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
   const router = useRouter()
   return (
     <Head>
-      <GTMScript />
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />

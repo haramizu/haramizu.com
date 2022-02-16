@@ -4,8 +4,6 @@ import SimpleAnalytics from './SimpleAnalytics'
 import Umami from './Umami'
 import siteMetadata from '@/data/siteMetadata'
 
-import MooScript from './moosend'
-
 const isProduction = process.env.NODE_ENV === 'production'
 
 const Analytics = () => {
@@ -15,7 +13,6 @@ const Analytics = () => {
       {isProduction && siteMetadata.analytics.simpleAnalytics && <SimpleAnalytics />}
       {isProduction && siteMetadata.analytics.umamiWebsiteId && <Umami />}
       {isProduction && siteMetadata.analytics.googleAnalyticsId && <GA />}
-      <MooScript />
     </>
   )
 }

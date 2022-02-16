@@ -12,7 +12,8 @@ class MyDocument extends Document {
               //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
               mootrack('init', '0c70a804-c62f-4bbc-a76b-4272c1091127');
               // track a view of the current page
-              mootrack('trackPageView');              `,
+              mootrack('trackPageView');              
+              `,
             }}
           />
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />

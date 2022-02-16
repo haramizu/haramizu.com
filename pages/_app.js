@@ -8,6 +8,7 @@ import Head from 'next/head'
 
 import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
+import GoogleTagManager from '@/components/analytics/GoogleTagManager'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <GoogleTagManager />
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />

@@ -15,7 +15,7 @@ const Analytics = () => {
       {isProduction && siteMetadata.analytics.simpleAnalytics && <SimpleAnalytics />}
       {isProduction && siteMetadata.analytics.umamiWebsiteId && <Umami />}
       {isProduction && siteMetadata.analytics.googleAnalyticsId && <GA />}
-      {isProduction && siteMetadata.analytics.googleAnalyticsId && <GTMScript />}
+      {isProduction && siteMetadata.analytics.googleTagManagerId && <GTMScript />}
     </>
   )
 }

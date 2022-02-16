@@ -22,7 +22,7 @@ const siteMetadata = {
     plausibleDataDomain: 'haramizu.com', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: 'UA-4471333-3', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
     googleTagManagerId: 'GTM-MQSXXN7', // e.g. GTM-xxxxxxxx
   },
   newsletter: {

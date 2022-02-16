@@ -30,17 +30,6 @@ class MyDocument extends Document {
           />
         </Head>
         <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html: `
-                <iframe
-                  src="https://www.googletagmanager.com/ns.html?id=GTM-MQSXXN7"
-                  height="0"
-                  width="0"
-                  style="display:none;visibility:hidden"
-                />`,
-            }}
-          />
           <Main />
           <NextScript />
         </body>

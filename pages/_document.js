@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { GTM_ID } from '../lib/gtm'
-import { GoogleTagManager } from '@/components/analytics/GoogleTagManager'
 
 class MyDocument extends Document {
   render() {

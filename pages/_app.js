@@ -33,6 +33,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
+        <Script src="https://www.googletagmanager.com/gtm.js?id=${GTM_ID}" strategy="lazyOnload" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Script

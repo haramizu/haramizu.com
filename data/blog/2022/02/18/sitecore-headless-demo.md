@@ -2,7 +2,7 @@
 title: Sitecore Headless - Next.js 評価環境の構築
 date: '2022-02-18'
 tags: ['Sitecore','Headless','Next.js']
-draft: false
+draft: true
 summary: ブログでこれまでヘッドレスに関しての情報を提供していました。手順に関してはリンクを貼りながら紹介していきつつ、テスト環境を素早く立ち上げる手順について今回は紹介をします。
 images: ['/static/images/2022/02/nextjs12.png']
 ---

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-script-in-head */
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 
@@ -11,10 +12,23 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
+import { useEffect } from 'react'
+
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
+import { GTM_ID, pageview } from '../lib/gtm'
+import { Router, useRouter } from 'next/router'
+
 export default function App({ Component, pageProps }) {
+  const router = useRouter()
+  useEffect(() => {
+    router.events.on('routeChangeComplete', pageview)
+    return () => {
+      router.events.off('routeChangeComplete', pageview)
+    }
+  }, [router.events])
+
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>

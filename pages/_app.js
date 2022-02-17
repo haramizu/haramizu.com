@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/inline-script-id */
 /* eslint-disable @next/next/no-script-in-head */
 import '@/css/tailwind.css'
 import '@/css/prism.css'
@@ -33,12 +34,10 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
-        <Script src="https://www.googletagmanager.com/gtm.js?id=${GTM_ID}" strategy="lazyOnload" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Script
         strategy="afterInteractive"
-        id="googletag"
         dangerouslySetInnerHTML={{
           __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

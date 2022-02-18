@@ -9,6 +9,16 @@ images: ['/static/images/2022/02/release27.png']
 
 今回は少し趣向を変えて Sitecore ではなく Next.js で Google Tag Manager を適用するための手順を紹介します。テストも含めて、実施していきます。
 
+## 前提条件
+
+今回はこのような前提条件です。
+
+* ブログのサンプル [Tailwind Nextjs Theme](https://github.com/timlrx/tailwind-nextjs-starter-blog)
+* Next.js のバージョン 12.0.9
+* Vercel にホスティングしています
+
+それでは早速、進めていきましょう。
+
 ## Google Tag Manager の実装
 
 Next.js で利用する Google Tag Manager のサンプルは以下のようにまとまっています。
@@ -141,3 +151,26 @@ const ContentSecurityPolicy = `
 `
 ```
 
+実際に動作するかどうか、Google Tag Manager のプレビュー機能で確認をします。管理画面の右上にあるプレビューをクリックしてください。
+
+![GoogleTagManager](/static/images/2022/02/gtm03.png)
+
+画面が切り替わり URL を入力する画面となります。ここにプレビューをしたい URL を入力して Connect をクリックします。
+
+![GoogleTagManager](/static/images/2022/02/gtm04.png)
+
+ページが開いて、タグが検出されれば以下のような画面になります。
+
+![GoogleTagManager](/static/images/2022/02/gtm05.png)
+
+実際にこのブログに対してアクセスをした結果は以下のようになります。
+
+![GoogleTagManager](/static/images/2022/02/gtm06.png)
+
+実際に Google Analytics にアクセスすることが可能か確認をすると、以下のような形でリアルタイムの画面にアクセスを反映しているのを確認できました。
+
+![GoogleTagManager](/static/images/2022/02/gtm07.png)
+
+## まとめ
+
+今回は公式が提供しているサンプルをそのまま使う手順を紹介しつつ、Content Security Policy に関して設定をしている場合に、Google Tag Manager を動かす際の手順を合わせて解説をしました。この Content Security Policy に関しては、私のブログのサンプルでは厳密に設定しているため、公式のサンプルと違う動きで悩みましたが、ブラウザの開発者ツールでエラーを確認して問題を見つけることができました。

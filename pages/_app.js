@@ -25,7 +25,7 @@ import TagManager from 'react-gtm-module'
 export default function App({ Component, pageProps }) {
   // Google Tag Manager start
   useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-55HQ457' })
+    TagManager.initialize({ gtmId: 'GTM-MQSXXN7' })
   }, [])
 
   useEffect(() => {

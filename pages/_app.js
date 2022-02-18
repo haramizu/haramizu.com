@@ -20,34 +20,24 @@ import Script from 'next/script'
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
-import { GTM_ID, pageview } from '../lib/gtm'
+import TagManager from 'react-gtm-module'
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter()
+  // Google Tag Manager start
   useEffect(() => {
-    router.events.on('routeChangeComplete', pageview)
-    return () => {
-      router.events.off('routeChangeComplete', pageview)
-    }
-  }, [router.events])
+    TagManager.initialize({ gtmId: 'GTM-55HQ457' })
+  }, [])
+
+  useEffect(() => {
+    document.body.classList?.remove('loading')
+  }, [])
+  // Google Tag Manager end
 
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','${GTM_ID}');
-          `,
-        }}
-      />
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
       <LayoutWrapper>

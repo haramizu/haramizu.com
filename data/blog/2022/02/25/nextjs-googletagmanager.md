@@ -107,6 +107,41 @@ export default class MyDocument extends Document {
 
 ![GoogleTagManager](/static/images/2022/02/gtm01.png)
 
+
+今回は、react-gtm-module を利用したいと思います。まず最初に、以下のコマンドを実行します。
+
+```
+npm install react-gtm-module
+```
+
+pages/_app.js のファイルを編集していきます。まずは、以下の import を追加してください。
+
+```javascript
+import TagManager from 'react-gtm-module'
+```
+
+以下のコードを App の下に追加してください。**GTM-SAMPLE1** のところは、利用する際のタグを記載します。
+
+```javascript
+export default function App({ Component, pageProps }) {
+  // Google Tag Manager start
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-SAMPLE1' })
+  }, [])
+
+  useEffect(() => {
+    document.body.classList?.remove('loading')
+  }, [])
+  // Google Tag Manager end
+```
+
+
+
+
+```
+npm i --save-dev @types/react-gtm-module
+```
+
 基本的にはこれで動きます。とはいえもう少し細かい点を見ていきましょう。
 
 ## Content Security Policy を確認する

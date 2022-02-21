@@ -15,7 +15,7 @@ images: ['/static/images/2022/02/release27.png']
 
 ![OrderCloud](/static/images/2022/02/release01.png)
 
-上記の画面にある New pipeline のボタンをクリックします。クリックをすると Select a template が表示されます。
+上記の画面にある New pipeline のボタンをクリックします。クリックをすると **Select a template** が表示されます。
 
 ![OrderCloud](/static/images/2022/02/release02.png)
 
@@ -23,7 +23,7 @@ images: ['/static/images/2022/02/release27.png']
 
 ![OrderCloud](/static/images/2022/02/release03.png)
 
-一番左側にある Add an artifact をクリックしてください、画面は下のように変わります。Source として前回作成をしたパイプラインを指定します。
+一番左側にある **Add an artifact** をクリックしてください、画面は下のように変わります。Source として前回作成をしたパイプラインを指定します。
 
 ![OrderCloud](/static/images/2022/02/release04.png)
 
@@ -33,11 +33,11 @@ images: ['/static/images/2022/02/release27.png']
 
 ### ミドルウェアの展開
 
-ここからミドルウェアなどのアプリを個別に設定していきます。まず最初にミドルウェアを展開するために、Add a stage のボタンをクリックしてください。
+ここからミドルウェアなどのアプリを個別に設定していきます。まず最初にミドルウェアを展開するために、**Add a stage** のボタンをクリックしてください。
 
 ![OrderCloud](/static/images/2022/02/release06.png)
 
-今回は Azure App Service Deployment を選択します。ステージとしては Middleware Test と名前をつけます。
+今回は **Azure App Service Deployment** を選択します。ステージとしては Middleware Test と名前をつけます。
 
 ![OrderCloud](/static/images/2022/02/release07.png)
 

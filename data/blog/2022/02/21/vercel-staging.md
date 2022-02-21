@@ -49,10 +49,10 @@ Sitecore にインポートをしたアイテムはまだ Master データベー
 
 今回は XM1 をサーバーにインストールをしているため、編集サーバーと配信サーバーが分かれている形となります。設定の変更に関しては以下の手順で進めていきます。
 
-1. 編集サーバーの App_Config\Include\zzz にある sitecoredemo-jp.config のファイルを編集サーバーの同じフォルダにコピーをします
+1. 編集サーバーの App_Config\Include\zzz にある `sitecoredemo-jp.config` のファイルを編集サーバーの同じフォルダにコピーをします
 2. sites の設定のなかにある database を web に変更する。
 
-```xml
+```xml:sitecoredemo-jp.config
 <sites>
     <!--
     JSS Site Registration
@@ -77,9 +77,9 @@ Sitecore にインポートをしたアイテムはまだ Master データベー
 
 ## ローカルでのテスト 
 
-ローカルの環境にて Sitecore に接続をして動作させるように環境を変更します。この変更は .env ファイルに値を入れていくことで対応できます。
+ローカルの環境にて Sitecore に接続をして動作させるように環境を変更します。この変更は `.env` ファイルに値を入れていくことで対応できます。
 
-```
+```yaml:.env
 PUBLIC_URL=http://localhost:3000
 JSS_EDITING_SECRET=利用しているJSS EDIT KEY を記載します
 SITECORE_API_KEY=API キーを設定します
@@ -118,7 +118,7 @@ jss build
 
 ![vercel](/static/images/2022/02/vercel09.png)
 
-続いて、**.env** ファイルを開いて、**SITECORE_API_HOST** の値を公開しているサーバーの URL に変更をします。変更が終わったら改めて
+続いて、`.env` ファイルを開いて、`SITECORE_API_HOST` の値を公開しているサーバーの URL に変更をします。変更が終わったら改めて
 
 ```
 jss start
@@ -140,15 +140,15 @@ jss build
 
 ここからは Vercel の設定へと進んでいきます。今回のプロジェクトの Settings - Environment Variables に記載されている設定を変更していく形となります。
 
-前回は SITECORE_API_HOST には CM サーバーのホスト名を指定するように記載していました。これを公開用のサーバーに変更をします。すでに登録しているホストメインの項目に関して、Environment としては Preview のチェックのみとして更新をします。
+前回は `SITECORE_API_HOST` には CM サーバーのホスト名を指定するように記載していました。これを公開用のサーバーに変更をします。すでに登録しているホストメインの項目に関して、Environment としては Preview のチェックのみとして更新をします。
 
 ![vercel](/static/images/2022/02/vercel11.png)
 
-続いて、同じ SITECORE_API_HOST のキーを指定しますが、Production のみをチェックして追加します。
+続いて、同じ `SITECORE_API_HOST` のキーを指定しますが、Production のみをチェックして追加します。
 
 ![vercel](/static/images/2022/02/vercel12.png)
 
-結果、SITECORE_API_HOST は２つになりますが、Production と Preview で別々のサーバーを参照する設定ができました。
+結果、`SITECORE_API_HOST` は２つになりますが、Production と Preview で別々のサーバーを参照する設定ができました。
 
 ![vercel](/static/images/2022/02/vercel13.png)
 

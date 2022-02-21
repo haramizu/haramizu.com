@@ -33,13 +33,13 @@ npm install react-gtm-module
 
 pages/_app.js のファイルを編集していきます。以下の import を追加してください。
 
-```javascript
+```javascript:pages/_app.js
 import TagManager from 'react-gtm-module'
 ```
 
-以下のコードを App の下に追加してください。**GTM-SAMPLE1** のところは、利用する際のタグを記載します。
+以下のコードを App の下に追加してください。`GTM-SAMPLE1` のところは、利用する際のタグを記載します。
 
-```javascript
+```javascript:pages/_app.js
 export default function App({ Component, pageProps }) {
   // Google Tag Manager start
   useEffect(() => {
@@ -60,11 +60,11 @@ export default function App({ Component, pageProps }) {
 
 ## Content Security Policy を確認する
 
-私のブログサイトは、[Tailwind Nextjs Theme](https://github.com/timlrx/tailwind-nextjs-starter-blog)をベースにコンテンツを追加、利用したい機能を追加しています。このサンプルはセキュリティに関してもしっかり実装しているため、コードがそのままでは動きません。この設定は、next.config.js のファイルに記載されています。
+私のブログサイトは、[Tailwind Nextjs Theme](https://github.com/timlrx/tailwind-nextjs-starter-blog)をベースにコンテンツを追加、利用したい機能を追加しています。このサンプルはセキュリティに関してもしっかり実装しているため、コードがそのままでは動きません。この設定は、`next.config.js` のファイルに記載されています。
 
 コードの中身は以下の通りです。
 
-```javascript
+```javascript:next.config.js
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app;
@@ -87,7 +87,7 @@ const ContentSecurityPolicy = `
 
 今回はタグが動いているかどうかのプレビューも実施したいため、以下のように書き換えました。
 
-```javascript
+```javascript:next.config.js
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' www.google-analytics.com ssl.google-analytics.com tagmanager.google.com www.googletagmanager.com giscus.app;

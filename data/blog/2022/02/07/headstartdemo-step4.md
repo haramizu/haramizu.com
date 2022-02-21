@@ -27,7 +27,7 @@ images: ['/static/images/2022/02/vs07.png']
 
 ![OrderCloud](/static/images/2022/02/vs03.png)
 
-もう一度 Visual Studio に戻って、上記の値を利用する新規のプロファイルを作成します。ここでは Test という名前をつけて、起動に関してはプロジェクトを選択してください。また、環境変数の名前としては、APP_CONFIG_CONNECTION を、上記の Connections string を入力します。設定画面は以下のようになります。
+もう一度 Visual Studio に戻って、上記の値を利用する新規のプロファイルを作成します。ここでは Test という名前をつけて、起動に関してはプロジェクトを選択してください。また、環境変数の名前としては、`APP_CONFIG_CONNECTION` を、上記の Connections string を入力します。設定画面は以下のようになります。
 
 ![OrderCloud](/static/images/2022/02/vs04.png)
 

@@ -25,7 +25,7 @@ images: ['/static/images/2022/02/release27.png']
 2. Middleware を展開した App Servcie の Test スロットを開く
 3. 左側の構成のメニューを選択
 4. 新しいアプリケーション設定 をクリックする
-5. APP_CONFIG_CONNECTION の名前で、App Configuration から取得した接続文字列を入れる
+5. `APP_CONFIG_CONNECTION` の名前で、App Configuration から取得した接続文字列を入れる
 6. 保存する
 
 ![OrderCloud](/static/images/2021/09/ordercloud77.gif)

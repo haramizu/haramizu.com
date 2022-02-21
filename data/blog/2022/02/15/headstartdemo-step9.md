@@ -11,9 +11,9 @@ images: ['/static/images/2022/02/dev10.png']
 
 ## 連携前の作業として
 
-azure-pipelines.yml zipAfterPublish を true に変更
+`azure-pipelines.yml` のファイルの `zipAfterPublish` を true に変更
 
-```yaml
+```yaml:azure-pipelines.yml
       - task: DotNetCoreCLI@2
         displayName: Publish Middleware
         inputs:
@@ -24,7 +24,7 @@ azure-pipelines.yml zipAfterPublish を true に変更
           zipAfterPublish: true
 ```
 
-version.yml にあるmiddlewaer の URL を変更する
+`version.yml` にある `middlewaer` の URL を変更する
 
 ```yaml
 steps:
@@ -49,11 +49,11 @@ steps:
 
 ## プロジェクトの作成
 
-Azure DevOps にログイン
+Azure DevOps にログインをします。
 
 ![OrderCloud](/static/images/2022/02/dev01.png)
 
-New Project を作成（ Headstart Test )
+実際に作業をするためのプロジェクトを追加するべく、New Project を作成（ Headstart Test ) を今回は作成しました。
 
 ![OrderCloud](/static/images/2022/02/dev02.png)
 
@@ -63,15 +63,15 @@ New Project を作成（ Headstart Test )
 
 ![OrderCloud](/static/images/2022/02/dev03.png)
 
-GitHub を選択する
+連携するコードは今回は GitHub になるため、GitHub を選択します。
 
 ![OrderCloud](/static/images/2022/02/dev04.png)
 
-今回は headstart-demo を選択する
+今回はリポジトリの名前として設定している headstart-demo を選択します。
 
 ![OrderCloud](/static/images/2022/02/dev05.png)
 
-権限設定の画面で、対象のリポジトリに関しての権限を許可する。
+リポジトリの設定の際には、権限設定の画面で権限を許可する必要があります。対象のリポジトリを選択して、**Approve and Install** をクリックしてください。
 
 ![OrderCloud](/static/images/2022/02/dev06.png)
 
@@ -83,7 +83,7 @@ azure-pipelines.yml が読み込まれているのを確認して、右上にあ
 
 ![OrderCloud](/static/images/2022/02/dev08.png)
 
-Run Pipeline をクリックします。
+画面の中央に表示されている **Run Pipeline** をクリックします。
 
 ![OrderCloud](/static/images/2022/02/dev09.png)
 

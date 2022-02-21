@@ -33,7 +33,7 @@ cd buyer
 npm install
 ```
 
-続いて buyer を起動するための設定を記入します。まず最初にローカルのミドルウェアを利用すると指定するために、src/UI/Buyer/src/environments/environment.local.ts のファイルを編集します。このファイルの上の方に以下の設定が記載されています。
+続いて buyer を起動するための設定を記入します。まず最初にローカルのミドルウェアを利用すると指定するために、`src/UI/Buyer/src/environments/environment.local.ts` のファイルを編集します。このファイルの上の方に以下の設定が記載されています。
 
 ```
 // ===== MAKE CHANGES TO CONFIGURATION BETWEEN THESE LINES ONLY =======
@@ -48,11 +48,11 @@ const localBuyerApiClient = '800EFEC0-43A5-4EB6-9150-C3BBE628214C'
 // ======= UNLESS YOU ARE DOING SOMETHING WEIRD =======================
 ```
 
-useLocalMiddleware と useLocalBuyerApiClient を true に変更して、localBuyerApiClient を Postman で取得した Buyer の ClientID を設定してください。
+`useLocalMiddleware` と `useLocalBuyerApiClient` を true に変更して、`localBuyerApiClient` を Postman で取得した Buyer の `ClientID` を設定してください。
 
-続いてその他の設定が記載されているファイル、 src/UI/Buyer/src/assets/appConfigs/defaultbuyer-test.json を変更します。サンプルで入っているデータは以下の通りです。
+続いてその他の設定が記載されているファイル、 `src/UI/Buyer/src/assets/appConfigs/defaultbuyer-test.json` を変更します。サンプルで入っているデータは以下の通りです。
 
-```json
+```json:defaultbuyer-test.json
 {
   "hostedApp": true,
   "appname": "HeadstartDemo",
@@ -111,7 +111,7 @@ cd seller
 npm install
 ```
 
-Seller のアプリも Buyer と同様のローカルで動かすための設定、アプリの設定の２つのファイルがあります。まずはローカルで動かすためのファイルを編集します。src/UI/Seller/src/environments/environment.local.ts のファイルであり、設定は１ヶ所 useLocalMiddleware を true であれば動作します。
+Seller のアプリも Buyer と同様のローカルで動かすための設定、アプリの設定の２つのファイルがあります。まずはローカルで動かすためのファイルを編集します。`src/UI/Seller/src/environments/environment.local.ts` のファイルであり、設定は１ヶ所 `useLocalMiddleware` を true であれば動作します。
 
 ```
 // ===== MAKE CHANGES TO CONFIGURATION BETWEEN THESE LINES ONLY =======
@@ -124,7 +124,7 @@ const localMiddlewareURL = 'https://localhost:5001'
 // ======= UNLESS YOU ARE DOING SOMETHING WEIRD =======================
 ```
 
-続いてアプリの設定を変更するために、src/UI/Seller/src/assets/appConfigs/defaultadmin-test.json のファイルを変更します。
+続いてアプリの設定を変更するために、`src/UI/Seller/src/assets/appConfigs/defaultadmin-test.json` のファイルを変更します。
 
 ```json
 {

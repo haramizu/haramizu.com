@@ -2,7 +2,7 @@
 title: Sitecore Headless - カスタムコンポーネントの作成
 date: '2022-02-25'
 tags: ['Sitecore','Headless']
-draft: true
+draft: false
 summary: ページを作成していく際に、コンポーネントの配置をすることができるエリアとして Placeholder を作成して配置することで、コンテンツをページの場所に貼り付けたり、同じコンテンツを複数のページで利用したりということが簡単にできるようになります。今回はこの Placeholder の作成方法を紹介していきます。
 images: ['/static/images/2022/02/release27.png']
 ---

@@ -13,7 +13,7 @@ images: ['/static/images/2021/04/create02.png ']
 
 今回紹介をする流れは、Sitecore JavaScript Services のドキュメントをベースに紹介をしていきます。英語が苦にならない方は、ぜひ以下のサイトをご覧ください。
 
-* [Sitecore JSS Documentation](https://jss.sitecore.com)
+* [Sitecore Headless Services](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/sitecore-headless-services.html)
 
 最初は、サンプルのアプリを動かすところが定番です。これで進めていきましょう。
 
@@ -21,7 +21,7 @@ images: ['/static/images/2021/04/create02.png ']
 
 サンプルアプリを起動するために、以下の手順を実行します。
 
-* [Quick Start](https://jss.sitecore.com/docs/client-frameworks/getting-started/quick-start)
+* [Walkthrough: Getting started with JSS for React](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/walkthrough--getting-started-with-jss-for-react.html)
 
 すでに私の環境では jss のコマンドをインストール済みとなりますので、サンプルアプリをまずは作成します。
 

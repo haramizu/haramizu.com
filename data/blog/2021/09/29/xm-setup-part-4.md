@@ -1,7 +1,7 @@
 ---
 title: Sitecore XM シリーズ - Sitecore Headless Rendering インストール
 date: '2021-09-29'
-tags: ['Sitecore','Install','Headless','XM']
+tags: ['Sitecore','インストール','Headless','XM']
 draft: false
 summary: 今回は Sitecore Experience Manager (XM) の環境にヘッドレスのモジュールをインストールする手順を紹介していきます。すでに紹介したように、XM をインストールアシスタントを利用してインストールをすると、 CM / CD と分かれた環境が展開されます。この環境で、Sitecore ヘッドレスに関するモジュールをインストールする手順を紹介していきます。
 images: ['/static/images/2021/09/xm36.png)']
@@ -11,7 +11,7 @@ images: ['/static/images/2021/09/xm36.png)']
 
 手順に関しては、以下の JSS のサイトの紹介に沿って進めていく形です。
 
-* [JSS Server Setup](https://jss.sitecore.com/docs/client-frameworks/getting-started/jss-server-install)
+* [Installing Headless Services](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/installing-headless-services.html)
 
 ## 前提条件
 
@@ -73,4 +73,4 @@ http://your-cd-instance/sitecore/api/layout/render/jss?item=/&sc_apikey=TEST
 
 ## 参考情報
 
-* [JSS Server Setup](https://jss.sitecore.com/docs/client-frameworks/getting-started/jss-server-install)
+* [Installing Headless Services](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/installing-headless-services.html)

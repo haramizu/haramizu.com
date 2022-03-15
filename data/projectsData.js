@@ -18,29 +18,29 @@ const projectsData = [
     href: '/blog/Sitecore-XM',
   },
   {
-    title: 'Sitecore Content Hub クイックガイド',
-    description: `Sitecore Content Hub に関する記事をまとめてみました。`,
-    imgSrc: '/static/images/2020/03/sitecorecontenthub-default.png',
-    href: '/blog/sitecore-content-hub',
-  },
-  {
     title: 'OrderCloud シリーズ',
     description: `Sitecore が提供するコマース環境に関する SaaS 製品、OrderCloud に関して記載している記事一覧を紹介しています。`,
     imgSrc: '/static/images/2021/09/ordercloud81.png',
     href: '/blog/OrderCloud',
   },
   {
+    title: 'Sitecore Content Hub クイックガイド',
+    description: `Sitecore Content Hub に関する記事をまとめてみました。`,
+    imgSrc: '/static/images/2020/03/sitecorecontenthub-default.png',
+    href: '/blog/sitecore-content-hub',
+  },
+  {
     title: 'Moosend シリーズ',
     description: `マーケティングオートメーションツールの Moosend に関して、アカウントの作成から使い方まで色々とブログで紹介をしています。このページでは、各種ページへのリンクを用意しています`,
     imgSrc: '/static/images/2021/05/moosendoverview01.png',
-    href: '/blog/Sitecore-Send',
+    href: '/blog/moosend',
   },
   {
     title: 'Webinar シリーズ',
     description: `この記事では Sitecore が展開している Webinar のうち、私が登壇したセッションを一覧で紹介しています。`,
     imgSrc: '/static/images/2021/05/cookie-seminar.png',
     href: '/blog/webinar',
-  },  
+  },
   {
     title: 'Sitecore インストールシリーズ',
     description: `この記事では Sitecore のインストール、デモ環境の構築およびデモの手順などをまとめていきます。`,

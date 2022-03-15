@@ -14,7 +14,7 @@ images: ['/static/images/2021/05/scaffold02.png']
 
 Next.js + Vercel を組み合わせた構成をもとに Sitecore JSS の基本的なことを紹介していくシリーズです。
 
-* [環境の構築](/blog/2021/09/09/nextjs-vercel-part-1)
+* [Vercel 環境の構築](/blog/2021/09/09/nextjs-vercel-part-1)
 
 ## Next.js SDK を利用してサンプルサイトを構築
 

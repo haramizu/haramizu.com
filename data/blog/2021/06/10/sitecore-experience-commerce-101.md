@@ -2,7 +2,7 @@
 title: Sitecore Experience Commerce を動かす 
 date: '2021-06-10'
 lastmod: '2021-06-10'
-tags: ['Sitecore','Demo','Install','Commerce']
+tags: ['Sitecore','デモ','インストール','Commerce']
 draft: false
 summary: 今回は Sitecore が提供する Commerce 製品の一つ、Sitecore Experience Commerce のインストールに関する手順を紹介します。
 images: ['/static/images/2021/06/commerce11.png']

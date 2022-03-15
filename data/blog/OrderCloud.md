@@ -9,6 +9,20 @@ images: ['/static/images/2021/09/ordercloud81.png']
 
 Sitecore OrderCloud に関する記事を以下のように公開しました。今後も引き続き情報を追加していきたいと思います。
 
+## Headstart セットアップ
+
+Sitecore OrderCloud のデモ、Headstart に関するセットアップの手順をより詳細に紹介をしています。
+
+* [Part 1 環境を整備する](/blog/2022/02/01/headstartdemo-step1)
+* [Part 2 サンプルコードを準備する](/blog/2022/02/02/headstartdemo-step2)
+* [Part 3 Azure の環境を準備する（その１）](/blog/2022/02/04/headstartdemo-step3)
+
+## Headstart サンプルサイト
+
+Sitecore OrderCloud のデモ、Headstart は以下のサイトで公開をしています。
+
+* [GitHub ordercloud-api / Headstart](https://github.com/ordercloud-api/Headstart)
+
 ## Next.js Commerce と Sitecore OrderCloud の連携
 
 Headstart のデモで EC サイトとなる部分を Next.js Commerce を利用して展開することが可能となりました。その手順を以下のページで紹介をしています。
@@ -17,9 +31,9 @@ Headstart のデモで EC サイトとなる部分を Next.js Commerce を利用
 * [Middleware と Seller の追加（前編）](/blog/2021/10/20/Nextjs-Commerce-OrderCloud-part-2)
 * [Middleware と Seller の追加（後編）](/blog/2021/10/21/Nextjs-Commerce-OrderCloud-part-3)
 
-## Headstart セットアップ
+## Headstart セットアップ（旧版）
 
-EC サイトのデモとして提供している Headstart セットアップに関して今後以下のように紹介をしました。
+EC サイトのデモとして提供している Headstart セットアップに関して今後以下のように紹介をしています。この記事は古いため、新しいセットアップの手順を参照していただくのが良いです。
 
 1. [準備](/blog/2021/09/06/OrderCloud-setup-part-1)
 2. [設定](/blog/2021/09/08/OrderCloud-setup-part-2)
@@ -30,8 +44,3 @@ EC サイトのデモとして提供している Headstart セットアップに
 
 * [macOS で動作させる](/blog/2021/09/17/OrderCloud-mac)
 
-## Sitecore Headstart 
-
-Sitecore OrderCloud Headstart は以下のサイトで公開をしています。
-
-* [GitHub ordercloud-api / Headstart](https://github.com/ordercloud-api/Headstart)

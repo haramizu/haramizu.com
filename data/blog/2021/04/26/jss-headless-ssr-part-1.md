@@ -13,9 +13,11 @@ images: ['/static/images/2021/04/headless01.png']
 
 Sitecore のインスタンスは仮想マシンとして立ち上げて、JSS のアプリがインターネットを通じて Sitecore にアクセスすることができるようにしてあります。また、API キーなどもすでに作成されており、FQDN でサーバーを参照できるようになっていることを前提とします。
 
-また Headless のトポロジーを紹介します。以下図が参考になります（引用：[A DevOps guide to JSS](https://jss.sitecore.com/docs/techniques/devops)）。
+また Headless のトポロジーを紹介します。
 
 ![headless](/static/images/2021/04/headless01.png "headless")
+
+* 参考: [Server-side rendering JSS applications](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/server-side-rendering-jss-applications.html)
 
 右側が訪問者で、Node.js のインスタンスにアクセスをします。この Node.js のインスタンスは、アクセスがあると必要な情報を取得するために、左側の Sitecore CD にアクセスする形となります。必要な情報を取得した Node.js のインスタンスが返答をして、ブラウザにページが表示されるようになります。
 

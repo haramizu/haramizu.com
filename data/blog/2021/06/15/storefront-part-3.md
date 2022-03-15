@@ -2,7 +2,7 @@
 title: Storefront - Commerce Control Panel
 date: '2021-06-15'
 lastmod: '2021-06-15'
-tags: ['Sitecore','Demo','Install','Commerce','Storefront']
+tags: ['Sitecore','デモ','インストール','Commerce','Storefront']
 draft: false
 summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
 images: ['/static/images/2021/06/storefront07.png']

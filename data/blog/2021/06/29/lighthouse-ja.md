@@ -2,7 +2,7 @@
 title: Sitecore Demo Platform - デモの日本語化
 date: '2021-06-29'
 lastmod: '2021-06-29'
-tags: ['Sitecore','Demo']
+tags: ['Sitecore','デモ']
 draft: false
 summary: 以前に Sitecore のデモ環境を動かすための手順として、Sitecore Demo Platform を動かすを紹介しました。今回は日本語環境を整備する手順を紹介して行きます。
 images: ['/static/images/2021/06/jaresource14.png']

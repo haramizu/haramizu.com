@@ -122,7 +122,7 @@ const ContentBlock = ({ fields }: ContentBlockProps): JSX.Element => (
 
 ## まとめ
 
-今回は Tailwind CSS を適用するための最初のステップを紹介しました。次回はナビゲーションの部分を作りたいと思います。
+今回は Tailwind CSS を適用するための最初のステップを紹介しました。次回からは有料のサンプルソースコードを提供している https://tailwindui.com のコードを参考にしながら（このブログのために購入しました）、次回はナビゲーションの部分を作りたいと思います。
 
 ## 参考資料
 

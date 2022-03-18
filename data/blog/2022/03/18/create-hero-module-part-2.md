@@ -2,7 +2,7 @@
 title: Hero エリアの部品を作成する（後編）
 date: '2022-03-18'
 tags: ['tailwind.css', 'Next.js', 'Headless']
-draft: true
+draft: false
 summary: 前回は新しいコンポーネントを作成して配置しましたが、まだ見た目は普通に HTML が表示されている程度の Tailwind CSS のデザインになっています。今回は見た目を少し変更するのと、合わせてコンテンツの属性を少し変更したいと思います。
 images: ['/static/images/2022/03/Scaffold24.png']
 ---

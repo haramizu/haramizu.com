@@ -2,7 +2,7 @@
 title: Sitecore Horizon のインストール
 date: '2022-03-23'
 tags: ['Sitecore', 'Horizon']
-draft: true
+draft: false
 summary: これまで Sitecore の編集環境としてはコンテンツエディター、エクスペリエンスエディターと２つのツールを利用していました。全体を見渡すことができるコンテンツエディター、見たまま編集を実現するエクスペリエンスエディターという位置付けです。今回紹介をする Sitecore Horizon はその２つのいいところ取りの製品になります。
 images: ['/static/images/2022/03/horizon07.png']
 ---

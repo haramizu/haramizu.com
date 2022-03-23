@@ -66,13 +66,15 @@ type HeroProps = StyleguideComponentProps & {
 };
 
 const Hero = (props: HeroProps): JSX.Element => (
-  <div>
-    <p>Hero Component</p>
-    <Text tag="h2" className="text-2xl font-bold" field={props.fields.title1} />
-    <Text tag="h3" className="text-1xl font-bold" field={props.fields.title2} />
-    <Text field={props.fields.text} />
-    <Image media={props.fields.image} />
-  </div>
+  return (
+    <div>
+      <p>Hero Component</p>
+      <Text tag="h2" className="text-2xl font-bold" field={props.fields.title1} />
+      <Text tag="h3" className="text-1xl font-bold" field={props.fields.title2} />
+      <Text field={props.fields.text} />
+      <Image media={props.fields.image} />
+    </div>
+  );
 );
 
 export default withDatasourceCheck()<HeroProps>(Hero);

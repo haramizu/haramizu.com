@@ -4,7 +4,7 @@ date: '2022-04-05'
 tags: ['Next.js', 'Headless']
 draft: true
 summary: 前回はテキストに関するフィールド形式を利用して、テンプレートを作成しました。今回は画像を指定できるコンポーネントを作成していきます。
-images: ['/static/images/2022/03/component06.gif']
+images: ['/static/images/2022/04/template18.gif']
 ---
 
 前回はテキストに関するフィールド形式を利用して、テンプレートを作成しました。今回は画像を指定できるコンポーネントを作成していきます。
@@ -28,7 +28,7 @@ jss scaffold Data/ImageSample
 - sitecore/definitions/components/Data/ImageSample.sitecore.ts
 - src/components/Data/ImageSample.tsx
 
-１つ目のファイルはテンプレートを構成するフィールドのタイプを定義するために、画像のフィールドということで以下のコードに変更をします。
+１つ目のファイルはテンプレートを構成するフィールドのタイプを定義することができます。以下のファイルにコードを追加します。
 
 ```javascript:sitecore/definitions/components/Data/ImageSample.sitecore.ts
 export default function ImageSample(manifest: Manifest): void {
@@ -158,6 +158,8 @@ const ImageSample = (props: ImageSampleProps): JSX.Element => (
   src="/-/media/sitecoredemo-jp/GettyImages-1183367089.ashx?h=733&amp;iar=0&amp;w=1100&amp;hash=1FD27EE38776805D782964BA955743E7"
 />
 ```
+
+なお、レスポンシブに関して処理をすることができるのはメディアライブラリの中にあるファイルであり、Sitecore Content Hub の場合は別の記述方法になりますのでご注意ください。
 
 ## まとめ
 

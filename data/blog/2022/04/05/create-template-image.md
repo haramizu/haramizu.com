@@ -1,5 +1,5 @@
 ---
-title: テンプレートの作成とデータタイプの設定 - 画像編
+title: コンポーネントの作成とテンプレート連携 - 画像編
 date: '2022-04-05'
 tags: ['Next.js', 'Headless']
 draft: true

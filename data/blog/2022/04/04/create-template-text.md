@@ -1,5 +1,5 @@
 ---
-title: テンプレートの作成とデータタイプの設定 - テキスト編
+title: コンポーネントの作成とテンプレート連携 - テキスト編
 date: '2022-04-04'
 tags: ['Next.js', 'Headless']
 draft: false

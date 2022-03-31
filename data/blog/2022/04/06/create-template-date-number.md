@@ -1,5 +1,5 @@
 ---
-title: テンプレートの作成とデータタイプの設定 - 日付と数字編
+title: コンポーネントの作成とテンプレート連携 - 日付と数字編
 date: '2022-04-06'
 tags: ['Next.js', 'Headless']
 draft: true

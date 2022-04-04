@@ -1,6 +1,6 @@
 ---
 title: GraphQL の利用
-date: '2022-04-08'
+date: '2022-04-15'
 tags: ['Next.js', 'Headless']
 draft: true
 summary:

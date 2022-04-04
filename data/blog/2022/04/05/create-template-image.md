@@ -2,7 +2,7 @@
 title: コンポーネントの作成とテンプレート連携 - 画像編
 date: '2022-04-05'
 tags: ['Next.js', 'Headless']
-draft: true
+draft: false
 summary: 前回はテキストに関するフィールド形式を利用して、テンプレートを作成しました。今回は画像を指定できるコンポーネントを作成していきます。
 images: ['/static/images/2022/04/template18.gif']
 ---

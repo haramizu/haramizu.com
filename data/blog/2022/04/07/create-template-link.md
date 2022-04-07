@@ -2,7 +2,7 @@
 title: コンポーネントの作成とテンプレート連携 - リンクフィールド編
 date: '2022-04-07'
 tags: ['Next.js', 'Headless']
-draft: true
+draft: false
 summary: Web サイトのデータとして重要になってくるのがコンテンツの次にリンクになります。この部分の記述をコンポーネントではどう言った形で記述するのかを今回は紹介していきます。
 images: ['/static/images/2022/04/template39.png']
 ---

@@ -28,7 +28,7 @@ jss scaffold Data/ContentListSample
 - sitecore/definitions/components/Data/ContentListSample.sitecore.ts
 - src/components/Data/ContentListSample.tsx
 
-１つ目のファイルはテンプレートを構成するフィールドのタイプを定義することができます。以下のファイルにコードを追加します。`contentlist1` を作成して、コンテンツタイプを `CommonFieldTypes.ContentList` としています。
+１つ目のファイルはテンプレートを構成するフィールドのタイプを定義することができます。今回は、以下のファイルにコードを追加します。`contentlist1` を作成して、コンテンツタイプを `CommonFieldTypes.ContentList` としています。
 
 ```javascript:sitecore/definitions/components/Data/ContentListSample.sitecore.ts
 export default function ContentListSample(manifest: Manifest): void {
@@ -40,7 +40,7 @@ export default function ContentListSample(manifest: Manifest): void {
 }
 ```
 
-レンダリングを担うコードは以下の通りです。import に Item の項目が追加されている点など、標準で作成されているコードと異なります。
+レンダリングを担うコードは以下の通りです。import に `Item` の項目が追加されている点など、標準で作成されているコードと異なります。
 
 ```javascript:src/components/Data/ContentListSample.tsx
 import { Text, Item, Field, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';

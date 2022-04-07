@@ -2,7 +2,7 @@
 title: Sitecore Symposium World Tour Tokyo 開催決定
 date: '2022-04-11'
 tags: ['Sitecore', 'イベント']
-draft: true
+draft: false
 summary: 現在、グローバルで Sitecore Symposium World Tour というイベントが開催されており、すでにロンドンやドバイで開催されて新しい情報などが随時提供されています。このイベントの日本での開催が決まり、2022年5月17日に東京で開催されることが決まりました。
 images: ['/static/images/2022/04/2022-SYMWT-Email-Signature_JP.png']
 ---

@@ -13,23 +13,31 @@ Sitecore OrderCloud に関する記事を以下のように公開しました。
 
 Sitecore OrderCloud のデモ、Headstart に関するセットアップの手順をより詳細に紹介をしています。
 
-* [Part 1 環境を整備する](/blog/2022/02/01/headstartdemo-step1)
-* [Part 2 サンプルコードを準備する](/blog/2022/02/02/headstartdemo-step2)
-* [Part 3 Azure の環境を準備する（その１）](/blog/2022/02/04/headstartdemo-step3)
+- [Part 1 環境を整備する](/blog/2022/02/01/headstartdemo-step1)
+- [Part 2 サンプルコードを準備する](/blog/2022/02/02/headstartdemo-step2)
+- [Part 3 Azure の環境を準備する（その１）](/blog/2022/02/04/headstartdemo-step3)
+- [Part 4 ミドルウェアの起動](/blog/2022/02/07/headstartdemo-step4)
+- [Part 5 サンプルデータの準備](/blog/2022/02/08/headstartdemo-step5)
+- [Part 6 Sendgrid にサンプルのメールを設定する](/blog/2022/02/09/headstartdemo-step6)
+- [Part 7 Buyer および seller サイトの起動](/blog/2022/02/10/headstartdemo-step7)
+- [Part 8 Azure の環境を準備する（その２）](/blog/2022/02/14/headstartdemo-step8)
+- [Part 9 Azure DevOps と GitHub 連携](/blog/2022/02/15/headstartdemo-step9)
+- [Part 10 リリースの作成と動作確認](/blog/2022/02/16/headstartdemo-step10)
+- [Part 11 環境のチェック](/blog/2022/02/17/headstartdemo-step11)
 
 ## Headstart サンプルサイト
 
 Sitecore OrderCloud のデモ、Headstart は以下のサイトで公開をしています。
 
-* [GitHub ordercloud-api / Headstart](https://github.com/ordercloud-api/Headstart)
+- [GitHub ordercloud-api / Headstart](https://github.com/ordercloud-api/Headstart)
 
 ## Next.js Commerce と Sitecore OrderCloud の連携
 
 Headstart のデモで EC サイトとなる部分を Next.js Commerce を利用して展開することが可能となりました。その手順を以下のページで紹介をしています。
 
-* [Next.js Commerce と OrderCloud の連携](/blog/2021/10/19/Nextjs-Commerce-OrderCloud-part-1)
-* [Middleware と Seller の追加（前編）](/blog/2021/10/20/Nextjs-Commerce-OrderCloud-part-2)
-* [Middleware と Seller の追加（後編）](/blog/2021/10/21/Nextjs-Commerce-OrderCloud-part-3)
+- [Next.js Commerce と OrderCloud の連携](/blog/2021/10/19/Nextjs-Commerce-OrderCloud-part-1)
+- [Middleware と Seller の追加（前編）](/blog/2021/10/20/Nextjs-Commerce-OrderCloud-part-2)
+- [Middleware と Seller の追加（後編）](/blog/2021/10/21/Nextjs-Commerce-OrderCloud-part-3)
 
 ## Headstart セットアップ（旧版）
 
@@ -42,5 +50,4 @@ EC サイトのデモとして提供している Headstart セットアップに
 5. [Azure への展開](/blog/2021/09/14/OrderCloud-setup-part-5)
 6. [展開後の調整](/blog/2021/09/15/OrderCloud-setup-part-6)
 
-* [macOS で動作させる](/blog/2021/09/17/OrderCloud-mac)
-
+- [macOS で動作させる](/blog/2021/09/17/OrderCloud-mac)

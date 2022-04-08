@@ -2,7 +2,7 @@
 title: ブランチテンプレートの作成
 date: '2022-04-27'
 tags: ['Sitecore', 'XM']
-draft: false
+draft: true
 summary: ページで複数のアイテムを利用して構成をする際に、まとめてアイテムを作成することができるブランチの機能が便利です。今回は、ブランチの使い方について紹介をします。
 images: ['/static/images/2022/04/template58.png']
 ---

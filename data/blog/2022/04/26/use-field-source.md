@@ -2,7 +2,7 @@
 title: 個別フィールドのソースを活用する
 date: '2022-04-26'
 tags: ['Sitecore', 'XM']
-draft: false
+draft: true
 summary: テンプレートのソースの項目を利用することで、作業効率を上げることが可能となります。今回はこのフィールド形式の指定の後ろの項目、ソースの利用方法を紹介します。
 images: ['/static/images/2022/04/template58.png']
 ---

@@ -2,7 +2,7 @@
 title: コンポーネントの作成とテンプレート連携 - チェックボックス編
 date: '2022-04-12'
 tags: ['Next.js', 'Headless']
-draft: false
+draft: true
 summary: これまで紹介をしていたデータの形式は一般的なデータとして利用することが多い項目でしたが、今回はチェックボックスを紹介する地味なトピックとなります。
 images: ['/static/images/2022/04/template46.png']
 ---

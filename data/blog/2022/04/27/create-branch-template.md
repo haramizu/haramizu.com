@@ -9,10 +9,6 @@ images: ['/static/images/2022/04/template58.png']
 
 ページで複数のアイテムを利用して構成をする際に、まとめてアイテムを作成することができるブランチの機能が便利です。今回は、ブランチの使い方について紹介をします。
 
-## リンクの指定
-
-## 画像パスの指定
-
-## リッチテキスト形式の指定
-
 ## まとめ
+
+- [ブランチ テンプレート](https://doc.sitecore.com/xp/ja/developers/101/sitecore-experience-manager/branch-templates.html)

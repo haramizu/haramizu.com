@@ -2,7 +2,7 @@
 title: プレースホルダーの作成
 date: '2022-04-15'
 tags: ['Next.js', 'Headless', 'Sitecore', 'XM']
-draft: true
+draft: false
 summary: Sitecore でレイアウトのエリアに関して、名前をつける機能をプレースホルダーという形で定義することができます。これを利用することで、プレースホルダーに配置することができるコンポーネントの制限をしたり、プレースホルダーを階層化して管理することができるようになります。今回はこのプレースホルダーの考え方、そして作り方を紹介していきます。
 images: ['/static/images/2022/04/placeholder09.gif']
 ---

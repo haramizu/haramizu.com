@@ -9,7 +9,7 @@ images: ['/static/images/2022/03/component06.gif']
 
 前回はデモ環境の構築だけということで、準備が完了するところまでの紹介でした。今回は具体的に Sitecore の環境を立ち上げてデモが動くようにしたいと思います。
 
-## 環境を起動する
+## インストール前の準備を進める
 
 デモは Sitecore のコンテナを動かす際のデモと同様のスクリプトが `C:\projects\Helix.Examples\examples\helix-basic-nextjs` のフォルダに準備されています。
 
@@ -24,3 +24,9 @@ images: ['/static/images/2022/03/component06.gif']
 実行すると以下のように環境のセットアップが進んでいきます。途中、証明書ツールに関するダイアログが表示されますが、Yes を選択してください。
 
 ![sample](/static/images/2022/05/sample06.png)
+
+しばらくすると、以下のような形で手続きが完了となります。
+
+![sample](/static/images/2022/05/sample07.png)
+
+.\up.ps1

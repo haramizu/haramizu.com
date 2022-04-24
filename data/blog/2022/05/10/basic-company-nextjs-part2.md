@@ -13,7 +13,7 @@ images: ['/static/images/2022/03/component06.gif']
 
 デモは Sitecore のコンテナを動かす際のデモと同様のスクリプトが `C:\projects\Helix.Examples\examples\helix-basic-nextjs` のフォルダに準備されています。
 
-![sample](/static/images/2022/05/sample09.png)
+![sample](/static/images/2022/05/sample10.png)
 
 ここで、init.ps1 を実行して、必要なプログラムのインストールそしてコンテナのダウンロードなどを進めていきます。
 
@@ -21,15 +21,23 @@ images: ['/static/images/2022/03/component06.gif']
 .\init.ps1 -InitEnv -LicenseXmlPath "C:\projects\license\license.xml" -AdminPassword "DesiredAdminPassword"
 ```
 
-実行すると以下のように環境のセットアップが進んでいきます。途中、証明書ツールに関するダイアログが表示されますが、Yes を選択してください。
-
-![sample](/static/images/2022/05/sample10.png)
-
-しばらくすると、以下のような形で手続きが完了となります。
+実行すると以下のように環境のセットアップが進んでいきます。途中、NuGet の provider に関する質問が出てくるためここでは Yes を選択します。
 
 ![sample](/static/images/2022/05/sample11.png)
 
-これで準備が完了となりました。
+証明書ツールに関するダイアログが表示されますが、Yes を選択してください。
+
+![sample](/static/images/2022/05/sample12.png)
+
+しばらくすると、以下のような形でスクリプトが終了します。
+
+![sample](/static/images/2022/05/sample13.png)
+
+このスクリプトに記載している証明書へのパスを設定するために、表示されているコマンドをそのまま実行してください。
+
+![sample](/static/images/2022/05/sample14.png)
+
+一度、シェルスクリプトを終了させたあと反映されるため、この画面は一度閉じてください。これで準備が完了となりました。
 
 ## コンテナイメージのダウンロードと起動
 
@@ -38,3 +46,13 @@ images: ['/static/images/2022/03/component06.gif']
 ```
 .\up.ps1
 ```
+
+イメージのダウンロードなども込みで、それなりに時間がかかりますのでのんびり終了するのを待ちましょう。
+
+![sample](/static/images/2022/05/sample15.png)
+
+実際に起動しているかどうかを確認したいと思います。
+
+## まとめ
+
+前回は環境の設定、今回は実際に Sitecore が起動するところまでの紹介となりました。次回は、どういう構成でデモサイトが動いているのかについて確認をしていきたいと思います。

@@ -1,6 +1,6 @@
 ---
 title: Sitecore Helix の Next.js サンプルを動かす - デモ環境の構築
-date: '2022-05-10'
+date: '2022-05-20'
 tags: ['デモ', 'Next.js']
 draft: true
 summary: 前回はデモ環境の構築だけということで、準備が完了するところまでの紹介でした。今回は具体的に Sitecore の環境を立ち上げてデモが動くようにしたいと思います。

@@ -4,7 +4,7 @@ date: '2022-05-12'
 tags: ['Docker', 'Sitecore']
 draft: true
 summary: コンテナで稼働している Sitecore の環境に対して、自己証明書ではなくワイルドカード証明書を利用してサイトを立ち上げる手順を紹介します。これにより、実際の運用に近い形を手元で再現することが可能となります。
-images: ['/static/images/2022/05/sample09.png']
+images: ['/static/images/2022/05/domain05.png']
 ---
 
 コンテナで稼働している Sitecore の環境に対して、自己証明書ではなくワイルドカード証明書を利用してサイトを立ち上げる手順を紹介します。これにより、実際の運用に近い形を手元で再現することが可能となります。
@@ -80,7 +80,7 @@ ID_HOST=xm1id.sitecoredemo.jp
 
 これらのホスト名を追加するために、以下のコマンドも実行してください。
 
-```powershell
+```ps1
 Add-HostsEntry "xm1cd.sitecoredemo.jp"
 Add-HostsEntry "xm1cm.sitecoredemo.jp"
 Add-HostsEntry "xm1id.sitecoredemo.jp"

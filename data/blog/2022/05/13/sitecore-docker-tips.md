@@ -9,7 +9,7 @@ images: ['/static/images/2022/05/docker08.png']
 
 Sitecore コンテナを利用する上でよく引っかかるポイントをこのページに記載しています。今後、見つけたものは随時追加していきたいと思います。
 
-## Box Drive などとの相性
+## Box Drive などのクラウドドライブとの相性
 
 Docker Desktop を利用する際には、Box Drive などのクラウド連携のツールを入れている際に、Docker for Windows が正しく動作しないことがあります。よくあるエラーメッセージは以下の通りです。
 
@@ -18,6 +18,8 @@ hcsshim::PrepareLayer - failed failed in win32 : Incorrect function. (0x1)
 ```
 
 C:\Windows\System32\drivers\ の配下にある `cbfsconnect2017.sys` および `cbfs6.sys` などのファイルが影響を与えています。回避方法としては Box Drive を開発用のマシンにインストールしない、もしくは一時的に上記のファイルを削除して再起動する、などの手順が必要となります。
+
+cbfs のドライバ自体は最新版では問題なく動作するようですが、まだ多くのクラウドドライブのツールで利用していないのが現状です。
 
 ## 停止と再起動
 

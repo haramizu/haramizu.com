@@ -29,13 +29,13 @@ images: ['/static/images/2022/05/docker08.png']
 
 まず最初に、Windows 11 Pro の Hyper-V を有効にします。PowerShell を管理者権限で起動して、次のコマンドを実行してください。
 
-```powershell
+```ps1
 Enable-WindowsOptionalFeature -Online -FeatureName $("Microsoft-Hyper-V", "Containers") -All
 ```
 
 インストールが完了すると再起動を促されます。続いて、Windows Subsystem for Linux もインストールしておく必要があります。
 
-```powershell
+```ps1
 wsl --install
 ```
 
@@ -51,7 +51,7 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install-manual#step-4---download-th
 
 続いて、さまざまなツールをインストールするためのインストーラーとして **chocolatey** を今回は利用したいと思います。
 
-```powershell
+```ps1
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
@@ -65,7 +65,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### Visual Studio Code のインストール
 
-```powershell
+```ps1
 choco install vscode
 ```
 
@@ -83,7 +83,7 @@ choco install vscode
 
 Git for Windows をインストールします。
 
-```powershell
+```ps1
 choco install git
 ```
 
@@ -93,7 +93,7 @@ choco install git
 
 git のコマンドで作業をするのに慣れている人は良いのですが、手軽に使えるという点で GitHub Desktop をこのブログでも利用した形で記事を掲載していきます。
 
-```powershell
+```ps1
 choco install github-desktop
 ```
 
@@ -107,7 +107,7 @@ choco install github-desktop
 
 Docker for Windows をインストールします。
 
-```powershell
+```ps1
 choco install docker-desktop
 ```
 
@@ -174,7 +174,7 @@ Visual Studio 2022 Professional をインストールします。マイクロソ
 
 インストールをする時に便利な支援ツールとして、 Sitecore Docker Tools をインストールします。Sitecore Gallery からダウンロードすることができるため、以下のコマンドを実行してインストールしてください。
 
-```powershell
+```ps1
 Register-PSRepository -Name "SitecoreGallery" -SourceLocation "https://sitecore.myget.org/F/sc-powershell/api/v2"
 Install-Module SitecoreDockerTools
 ```

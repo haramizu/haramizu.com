@@ -1,9 +1,9 @@
 ---
-title: Sitecore Helix の Next.js サンプルを動かす - デモ環境の構築
+title: Sitecore Helix の Next.js サンプルを動かす - コンテナを起動する
 date: '2022-05-20'
-tags: ['デモ', 'Next.js']
+tags: ['デモ', 'Next.js', 'Docker']
 draft: true
-summary: 前回はデモ環境の構築だけということで、準備が完了するところまでの紹介でした。今回は具体的に Sitecore の環境を立ち上げてデモが動くようにしたいと思います。
+summary: 前回は環境を準備するところまでとして、コンテナを起動することはありませんでした。今回は、サンプルを実行するためのスクリプト up.ps1 を参考にしながらどういう形でコンテナを起動することになるのかを確認していきます。
 images: ['/static/images/2022/03/component06.gif']
 ---
 
@@ -17,7 +17,7 @@ images: ['/static/images/2022/03/component06.gif']
 
 ここで、init.ps1 を実行して、必要なプログラムのインストールそしてコンテナのダウンロードなどを進めていきます。
 
-```powershell
+```ps1
 .\init.ps1 -InitEnv -LicenseXmlPath "C:\projects\license\license.xml" -AdminPassword "DesiredAdminPassword"
 ```
 

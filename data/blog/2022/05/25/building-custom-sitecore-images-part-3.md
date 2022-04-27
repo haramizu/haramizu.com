@@ -2,7 +2,7 @@
 title: Sitecore Docker カスタムイメージの利用 - 管理画面の日本語化
 date: '2022-05-25'
 tags: ['Docker']
-draft: true
+draft: false
 summary: カスタムイメージの作成ができましたが、管理画面などは英語のままとなっています。日本語を扱うことができるように、日本語リソースの追加と設定の追加に関しての手順を紹介していきます。
 images: ['/static/images/2022/05/customimage14.png']
 ---

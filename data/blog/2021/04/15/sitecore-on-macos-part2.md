@@ -118,7 +118,7 @@ PS C:\projects\sif>
 
 ![network](/static/images/2021/04/network01.png "network")
 
-仮想マシンの IIS にアクセスできることを確認しました。仮想マシンの中では複数のインスタンスが起動しており、それぞれを認識させるために、**$SitecoreSiteName** と **$IdentityServerSiteName** を名前で参照できるように、hosts ファイルを書き換えます。hosts ファイルは **/private/etc/hosts** に配置されており、管理者のみが編集可能です。
+仮想マシンの IIS にアクセスできることを確認しました。仮想マシンの中では複数のインスタンスが起動しており、それぞれを認識させるために、`$SitecoreSiteName` と `$IdentityServerSiteName` を名前で参照できるように、hosts ファイルを書き換えます。hosts ファイルは **/private/etc/hosts** に配置されており、管理者のみが編集可能です。
 
 少し遠回りですが、VS Code で host ファイルの編集をできるようにします。
 

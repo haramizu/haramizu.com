@@ -42,7 +42,7 @@ images: ['/static/images/2022/03/Scaffold17.png']
 
 続いて、スクリプトでインストールをするために、環境に整えた値を設定していきます。`deploy.ps1` のファイルの最初の部分に設定が記載されています。
 
-```powershell:\projects\contenthub50
+```ps1:\projects\contenthub50
 param
 (
   [string] $ScchWdpPackage = "$($PSScriptRoot)\Sitecore.Connector.ContentHub.WDP.scwdp.zip",

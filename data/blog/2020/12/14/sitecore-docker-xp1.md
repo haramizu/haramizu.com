@@ -41,30 +41,29 @@ ISOLATION=default
 
 表にすると以下のようになります。違いとしては、COMPOSE_PROJECT_NAME が異なる（ XP0 と XP1 の違い）と **CD_HOST** と **REPORTING_API_KEY** の項目が追加されているだけです。
 
-| パラメーター 	| 値 	|
-|-	|-	|
-| COMPOSE_PROJECT_NAME 	| sitecore-xp1 	|
-| SITECORE_DOCKER_REGISTRY 	| scr.sitecore.com/sxp/ 	|
-| SITECORE_VERSION 	| 10.0.0-ltsc2019 	|
-| SITECORE_ADMIN_PASSWORD 	|  	|
-| SQL_SA_PASSWORD 	|  	|
-| REPORTING_API_KEY 	|  	|
-| TELERIK_ENCRYPTION_KEY 	|  	|
-| SITECORE_IDSECRET 	|  	|
-| SITECORE_ID_CERTIFICATE 	|  	|
-| SITECORE_ID_CERTIFICATE_PASSWORD 	|  	|
-| SITECORE_LICENSE 	|  	|
-| CD_HOST 	| xp1cd.localhost 	|
-| CM_HOST 	| xp1cm.localhost 	|
-| ID_HOST 	| xp1id.localhost 	|
-| TRAEFIK_IMAGE 	| traefik:v2.2.0-windowsservercore-1809 	|
-| TRAEFIK_ISOLATION 	| hyperv 	|
-| ISOLATION 	| default 	|
+| パラメーター                     | 値                                    |
+| -------------------------------- | ------------------------------------- |
+| COMPOSE_PROJECT_NAME             | sitecore-xp1                          |
+| SITECORE_DOCKER_REGISTRY         | scr.sitecore.com/sxp/                 |
+| SITECORE_VERSION                 | 10.0.0-ltsc2019                       |
+| SITECORE_ADMIN_PASSWORD          |                                       |
+| SQL_SA_PASSWORD                  |                                       |
+| REPORTING_API_KEY                |                                       |
+| TELERIK_ENCRYPTION_KEY           |                                       |
+| SITECORE_IDSECRET                |                                       |
+| SITECORE_ID_CERTIFICATE          |                                       |
+| SITECORE_ID_CERTIFICATE_PASSWORD |                                       |
+| SITECORE_LICENSE                 |                                       |
+| CD_HOST                          | xp1cd.localhost                       |
+| CM_HOST                          | xp1cm.localhost                       |
+| ID_HOST                          | xp1id.localhost                       |
+| TRAEFIK_IMAGE                    | traefik:v2.2.0-windowsservercore-1809 |
+| TRAEFIK_ISOLATION                | hyperv                                |
+| ISOLATION                        | default                               |
 
+REPORTING_API_KEY は 64 文字〜128 文字までのランダムなキーを設定することになります。ここでは以下のコマンドを追加します。
 
-REPORTING_API_KEY は 64文字〜128文字までのランダムなキーを設定することになります。ここでは以下のコマンドを追加します。
-
-```powershell
+```ps1
 Set-DockerComposeEnvFileVariable "REPORTING_API_KEY" -Value (Get-SitecoreRandomString 128 -DisallowSpecial)
 ```
 
@@ -98,7 +97,7 @@ Add-HostsEntry "xp1id.cmsdemo.jp"
 choco install openssl
 ```
 
-![OpenSSL](/static/images/2020/12/openssl.gif "OpenSSL")
+![OpenSSL](/static/images/2020/12/openssl.gif 'OpenSSL')
 
 インストールが完了すると、Path が変更されたというメッセージが表示されているので、一度 PowerShell の画面を閉じて、別のウィンドウで新しく立ち上げてください。これで、Openssl のコマンドを利用できるようになります。
 
@@ -108,7 +107,7 @@ choco install openssl
 
 続いて、ファイルを作成するフォルダに移動して、以下のようにコマンドを実行していきます。
 
-```powershell
+```ps1
 cd C:\projects\compose\ltsc2019\xp1\traefik\certs
 openssl pkcs12 -in "/projects/cmsdemo20201124.pfx" -clcerts -nokeys -out _wildcard.cmsdemo.jp.pem
 openssl pkcs12 -in "/projects/cmsdemo20201124.pfx" -nocerts -nodes -out _wildcard.cmsdemo.jp-key.pem
@@ -116,7 +115,7 @@ openssl pkcs12 -in "/projects/cmsdemo20201124.pfx" -nocerts -nodes -out _wildcar
 
 Openssl のコマンドを実行すると、pfx のパスワードを入力する画面になりますので、パスワードを都度入れてください。
 
-![OpenSSL](/static/images/2020/12/createpem.png "OpenSSL")
+![OpenSSL](/static/images/2020/12/createpem.png 'OpenSSL')
 
 続いて、C:\projects\compose\ltsc2019\xp1\traefik のフォルダの下にある config\dynamic フォルダに設定ファイル certs_config.yaml があります。これを以下の様に書き換えてください。
 
@@ -127,13 +126,13 @@ tls:
       keyFile: C:\etc\traefik\certs\_wildcard.cmsdemo.jp-key.pem
 ```
 
-![cert config](/static/images/2020/12/certconfig.png "cert config")
+![cert config](/static/images/2020/12/certconfig.png 'cert config')
 
 ## Sitecore を起動する
 
 準備が完了したので、コンテナを起動しましょう。
 
-```powershell
+```ps1
 docker-compose up -d
 ```
 
@@ -141,7 +140,7 @@ docker-compose up -d
 
 起動が完了すると、以下のように複数のコンテナが起動していることがわかります。
 
-![コンテナの起動](/static/images/2020/12/xp1.png "コンテナの起動")
+![コンテナの起動](/static/images/2020/12/xp1.png 'コンテナの起動')
 
 設定している証明書が有効になっているかどうか、アクセスをして確認をします。
 
@@ -149,10 +148,9 @@ docker-compose up -d
 2. Welcome ページが表示されているのを確認します
 3. 証明書が設定されているか確認をします（ブラウザの鍵をクリックすると見れます）
 
-    ![証明書の確認](/static/images/2020/12/welcomecms.png "証明書の確認")
+   ![証明書の確認](/static/images/2020/12/welcomecms.png '証明書の確認')
 
 4. /sitecore を URL に追加して管理画面にログインをします
 5. ログイン画面で証明書が有効であることを確認します
 
-    ![証明書の確認](/static/images/2020/12/welcomecms2.png "証明書の確認")
-
+   ![証明書の確認](/static/images/2020/12/welcomecms2.png '証明書の確認')

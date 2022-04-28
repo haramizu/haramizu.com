@@ -68,6 +68,10 @@ src\DockerExamples.XConnect.Model
 src\DockerExamples.Website
 ```
 
+DockerExamples.sln ファイルを Visual Studio で開きます。削除されたプロジェクトが無効になっているため、これを削除します。
+
+![vs](/static/images/2022/05/vs01.png)
+
 ## Docker ファイルの調整
 
 Docker ファイルには、上記のプロジェクトを Build する手続きが入っているため、Build をする部分を削除します。具体的には、以下の行をコメントアウトする形です。

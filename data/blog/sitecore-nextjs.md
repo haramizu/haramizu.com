@@ -2,7 +2,7 @@
 title: Sitecore Headless - Next.js Tips シリーズ
 date: '2022-05-12'
 tags: ['Next.js', 'Headless']
-draft: true
+draft: false
 summary: Next.js の SDK を利用して Sitecore をヘッドレス CMS で開発をする際の各種ヒントを個別のトピックとして紹介しています。ここでは一覧で表示していますので参考にしてください。
 images: ['/static/images/2022/05/414px-Nextjs-logo.svg.png']
 ---

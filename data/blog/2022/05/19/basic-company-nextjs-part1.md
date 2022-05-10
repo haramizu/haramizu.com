@@ -1,6 +1,6 @@
 ---
 title: Sitecore Helix の Next.js サンプルを動かす - 準備
-date: '2022-05-17'
+date: '2022-05-19'
 tags: ['デモ', 'Next.js', 'Docker']
 draft: true
 summary: Sitecore が提供しているデモ Sitecore Helix に、Next.js をベースにしたサンプルが含まれています。今回は、このサンプルを動かすところまでの手順を紹介していきます。なお、今回は設定までとして、実際にコンテナを起動するのは次回紹介する予定です。
@@ -101,7 +101,7 @@ RENDERING_HOST=www-basic-company-nextjs.sitecoredemo.jp
 
 また証明書に関しては、以前作成をしたファイルをそのまま流用します。
 
-- [Sitecore XM1 で起動しているドメインを変更する](/blog/2022/05/12/sitecore-docker-domain)
+- [Sitecore XM1 で起動しているドメインを変更する](/blog/2022/05/13/sitecore-docker-domain)
 
 **C:\projects\helix-basic-nextjs\docker\traefik\certs** に証明書ファイルをコピー、**C:\projects\helix-basic-nextjs\docker\traefik\config\dynamic\certs_config.yaml** に記載されるファイルの名前を変更しておきます。
 
@@ -131,6 +131,7 @@ Add-HostsEntry "www-basic-company-nextjs.sitecoredemo.jp"
 
 今回はコンテナを起動するにあたって必要となる準備を紹介しました。今回は少し踏み込んで、init.ps1 がどのような動きをしているのかを見てもらいました。次回は、手順に沿ってデモ環境を立ち上げたいと思います。
 
-## 参考サイト
+## 参考情報
 
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)
 - [Troubleshooting unhealthy Sitecore containers on Docker](https://www.logicalfeed.com/posts/1249/troubleshooting-unhealthy-sitecore-containers-on-docker)

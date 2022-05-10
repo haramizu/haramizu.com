@@ -1,6 +1,6 @@
 ---
 title: Sitecore XM1 で起動しているドメインを変更する
-date: '2022-05-12'
+date: '2022-05-13'
 tags: ['Docker', 'Sitecore']
 draft: true
 summary: コンテナで稼働している Sitecore の環境に対して、自己証明書ではなくワイルドカード証明書を利用してサイトを立ち上げる手順を紹介します。これにより、実際の運用に近い形を手元で再現することが可能となります。
@@ -110,4 +110,5 @@ docker-compose up -d
 
 ## 参考情報
 
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)
 - [Sitecore 10 を Docker で実行する - XP1 とドメインの設定](/blog/2020/12/14/sitecore-docker-xp1)

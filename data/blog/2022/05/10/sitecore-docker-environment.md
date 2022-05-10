@@ -193,8 +193,9 @@ Install-Module SitecoreDockerTools
 
 以前は Windows Server 2019 にて Docker を利用する方法を紹介しましたが、今回のように Windows 10/11 Pro でも Hyper-V が利用できるマシンであれば環境を準備することができます。
 
-## 参考ページ
+## 参考情報
 
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)
 - [Sitecore を Docker で動かす – Part 1](/blog/2019/12/26/sitecore-docker-part1)
 - [Sitecore を Docker で動かす – Part 2](/blog/2020/01/08/sitecore-docker-part2)
 - [Sitecore 10 を Docker で実行する](/blog/2020/12/11/sitecore10docker)

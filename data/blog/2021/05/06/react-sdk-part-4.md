@@ -6,6 +6,7 @@ draft: false
 summary: これまでサンプルのアプリケーションを作成して動作確認、という内容を紹介してきました。今回は実際に React のコンポーネントを追加したいと思います。
 images: ['/static/images/2021/05/scaffold03.png']
 ---
+
 これまでサンプルのアプリケーションを作成して動作確認、という内容を紹介してきました。今回は実際に React のコンポーネントを追加したいと思います。
 
 ## jss scaffold ComponentName
@@ -18,7 +19,7 @@ jss scaffold Test
 
 コマンドを実行すると、以下のように結果が表示されます。
 
-![scaffold](/static/images/2021/05/scaffold01.png "scaffold")
+![scaffold](/static/images/2021/05/scaffold01.png 'scaffold')
 
 コンポーネントのデータの定義をするファイルとして sitecore/definitions/components/Test.sitecore.js が生成され、React コンポーネントのファイルとして src/components/Test/index.js が生成されている形です。それぞれのファイルを参照します。
 
@@ -64,7 +65,7 @@ export default function(manifest) {
 
 Test コンポーネントで利用するフィールドとして heading という項目が用意されており、この文字列は SingleLineText として定義されています。
 
-###  src/components/Test/index.js
+### src/components/Test/index.js
 
 続いて React コンポーネントを参照すると、コードは以下のようになっています。
 
@@ -92,17 +93,17 @@ import { Text } from '@sitecore-jss/sitecore-jss-react';
 この２行目で、Sitecore JSS で定義している Text をインポートしています。そしてこれを以下のように HTML に埋め込む形としています。
 
 ```html
-  <div>
-    <p>Test Component</p>
-    <Text field={props.fields.heading} />
-  </div>
+<div>
+  <p>Test Component</p>
+  <Text field="{props.fields.heading}" />
+</div>
 ```
 
 このテストコンポーネントは、Test Component と文字を表示し、その後にコンテンツとしてのテキストを表示する、という動作をすることになります。
 
 ## コンテンツの編集
 
-### jss start 
+### jss start
 
 今回は、Visual Studio Code を利用しているのを前提として作業をしていきます。まず、コンポーネントを追加したプロジェクトが正しく動くかどうか、確認をするために実行します。
 
@@ -112,7 +113,7 @@ jss start
 
 実行すると以下のように表示されます。
 
-![scaffold](/static/images/2021/05/scaffold02.png "scaffold")
+![scaffold](/static/images/2021/05/scaffold02.png 'scaffold')
 
 今回は実行している状態のまま、コンテンツの編集をしてください。
 
@@ -120,7 +121,7 @@ jss start
 
 これを実際のページで利用する際には、以下のファイルがコンテンツとなっているので、編集をします。
 
-* react-app/data/routes/ja-JP.yml
+- react-app/data/routes/ja-JP.yml
 
 元々のファイルでは以下のような記載が入っているとします。
 
@@ -147,7 +148,7 @@ placeholders:
 
 保存をすると改めてコンパイルが実行されて、ブラウザの画面で再読み込みをすると反映されていることがわかります。
 
-![scaffold](/static/images/2021/05/scaffold03.png "scaffold")
+![scaffold](/static/images/2021/05/scaffold03.png 'scaffold')
 
 ## まとめ
 
@@ -155,7 +156,6 @@ placeholders:
 
 次回はこの作成したコンポーネントを編集して、アイテムの編集項目に関しての定義をもう少し追加していきます。
 
-## 参考ページ
-* [UI Components in the JSS React sample app](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/ui-components-in-the-jss-react-sample-app.html)
+## 参考情報
 
-
+- [UI Components in the JSS React sample app](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/ui-components-in-the-jss-react-sample-app.html)

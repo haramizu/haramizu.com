@@ -7,6 +7,8 @@ summary: Sitecore Experience Platform 10.0 において対応を始めた Docker
 images: ['/static/images/2020/12/welcomecms2.png']
 ---
 
+> Docker 関連の記事は [Sitecore Docker シリーズ](/blog/sitecore-docker) にまとめています。
+
 Sitecore Experience Platform 10.0 において対応を始めた Docker 対応、前回は XP0 の環境を立ち上げる手順を紹介しました。今回は、XP1 の環境とドメイン名の設定の変更をしてみます。
 
 ## 前回のおさらい

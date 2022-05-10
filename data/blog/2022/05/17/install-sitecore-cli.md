@@ -1,6 +1,6 @@
 ---
 title: Sitecore CLI のインストール
-date: '2022-05-13'
+date: '2022-05-17'
 tags: ['Sitecore CLI']
 draft: true
 summary: Sitecore には開発効率、運用などで活用できるコマンドラインツールを提供しています。今回は、このツール、Sitecore CLI のインストール手順を紹介します。
@@ -114,6 +114,6 @@ dotnet sitecore plugin list
 
 Sitecore CLI のインストールに関して紹介をしました。ツールの使い方は別の記事で紹介をしますが、Sitecore CLI は今後ブログでも利用していきますので、なるべくインストールをしてください。
 
-## 参考ページ
+## 参考情報
 
 - [Install Sitecore Command Line Interface](https://doc.sitecore.com/xp/en/developers/102/developer-tools/install-sitecore-command-line-interface.html)

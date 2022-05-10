@@ -19,14 +19,13 @@ Google Analytics 連携ができるプラグインは、公式プラグインと
 
 **Tips** すでに package.json の中に `@docusaurus/preset-classic` が含まれている場合はプラグインのインストールは不要です。
 
-
 ```
 yarn add @docusaurus/plugin-google-gtag
 ```
 
 私の環境では `@docusaurus/preset-classic` がすでにセットアップされているので、`docusaurus.config.js` ファイルで定義している themeConfig に対して以下のコードを追加しただけとなります。
 
-``` javascript
+```javascript
 module.exports = {
   themeConfig: {
     gtag: {
@@ -35,7 +34,7 @@ module.exports = {
       anonymizeIP: true, // Should IPs be anonymized?
     },
   },
-};
+}
 ```
 
 これで Google Analytics のタグが埋め込まれました。
@@ -45,7 +44,6 @@ module.exports = {
 サイトマップを追加する場合も以下のようプラグインをインストールします。
 
 **Tips** すでに package.json の中に `@docusaurus/preset-classic` が含まれている場合はプラグインのインストールは不要です。
-
 
 ```
 $ yarn add @docusaurus/plugin-sitemap
@@ -67,20 +65,19 @@ $ yarn add @docusaurus/plugin-sitemap
 
 サイトの /sitemap.xml アクセスすると、サイトマップのファイルが表示されます。
 
-
 ## sidebars.js の変更
 
 今回は、Docusaurus に関するドキュメントを複数のページに分けて作っています。このため、以下のファイルをサイドバーに追加していきます。
 
-* Docusaurus.md
-* Docusaurus-yarn-start.md
-* Docusaurus-site-settings.md
-* Docusaurus-plugin.md
-* Docusaurus-side-bars.md 
-* Docusaurus-docs.md
-* Docusaurus-blog.md
-* Docusaurus-style-guide.md
-* Docusaurus-github"
+- Docusaurus.md
+- Docusaurus-yarn-start.md
+- Docusaurus-site-settings.md
+- Docusaurus-plugin.md
+- Docusaurus-side-bars.md
+- Docusaurus-docs.md
+- Docusaurus-blog.md
+- Docusaurus-style-guide.md
+- Docusaurus-github"
 
 デフォルトの値は sidebars.js の中身は以下のような状態です。
 
@@ -90,8 +87,9 @@ module.exports = {
     Docusaurus: ['doc1', 'doc2', 'doc3'],
     Features: ['mdx'],
   },
-};
+}
 ```
+
 ![img](/static/images/docusause/sidebar-before.png)
 
 基本的には .md ファイルに定義されている id を並べる形となっています。このため、今回は以下のように書き換えます。
@@ -100,19 +98,19 @@ module.exports = {
 module.exports = {
   someSidebar: {
     Docusaurus: [
-      "Docusaurus",
-      "Docusaurus-yarn-start",
-      "Docusaurus-site-settings",
-      "Docusaurus-plugin",
-      "Docusaurus-side-bars", 
-      "Docusaurus-docs",
-      "Docusaurus-blog",
-      "Docusaurus-style-guide",
-      "Docusaurus-github"
+      'Docusaurus',
+      'Docusaurus-yarn-start',
+      'Docusaurus-site-settings',
+      'Docusaurus-plugin',
+      'Docusaurus-side-bars',
+      'Docusaurus-docs',
+      'Docusaurus-blog',
+      'Docusaurus-style-guide',
+      'Docusaurus-github',
     ],
     Features: ['mdx'],
   },
-};
+}
 ```
 
 上記のように変更をすると、左側のメニューに対して各 Markdown のファイルで定義した sidebar_label を利用してメニューが作成されます。
@@ -121,6 +119,6 @@ module.exports = {
 
 注意点としては、 `slug:` で他の Markdown ファイルで定義が被らないようにすること、また `id:` に関しても同様に被らないようにしないといけません。ファイル名と `id` は揃える必要はありませんが、別にして作っていくと対象のコンテンツを見つけるのが難しくなるので、合わせることを推奨します。
 
-## 参考記事
+## 参考情報
 
-* [Plugins](https://docusaurus.io/docs/using-plugins/)
+- [Plugins](https://docusaurus.io/docs/using-plugins/)

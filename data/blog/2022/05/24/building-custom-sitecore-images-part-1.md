@@ -1,6 +1,6 @@
 ---
 title: Sitecore Docker カスタムイメージの利用 - 初期設定
-date: '2022-05-23'
+date: '2022-05-24'
 tags: ['Docker']
 draft: true
 summary: これまでサンプルの Docker のイメージを起動して動作検証をしている形でしたが、実際には必要となるモジュールの入っているイメージを作成していくことになります。今回はサンプルから自分で利用したいカスタムイメージを作成していきます。
@@ -97,6 +97,7 @@ docker-compose -f docker-compose.xm1.yml -f docker-compose.xm1.override.yml up -
 
 今回はサンプルをベースに起動するところまで実行していきました。次回は、不要な部分を削って実際のプロジェクトのベースにできるようにカスタマイズをしていきます。
 
-## 参考ページ
+## 参考情報
 
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)
 - [カスタム Sitecore イメージの作成](https://doc.sitecore.com/xp/ja/developers/101/developer-tools/building-custom-sitecore-images.html)

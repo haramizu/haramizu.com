@@ -1,6 +1,6 @@
 ---
 title: Sitecore CLI のインストール for macOS
-date: '2022-05-20'
+date: '2022-05-23'
 tags: ['Sitecore CLI']
 draft: true
 summary: Sitecore の環境をコマンドラインで制御することができるコマンドラインのツールとして Sitecore コマンドラインインターフェイスが提供されています。今回は、このツールのインストール手順を紹介します。
@@ -11,7 +11,7 @@ Sitecore のコマンドラインツール、Sitecore CLI を今回は macOS に
 
 Windows 環境へのインストールは、すでに以下のページで紹介をしています。
 
-- [Sitecore CLI のインストール](/blog/2022/05/13/install-sitecore-cli)
+- [Sitecore CLI のインストール](/blog/2022/05/17/install-sitecore-cli)
 
 ## インストール
 

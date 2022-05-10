@@ -1,6 +1,6 @@
 ---
 title: Sitecore Docker カスタムイメージの利用 - Sitecore Headless Services のイメージ作成
-date: '2022-05-27'
+date: '2022-05-30'
 tags: ['Docker', 'Headless']
 draft: true
 summary: 前回は Sitecore Management Services のインストールを実施しました。今回はモジュールのインストールとして、Sitecore Headless Services のモジュールをインストールしたいとおもいます。また、標準で SXA のモジュールも入っているため、この後利用することはないため削除してい行きます。前回の Sitecore Management Services と違って、CM サーバー以外にも設定をする必要があるため、同様のモジュールでも同じような手順で進めることが可能です。
@@ -25,11 +25,10 @@ images: ['/static/images/2022/05/customimage23.png']
   cm:
     build:
       args:
-        SXA_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-sxa-xm1-assets:${SXA_VERSION}            
+        SXA_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-sxa-xm1-assets:${SXA_VERSION}
 ```
 
 上記の定義と連携している dockerfile も編集していきます。以下は削除していく項目です。
-
 
 ```yaml:docker\build\solr-init\Dockerfile
 ARG SXA_IMAGE

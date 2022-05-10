@@ -8,6 +8,8 @@ summary: 今回は、Microsoft Azure 上で展開する仮想環境にて、Dock
 images: ['/static/images/2021/05/headless10.png']
 ---
 
+> Docker 関連の記事は [Sitecore Docker シリーズ](/blog/sitecore-docker) にまとめています。
+
 Sitecore の Headless の環境を評価するには、実際のデモを動かしてみるのが一番早いので、GitHub で提供されているデモを実行してみます。環境に関しては、Docker の動作する環境が準備できていれば問題ありません。まだの場合は、以下の記事を参考に構築してみてください。
 
 - [Windows Server で Docker の環境を整える](/blog/2021/05/22/Windows-Server-Docker)

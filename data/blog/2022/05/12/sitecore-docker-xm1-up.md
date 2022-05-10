@@ -1,6 +1,6 @@
 ---
 title: Sitecore XM 10.2 を Docker で実行する
-date: '2022-05-11'
+date: '2022-05-12'
 tags: ['Docker', 'Sitecore']
 draft: true
 summary: 前回は Docker の動く環境を整備するところまで紹介をしました。今回は、Sitecore XM 10.2 を Docker で動作させるところまで紹介をしていきます。

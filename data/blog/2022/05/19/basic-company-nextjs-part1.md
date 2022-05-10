@@ -1,6 +1,6 @@
 ---
 title: Sitecore Helix の Next.js サンプルを動かす - 準備
-date: '2022-05-17'
+date: '2022-05-19'
 tags: ['デモ', 'Next.js', 'Docker']
 draft: true
 summary: Sitecore が提供しているデモ Sitecore Helix に、Next.js をベースにしたサンプルが含まれています。今回は、このサンプルを動かすところまでの手順を紹介していきます。なお、今回は設定までとして、実際にコンテナを起動するのは次回紹介する予定です。

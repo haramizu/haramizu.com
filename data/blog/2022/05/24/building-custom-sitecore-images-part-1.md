@@ -97,6 +97,7 @@ docker-compose -f docker-compose.xm1.yml -f docker-compose.xm1.override.yml up -
 
 今回はサンプルをベースに起動するところまで実行していきました。次回は、不要な部分を削って実際のプロジェクトのベースにできるようにカスタマイズをしていきます。
 
-## 参考ページ
+## 参考情報
 
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)
 - [カスタム Sitecore イメージの作成](https://doc.sitecore.com/xp/ja/developers/101/developer-tools/building-custom-sitecore-images.html)

@@ -61,10 +61,10 @@ images: ['/static/images/2021/08/accessviewer16.png']
 
 違いは以下の通りです。
 
-* Group A のみ Components の読み取り可
-* Group B のみ Content の読み取り可
-* Group A および B は Home、Media、Data を読み取り可
-* 読み取りを設定しないアイテムは権限の継承をしないように設定する
+- Group A のみ Components の読み取り可
+- Group B のみ Content の読み取り可
+- Group A および B は Home、Media、Data を読み取り可
+- 読み取りを設定しないアイテムは権限の継承をしないように設定する
 
 ### ユーザーにロールを割り当てる
 
@@ -90,8 +90,8 @@ Group A と Group B に所属するとどうなるでしょうか？結果とし
 
 もともと Group A でも Group B でも参照できるエリアを設定しているため（今回は Home、Media、Data はどちらのロールでも参照可）、一般的にはユーザーは１つのロールを割り当て、ロールで参照できる範囲のコンテンツを参照、編集するなどができます。一方、複数のロールに所属することで部門を超えて参照をする必要のあるユーザーのみが、多くの情報にアクセスできる、という形も設定できます。
 
-## 参考資料
+## 参考情報
 
-* [セキュリティ ロール](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/the-security-roles.html)
-* [セキュリティ アカウントにアクセス権を割り当てる](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/assign-access-rights-to-a-security-account.html)
-* [セキュリティ ドメイン](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/security-domains.html)
+- [セキュリティ ロール](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/the-security-roles.html)
+- [セキュリティ アカウントにアクセス権を割り当てる](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/assign-access-rights-to-a-security-account.html)
+- [セキュリティ ドメイン](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/security-domains.html)

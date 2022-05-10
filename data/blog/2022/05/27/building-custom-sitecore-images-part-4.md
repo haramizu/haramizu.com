@@ -13,7 +13,7 @@ images: ['/static/images/2022/05/customimage21.png']
 
 まず最初に、Sitecore CLI を現在のプロジェクトで利用できるように、設定を進めていきます。詳しい設定の手順は以下のページに記載しています。
 
-- [Sitecore CLI のインストール](/blog/2022/05/13/install-sitecore-cli)
+- [Sitecore CLI のインストール](/blog/2022/05/17/install-sitecore-cli)
 
 今回は以下のコマンドをプロジェクトのフォルダで実行をしていきます。
 
@@ -107,3 +107,7 @@ dotnet sitecore index schema-populate
 ## まとめ
 
 今回は Sitecore CLI を利用するために必要となる Sitecore Management Services をイメージに含める手順を紹介しました。一度定義したものを作成しておけば比較的簡単に追加することができるのを確認しました。
+
+## 参考情報
+
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)

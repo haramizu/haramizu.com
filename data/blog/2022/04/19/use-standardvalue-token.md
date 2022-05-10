@@ -76,7 +76,7 @@ images: ['/static/images/2022/04/standardvalue07.png']
 
 今回はアイテムを作成した時の初期値の設定方法としてスタンダードバリューの動きを紹介をしました。今回は、$name $date という形でトークンを指定しましたが、標準で設定する値を入れておくことも可能です。こういった機能を利用することで、日頃のコンテンツ制作作業を少しシンプルにすることが出るようになります。
 
-## 参考ページ
+## 参考情報
 
 - [スタンダード バリュー](https://doc.sitecore.com/xp/ja/developers/101/sitecore-experience-manager/standard-values.html)
 - [スタンダード バリューの設定](https://doc.sitecore.com/xp/ja/developers/101/sitecore-experience-manager/configure-standard-values.html)

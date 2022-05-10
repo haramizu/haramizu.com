@@ -439,7 +439,7 @@ export default function(manifest) {
 
 import { withPlaceholder } from '@sitecore-jss/sitecore-jss-react';
 
-## 参考ページ
+## 参考情報
 
 * [Getting into Sitecore JSS, Part 2: UI Frameworks](https://www.techguilds.com/blog/2018/12/sitecore-jss-part-2-ui-frameworks)
 * [Getting into Sitecore JSS, Part 3: NPM and JSS](https://www.techguilds.com/Blog/2018/12/sitecore-jss-part-3-npm)

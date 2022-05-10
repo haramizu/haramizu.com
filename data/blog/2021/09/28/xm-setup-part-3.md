@@ -227,7 +227,7 @@ C:\inetpub\wwwroot\sitecorepublishing
 
 今回 Publishing Service は同じサーバーにインストールをしましたが、手順を見るとわかるようにサイトは別で起動しており、かつデータベース接続を通じて処理をしているため、編集サーバー以外に別途入れることも可能です。リソースの割り当てなどを考えるときに、どのようにインストールをするのかは都度考慮していく形となります。デモ環境などでも、Publishing Service が入っていると公開などの処理も速くなるので、便利なのでこの機会にぜひ試してみてください。
 
-## 参考資料
+## 参考情報
 
 - [Sitecore Publishing Service のインストールおよび設定ガイド](https://doc.sitecore.com/ja/resources/SC-Publishing-Service-5.0-Install-Guide-JA.pdf)
 - [Sitecore Publishing Service モジュールのインストールおよび設定ガイド](https://doc.sitecore.com/ja/resources/SC-Publishing-Service-Module-10.1-Install-&-Config-Guide-JA.pdf) PDF ファイル

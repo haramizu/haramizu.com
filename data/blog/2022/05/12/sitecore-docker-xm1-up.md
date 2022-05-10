@@ -229,6 +229,7 @@ docker-compose up -d
 
 ## 参考情報
 
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)
+- [Sitecore XM を Docker で動かすための環境整備](/blog/2022/05/10/sitecore-docker-environment)
 - [最初の Sitecore インスタンスを実行する](https://doc.sitecore.com/xp/ja/developers/101/developer-tools/run-your-first-sitecore-instance.html)
-- [Sitecore XM を Docker で動かすための環境整備](/blog/2022/05/09/sitecore-docker-environment)
 - [Sitecore 10 を Docker で実行する](/blog/2020/12/11/sitecore10docker)

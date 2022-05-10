@@ -353,7 +353,7 @@ docker-compose down
 
 を実行することで、コンテナが削除されます。改めて、docker-compose up -d を実行することで、初期起動と同じコンテナが作成されます。
 
-## 参考サイト
+## 参考情報
 
 - [最初の Sitecore インスタンスの実行](https://containers.doc.sitecorejp.net/docs/run-sitecore)
 - [Sitecore Experience Platform 10.0](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/100/Sitecore_Experience_Platform_100.aspx)

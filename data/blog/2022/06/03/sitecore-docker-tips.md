@@ -1,6 +1,6 @@
 ---
 title: Sitecore コンテナに関する Tips
-date: '2022-06-02'
+date: '2022-06-03'
 tags: ['Docker', 'Sitecore']
 draft: true
 summary: Sitecore コンテナを利用する上でよく引っかかるポイントをこのページに記載しています。今後、見つけたものは随時追加していきたいと思います。
@@ -70,3 +70,7 @@ Error response from daemon: Unrecognised volume spec: file '\\.\pipe\docker_engi
 公式サイトにもいくつか Tips が記載されています。
 
 - [Docker のトラブルシューティング](https://doc.sitecore.com/xp/ja/developers/101/developer-tools/troubleshooting-docker.html)
+
+## 参考情報
+
+- [Sitecore Docker シリーズ](/blog/sitecore-docker)

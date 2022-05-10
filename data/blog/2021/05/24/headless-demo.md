@@ -138,6 +138,6 @@ jss start
 
 GitHub にあるリポジトリを利用して、Sitecore JavaScript Services が動いている環境を手元で動かすことができました。サンプルのコードでどういう形で実装をしているのか、などみていただくのもいいと思います。
 
-## 参考
+## 参考情報
 
 - [Connected and Integrated Modes Installation](https://github.com/Sitecore/Sitecore.Demo.Headless/blob/main/docs/configuration/installation.md)

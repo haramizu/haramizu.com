@@ -11,7 +11,7 @@ Sitecore のコマンドラインツール、Sitecore CLI を今回は macOS に
 
 Windows 環境へのインストールは、すでに以下のページで紹介をしています。
 
-- [Sitecore CLI のインストール](/blog/2022/05/13/install-sitecore-cli)
+- [Sitecore CLI のインストール](/blog/2022/05/17/install-sitecore-cli)
 
 ## インストール
 

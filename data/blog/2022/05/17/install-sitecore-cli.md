@@ -114,6 +114,6 @@ dotnet sitecore plugin list
 
 Sitecore CLI のインストールに関して紹介をしました。ツールの使い方は別の記事で紹介をしますが、Sitecore CLI は今後ブログでも利用していきますので、なるべくインストールをしてください。
 
-## 参考ページ
+## 参考情報
 
 - [Install Sitecore Command Line Interface](https://doc.sitecore.com/xp/en/developers/102/developer-tools/install-sitecore-command-line-interface.html)

@@ -20,7 +20,7 @@ const projectsData = [
   {
     title: 'Docker シリーズ',
     description: `Sitecore を Docker で利用する際の簡単な手順、Tips を紹介しています。`,
-    imgSrc: '/static/images/2021/09/ordercloud81.png',
+    imgSrc: '/static/images/2022/05/Moby-logo.png',
     href: '/blog/sitecore-docker',
   },
   {

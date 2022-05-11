@@ -2,7 +2,7 @@
 title: Sitecore Docker カスタムイメージの利用 - Sitecore Headless Services のイメージ作成
 date: '2022-05-30'
 tags: ['Docker', 'Headless']
-draft: false
+draft: true
 summary: 前回は Sitecore Management Services のインストールを実施しました。今回はモジュールのインストールとして、Sitecore Headless Services のモジュールをインストールしたいとおもいます。また、標準で SXA のモジュールも入っているため、この後利用することはないため削除してい行きます。前回の Sitecore Management Services と違って、CM サーバー以外にも設定をする必要があるため、同様のモジュールでも同じような手順で進めることが可能です。
 images: ['/static/images/2022/05/customimage23.png']
 ---

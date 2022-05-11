@@ -2,7 +2,7 @@
 title: Sitecore Docker カスタムイメージの利用 - プロジェクトの作成
 date: '2022-05-25'
 tags: ['Docker']
-draft: false
+draft: true
 summary: サンプルのカスタムイメージを利用して起動することができたため、今回は今後利用していく上で不要な部分や、変更するべき点について紹介をしていきます。
 images: ['/static/images/2022/05/customimage12.png']
 ---

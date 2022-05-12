@@ -34,19 +34,19 @@ images: ['/static/images/2022/05/customimage06.png']
 `.env` ファイルで必要となる項目にスクリプトが設定をしていきます。まずはホスト名を変更していきます。今回は以下のように変更をします。
 
 ```
-CD_HOST=cd.sitecoredemo.jp
-CM_HOST=manage.sitecoredemo.jp
-ID_HOST=login.sitecoredemo.jp
-HRZ_HOST=edit.sitecoredemo.jp
+CD_HOST=cd-demo.sitecoredemo.jp
+CM_HOST=manage-demo.sitecoredemo.jp
+ID_HOST=login-demo.sitecoredemo.jp
+HRZ_HOST=edit-demo.sitecoredemo.jp
 ```
 
 host ファイルに対してもこのドメインを追加していきます。
 
 ```
-Add-HostsEntry "cd.sitecoredemo.jp"
-Add-HostsEntry "manage.sitecoredemo.jp"
-Add-HostsEntry "login.sitecoredemo.jp"
-Add-HostsEntry "edit.sitecoredemo.jp"
+Add-HostsEntry "cd-demo.sitecoredemo.jp"
+Add-HostsEntry "manage-demo.sitecoredemo.jp"
+Add-HostsEntry "login-demo.sitecoredemo.jp"
+Add-HostsEntry "edit-demo.sitecoredemo.jp"
 ```
 
 以下の項目に関しても、デフォルトの値から変更をしてください。

@@ -18,6 +18,18 @@ const projectsData = [
     href: '/blog/Sitecore-XM',
   },
   {
+    title: 'Docker シリーズ',
+    description: `Sitecore を Docker で利用する際の簡単な手順、Tips を紹介しています。`,
+    imgSrc: '/static/images/2022/05/Moby-logo.png',
+    href: '/blog/sitecore-docker',
+  },
+  {
+    title: 'Next.js シリーズ',
+    description: `Sitecore ヘッドレスで利用可能な Next.js について、Tips を紹介しています。`,
+    imgSrc: '/static/images/2022/05/414px-Nextjs-logo.svg.png',
+    href: '/blog/sitecore-nextjs',
+  },
+  {
     title: 'OrderCloud シリーズ',
     description: `Sitecore が提供するコマース環境に関する SaaS 製品、OrderCloud に関して記載している記事一覧を紹介しています。`,
     imgSrc: '/static/images/2021/09/ordercloud81.png',

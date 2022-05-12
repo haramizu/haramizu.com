@@ -6,18 +6,6 @@ const projectsData = [
     href: '/blog/sitecore-docs',
   },
   {
-    title: 'Sitecore ヘッドレス シリーズ',
-    description: `ここでは Sitecore ヘッドレスに関する記事を紹介しています。基本的には React および Next.js を利用する手順に関して紹介をしています。`,
-    imgSrc: '/static/images/2021/05/scaffold02.png',
-    href: '/blog/Sitecore-Headless',
-  },
-  {
-    title: 'XM シリーズ',
-    description: `Sitecore XM の環境を作って検証をするための手順の記事を紹介しています。`,
-    imgSrc: '/static/images/2021/09/xm09.png',
-    href: '/blog/Sitecore-XM',
-  },
-  {
     title: 'Docker シリーズ',
     description: `Sitecore を Docker で利用する際の簡単な手順、Tips を紹介しています。`,
     imgSrc: '/static/images/2022/05/Moby-logo.png',
@@ -28,6 +16,18 @@ const projectsData = [
     description: `Sitecore ヘッドレスで利用可能な Next.js について、Tips を紹介しています。`,
     imgSrc: '/static/images/2022/05/414px-Nextjs-logo.svg.png',
     href: '/blog/sitecore-nextjs',
+  },
+  {
+    title: 'Sitecore ヘッドレス シリーズ',
+    description: `ここでは Sitecore ヘッドレスに関する記事を紹介しています。基本的には React および Next.js を利用する手順に関して紹介をしています。`,
+    imgSrc: '/static/images/2021/05/scaffold02.png',
+    href: '/blog/Sitecore-Headless',
+  },
+  {
+    title: 'XM シリーズ',
+    description: `Sitecore XM の環境を作って検証をするための手順の記事を紹介しています。`,
+    imgSrc: '/static/images/2021/09/xm09.png',
+    href: '/blog/Sitecore-XM',
   },
   {
     title: 'OrderCloud シリーズ',

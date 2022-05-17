@@ -195,6 +195,7 @@ Install-Module SitecoreDockerTools
 
 ## 参考情報
 
+- [環境の設定](https://doc.sitecore.com/xp/ja/developers/101/developer-tools/set-up-the-environment.html)
 - [Sitecore Docker シリーズ](/blog/sitecore-docker)
 - [Sitecore を Docker で動かす – Part 1](/blog/2019/12/26/sitecore-docker-part1)
 - [Sitecore を Docker で動かす – Part 2](/blog/2020/01/08/sitecore-docker-part2)

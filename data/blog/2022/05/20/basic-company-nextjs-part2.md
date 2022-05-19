@@ -2,7 +2,7 @@
 title: Sitecore Helix の Next.js サンプルを動かす - コンテナを起動する
 date: '2022-05-20'
 tags: ['デモ', 'Next.js', 'Docker']
-draft: true
+draft: false
 summary: 前回は環境を準備するところまでとして、コンテナを起動することはありませんでした。今回は、サンプルを実行するためのスクリプト up.ps1 を参考にしながらどういう形でコンテナを起動することになるのかを確認していきます。
 images: ['/static/images/2022/05/sample20.png']
 ---

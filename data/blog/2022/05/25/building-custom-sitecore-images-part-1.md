@@ -2,7 +2,7 @@
 title: Sitecore Docker カスタムイメージの利用 - 初期設定
 date: '2022-05-25'
 tags: ['Docker']
-draft: true
+draft: false
 summary: これまでサンプルの Docker のイメージを起動して動作検証をしている形でしたが、実際には必要となるモジュールの入っているイメージを作成していくことになります。今回はサンプルから自分で利用したいカスタムイメージを作成していきます。
 images: ['/static/images/2022/05/customimage06.png']
 ---

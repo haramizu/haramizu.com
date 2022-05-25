@@ -1,6 +1,6 @@
 ---
 title: Sitecore CLI シリーズ
-date: '2022-06-03'
+date: '2022-06-06'
 tags: ['Sitecore CLI']
 draft: true
 summary: Sitecore CLI はコマンドラインで Sitecore を制御することができる非常に便利な機能です。このシリーズでは、Sitecore CLI の環境を整備する手順や関連機能について紹介をしています。
@@ -11,8 +11,8 @@ Sitecore CLI はコマンドラインで Sitecore を制御することができ
 
 - [Sitecore CLI のインストール](/blog/2022/05/17/install-sitecore-cli)
 - [Sitecore CLI のインストール for macOS](/blog/2022/05/23/install-sitecore-cli-macos)
-- [Sitecore CLI を利用してコンテンツのインポート](/blog/2022/05/31/sitecore-cli-import)
-- [Sitecore CLI を利用してコンテンツのエクスポート](/blog/2022/06/01/sitecore-cli-export)
+- [Sitecore CLI を利用してコンテンツのインポート](/blog/2022/06/02/sitecore-cli-import)
+- [Sitecore CLI を利用してコンテンツのエクスポート](/blog/2022/06/03/sitecore-cli-export)
 
 ## Sitecore CLI コマンド
 

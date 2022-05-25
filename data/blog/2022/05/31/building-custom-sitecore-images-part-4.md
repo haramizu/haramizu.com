@@ -1,6 +1,6 @@
 ---
 title: Sitecore Docker カスタムイメージの利用 - Sitecore Management Services のインストール
-date: '2022-05-30'
+date: '2022-05-31'
 tags: ['Docker', 'Sitecore CLI']
 draft: true
 summary: カスタムイメージに対して、 Sitecore CLI でアクセスをして作業をすることができるように、Sitecore Management Services を追加したいとおもいます。この機能が CM サーバーに入っていない場合は、Sitecore CLI を利用することができません。今回はコンテナでの設定に関して説明をしていきますが、そのほかの環境に関してはパッケージを利用してインストールをしてください。

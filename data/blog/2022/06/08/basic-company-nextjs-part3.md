@@ -1,6 +1,6 @@
 ---
 title: Sitecore Helix の Next.js サンプルを動かす - テンプレートの変更
-date: '2022-06-06'
+date: '2022-06-07'
 tags: ['Next.js', 'Sitecore CLI']
 draft: true
 summary: Sitecore Helix のサンプルを以前動作しましたが、今回はこれまで作成してきたイメージを利用して、同じように動作する環境を準備したいと思います。

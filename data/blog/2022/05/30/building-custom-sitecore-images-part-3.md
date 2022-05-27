@@ -11,41 +11,68 @@ images: ['/static/images/2022/05/customimage14.png']
 
 ## CM サーバーへのファイル展開
 
-今回のデモ環境としては、**C:\projects\sitecoredemo-jp\docker\deploy\website** というフォルダがプロジェクトに含まれており、ここにファイルを配置すると CM サーバーのリソースとして動かすことができます。
+CM サーバーに対してリソースをコピーすることで、日本語化することが可能となります。イメージをビルドする際に、対象となるファイルをコピーするようにします。まず、ローカライズをするリソースファイルのパスを今回は以下のように設定をします。
 
-まず最初に日本語のリソースを入手していきます。今回は、Sitecore Experience Platform の日本語リソース、Sitecore Experience Accelerator の日本語リソースをそれぞれのページからダウンロードをします。
+C:\projects\sitecoredemo-jp\docker\build\cm\localization
+
+日本語のリソースファイルは、以下のページからダウンロードすることができます。今回は、Sitecore Experience Platform の日本語リソースページからダウンロードして展開します。
 
 - https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/102/Sitecore_Experience_Platform_102.aspx
-- https://dev.sitecore.net/Downloads/Sitecore_Experience_Accelerator/10x/Sitecore_Experience_Accelerator_1020.aspx
 
-これらのファイルに関して、上記のフォルダに App_Data というフォルダを作成して、リソースを展開します。
+これらのファイルに関して、上記のフォルダにリソースを展開します。
 
 ![customimage](/static/images/2022/05/customimage13.png)
 
-コンテナを起動したあと、以下の手続きを進めていきます。
+続いて C:\projects\sitecoredemo-jp\docker\build\cm\Dockerfile の Dockerfile がイメージをビルドする際の定義となりますので、以下の１行を追加します。色々なデータをコピーしているため、その最後に入れておく形で問題ありません。
 
-1. ログインします
-2. Desktop を開きます
-3. データベースを Core に切り替えます
-4. Control Panel を開いて、 Add a new language をクリック
-5. Japanese - Japan を追加します
-6. Desktop を開きます
-7. データベースを Master に切り替えます
-8. User Manager を開きます
-9. Admin の設定を開きます
-10. Language Settings の Client Language を Japanese(Japan) を選択します
-11. ログアウトします
-12. Admin でログインします
+```dockerfile
+# Copy Localization Files
+COPY .\localization \inetpub\wwwroot\App_Data
+```
 
-上記の手順が終わったところで管理画面が日本語になりました。
+ファイルの更新が終わったら、このイメージをビルドし直します。
+
+```psh
+docker-compose build cm
+```
+
+あとは以下の手順となります。
+
+1. docker-comopse up -d で起動する
+2. ログインをする
+3. デスクトップを開いて Core データベースに切り替える
+4. コントロールパネルを開いて言語の追加、日本語を追加する
+5. Master データベースに戻す
+6. ユーザーの表示言語を日本語にする
+
+これで日本語の UI に切り替えることができました。
 
 ![customimage](/static/images/2022/05/customimage14.png)
 
+実際にコンテナにファイルがコピーされているか確認をします。Visual Studio Code のコンテナ一覧から CM を右クリックで選択して、`Attache Shell` を実行します。
+
+![customimage](/static/images/2022/05/customimage25.png)
+
+コマンドラインで App_Data\localization に移動して dir コマンドを実行すると、ファイルがコピーされていることがわかります。
+
+![customimage](/static/images/2022/05/customimage26.png)
+
 ## 追加のリソースファイル
 
-上記のログインでは、PowerShell に関するリソースが不足していることがわかります。このアイコンに関するリソースファイルは https://github.com/SitecoreJapan/InstallScript/tree/master/101 の powershell-report-ja-jp.xml ファイルになります。これを、 **C:\projects\sitecoredemo-jp\docker\deploy\website** の下に temp フォルダを作成してファイルをコピーします。
+上記のログインでは、PowerShell に関するリソースが不足していることがわかります。このアイコンに関するリソースファイルは https://github.com/SitecoreJapan/InstallScript/tree/master/101 の powershell-report-ja-jp.xml ファイルになります。C:\projects\sitecoredemo-jp\docker\build\cm\temp\ というフォルダを作成してファイルをコピーします。続いて Dockerfile に以下のコピーを追加します。
 
-ファイルを配置したあと、以下の手順でインポートをしていきます。
+```dockerfile
+# Copy temp file
+COPY .\temp \inetpub\wwwroot\temp\import
+```
+
+改めてイメージを build しなおします。
+
+```psh
+docker-compose build cm
+```
+
+新しいイメージでコンテナを起動すると、ファイルが temp\import の下に配置されていることを確認できます。あとは以下の手順でリソースのインポートとなります。
 
 1. コントロールパネルを開く
 2. 言語ファイルをインポートするをクリック
@@ -53,28 +80,13 @@ images: ['/static/images/2022/05/customimage14.png']
 
 ![customimage](/static/images/2022/05/customimage15.png)
 
-インポートが完了しました。ここでリソースがそのまま保持されるかどうかを確認するために、リスタートをかけます。
-
-```
-docker-compose restart
-```
-
-ログインしても保持されていることがわかります。
+インポートを完了させると、PowerShell のアイコンも日本語のリソースが適用されているのがわかります。
 
 ![customimage](/static/images/2022/05/customimage16.png)
 
-続いてコンテナを削除したあとでも日本語化されているかどうかを確認します。
-
-```
-docker-compose down
-docker-compose up -d
-```
-
-問題なく、日本語化されていることも確認できています。これは、SQL Server のファイルが `docker\data\mssql` の下で展開しており、コンテナを一度落としてもデータは保持されているのを確認できた形です。
-
 ## まとめ
 
-今回は日本語化の手順を通じて、サーバーにファイルを展開する方法、Core データベースに必要なデータを入れて反映させる手順を紹介しました。起動しているコンテナに対してアップロードの手順を実施した際には、改めてコンテナを起動した時にはイメージに含まれていないため、日本語リソースがないイメージが起動することになりますが、ファイルを配置しておくことで参照できるようにしています。
+今回は日本語化の手順を通じて、イメージの中にファイルをコピーする手順を確認しました。合わせて、temp フォルダを経由してリソースファイルをイメージに含めて、 Core データベースに必要なデータを入れて反映させる手順を紹介しました。今後はこのイメージファイルは日本語のリソースを常にインポートしており、言語の追加作業および不足リソースの追加だけで管理画面の日本語化をいつでも行えるようになりました。
 
 ## 参考情報
 

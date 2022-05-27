@@ -4,7 +4,7 @@ date: '2022-05-30'
 tags: ['Docker']
 draft: false
 summary: カスタムイメージの作成ができましたが、管理画面などは英語のままとなっています。日本語を扱うことができるように、日本語リソースの追加と設定の追加に関しての手順を紹介していきます。
-images: ['/static/images/2022/05/customimage14.png']
+images: ['/static/images/2022/05/customimage16.png']
 ---
 
 カスタムイメージの作成ができましたが、管理画面などは英語のままとなっています。日本語を扱うことができるように、日本語リソースの追加と設定の追加に関しての手順を紹介していきます。
@@ -21,7 +21,7 @@ C:\projects\sitecoredemo-jp\docker\build\cm\localization
 
 これらのファイルに関して、上記のフォルダにリソースを展開します。
 
-![customimage](/static/images/2022/05/customimage13.png)
+<Image alt="customimage" src="/static/images/2022/05/customimage13.png" width={400} height={453} />
 
 続いて C:\projects\sitecoredemo-jp\docker\build\cm\Dockerfile の Dockerfile がイメージをビルドする際の定義となりますので、以下の１行を追加します。色々なデータをコピーしているため、その最後に入れておく形で問題ありません。
 
@@ -51,11 +51,11 @@ docker-compose build cm
 
 実際にコンテナにファイルがコピーされているか確認をします。Visual Studio Code のコンテナ一覧から CM を右クリックで選択して、`Attache Shell` を実行します。
 
-![customimage](/static/images/2022/05/customimage25.png)
+<Image alt="customimage" src="/static/images/2022/05/customimage25.png" width={400} height={322} />
 
 コマンドラインで App_Data\localization に移動して dir コマンドを実行すると、ファイルがコピーされていることがわかります。
 
-![customimage](/static/images/2022/05/customimage26.png)
+<Image alt="customimage" src="/static/images/2022/05/customimage26.png" width={600} height={335} />
 
 ## 追加のリソースファイル
 

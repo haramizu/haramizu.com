@@ -1,10 +1,10 @@
 ---
 title: Sitecore Content Hub と CI HUB - Figma 編
-date: '2022-06-08'
+date: '2022-06-10'
 tags: ['Content Hub', 'CI HUB', 'Figma']
 draft: true
 summary: Adobe Creative Cloud および Microsoft Office と日頃から利用するであろうツール以外にも CI HUB は対応しています。今回はデザインツールである Figma との連携について紹介をします。
-images: ['/static/images/2022/03/component06.gif']
+images: ['/static/images/2022/06/figma04.png']
 ---
 
 Adobe Creative Cloud および Microsoft Office と日頃から利用するであろうツール以外にも CI HUB は対応しています。今回はデザインツールである Figma との連携について紹介をします。

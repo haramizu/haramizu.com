@@ -1,10 +1,10 @@
 ---
 title: Sitecore Content Hub と CI HUB - Microsoft Office 編
-date: '2022-06-08'
+date: '2022-06-09'
 tags: ['Content Hub', 'CI HUB']
 draft: true
 summary: Sitecore Content Hub をさまざまなアプリケーションと連携することができるツールを CI HUB という会社が提供しているいます。前回の Adobe Creative Cloud の連携に続いて、Microsoft Office との連携について紹介をします。
-images: ['/static/images/2022/03/component06.gif']
+images: ['/static/images/2022/06/office04.png']
 ---
 
 Sitecore Content Hub をさまざまなアプリケーションと連携することができるツールを CI HUB という会社が提供しているいます。前回の Adobe Creative Cloud の連携に続いて、Microsoft Office との連携について紹介をします。

@@ -4,7 +4,7 @@ date: '2022-06-08'
 tags: ['Content Hub', 'CI HUB']
 draft: true
 summary: Sitecore Content Hub をさまざまなアプリケーションと連携することができるツールを CI HUB という会社が提供しているいます。このコネクタを利用することで、DAM の利用に関しての可能性を広げます。今回は Adobe Creative Cloud のコネクタのインストール、利用方法に関して紹介をします。
-images: ['/static/images/2022/03/component06.gif']
+images: ['/static/images/2022/06/adobe15.png']
 ---
 
 Sitecore Content Hub をさまざまなアプリケーションと連携することができるツールを CI HUB という会社が提供しているいます。このコネクタを利用することで、DAM の利用に関しての可能性を広げます。今回は Adobe Creative Cloud のコネクタのインストール、利用方法に関して紹介をします。

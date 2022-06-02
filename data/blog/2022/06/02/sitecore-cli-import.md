@@ -2,7 +2,7 @@
 title: Sitecore CLI を利用してコンテンツのインポート
 date: '2022-06-02'
 tags: ['Sitecore CLI']
-draft: true
+draft: false
 summary: Sitecore の環境をコマンドラインで制御することができるコマンドラインのツールとして Sitecore コマンドラインインターフェイスが提供されています。今回は、このツールを利用して、サンプルのデータを利用してインポートを実行する手順について確認をしていきます。
 images: ['/static/images/2022/06/cli10.png']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore CLI を利用してコンテンツのエクスポート
 date: '2022-06-03'
 tags: ['Sitecore CLI']
-draft: true
+draft: false
 summary: 前回の Sitecore CLI を利用してコンテンツのインポートの設定の状況から、Sitecore にアイテムを作成してエクスポートをする手順を確認します。インポート、エクスポートができるようになることで、作成したデータをコードで管理することが簡単にできるようになります。
 images: ['/static/images/2022/06/cli13.png']
 ---

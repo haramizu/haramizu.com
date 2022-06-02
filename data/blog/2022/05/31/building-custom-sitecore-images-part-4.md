@@ -56,7 +56,7 @@ dotnet sitecore index schema-populate
 まず最初に `.env` ファイルに、以下の１行を追加してください。イメージリポジトリを設定する形です。
 
 ```
-MANAGEMENT_SERVICES_VERSION=4.1-1809
+MANAGEMENT_SERVICES_VERSION=4.2-1809
 ```
 
 これは定義を `.env` に記載しているだけなので、docker-compose はどのインスタンスに入れるべきか判断することができません。今回は `docker-compose.override.yml` のファイルに１行追加してください。

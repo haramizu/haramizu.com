@@ -30,7 +30,7 @@ dotnet sitecore plugin add -n Sitecore.DevEx.Extensibility.Publishing
 この状態で起動している Sitecore にアクセスをします。
 
 ```
-dotnet sitecore login --cm https://manage.sitecoredemo.jp/ --auth https://login.sitecoredemo.jp/ --allow-write true
+dotnet sitecore login --cm https://manage.sitecoredemo.localhost/ --auth https://login.sitecoredemo.localhost/ --allow-write true
 ```
 
 ![customimage](/static/images/2022/05/customimage18.png)

@@ -2,7 +2,7 @@
 title: Sitecore CLI シリーズ
 date: '2022-06-06'
 tags: ['Sitecore CLI']
-draft: true
+draft: false
 summary: Sitecore CLI はコマンドラインで Sitecore を制御することができる非常に便利な機能です。このシリーズでは、Sitecore CLI の環境を整備する手順や関連機能について紹介をしています。
 images: ['/static/images/2022/05/cli01.png']
 ---

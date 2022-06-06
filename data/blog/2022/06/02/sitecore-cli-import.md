@@ -31,7 +31,7 @@ docker-compose up -d
 続いて Sitecore CLI のコマンドを利用してログインを実行します。
 
 ```
-dotnet sitecore login --cm https://manage-demo.sitecoredemo.jp/ --auth https://login-demo.sitecoredemo.jp/ --allow-write true
+dotnet sitecore login --cm https://manage.sitecoredemo.localhost/ --auth https://login.sitecoredemo.localhost/ --allow-write true
 ```
 
 コマンドを実行するとウィンドウが開いてログイン、コマンドラインからアクセスできるようにします。

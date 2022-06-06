@@ -30,7 +30,7 @@ dotnet sitecore plugin add -n Sitecore.DevEx.Extensibility.Publishing
 この状態で起動している Sitecore にアクセスをします。
 
 ```
-dotnet sitecore login --cm https://manage.sitecoredemo.jp/ --auth https://login.sitecoredemo.jp/ --allow-write true
+dotnet sitecore login --cm https://manage.sitecoredemo.localhost/ --auth https://login.sitecoredemo.localhost/ --allow-write true
 ```
 
 ![customimage](/static/images/2022/05/customimage18.png)
@@ -73,7 +73,7 @@ MANAGEMENT_SERVICES_VERSION=4.2-1809
 ```yml:docker\build\cm\Dockerfile
 ARG MANAGEMENT_SERVICES_IMAGE
 
-FROM ${MANAGEMENT_SERVICES_IMAGE} AS management_services
+FROM ${MANAGEMENT_SERVICES_IMAGE} as management_services
 
 # Copy the Sitecore Management Services Module
 COPY --from=management_services C:\module\cm\content C:\inetpub\wwwroot

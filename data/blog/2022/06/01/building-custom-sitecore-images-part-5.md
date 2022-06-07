@@ -15,6 +15,8 @@ images: ['/static/images/2022/05/customimage23.png']
 
 ```yaml:docker-compose.override.yml
   solr-init:
+    build:
+      args:
         SXA_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-sxa-xm1-assets:${SXA_VERSION}
 
   cd:
@@ -26,6 +28,10 @@ images: ['/static/images/2022/05/customimage23.png']
     build:
       args:
         SXA_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-sxa-xm1-assets:${SXA_VERSION}
+
+  hrz:        
+    environment:
+      Sitecore_Plugins__Filters__ExperienceAccelerator: +SXA    
 ```
 
 上記の定義と連携している dockerfile も編集していきます。以下は削除していく項目です。
@@ -125,7 +131,7 @@ RUN C:\module\tools\Initialize-Content.ps1 -TargetPath C:\inetpub\wwwroot; `
 ```yml:docker\build\mssql-init\Dockerfile
 ARG HEADLESS_SERVICES_IMAGE
 
-FROM ${HEADLESS_SERVICES_IMAGE} AS headless_services
+FROM ${HEADLESS_SERVICES_IMAGE} as headless_services
 
 # Add Headless module
 COPY --from=headless_services C:\module\db C:\jss_data

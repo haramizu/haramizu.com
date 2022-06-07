@@ -34,19 +34,19 @@ images: ['/static/images/2022/05/customimage06.png']
 `.env` ファイルで必要となる項目にスクリプトが設定をしていきます。まずはホスト名を変更していきます。今回は以下のように変更をします。
 
 ```
-CD_HOST=cd.sitecoredemo.localhost
-CM_HOST=manage.sitecoredemo.localhost
-ID_HOST=login.sitecoredemo.localhost
-HRZ_HOST=edit.sitecoredemo.localhost
+CD_HOST=cd.sitecoredemojp.localhost
+CM_HOST=cm.sitecoredemojp.localhost
+ID_HOST=id.sitecoredemojp.localhost
+HRZ_HOST=hrz.sitecoredemojp.localhost
 ```
 
 host ファイルに対してもこのドメインを追加していきます。
 
 ```
-Add-HostsEntry "cd.sitecoredemo.localhost"
-Add-HostsEntry "manage.sitecoredemo.localhost"
-Add-HostsEntry "login.sitecoredemo.localhost"
-Add-HostsEntry "edit.sitecoredemo.localhost"
+Add-HostsEntry "cd.sitecoredemojp.localhost"
+Add-HostsEntry "cm.sitecoredemojp.localhost"
+Add-HostsEntry "id.sitecoredemojp.localhost"
+Add-HostsEntry "hrz.sitecoredemojp.localhost"
 ```
 
 以下の項目に関しても、デフォルトの値から変更をしてください。
@@ -58,16 +58,12 @@ SQL_SA_PASSWORD
 
 また証明書は以下の手順で作成をします。 docker\traefik\certs のフォルダに移動をして、mkcert のコマンドでファイルを作成します。
 
+```
+mkcert -key-file key.pem -cert-file cert.pem "*.sitecoredemojp.localhost"
+```
+
 ![customimage](/static/images/2022/05/customimage03.png)
 
-２つのファイルをそれぞれ設定をします。
-
-```yaml:C:\projects\sitecoredemo-jp\docker\traefik\config\dynamic\certs_config.yaml
-tls:
-  certificates:
-    - certFile: C:\etc\traefik\certs\_wildcard.sitecoredemo.localhost.pem
-      keyFile: C:\etc\traefik\certs\_wildcard.sitecoredemo.localhost-key.pem
-```
 
 ## XM のイメージを実行
 

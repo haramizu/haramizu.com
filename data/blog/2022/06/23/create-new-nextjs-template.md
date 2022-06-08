@@ -1,6 +1,6 @@
 ---
 title: Sitecore JSS 20.0 からの新しいテンプレート作成方法
-date: '2022-06-13'
+date: '2022-06-23'
 tags: ['Headless', 'Next.js']
 draft: true
 summary: これまでサンプルのアプリを利用する際には、Sitecore JSS のコマンドとして jss を利用していました。Sitecore JSS 20.0 からはコマンドの動作が更新され便利な機能が提供されるようになりました。そこで今回は、新しいテンプレートの作成方法に関して確認をしていきます。

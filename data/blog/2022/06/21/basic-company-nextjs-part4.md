@@ -1,6 +1,6 @@
 ---
 title: Sitecore Helix の Next.js サンプルを動かす - Next.js アプリの追加
-date: '2022-06-13'
+date: '2022-06-21'
 tags: ['Next.js', 'Sitecore CLI']
 draft: true
 summary: Sitecore Helix のサンプルに関して以前一度動作確認をしました。今回から数回に分けて、これまで作成してきたイメージを利用して、Sitecore Helix と同等の環境をサンプルコードを利用して準備していきたいと思います。

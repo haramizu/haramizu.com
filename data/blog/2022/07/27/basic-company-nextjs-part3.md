@@ -44,7 +44,7 @@ dotnet sitecore ser push
 
 インポートが完了すると、コンテンツエディターからアクセスをするとサイトに必要な情報が含まれていることがわかります。
 
-![sample](/static/images/2022/06/sample01.png)
+![sample](/static/images/2022/07/sample01.png)
 
 ## Node.js のコンテナを追加する
 
@@ -178,7 +178,7 @@ docker-compose up -d
 
 コンテナが起動していることを確認できました。しかしながら、２つほどコンテナが起動していない状況です。
 
-![sample](/static/images/2022/06/sample02.png)
+![sample](/static/images/2022/07/sample02.png)
 
 これは Next.js のプロジェクトに関しての設定が不足しているためです。
 

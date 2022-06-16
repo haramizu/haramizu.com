@@ -38,43 +38,43 @@ cd src
 npm init sitecore-jss
 ```
 
-![nextjs](/static/images/2022/06/nextjs01.png)
+![nextjs](/static/images/2022/07/nextjs01.png)
 
 ここでは y を選択して進めると、続いてどのテンプレートをベースにするか確認が表示されます。
 
-![nextjs](/static/images/2022/06/nextjs02.png)
+![nextjs](/static/images/2022/07/nextjs02.png)
 
 今回は nextjs のまま進めるので、キーボードで Enter をタイプすることで画面が切り替わります。続いてディレクトリの指定が表示されます。
 
-![nextjs](/static/images/2022/06/nextjs03.png)
+![nextjs](/static/images/2022/07/nextjs03.png)
 
 続いてアプリの名前が表示されます。今回は sitecoredemo-jp とします。
 
-![nextjs](/static/images/2022/06/nextjs04.png)
+![nextjs](/static/images/2022/07/nextjs04.png)
 
 Sitecore のホスト名が表示されます。これまでの環境では manage-demo.sitecoredemo.jp としていたので、この値を設定します。
 
-![nextjs](/static/images/2022/06/nextjs05.png)
+![nextjs](/static/images/2022/07/nextjs05.png)
 
 GraphQL か REST にするのかの確認が表示されるため、GraphQL を選択します。
 
-![nextjs](/static/images/2022/06/nextjs06.png)
+![nextjs](/static/images/2022/07/nextjs06.png)
 
 続いて SSG （スタティクサイトジェネレーター）なのか SSR （サーバーサイドレンダリング）の確認が表示されます。ここでは SSG を選択します。
 
-![nextjs](/static/images/2022/06/nextjs07.png)
+![nextjs](/static/images/2022/07/nextjs07.png)
 
 テンプレートのデータが必要かどうかが表示されます。今回は取り急ぎテンプレートを入れたいと思いますので、スペースキーをタイプしてチェックしている状態で進めます。
 
-![nextjs](/static/images/2022/06/nextjs08.png)
+![nextjs](/static/images/2022/07/nextjs08.png)
 
 追加の言語の確認が表示されます。先々を考えて `ja-JP` を追加しておきます。
 
-![nextjs](/static/images/2022/06/nextjs09.png)
+![nextjs](/static/images/2022/07/nextjs09.png)
 
 これでコマンドによる確認は終了となり、`npm install` が実行されます。
 
-![nextjs](/static/images/2022/06/nextjs10.png)
+![nextjs](/static/images/2022/07/nextjs10.png)
 
 しばらくするとテンプレートの完成です。
 

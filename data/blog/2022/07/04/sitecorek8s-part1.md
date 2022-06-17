@@ -1,5 +1,5 @@
 ---
-title: Sitecore を AKS に展開する - 環境を整える
+title: Sitecore on Azure Kubernetes Service - 環境を整える
 date: '2022-07-04'
 tags: ['AKS', 'インストール']
 draft: true

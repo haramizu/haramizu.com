@@ -13,7 +13,7 @@ images: ['/static/images/2022/07/aks14.png']
 
 - [Azure Kubernetes Service (AKS)](https://docs.microsoft.com/ja-jp/azure/aks/)
 
-## Azure CLI を開く
+## Azure Cloud Shell を開く
 
 今回は作業環境は Azure ポータルで提供されている Cloud Shell を利用していきます。Cloud Shell を起動する方法は、Azure ポータルの上のメニューにある一番左のアイコンをクリックすることで起動します。
 

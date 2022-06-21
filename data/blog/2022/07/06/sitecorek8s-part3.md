@@ -3,11 +3,13 @@ title: Sitecore on Azure Kubernetes Service - AKS に展開
 date: '2022-07-06'
 tags: ['AKS', 'インストール']
 draft: true
-summary: Sitecore を AKS を利用して展開するための設定手順について、今回は各種設定ファイルの中のデータを作成していきます。設定ファイルのデータは実際に展開する際のデータとして利用するものになります。
-images: ['/static/images/2022/07/sitecoreaks07.png']
+summary: Sitecore を Azure Kubernetes Service に展開するための準備としてこれまで2回に分けて紹介をしてきました。今回は準備が整っている状況ですので、Sitecore を Azure 上に展開していきます。
+images: ['/static/images/2022/07/sitecoreaks27.png']
 ---
 
-これまで2回に分けて準備を進めてきたデータを利用して、Sitecore を Azure 上に展開したいと思います。これまでの記事は以下の通りです。
+Sitecore を Azure Kubernetes Service に展開するための準備としてこれまで2回に分けて紹介をしてきました。今回は準備が整っている状況ですので、Sitecore を Azure 上に展開していきます。
+
+これまでの記事は以下の通りです。
 
 - [環境を整える](/blog/2022/07/04/sitecorek8s-part1)
 - [展開前の設定](/blog/2022/07/05/sitecorek8s-part2)

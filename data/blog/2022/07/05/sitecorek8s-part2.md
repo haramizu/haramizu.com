@@ -4,7 +4,7 @@ date: '2022-07-05'
 tags: ['AKS', 'インストール']
 draft: true
 summary: Sitecore を AKS を利用して展開するための設定手順について、今回は各種設定ファイルの中のデータを作成していきます。設定ファイルのデータは実際に展開する際のデータとして利用するものになります。
-images: ['/static/images/2022/07/sitecoreaks06.png']
+images: ['/static/images/2022/07/sitecoreaks07.png']
 ---
 
 Sitecore を AKS を利用して展開するための設定手順について、今回は各種設定ファイルの中のデータを作成していきます。設定ファイルのデータは実際に展開する際のデータとして利用するものになります。

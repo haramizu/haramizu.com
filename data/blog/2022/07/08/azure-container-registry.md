@@ -1,6 +1,6 @@
 ---
 title: Azure Container Registry を利用する - チュートリアル
-date: '2022-07-06'
+date: '2022-07-08'
 tags: ['Docker', 'Azure チュートリアル']
 draft: true
 summary: Docker のコンテナ管理をすることができる Azure の機能である　Azure Container Registry に関して、今回はチュートリアルを実施していきます。詳しくは、マイクロソフトのサイトで掲載されていますのでこちらを参照していただきつつ、今回のブログではダイジェストで実施していきます。

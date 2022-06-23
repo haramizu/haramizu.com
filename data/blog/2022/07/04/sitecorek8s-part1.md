@@ -60,6 +60,8 @@ az account set --subscription "YourSubscriptionName"
 
 別のサブスクリプションに切り替えることが出来ました。このサブスクリプションで利用できるデータセンターを調べます。
 
+c:¥projects¥license¥license.xml
+
 ```
 az account list-locations --output table
 ```
@@ -84,7 +86,7 @@ az aks get-versions --location japaneast --output table
 
 注意：日本語版のガイドではこのリンクが 10.1 になっています。
 
-ダウンロードした SitecoreContainerDeployment.10.2.0.006766.683.zip の中にある k8s\ltsc2019\xm1 を今回は利用します。このフォルダを c:\projects\k8sxm1 にコピーします。
+ダウンロードした SitecoreContainerDeployment.10.2.0.006766.683.zip の中にある k8s\ltsc2019\xm1 を今回は利用します。このフォルダを c:\projects\aksxm1 にコピーします。
 
 ## 証明書ファイルの展開
 
@@ -95,7 +97,7 @@ az aks get-versions --location japaneast --output table
 ```
 cd C:\Projects\license
 openssl pkcs12 -in sitecoredemo20220411.pfx -clcerts -nokeys -out C:\Projects\aksxm1\secrets\tls\global-cd\tls.crt
-openssl pkcs12 -in "/projects/license/sitecoredemo20220411.pfx" -nocerts -nodes -out C:\Projects\aksxm1\secrets\tls\global-cd\tls.key
+openssl pkcs12 -in sitecoredemo20220411.pfx -nocerts -nodes -out C:\Projects\aksxm1\secrets\tls\global-cd\tls.key
 ```
 
 ![AKS](/static/images/2022/07/sitecoreaks06.png)

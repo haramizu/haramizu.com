@@ -7,7 +7,7 @@ summary: Sitecore を Azure Kubernetes Service に展開するための準備と
 images: ['/static/images/2022/07/sitecoreaks27.png']
 ---
 
-Sitecore を Azure Kubernetes Service に展開するための準備としてこれまで2回に分けて紹介をしてきました。今回は準備が整っている状況ですので、Sitecore を Azure 上に展開していきます。
+Sitecore を Azure Kubernetes Service に展開するための準備としてこれまで 2 回に分けて紹介をしてきました。今回は準備が整っている状況ですので、Sitecore を Azure 上に展開していきます。
 
 これまでの記事は以下の通りです。
 
@@ -55,7 +55,7 @@ az aks create --resource-group jpn-tokyo-shin-aksxm1 --name SitecoredemoCluster 
 
 ![AKS](/static/images/2022/07/sitecoreaks10.png)
 
-このタイミングで、リソースグループ一覧を見に行くと MC_ がついているリソースグループが追加されています。
+このタイミングで、リソースグループ一覧を見に行くと MC\_ がついているリソースグループが追加されています。
 
 ![AKS](/static/images/2022/07/sitecoreaks12.png)
 
@@ -74,7 +74,6 @@ az aks nodepool add --resource-group jpn-tokyo-shin-aksxm1 --cluster-name Siteco
 しばらくするとノードプールが追加されます。Azure ポータルサイトに行くと、以下のように確認ができます。
 
 ![AKS](/static/images/2022/07/sitecoreaks11.png)
-
 
 作成をした設定を、ローカルで利用できるようにクレデンシャルを取得します。
 
@@ -126,7 +125,7 @@ kubectl apply -k ./secrets/
 
 ## 非本番環境向けの External Service の起動
 
-本番環境の場合は別途 SQL Database などを準備する必要がありますが、今回は展開の練習でもあるため個別に準備しないで展開したいと思います。まず External の構成ファイルを使用して、選択したノードにスケジューリングされるPodを作成します。
+本番環境の場合は別途 SQL Database などを準備する必要がありますが、今回は展開の練習でもあるため個別に準備しないで展開したいと思います。まず External の構成ファイルを使用して、選択したノードにスケジューリングされる Pod を作成します。
 
 ```
 kubectl apply -k ./external/
@@ -238,4 +237,4 @@ localhost に IP アドレスとサーバー名を記載してください。記
 
 ## まとめ
 
-Docker を利用してコンテナベースで Sitecore を動かす手順をこれまで紹介していましたが、3回に分けて手順を紹介していきましたが Azure Kubernetes Service で動作させることが出来ました。まず起動するところまで、というところで３回目で区切りをつけますが、今後は起動している環境を利用して構成をすこしづつ変更していきたいと思います。
+Docker を利用してコンテナベースで Sitecore を動かす手順をこれまで紹介していましたが、3 回に分けて手順を紹介していきましたが Azure Kubernetes Service で動作させることが出来ました。まず起動するところまで、というところで３回目で区切りをつけますが、今後は起動している環境を利用して構成をすこしづつ変更していきたいと思います。

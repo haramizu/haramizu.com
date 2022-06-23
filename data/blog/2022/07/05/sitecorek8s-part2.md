@@ -14,7 +14,7 @@ Sitecore を AKS を利用して展開するための設定手順について、
 Kubernates の各種設定をパラメーターとして持つことができるように、`secrets` というフォルダにテキストファイル、それに伴う設定を入れていく必要があります。この手順に関しては展開ガイドの 1.3.4 に設定に関して記載されていますが、詳細は 4.5 のリストを見るとわかります。XM1 の場合に設定が必要なファイルは以下通りです。
 
 | ファイル名                                          | 概要                             | デフォルトの値                                                       |
-|-----------------------------------------------------|----------------------------------|----------------------------------------------------------------------|
+| --------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | sitecore-license.txt                                | ライセンスファイル               |                                                                      |
 | sitecore-adminpassword.txt                          | 管理者パスワード                 |                                                                      |
 | sitecore-telerikencryptionkey.txt                   | Telerik Web キー                 |                                                                      |
@@ -53,7 +53,7 @@ Kubernates の各種設定をパラメーターとして持つことができる
 
 ### sitecore-license.txt
 
-Sitecore のライセンスに関する情報をテキストに設定する必要があります。ここでは SitecoreDockerTools のモジュールを利用して作成するのが簡単なため、まず `C:\Projects\aksxm1\secrets` のフォルダに `.env` ファイルを作成します。ファイルの中は1行だけ記載してください。
+Sitecore のライセンスに関する情報をテキストに設定する必要があります。ここでは SitecoreDockerTools のモジュールを利用して作成するのが簡単なため、まず `C:\Projects\aksxm1\secrets` のフォルダに `.env` ファイルを作成します。ファイルの中は 1 行だけ記載してください。
 
 ```
 SITECORE_LICENSE=
@@ -94,7 +94,7 @@ Set-DockerComposeEnvFileVariable "SITECORE_ID_CERTIFICATE_PASSWORD" -Value $idCe
 それぞれの値が .env ファイルに生成されています。生成された値を以下のファイルにコピーしてください。
 
 | ファイル名                               | 項目                             |
-|------------------------------------------|----------------------------------|
+| ---------------------------------------- | -------------------------------- |
 | sitecore-identitysecret.txt              | SITECORE_IDSECRET                |
 | sitecore-identitycertificate.txt         | SITECORE_ID_CERTIFICATE          |
 | sitecore-identitycertificatepassword.txt | SITECORE_ID_CERTIFICATE_PASSWORD |

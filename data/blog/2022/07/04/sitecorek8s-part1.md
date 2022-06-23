@@ -28,8 +28,8 @@ images: ['/static/images/2022/07/sitecoreaks05.png']
 - Kubernetes 1.16x 以降
   - すでに Docker Desktop をインストールしていたのでインストール不要
   - `kubectl version --short` でバージョンの確認が可能
-- Azure CLI 
-    - インストール手順 https://docs.microsoft.com/ja-jp/cli/azure/install-azure-cli-windows?tabs=azure-cli
+- Azure CLI
+  - インストール手順 https://docs.microsoft.com/ja-jp/cli/azure/install-azure-cli-windows?tabs=azure-cli
 - Helm 3.0.x 以降
 - Sitecore SXP 10.2.0 Container Deployment Package （Web サイトからダウンロード）
 
@@ -53,7 +53,7 @@ az account list --output table
 一番右側に表示されている IsDefault が一番上が True になっていますが、以下のコマンドで切り替えることができます。
 
 ```
-az account set --subscription "SA-APAC_JP-SE-DEMO-INT-NHE-2500"
+az account set --subscription "YourSubscriptionName"
 ```
 
 ![AKS](/static/images/2022/07/sitecoreaks03.png)

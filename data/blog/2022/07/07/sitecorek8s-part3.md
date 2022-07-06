@@ -1,6 +1,6 @@
 ---
 title: Sitecore on Azure Kubernetes Service - AKS に展開
-date: '2022-07-08'
+date: '2022-07-07'
 tags: ['AKS', 'インストール']
 draft: false
 summary: Sitecore を Azure Kubernetes Service に展開するための準備としてこれまで2回に分けて紹介をしてきました。今回は準備が整っている状況ですので、Sitecore を Azure 上に展開していきます。

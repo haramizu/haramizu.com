@@ -71,7 +71,7 @@ Create API Key のボタンを押すと以下の画面となります。
 
 メールのテンプレートは、以下のフォルダにサンプルが入っています。
 
-src/Middleware/src/Headstart.Common/Assets/EmailTemplates
+assets\templates\email
 
 作成方法は以下の通りです。
 

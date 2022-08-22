@@ -1,10 +1,10 @@
 ---
 title: Sitecore on Azure Kubernetes Service - macOS からの展開
-date: '2022-07-08'
+date: '2022-08-23'
 tags: ['AKS', 'インストール']
 draft: false
 summary: Sitecore を Azure Kubernetes Service に展開する手順を紹介してきました。今回は、macOS において同様の処理ができる環境を整える手順を確認していきます。
-images: ['/static/images/2022/07/macos01.png']
+images: ['/static/images/2022/07/sitecoreaks27.png']
 ---
 
 Sitecore を Azure Kubernetes Service に展開する手順を紹介してきました。今回は、macOS において同様の処理ができる環境を整える手順を確認していきます。
@@ -29,8 +29,6 @@ Sitecore を Azure Kubernetes Service に展開する手順を紹介してきま
 brew update && brew install azure-cli
 ```
 
-![AKS](/static/images/2022/07/macos01.png)
-
 最後に helm をインストールします。このコマンドも Homebrew でインストールすることができます。
 
 - [Installing Helm](https://helm.sh/docs/intro/install/)
@@ -38,8 +36,6 @@ brew update && brew install azure-cli
 ```
 brew install helm
 ```
-
-![AKS](/static/images/2022/07/macos02.png)
 
 ##　展開する
 

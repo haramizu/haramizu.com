@@ -26,8 +26,9 @@ images: ['/static/images/2022/03/component06.gif']
 
 1. [Sitecore Experience Manager 10.2 のインストール](/blog/2021/09/22/xm-setup-part-1)
 2. [Sitecore Experience Accelerator インストール](/blog/2021/09/27/xm-setup-part-2)
-4. [Sitecore Headless Rendering インストール](/blog/2021/09/29/xm-setup-part-4)
-5. [Sitecore Connect for Content Hub 5.0 のインストール](/blog/2022/03/22/sitecore-connect-for-content-hub-5.0)
+3. [Sitecore Headless Rendering インストール](/blog/2021/09/29/xm-setup-part-4)
+4. [Sitecore Connect for Content Hub 5.0 のインストール](/blog/2022/03/22/sitecore-connect-for-content-hub-5.0)
+5. [Sitecore Horizon](/blog/2022/03/23/install-horizon)
 
 インストールをしたモジュールは以下の通りです。
 
@@ -35,6 +36,7 @@ images: ['/static/images/2022/03/component06.gif']
 - Sitecore Experience Accelerator 10.2
 - Sitecore Headless Rendering 20.0.0
 - Sitecore Connect for Content Hub 5.0
+- Sitecore Horizon 10.2
 
 ## 動作確認
 
@@ -56,3 +58,10 @@ http://your-sitecore-instance/sitecore/api/layout/render/jss?item=/&sc_apikey=TE
 
 ![install](/static/images/2022/08/install02.png)
 
+7. Horizon を管理画面から起動することができるのを確認します。
+
+上記が動けば、サーバーの準備は完了となります。
+
+## まとめ
+
+記事としては短いですが、ここがベースとなって今後進んでいきます。次回は、Docker コンテナを利用いしたいと思います。

@@ -66,6 +66,7 @@ param
 | $InstanceName             | sitecore                                    | インストールしているインスタンスの名前                        |
 | $SitecoreAdminPass        | b                                           | 管理者のパスワード                                            |
 | $SqlPass                  | Password12345                               | SQL Server のパスワード                                       |
+| $SqlInstanceName          | $InstanceName                               | データベースの Prefix を設定（ XM1 など）                      |
 | $SkipDatabaseInstallation | $false                                      | 10.2 の場合は $true に設定                                    |
 
 上記の設定に問題なければ、PowerShell で実行してください。

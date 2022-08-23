@@ -37,6 +37,11 @@ images: ['/static/images/2022/08/install01.png']
 - Sitecore Headless Rendering 20.0.0
 - Sitecore Connect for Content Hub 5.0
 - Sitecore Horizon 10.2
+- Sitecore Management Service 
+
+Sitecore Management Service のモジュールは、Sitecore CLI のページからダウンロードが可能です。
+
+- https://dev.sitecore.net/Downloads/Sitecore_CLI/4x/Sitecore_CLI_421.aspx
 
 ## 動作確認
 

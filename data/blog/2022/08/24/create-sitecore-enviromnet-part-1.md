@@ -1,10 +1,10 @@
 ---
-title: Sitecore Headless 開発、テスト環境の構築 Part 1 - サーバーの準備（前編）
-date: '2022-08-23'
-tags: ['Headless', 'Next.js']
-draft: true
+title: Sitecore Headless 開発、テスト環境の構築 Part 1 - サーバーの準備（サーバー編）
+date: '2022-08-24'
+tags: ['Headless']
+draft: false
 summary: １か月ほどブログの記事を掲載していませんでしたが、これまでの Tips を改めてまとめるシリーズを作成するために少し時間をいただきました。今回のシリーズで、Sitecore Headless を手元で動かし、サーバーに反映させて、実際に Web サーバーに展開するという形が可能な環境を構築していきたいと思います。
-images: ['/static/images/2022/03/component06.gif']
+images: ['/static/images/2022/08/install01.png']
 ---
 
 １か月ほどブログの記事を掲載していませんでしたが、これまでの Tips を改めてまとめるシリーズを作成するために少し時間をいただきました。今回のシリーズで、Sitecore Headless を手元で動かし、サーバーに反映させて、実際に Web サーバーに展開するという形が可能な環境を構築していきたいと思います。
@@ -37,6 +37,11 @@ images: ['/static/images/2022/03/component06.gif']
 - Sitecore Headless Rendering 20.0.0
 - Sitecore Connect for Content Hub 5.0
 - Sitecore Horizon 10.2
+- Sitecore Management Service 
+
+Sitecore Management Service のモジュールは、Sitecore CLI のページからダウンロードが可能です。
+
+- https://dev.sitecore.net/Downloads/Sitecore_CLI/4x/Sitecore_CLI_421.aspx
 
 ## 動作確認
 

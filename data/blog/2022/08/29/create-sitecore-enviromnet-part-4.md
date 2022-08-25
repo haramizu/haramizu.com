@@ -17,7 +17,9 @@ images: ['/static/images/2022/08/docker11.png']
 - Sitecore Experience Accelerator 10.2
 - Sitecore Connect for Content Hub 5.0.0
 
-ファイルをダウンロードした後、次はファイルを展開する形となります。 `docker\build\cm\Data` のフォルダを作成、その下に App_Data のフォルダを作成します。このフォルダに上記のリソースファイルを展開してください。展開した状況はいかのようになります。
+ファイルをダウンロードした後、次はファイルを展開する形となります。 `docker\build\cm\Data` のフォルダを作成、その下に App_Data のフォルダを作成します。**注意** 前回の記事で Sitecore Content Hub Connector をインストールしている場合は、同じコードが記載されているため不要です。
+
+このフォルダに上記のリソースファイルを展開してください。展開した状況は以下のようになります。
 
 ![install](/static/images/2022/08/docker10.png)
 

@@ -2,7 +2,7 @@
 title: Sitecore Headless 開発、テスト環境の構築 Part 3 - コンテナにモジュールのインストール - Content Hub コネクタ
 date: '2022-08-26'
 tags: ['Headless', 'Docker','Content Hub']
-draft: true
+draft: false
 summary: コンテナの環境をサーバーと同じ環境に整えていくために、Docker でも各種モジュールを利用できるようにしていきます。現在利用している Docker のコンテナには SXA および Horizon までは設定されているため、不足している分を随時インストールしていきます。
 images: ['/static/images/2022/08/docker08.png']
 ---
@@ -78,9 +78,9 @@ DAM_ExternalRedirectKey=Sitecore
       Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${DAM_ExternalRedirectKey}
 ```
 
-コンテナを動かすにあたって、web.config の値を設定する必要があります。この記述に関しては cm および cd の dockerfile のあるフォルダに transforms というフォルダを作成して、以下のファイルを作成します。
+コンテナを動かすにあたって、`web.config` および `connectionstrings.config` の値を設定する必要があります。この記述に関しては cm および cd の中に Data というフォルダを作成し、その中に transforms というフォルダを作成します。直下に web.config.cm.xdt を設定します。
 
-```xml:docker\build\cm\transforms\Web.config.xdt
+```xml:docker\build\cm\Data\transforms\web.config.cm.xdt
 <?xml version="1.0" encoding="utf-8"?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <location>
@@ -88,35 +88,81 @@ DAM_ExternalRedirectKey=Sitecore
       <httpProtocol>
         <customHeaders>
           <!-- CSP -->
-          <add xdt:Transform="SetAttributes" xdt:Locator="Match(name)" name="Content-Security-Policy" value="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://apps.sitecore.net https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net https://stylelabs.eu.auth0.com https://login.windows.net https://login.microsoftonline.com https://*.boxever.com; img-src 'self' data: https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; frame-ancestors 'self' https://sh.edge.localhost https://*.sitecoredemo.com;"/>
+          <add xdt:Transform="SetAttributes" xdt:Locator="Match(name)" name="Content-Security-Policy" value="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://apps.sitecore.net https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net https://stylelabs.eu.auth0.com https://login.windows.net https://login.microsoftonline.com https://*.boxever.com https://*.xmcloudcm.localhost; img-src 'self' data: https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net https://*.gravatar.com https://*.wp.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; frame-ancestors 'self' https://*.sitecoredemo.localhost https://*.xmcloudcm.localhost https://*.sitecoredemo.com;"/>
         </customHeaders>
       </httpProtocol>
     </system.webServer>
   </location>
-  <system.webServer>
-    <httpProtocol>
-      <customHeaders>
-        <add name="Docker-Examples" xdt:Locator="Match(name)" value="Role transform" xdt:Transform="SetAttributes(value)" />
-      </customHeaders>
-    </httpProtocol>
-  </system.webServer>
   <runtime>
-    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-      <!-- first completely remove the parent element -->
-      <dependentAssembly xdt:Transform="RemoveAll"
-                         xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'System.Runtime.CompilerServices.Unsafe'))">
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" xdt:Transform="InsertIfMissing">
+      <!-- Include binding redirects for CH Connector 5.0.0 on XM -->
+      <dependentAssembly xdt:Transform="Remove" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Extensions.Caching.Abstractions')">
       </dependentAssembly>
-      <!-- then add the new block -->
-      <dependentAssembly xdt:Transform="Insert">
-        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-4.0.4.1" newVersion="4.0.4.0 " />
+      <dependentAssembly xdt:Transform="Remove" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Extensions.Primitives')">
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Remove" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Azure.ServiceBus')">
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Remove" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Azure.Amqp')">
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Remove" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Extensions.Caching.Memory')">
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Remove" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Remotion.Linq')">
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Insert" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Extensions.Caching.Abstractions')">
+        <assemblyIdentity name="Microsoft.Extensions.Caching.Abstractions" publicKeyToken="adb9793829ddae60" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.14.0" newVersion="3.1.14.0" />
+        <codeBase version="2.1.2.0" href="bin/Microsoft.Extensions.Caching.Abstractions.dll" />
+        <codeBase version="3.1.5.0" href="bin/Microsoft.Extensions.Caching.Abstractions.dll" />
+        <codeBase version="3.1.14.0" href="bin/scch/Microsoft.Extensions.Caching.Abstractions.dll" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Insert" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Extensions.Primitives')">
+        <assemblyIdentity name="Microsoft.Extensions.Primitives" publicKeyToken="adb9793829ddae60" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.14.0" newVersion="3.1.14.0" />
+        <codeBase version="2.1.1.0" href="bin/Microsoft.Extensions.Primitives.dll" />
+        <codeBase version="3.1.5.0" href="bin/Microsoft.Extensions.Primitives.dll" />
+        <codeBase version="3.1.14.0" href="bin/scch/Microsoft.Extensions.Primitives.dll" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Insert" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Azure.ServiceBus')">
+        <assemblyIdentity name="Microsoft.Azure.ServiceBus" publicKeyToken="7e34167dcc6d6d8c" />
+        <codeBase version="3.1.0.0" href="bin/Microsoft.Azure.ServiceBus.dll" />
+        <codeBase version="3.2.1.0" href="bin/Microsoft.Azure.ServiceBus.dll" />
+        <codeBase version="4.1.2.0" href="bin/scch/Microsoft.Azure.ServiceBus.dll" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Insert" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Azure.Amqp')">
+        <assemblyIdentity name="Microsoft.Azure.Amqp" publicKeyToken="31bf3856ad364e35" />
+        <codeBase version="2.3.0.0" href="bin/Microsoft.Azure.Amqp.dll" />
+        <codeBase version="2.4.0.0" href="bin/scch/Microsoft.Azure.Amqp.dll" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Insert" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Extensions.Caching.Memory')">
+        <assemblyIdentity name="Microsoft.Extensions.Caching.Memory" publicKeyToken="adb9793829ddae60" />
+        <codeBase version="2.1.2.0" href="bin/Microsoft.Extensions.Caching.Memory.dll" />
+        <codeBase version="3.1.5.0" href="bin/Microsoft.Extensions.Caching.Memory.dll" />
+        <codeBase version="3.1.14.0" href="bin/scch/Microsoft.Extensions.Caching.Memory.dll" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="Insert" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Remotion.Linq')">
+        <assemblyIdentity name="Remotion.Linq" publicKeyToken="fee00910d6e5f53b"/>
+        <codeBase version="2.2.0.0" href="bin/scch/Remotion.Linq.dll"/>
       </dependentAssembly>
     </assemblyBinding>
   </runtime>
 </configuration>
 ```
 
-上記の内容に関しては、`docker\build\cd\transforms\Web.config.xdt` のファイルも同じ内容として変更をしてください。
+続いて App_Config のフォルダを作成し、その下に `ConnectionStrings.config.connectors.xdt` のファイルを作成して、以下のコードを記載します。
+
+```xml:docker\build\cm\Data\transforms\App_Config\ConnectionStrings.config.connectors.xdt
+<connectionStrings configBuilders="SitecoreConnectionStringsBuilder" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <add name="CMP.ServiceBusEntityPathIn" connectionString="" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  <add name="CMP.ServiceBusEntityPathOut" connectionString="" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  <add name="CMP.ServiceBusSubscription" connectionString="" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  <add name="CMP.ContentHub" connectionString="" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  <add name="DAM.ContentHub" connectionString="" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  <add name="DAM.SearchPage" connectionString="" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+  <add name="DAM.ExternalRedirectKey" connectionString="Sitecore" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+</connectionStrings>
+```
+
+上記の内容に関しては、cd のは以下にも同じように配置してください。
 
 準備が整ったところで、`cm` および `cd` に関しての Dockerfile の変更を実行します。
 
@@ -128,38 +174,24 @@ FROM ${CONTENTHUB_ASSETS_IMAGE} AS ch_assets
 # Add SCCH module 5.0.0
 COPY --from=ch_assets \module\cm\content .\
 
-# Copy role transforms
-COPY .\transforms\ \transforms\role\
+# Copy CM Resource
+COPY .\Data\ .\
 
-# Perform role transforms
-RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path .\ -XdtPath C:\transforms\role
+# Perform transforms
+RUN (Get-ChildItem -Path 'C:\\inetpub\\wwwroot\\transforms\\web*.xdt' -Recurse ) | `
+    ForEach-Object { & 'C:\\tools\\scripts\\Invoke-XdtTransform.ps1' -Path 'C:\\inetpub\\wwwroot\\web.config' -XdtPath $_.FullName `
+    -XdtDllPath 'C:\\tools\\bin\\Microsoft.Web.XmlTransform.dll'; };
 
-# Apply SCCH transformation files
-RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path C:\inetpub\wwwroot -XdtPath \inetpub\wwwroot\App_Data\Transforms\scch\xdts
+RUN (Get-ChildItem -Path 'C:\\inetpub\\wwwroot\\transforms\\app_config\\ConnectionStrings*.xdt' -Recurse ) | `
+    ForEach-Object { & 'C:\\tools\\scripts\\Invoke-XdtTransform.ps1' -Path 'C:\\inetpub\\wwwroot\\app_config\\ConnectionStrings.config' -XdtPath $_.FullName `
+    -XdtDllPath 'C:\\tools\\bin\\Microsoft.Web.XmlTransform.dll'; };
 ```
 
-`cd` に関しては以下の記述が必要となります。
-
-```dockerfile:docker\build\cd\Dockerfile
-ARG CONTENTHUB_ASSETS_IMAGE
-
-FROM ${CONTENTHUB_ASSETS_IMAGE} AS ch_assets
-
-# Add SCCH module 5.0.0
-COPY --from=ch_assets \module\cm\content .\
-
-# Copy role transforms
-COPY .\transforms\ \transforms\role\
-
-# Perform role transforms
-RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path .\ -XdtPath C:\transforms\role
-```
-
-これで準備が出来ました。 .env ファイルに Sitecore Content Hub と接続するための文字列を設定して、コンテナをビルドし直して実行してください。接続文字列を作成する方法は、サーバーにモジュールをインストールする手順のところで紹介しています。
+これで準備が出来ました。 .env ファイルに Sitecore Content Hub と接続するための文字列を設定して、コンテナを再ビルド、実行してください。接続文字列を作成する方法は、サーバーにモジュールをインストールする手順のところで紹介しています。
 
 - [Sitecore Connect for Content Hub 5.0 のインストール](/blog/2022/03/22/sitecore-connect-for-content-hub-5.0)
 
-Sitecore Content Hub を連携させるインスタンスとして、今回のデモ用の CM サーバーを追加する必要があります。手順は以下の通りです。
+Sitecore Content Hub 側の設定を追加で実施する必要があります。今回、連携する Content Hub のインスタンスに対して、今回のデモ用の CM サーバーを追加する必要があります。手順は以下の通りです。
 
 - 管理ツールを開く
 - 設定を開く

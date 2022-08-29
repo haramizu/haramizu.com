@@ -2,7 +2,7 @@
 title: Next.js サンプルサイトの追加（前編）
 date: '2022-08-30'
 tags: ['Headless', 'Next.js']
-draft: true
+draft: false
 summary: ４回に分けて作成をしてきた環境にはまだ Next.js のプロジェクトがないため、サンプルサイトを追加していきます。プロジェクトにコードを追加する形です。この手順は２回に分けて紹介をしていく予定です。今回は、まず Next.js のサンプルが動くところまで進めていきます。
 images: ['/static/images/2022/08/nextjs07.png']
 ---

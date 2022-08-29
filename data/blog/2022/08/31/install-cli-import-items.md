@@ -3,15 +3,15 @@ title: Sitecore CLI を利用してアイテムのインポート
 date: '2022-08-31'
 tags: ['Headless', 'Next.js']
 draft: true
-summary: 前回は単なるテンプレートとなるサーバーを用意しましたが、今回はローカルで表示するための
-images: ['/static/images/2022/03/component06.gif']
+summary: 前回は Next.js のテンプレートをプロジェクトに追加しましたが、この段階では Sitecore には何もデータが無いためエラーとなります。そこで、Sitecore CLI を利用して、サンプルデータをインポートしたいと思います。
+images: ['/static/images/2022/08/cli06.png']
 ---
 
-以前に紹介したことのある Sitecore CLI を利用して、前回の記事で作成した Next.js で動作するサンプルアプリをインポートしたいと思います。
+前回は Next.js のテンプレートをプロジェクトに追加しましたが、この段階では Sitecore には何もデータが無いためエラーとなります。そこで、Sitecore CLI を利用して、サンプルデータをインポートしたいと思います。
 
 ## Sitecore CLI のインストール
 
-インストールに関する手順は以下のブログですでに紹介をしています。
+データをインポートするためのツールに関して、今回は Sitecore CLI を利用します。インストールに関する手順は以下のブログですでに紹介をしています。
 
 - [Sitecore CLI のインストール](/blog/2022/05/18/install-sitecore-cli)
 
@@ -53,6 +53,16 @@ dotnet sitecore plugin list
 .sitecore/package-cache/
 ```
 
+Sitecore CLI でコンテナで起動している Sitecore に繋がるか調べるために、以下のコマンドを実行します。
+
+```
+dotnet sitecore login --cm https://cm.sitecoredemo.localhost --auth https://id.sitecoredemo.localhost --allow-write true
+dotnet sitecore index schema-populate                                                                                   
+```
+
+![cli](/static/images/2022/08/cli03.png)
+
+コマンドラインで Sitecore にアクセスできることを確認できました。
 
 ## アイテムを準備する
 
@@ -67,7 +77,22 @@ dotnet sitecore plugin list
 
 上記２つに関して、同じ階層にファイルをコピーしてください。コピーをした後のファイルは以下のようになります。
 
-![cli](/static/images/2022/08/cli03.png)
+![cli](/static/images/2022/08/cli04.png)
 
 ## Sitecore にインポートをする
 
+上記のアイテムをインポートをする際には、以下のコマンドを利用することでインポートが可能です。
+
+```
+dotnet sitecore ser push
+```
+
+![cli](/static/images/2022/08/cli05.png)
+
+アイテムがインポートされました。Sitecore のコンテンツエディタにアクセスすると以下のようになっています。
+
+![cli](/static/images/2022/08/cli06.png)
+
+## まとめ
+
+今回は Next.js のテンプレートで利用するサンプルのアイテムを Sitecore CLI で一括インポートを実施しました。次回は、Next.js と Sitecore を接続してページの表示ができる手順を紹介します。

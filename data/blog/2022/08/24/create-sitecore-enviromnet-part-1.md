@@ -27,15 +27,17 @@ images: ['/static/images/2022/08/install01.png']
 1. [Sitecore Experience Manager 10.2 のインストール](/blog/2021/09/22/xm-setup-part-1)
 2. [Sitecore Experience Accelerator インストール](/blog/2021/09/27/xm-setup-part-2)
 3. [Sitecore Headless Rendering インストール](/blog/2021/09/29/xm-setup-part-4)
-4. [Sitecore Connect for Content Hub 5.0 のインストール](/blog/2022/03/22/sitecore-connect-for-content-hub-5.0)
-5. [Sitecore Horizon](/blog/2022/03/23/install-horizon)
+4. [Sitecore Horizon](/blog/2022/03/23/install-horizon)
+
+**注意** 当初 Content Hub のコネクタも紹介していましたが、一部うまく動かないケースがあったため外しておきます。回避方法が見つかったら改めてアップデートします。
+
+- [Sitecore Connect for Content Hub 5.0 のインストール](/blog/2022/03/22/sitecore-connect-for-content-hub-5.0)
 
 インストールをしたモジュールは以下の通りです。
 
 - Sitecore Experience Manager 10.2
 - Sitecore Experience Accelerator 10.2
 - Sitecore Headless Rendering 20.0.0
-- Sitecore Connect for Content Hub 5.0
 - Sitecore Horizon 10.2
 - Sitecore Management Service 
 

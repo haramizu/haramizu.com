@@ -3,8 +3,8 @@ title: エクスペリエンス エディターを利用できるようにする
 date: '2022-09-05'
 tags: ['Headless', 'Next.js', 'Vercel']
 draft: true
-summary: 前々回に Next.js のテンプレートの準備を、前回はそれを利用するための Sitecore にアイテムをインポートする手順を紹介しました。今回は Next.js の設定を変更して、Sitecore のアイテムを参照してページが表示されるところまで紹介をします。
-images: ['/static/images/2022/03/component06.gif']
+summary: 前回は Vercel に新しいサイトを展開することができました。このインスタンスを利用して、エクスペリエンスエディターでページの編集をできるように進めていきます。
+images: ['/static/images/2022/09/vercel06.png']
 ---
 
 前回は Vercel に新しいサイトを展開することができました。このインスタンスを利用して、エクスペリエンスエディターでページの編集をできるように進めていきます。

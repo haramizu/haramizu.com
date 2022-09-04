@@ -2,7 +2,7 @@
 title: エクスペリエンス エディターを利用できるようにする
 date: '2022-09-05'
 tags: ['Headless', 'Next.js', 'Vercel']
-draft: true
+draft: false
 summary: 前回は Vercel に新しいサイトを展開することができました。このインスタンスを利用して、エクスペリエンスエディターでページの編集をできるように進めていきます。
 images: ['/static/images/2022/09/vercel06.png']
 ---

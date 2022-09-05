@@ -2,7 +2,7 @@
 title: Vercel に展開する
 date: '2022-09-02'
 tags: ['Headless', 'Next.js','Vercel']
-draft: true
+draft: false
 summary: これまで作成をしてきた Web サイトを Vercel に展開したいと思います。シリーズの最初の頃に立ち上げたサーバーに対してサンプルのデータを展開、合わせて Vercel に展開する手順を紹介していきます。
 images: ['/static/images/2022/09/vercel05.png']
 ---

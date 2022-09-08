@@ -4,7 +4,7 @@ date: '2022-09-16'
 tags: ['Headless', 'Next.js']
 draft: true
 summary: 前々回に Next.js のテンプレートの準備を、前回はそれを利用するための Sitecore にアイテムをインポートする手順を紹介しました。今回は Next.js の設定を変更して、Sitecore のアイテムを参照してページが表示されるところまで紹介をします。
-images: ['/static/images/2022/09/vercel06.png']
+images: ['/static/images/2022/09/project09.png']
 ---
 
 これまで複数回に分けてプロジェクトを作成してきましたが、毎回同じことを実施するのは面倒です。そこで、これまでの手順を省略して環境を起動する手順を紹介します。

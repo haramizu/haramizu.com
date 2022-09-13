@@ -1,6 +1,6 @@
 ---
 title: Sitecore Headless 開発、テスト環境の構築 Part 6 - エクスペリエンス エディターを利用できるようにする
-date: '2022-09-13'
+date: '2022-09-15'
 tags: ['Headless', 'Next.js']
 draft: true
 summary: 前回は Node.js をベースとしたコンテナを立ち上げて、そのコンテナで Next.js を起動しました。Next.js は Sitecore からデータを取得してページを表示している形です。今回は、Sitecore が Node.js のコンテナに接続して、エクスペリエンスエディターが起動するところまで進めていきます。

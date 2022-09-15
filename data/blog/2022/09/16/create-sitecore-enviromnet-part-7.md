@@ -2,7 +2,7 @@
 title: Sitecore Headless 開発、テスト環境の構築 Part 7 - プロジェクトの整理（ CD サーバーの削除 ）
 date: '2022-09-16'
 tags: ['Headless', 'Next.js']
-draft: true
+draft: false
 summary: すでにプロジェクトとしてはヘッドレスの検証環境を用意した形となりますが、今回と次回で不要な部分を削除、整理していきたいと思います。今回はヘッドレスで起動することになったので、CD サーバーの構成を削除したいと思います。
 images: ['/static/images/2022/09/rendering02.png']
 ---

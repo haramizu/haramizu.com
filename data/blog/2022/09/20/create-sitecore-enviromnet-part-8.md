@@ -2,7 +2,7 @@
 title: Sitecore Headless 開発、テスト環境の構築 Part 8 - プロジェクトの整理（ 設定の一元管理 ）
 date: '2022-09-20'
 tags: ['Headless', 'Next.js']
-draft: true
+draft: false
 summary: テスト環境の設定に関して、この項目を入力してください、などの記述をしていましたが実際に使うとなるともう少し自動化したほうが良い形になってきました。そこで最後に設定を .env ファイルに集約する形に書き換えていきます。
 images: ['/static/images/2022/09/rendering02.png']
 ---

@@ -2,7 +2,7 @@
 title: Experience Edge を利用して Vercel に展開する
 date: '2022-09-26'
 tags: ['Headless', 'Next.js', 'Vercel']
-draft: true
+draft: false
 summary: これまでサーバーとして Sitecore を仮想マシンとして起動していましたが、エンドポイントとして Sitecore Experience Edge というサービスを展開しており、これを利用することで Next.js のアプリを Vercel に簡単に展開することができます。今回はその展開手順に関して紹介をします。
 images: ['/static/images/2022/09/vercel11.png']
 ---

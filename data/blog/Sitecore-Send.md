@@ -2,9 +2,9 @@
 title: Sitecore Send について
 date: '2022-11-01'
 tags: ['Sitecore Send']
-draft: true
+draft: false
 summary: 昨年 Sitecore が買収した Moosend を企業向けのメールマーケティングツールとして Sitecore Send というサービスで展開をしています。このサービスは比較的簡単に導入でき、かつメールマーケティングを実施する上で十分な機能を提供しています。これに関して、いろいろな動画を用意したので、今回はこれを紹介したいと思います。
-images: ['/static/images/2022/10/symposium.png']
+images: ['https://img.youtube.com/vi/sLniW20osbQ/0.jpg']
 ---
 
 昨年 Sitecore が買収した Moosend を企業向けのメールマーケティングツールとして Sitecore Send というサービスで展開をしています。このサービスは比較的簡単に導入でき、かつメールマーケティングを実施する上で十分な機能を提供しています。これに関して、いろいろな動画を用意したので、今回はこれを紹介したいと思います。

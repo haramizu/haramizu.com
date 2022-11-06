@@ -14,8 +14,8 @@ images: ['/static/images/2021/05/moosendoverview01.png']
 
 Moosend を使い始めるための最初のガイドになります。Moosend に関してはブログ記事を note にまとめることにしました。ここではそのリンクを紹介しています。
 
-* [Moosend ってどんなサービス？](https://note.com/haramizu3/n/ne799f8ac66fa)
-* [Moosend のアカウントを作成する](https://note.com/haramizu3/n/n0aab120474f5)
+* [Moosend ってどんなサービス？](/blog/2021/05/07/moosend-overview-part-1)
+* [Moosend のアカウントを作成する](/blog/2021/05/10/moosend-overview-part-2)
 * [初期設定を進めていく 前編](/blog/2021/05/11/moosend-overview-part-3)
 * [初期設定を進めていく 後編](/blog/2021/05/12/moosend-overview-part-4)
 

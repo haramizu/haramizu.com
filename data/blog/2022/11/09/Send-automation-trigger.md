@@ -4,7 +4,7 @@ date: '2022-11-09'
 tags: ['Sitecore Send']
 draft: false
 summary: Sitecore Send のオートメーションシナリオを利用することで、ステップメールのシナリオを柔軟憎むことが可能となっています。今回はそのオートメーションに関するシナリオをみていきましょう。
-images: ['/static/images/2022/11/youtube.png']
+images: ['/static/images/2022/11/trigger01.png']
 ---
 
 Sitecore Send のオートメーションシナリオを利用することで、ステップメールのシナリオを柔軟憎むことが可能となっています。今回はそのオートメーションに関するシナリオをみていきましょう。

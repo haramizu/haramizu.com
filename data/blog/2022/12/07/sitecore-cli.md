@@ -2,7 +2,7 @@
 title: Sitecore CLI を利用してクラウドとローカルの環境を揃える
 date: '2022-12-07'
 tags: ['XM Cloud', 'Sitecore CLI']
-draft: true
+draft: false
 summary: これまでサーバーとして Sitecore を仮想マシンとして起動していましたが、エンドポイントとして Sitecore Experience Edge というサービスを展開しており、これを利用することで Next.js のアプリを Vercel に簡単に展開することができます。今回はその展開手順に関して紹介をします。
 images: ['/static/images/2022/10/symposium.png']
 ---

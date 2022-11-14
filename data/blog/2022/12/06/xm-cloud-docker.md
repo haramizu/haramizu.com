@@ -7,6 +7,26 @@ summary: Sitecore XM Cloud の利用をする際の最初のツールとなる X
 images: ['/static/images/2022/12/portal01.png']
 ---
 
+![add website](/static/images/2022/12/docker01.png)
+
+![add website](/static/images/2022/12/docker02.png)
+
+```
+.\init.ps1 -InitEnv -LicenseXmlPath "C:\projects\license\license.xml" -AdminPassword "DesiredAdminPassword"
+```
+
+![add website](/static/images/2022/12/docker03.png)
+
+![add website](/static/images/2022/12/docker04.gif)
+
+![add website](/static/images/2022/12/docker05.png)
+
+![add website](/static/images/2022/12/docker06.png)
+
+![add website](/static/images/2022/12/docker07.png)
+
+![add website](/static/images/2022/12/docker08.png)
+
 ## 参考動画
 
 上記の内容をダイジェストで紹介している動画を YouTube にアップしています。

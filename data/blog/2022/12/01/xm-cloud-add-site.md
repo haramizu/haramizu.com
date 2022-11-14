@@ -1,11 +1,25 @@
 ---
-title: XM Cloud Deploy 環境の追加
+title: サイトの追加
 date: '2022-12-01'
 tags: ['XM Cloud']
 draft: false
 summary: Sitecore XM Cloud の利用をする際の最初のツールとなる XM Cloud Deploy ツールを今回は紹介します。このツールを利用することで、GitHub のリポジトリと連携している Sitecore XM Cloud のプロジェクトを作成することができます。
-images: ['/static/images/2022/11/portal01.png']
+images: ['/static/images/2022/12/website02.png']
 ---
+
+![add website](/static/images/2022/12/website01.png)
+
+![add website](/static/images/2022/12/website02.png)
+
+![add website](/static/images/2022/12/website03.png)
+
+![add website](/static/images/2022/12/website04.png)
+
+![add website](/static/images/2022/12/website05.png)
+
+![add website](/static/images/2022/12/website06.png)
+
+![add website](/static/images/2022/12/website07.png)
 
 ## 参考動画
 

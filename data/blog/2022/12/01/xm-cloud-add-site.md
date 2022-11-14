@@ -11,15 +11,15 @@ images: ['/static/images/2022/12/website07.png']
 
 ## Web サイトの追加
 
-まず起動してすぐの環境には Web サイトの設定がありません。今回は管理画面から、Sites のメニューを選択、**Add your first website** のボタンをクリックすることで、作成を開始することができます。
+まず起動してすぐの環境には Web サイトの設定がありません。今回は管理画面から、Sites のメニューを選択、`Add your first website` のボタンをクリックすることで、作成を開始することができます。
 
 ![add website](/static/images/2022/12/website01.png)
 
-クリックをすると２つのテンプレートが表示されます（この記事執筆のタイミングです）。今回は **Basic site** を選択して次に進みます。
+クリックをすると２つのテンプレートが表示されます（この記事執筆のタイミングです）。今回は `Basic site` を選択して次に進みます。
 
 ![add website](/static/images/2022/12/website02.png)
 
-次に進むと Site name を設定する形となります。今回は sxastarter とし、対象の言語は英語とします。
+次に進むと Site name を設定する形となります。今回は `sxastarter` とし、対象の言語は英語とします。
 
 ![add website](/static/images/2022/12/website03.png)
 
@@ -31,7 +31,7 @@ images: ['/static/images/2022/12/website07.png']
 
 ![add website](/static/images/2022/12/website05.png)
 
-実際にコンテンツエディターを開くと、サイトが１つ作成されているのがわかります。今回の場合は sxastarter というサイトが立ち上がっています。
+実際にコンテンツエディターを開くと、サイトが１つ作成されているのがわかります。今回の場合は `sxastarter` というサイトが立ち上がっています。
 
 ![add website](/static/images/2022/12/website06.png)
 
@@ -43,6 +43,6 @@ images: ['/static/images/2022/12/website07.png']
 
 今回は新しい Web サイトを立ち上げるということで、テンプレートとなるサイトをそのまま追加しました。これにより、具体的にサイトの構築をするための第一歩をてに入れ流ことができました。
 
-上記の内容をダイジェストで紹介している動画を YouTube にアップしています。
+上記の内容をダイジェストで紹介している動画を YouTube にアップしています。参考にしてください。
 
 [![](https://img.youtube.com/vi/Ovs8ZbmXRBA/0.jpg)](https://www.youtube.com/watch?v=Ovs8ZbmXRBA)

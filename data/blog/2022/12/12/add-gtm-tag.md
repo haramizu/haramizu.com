@@ -3,15 +3,15 @@ title: Next.js に Google Tag Manager を設定する - XM Cloud 編
 date: '2022-12-12'
 tags: ['XM Cloud', 'XM', 'Headless SXA', 'Next.js']
 draft: false
-summary: これまでサーバーとして Sitecore を仮想マシンとして起動していましたが、エンドポイントとして Sitecore Experience Edge というサービスを展開しており、これを利用することで Next.js のアプリを Vercel に簡単に展開することができます。今回はその展開手順に関して紹介をします。
+summary: XM Cloud のサイトを外部に公開をしました。他のサービスと連携させるためにも、まずは Google Tag Manager を設定します。
 images: ['/static/images/2022/12/gtm08.png']
 ---
 
-XM Cloud のサイトを外部に公開をしました。他のサービスと連携させるためにも、まずは Google Tag Manager を設定、合わせて Google Analytics の設定も進めていきます。
+XM Cloud のサイトを外部に公開をしました。他のサービスと連携させるためにも、まずは Google Tag Manager を設定します。
 
 ## Next.js に Google Tag Manager を設定する
 
-以前にもブログで紹介をしている手順を進めていきます。
+以前にもブログで紹介をしましたが、今回は少し違う形で実装をしていきます。
 
 - [Next.js に Google Tag Manager を設定する](/blog/2022/02/25/nextjs-googletagmanager)
 
@@ -25,15 +25,13 @@ npm install --save-dev @types/react-gtm-module
 
 ![GTM](/static/images/2022/12/gtm01.png)
 
-続いて `_app.tsx` のファイルを変更します。今回追加するコードは以下のようにします。
+続いて、以下のように新しいコンポーネントを作成します。
 
-```javascript:src\sxastarter\src\pages_app.tsx
+```javascript:src\sxastarter\src\components\GoogleTagManager.tsx
 import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
 
-function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
-  const { dictionary, ...rest } = pageProps;
-
+const GoogleTagManager = (): JSX.Element => {
   // useEffect for basic page views tracking via router/gtag.
   useEffect(() => {
     const tagManagerArgs = {
@@ -43,6 +41,28 @@ function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element
     };
     TagManager.initialize(tagManagerArgs);
   }, []);
+
+  return <></>;
+};
+
+export default GoogleTagManager;
+```
+
+続いて、スクリプトをインポートしているファイルを編集します。この際、今回は CdpPageView を利用しないのでコメントアウトをして、Google Tag Manager のみにします。
+
+```javascript:src\sxastarter\src\Scripts.tsx
+// import CdpPageView from 'components/CdpPageView';
+import GoogleTagManager from 'components/GoogleTagManager';
+
+const Scripts = (): JSX.Element => {
+  return (
+    <>
+      <GoogleTagManager />
+    </>
+  );
+};
+
+export default Scripts;
 ```
 
 上記の GTM_ID などの値は環境で利用できるようにするため、以下のように `next.config.js` ファイルに追加で記述をします。

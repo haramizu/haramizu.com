@@ -1,6 +1,6 @@
 ---
 title: Sitecore XM Cloud
-date: '2022-12-20'
+date: '2022-12-16'
 tags: ['XM Cloud', 'Headless SXA']
 draft: false
 summary: Sitecore XM Cloud に関する記事をいくつか掲載をしました。最初に評価するポイントとして、以下の記事の一覧を参考にしてください。

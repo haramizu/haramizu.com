@@ -3,11 +3,11 @@ title: XM Cloud に新しい Web サイトの追加
 date: '2022-12-01'
 tags: ['XM Cloud']
 draft: false
-summary: Sitecore XM Cloud の利用をする際の最初のツールとなる XM Cloud Deploy ツールを今回は紹介します。このツールを利用することで、GitHub のリポジトリと連携している Sitecore XM Cloud のプロジェクトを作成することができます。
+summary: 前回まで XM Cloud のサーバーの起動、環境の設定を紹介しました。今回から具体的に XM Cloud のサンプルサイトを起動して、Web サイトを作っていく手続きを進めていきます。
 images: ['/static/images/2022/12/website07.png']
 ---
 
-前回までで XM Cloud のサーバーの起動、環境の設定までを紹介しました。今回から具体的に XM Cloud のサンプルサイトを起動して、Web サイトを作っていく手続きを進めていきます。
+前回まで XM Cloud のサーバーの起動、環境の設定を紹介しました。今回から具体的に XM Cloud のサンプルサイトを起動して、Web サイトを作っていく手続きを進めていきます。
 
 ## Web サイトの追加
 

@@ -1,5 +1,5 @@
 ---
-title: XM Cloud - macOS 野環境で開発をする
+title: XM Cloud - macOS の環境で開発をする
 date: '2022-12-14'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
 draft: false

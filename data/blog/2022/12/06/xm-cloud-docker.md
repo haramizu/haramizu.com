@@ -2,7 +2,7 @@
 title: XM Cloud の開発環境を Docker で起動する
 date: '2022-12-06'
 tags: ['XM Cloud', 'Docker']
-draft: false
+draft: true
 summary: これまで XM Cloud に関して SaaS の環境のみを操作していました。実際の開発になると手元で同じ環境を用意したくなるところです。手元で動かすことができる Docker の環境が作成された GitHub のリポジトリに用意されているため、今回はこれを利用してローカルの環境で起動したいと思います。
 images: ['/static/images/2022/12/docker08.png']
 ---

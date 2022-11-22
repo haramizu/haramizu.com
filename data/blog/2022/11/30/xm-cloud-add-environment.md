@@ -2,7 +2,7 @@
 title: XM Cloud Deploy 環境の追加
 date: '2022-11-30'
 tags: ['XM Cloud', 'XM Cloud Deploy']
-draft: false
+draft: true
 summary: 前回は新しい XM Cloud のプロジェクトを作成しました。その際に環境として Development というのを作成しましたが、コード管理とどのように連携しているのでしょうか？今回は、環境について紹介をします。
 images: ['/static/images/2022/11/portal01.png']
 ---

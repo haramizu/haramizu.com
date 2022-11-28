@@ -9,6 +9,10 @@ images: ['/static/images/2022/12/contenthub03.png']
 
 Sitecore Content Hub の DAM 機能を有効にするために、XM Cloud と連携させるためにはコネクタを有効にする必要があります。今回は、この手順に関して紹介をします。
 
+手順に関しては公式のページで公開されています。
+
+- [Enabling Sitecore CMP and DAM in Sitecore XM Cloud](https://doc.sitecore.com/xmc/en/developers/xm-cloud/enabling-sitecore-cmp-and-dam-in-sitecore-xm-cloud.html)
+
 ## コネクタを有効にする
 
 XM Cloud を利用するにあたって、コネクタの連携は従来と異なる SaaS となるため手順が変わってきます。Sitecore Content Hub の DAM および CMP の連携に関しては、標準機能として提供しており、この機能を有効にするのは非常に簡単です。今回はこの手順を紹介します。
@@ -57,5 +61,9 @@ Sitecore_ConnectionStrings_DAM_dot_ContentHub              ClientId={client_id};
 Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey     Sitecore
 Sitecore_ConnectionStrings_DAM_dot_SearchPage              \_dot_SearchPage {Content Hub search page URI}
 ```
+
+  <add name="DAM.ContentHub" connectionString="ClientId=LogicApp;ClientSecret=d54a8fb6-45f7-4404-a930-4bfc05ce6cb5;UserName={username};Password={password};URI={uri};"/>
+  <add name="DAM.SearchPage" connectionString="{Content Hub search page URI}"/>
+  <add name="DAM.ExternalRedirectKey" connectionString="https://sitecoredemo-jp.sitecoresandbox.cloud/ja-jp/sitecore-dam-connect/approved-assets"/>
 
 ## Sitecore Content Hub 側の設定

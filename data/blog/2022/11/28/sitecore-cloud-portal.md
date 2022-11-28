@@ -2,7 +2,7 @@
 title: Sitecore Cloud Portal について
 date: '2022-11-28'
 tags: ['XM Cloud', 'Sitecore Cloud Portal']
-draft: true
+draft: false
 summary: Sitecore の新しい製品である Sitecore XM Cloud を日本市場でも販売開始となりました。従来から提供している Sitecore Experience Manager の SaaS 版であり、従来の製品の便利なところ、かつヘッドレスで利用することが可能な製品です。SaaS に展開するにあたって、SaaS として利用するためのツールをいくつか提供しています。まず関連するツールに関して紹介をしていきます。
 images: ['/static/images/2022/11/portal01.png']
 ---

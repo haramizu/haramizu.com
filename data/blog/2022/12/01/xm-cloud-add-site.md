@@ -2,7 +2,7 @@
 title: XM Cloud に新しい Web サイトの追加
 date: '2022-12-01'
 tags: ['XM Cloud']
-draft: true
+draft: false
 summary: 前回まで XM Cloud のサーバーの起動、環境の設定を紹介しました。今回から具体的に XM Cloud のサンプルサイトを起動して、Web サイトを作っていく手続きを進めていきます。
 images: ['/static/images/2022/12/website07.png']
 ---

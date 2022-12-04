@@ -28,6 +28,12 @@ images: ['/static/images/2022/12/slack01.png']
 
 上記のイベントだけでなく、オンラインの情報交換の場があると便利、ということで Slack を利用してコミュニティ的な形にしたいと思います。無料プランを利用してという形で想定しているため、過去 90 日の投稿は見ることができます。
 
+Slack に参加する際には、まず以下のフォームからチャンネルに入るための URL を取得してください。
+
+- [Sitecore Japan Community](https://www.sitecoredemo.jp/sitecore-japan-slack)
+
+上記のページは、Sitecore Send のランディングページの機能を利用して提供しています。
+
 まずはこのブログも含めてですが、ブログのフィードも参照できるようにしています。参加していただいた方には、まずここのチャンネルを招待しています。
 
 ![add website](/static/images/2022/12/slack01.png)

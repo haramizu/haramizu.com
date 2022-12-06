@@ -1,13 +1,13 @@
 ---
 title: Headstart デモ環境を構築する - Part 9 Azure DevOps と GitHub 連携
 date: '2022-02-15'
-tags: ['Sitecore','OrderCloud']
+tags: ['Sitecore', 'OrderCloud']
 draft: false
 summary: ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer およびEC サイトの管理画面となる seller のサイトをローカルで起動していきます。
 images: ['/static/images/2022/02/dev10.png']
 ---
 
-ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer およびEC サイトの管理画面となる seller のサイトをローカルで起動していきます。
+ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer および EC サイトの管理画面となる seller のサイトをローカルで起動していきます。
 
 ## 連携前の作業として
 
@@ -45,7 +45,6 @@ steps:
             Write-Host "##vso[build.updatebuildnumber]1.0.$newversion.$(Build.BuildId)"
         }
 ```
-
 
 ## プロジェクトの作成
 
@@ -99,7 +98,7 @@ No hosted parallelism has been purchased or granted. To request a free paralleli
 
 ![OrderCloud](/static/images/2021/09/ordercloud51.png)
 
-これは Azure DevOps の設定が不足しているためです。指定された URL をクリックするとフォームが表示されて、リクエストをすると、私の場合は3日で設定が完了して利用できるようになりました。
+これは Azure DevOps の設定が不足しているためです。指定された URL をクリックするとフォームが表示されて、リクエストをすると、私の場合は 3 日で設定が完了して利用できるようになりました。
 
 ## まとめ
 
@@ -108,3 +107,5 @@ No hosted parallelism has been purchased or granted. To request a free paralleli
 [![](https://img.youtube.com/vi/gUdmVrY_nm0/0.jpg)](https://www.youtube.com/watch?v=gUdmVrY_nm0)
 
 次回はビルドが成功した次のステップとしてリリースを作成して、Azure のインスタンスに対して展開していく手順を紹介します。
+
+- [Part 10 リリースの作成と動作確認](/blog/2022/02/16/headstartdemo-step10)

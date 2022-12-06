@@ -1,13 +1,13 @@
 ---
 title: Headstart デモ環境を構築する - Part 7 Buyer および seller サイトの起動
 date: '2022-02-10'
-tags: ['Sitecore','OrderCloud']
+tags: ['Sitecore', 'OrderCloud']
 draft: false
 summary: ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer およびEC サイトの管理画面となる seller のサイトをローカルで起動していきます。
 images: ['/static/images/2022/02/jssapp04.png']
 ---
 
-ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer およびEC サイトの管理画面となる seller のサイトをローカルで起動していきます。
+ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer および EC サイトの管理画面となる seller のサイトをローカルで起動していきます。
 
 ここから先は、Visual Studio Code で手順を進めていきます。
 
@@ -84,14 +84,14 @@ const localBuyerApiClient = '800EFEC0-43A5-4EB6-9150-C3BBE628214C'
 
 変更する項目は以下の通りです
 
-| 項目 | 説明 | 例 |
-|---|---|---|
-| clientID | Buyer の ClientID | 4E99898A-72E3-4584-AAFD-130C4B2F205D |
-| middlewareUrl | Web アプリのテストスロットの URL | https://headstart-middleware-test.azurewebsites.net |
-| translateBlobUrl | Blob URL | https://headstartjpdemo.blob.core.windows.net/ngx-translate/i18n/ |
-| sellerID | Seller ID を設定 | 0E2CB93C-CE06-450D-9921-3C8FC00444F0 |
-| sellerName | Seller のアプリ名 | Default HeadStart Admin UI |
-| orderCloudApiUrl | Sandbox の URL | https://japaneast-sandbox.ordercloud.io |
+| 項目             | 説明                             | 例                                                                |
+| ---------------- | -------------------------------- | ----------------------------------------------------------------- |
+| clientID         | Buyer の ClientID                | 4E99898A-72E3-4584-AAFD-130C4B2F205D                              |
+| middlewareUrl    | Web アプリのテストスロットの URL | https://headstart-middleware-test.azurewebsites.net               |
+| translateBlobUrl | Blob URL                         | https://headstartjpdemo.blob.core.windows.net/ngx-translate/i18n/ |
+| sellerID         | Seller ID を設定                 | 0E2CB93C-CE06-450D-9921-3C8FC00444F0                              |
+| sellerName       | Seller のアプリ名                | Default HeadStart Admin UI                                        |
+| orderCloudApiUrl | Sandbox の URL                   | https://japaneast-sandbox.ordercloud.io                           |
 
 上記の設定が完了したところで、buyer のアプリを実行します。
 
@@ -140,13 +140,13 @@ const localMiddlewareURL = 'https://localhost:5001'
 }
 ```
 
-| 項目 | 説明 | 値 |
-|---|---|---|
-| clientID | Seller の ClientID | 0E2CB93C-CE06-450D-9921-3C8FC00444F0 |
-| middlewareUrl | Web アプリのテストスロットの URL | https://headstart-middleware-test.azurewebsites.net |
-| translateBlobUrl | Blob URL | https://headstartjpdemo.blob.core.windows.net/ngx-translate/i18n/ |
-| blobStorageUrl | Blob URL | https://headstartjpdemo.blob.core.windows.net |
-| orderCloudApiUrl | Sandbox の URL | https://japaneast-sandbox.ordercloud.io |
+| 項目             | 説明                             | 値                                                                |
+| ---------------- | -------------------------------- | ----------------------------------------------------------------- |
+| clientID         | Seller の ClientID               | 0E2CB93C-CE06-450D-9921-3C8FC00444F0                              |
+| middlewareUrl    | Web アプリのテストスロットの URL | https://headstart-middleware-test.azurewebsites.net               |
+| translateBlobUrl | Blob URL                         | https://headstartjpdemo.blob.core.windows.net/ngx-translate/i18n/ |
+| blobStorageUrl   | Blob URL                         | https://headstartjpdemo.blob.core.windows.net                     |
+| orderCloudApiUrl | Sandbox の URL                   | https://japaneast-sandbox.ordercloud.io                           |
 
 上記の設定が終わったところで、コマンドの npm run start を実行します。
 
@@ -159,3 +159,5 @@ postman で作成をしたアカウントでログインをすると、管理画
 ## まとめ
 
 ミドルウェアに続いて buyer 、seller のアプリをローカルで動かすことができました。動作確認が終わったところで、次回からは Microsoft Azure に展開していきます。
+
+- [Part 8 Azure の環境を準備する（その２）](/blog/2022/02/14/headstartdemo-step8)

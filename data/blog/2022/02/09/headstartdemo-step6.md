@@ -1,7 +1,7 @@
 ---
 title: Headstart デモ環境を構築する - Part 6 Sendgrid にサンプルのメールを設定する
 date: '2022-02-09'
-tags: ['Sitecore','OrderCloud']
+tags: ['Sitecore', 'OrderCloud']
 draft: false
 summary: Sitecore Headstart のデモは Sendgrid を利用してメールを送信する形で構築されています。この部分は将来的には Sitecore Send に置き換えることも可能ですが、現状では Sendgrid のメールをセットアップしておくことでいくつかのメールが自動的に動くようになっています。今回はこれのセットアップに関して説明をします。
 images: ['/static/images/2022/02/sendgrid08.png']
@@ -31,7 +31,7 @@ Sitecore Headstart のデモは Sendgrid を利用してメールを送信する
 
 上記の項目を順に設定をしていきます。
 
-### ApiKey 
+### ApiKey
 
 この項目は、Sendgrid の管理画面 Settings - API Keys の画面に移動をして新規に作成をすることで生成されます。
 
@@ -108,3 +108,4 @@ assets\templates\email
 
 上記の設定ファイルを Azure の環境にインポートをします。これで Sendgrid に関する設定が完了となります。
 
+- [Part 7 Buyer および seller サイトの起動](/blog/2022/02/10/headstartdemo-step7)

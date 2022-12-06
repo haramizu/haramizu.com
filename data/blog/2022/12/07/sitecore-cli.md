@@ -2,7 +2,7 @@
 title: Sitecore CLI を利用してクラウドとローカルの環境を揃える
 date: '2022-12-07'
 tags: ['XM Cloud', 'Sitecore CLI']
-draft: true
+draft: false
 summary: XM Cloud のローカルの環境とサーバーとして利用している SaaS の XM Cloud の環境を同期する方法を紹介します。今回は全てを一括で同期していますが、アイテムに関して全て同期するとデータ量も増えるため、実際の開発環境では必要なデータだけを同期させて運用することになります。それでは早速環境を整えるところからスタートします。
 images: ['/static/images/2022/12/cli04.png']
 ---

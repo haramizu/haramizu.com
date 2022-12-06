@@ -1,7 +1,7 @@
 ---
 title: Headstart デモ環境を構築する - Part 8 Azure の環境を準備する（その２）
 date: '2022-02-14'
-tags: ['Sitecore','OrderCloud']
+tags: ['Sitecore', 'OrderCloud']
 draft: false
 summary: ローカルでの動作確認ができたので、次は Azure にミドルウェア、Buyer および Seller を展開していきます。実はまだミドルウェアのみインスタンスを作っていただけですので、ここで Buyer および Seller のインスタンスを追加していきます。
 images: ['/static/images/2022/02/azure24.png']
@@ -34,3 +34,5 @@ images: ['/static/images/2022/02/azure24.png']
 ## まとめ
 
 Azure の受け入れ側の手順の確認ができたので、次回からは GitHub にアップしているリポジトリのデータを利用して Azure に展開する手順を紹介していきます。
+
+- [Part 9 Azure DevOps と GitHub 連携](/blog/2022/02/15/headstartdemo-step9)

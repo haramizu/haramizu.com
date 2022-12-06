@@ -1,7 +1,7 @@
 ---
 title: Headstart デモ環境を構築する - Part 10 リリースの作成と動作確認
 date: '2022-02-16'
-tags: ['Sitecore','OrderCloud']
+tags: ['Sitecore', 'OrderCloud']
 draft: false
 summary: 前回の記事で Azure DevOps と GitHub に展開しているリポジトリの連携の設定、ビルドまで進めました。今回は、実際にビルドしたデータを Azure の各リソースに展開するための手順を紹介していきます。
 images: ['/static/images/2022/02/release27.png']
@@ -123,7 +123,7 @@ node inject-css defaultbuyer-test && node inject-appconfig defaultbuyer-test
 
 ![OrderCloud](/static/images/2022/02/release20.png)
 
-それぞれのステージが始まるまえに1分待機させたいと思いますので、Seller Test の左側にあるアイコンをクリックします。このアイコンをクリックして、Gates の設定を 1 分にします。これで前の展開が終わって 1 分の間隔を開けてスタートする形になります。
+それぞれのステージが始まるまえに 1 分待機させたいと思いますので、Seller Test の左側にあるアイコンをクリックします。このアイコンをクリックして、Gates の設定を 1 分にします。これで前の展開が終わって 1 分の間隔を開けてスタートする形になります。
 
 ![OrderCloud](/static/images/2022/02/release21.png)
 
@@ -160,3 +160,5 @@ Release 1 を選択して、Middleware Test にマウスカーソルを合わせ
 ## まとめ
 
 ここまで Headstart のデモを Azure に展開をするための手順として紹介をしていきました。展開をしただけでは動かないため、次回で追加の設定と確認方法を紹介していきます。
+
+- [Part 11 環境のチェック](/blog/2022/02/17/headstartdemo-step11)

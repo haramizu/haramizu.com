@@ -31,7 +31,7 @@ images: ['/static/images/2022/02/vs07.png']
 
 ![OrderCloud](/static/images/2022/02/vs04.png)
 
-**2022-07-01 追記：** Visual Studio 2022 では設定画面が変わりました。プロファイルとして Test を作成し、環境変数は１行のテキストを入れる形となります。この際、`APP_CONFIG_CONNECTION=Endpoint=https://headstartjpdemo.azconfig.io` のように環境変数を記載するのですが、いくつかの文字に関してはエスケープ（/)を入れる必要があります。この際、入力をしたあと一度別の項目にフォーカスを移すと自動的に変換してくれますが、https: のあとの文字が既に処理済みのように実施します。このため、 `APP_CONFIG_CONNECTION=Endpoint/=https:////headstartjpdemo.azconfig.io` のように `////` となっているのを確認してください。
+**2022-12-26 更新：** Visual Studio 2022 version 17.4.2 では以下の様な設定画面となります。
 
 ![OrderCloud](/static/images/2022/02/vs04-1.png)
 

@@ -2,7 +2,7 @@
 title: GitHub のリポジトリに反映させる
 date: '2022-12-08'
 tags: ['XM Cloud']
-draft: true
+draft: false
 summary: ローカルで開発をしたものを、GitHub を通じて反映させることが可能です。今回は、ローカルで少しだけアイテムの変更をして、GitHub のリポジトリを通じて SaaS 環境の XM Cloud に反映させる手順を紹介します。
 images: ['/static/images/2022/12/github04.png']
 ---

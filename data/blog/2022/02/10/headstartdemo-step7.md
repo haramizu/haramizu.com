@@ -135,6 +135,8 @@ const localMiddlewareURL = 'https://localhost:5001'
   "clientID": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
   "middlewareUrl": "https://my-hosted-middleware.com",
   "translateBlobUrl": "https://MYSTORAGEACCOUNTNAME.blob.core.windows.net/ngx-translate/i18n/",
+  "supportedLanguages": ["en", "fr", "jp"],
+  "defaultLanguage": "en",
   "blobStorageUrl": "https://MYSTORAGEACCOUNTNAME.blob.core.windows.net",
   "orderCloudApiUrl": "https://sandboxapi.ordercloud.io"
 }
@@ -145,6 +147,7 @@ const localMiddlewareURL = 'https://localhost:5001'
 | clientID         | Seller の ClientID               | 0E2CB93C-CE06-450D-9921-3C8FC00444F0                              |
 | middlewareUrl    | Web アプリのテストスロットの URL | https://headstart-middleware-test.azurewebsites.net               |
 | translateBlobUrl | Blob URL                         | https://headstartjpdemo.blob.core.windows.net/ngx-translate/i18n/ |
+| defaultLanguage  | 表示する言語                     | jp                                                                |
 | blobStorageUrl   | Blob URL                         | https://headstartjpdemo.blob.core.windows.net                     |
 | orderCloudApiUrl | Sandbox の URL                   | https://japaneast-sandbox.ordercloud.io                           |
 

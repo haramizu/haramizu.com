@@ -1,10 +1,10 @@
 ---
-title: Next.js Commerce と OrderCloud
+title: Next.js Commerce と OrderCloud の連携
 date: '2022-12-23'
 tags: ['OrderCloud', 'Next.js']
 draft: true
 summary: Next.js Commerce との連携の手順を以前にも紹介していましたが、時間が経ったこともありアップデートがあります。今回は、最短で立ち上げるための手順を改めて紹介したいと思います。
-images: ['/static/images/2021/09/xm09.png']
+images: ['/static/images/2022/12/nextjscommerce18.png']
 ---
 
 Next.js Commerce との連携の手順を以前にも紹介していましたが、時間が経ったこともありアップデートがあります。今回は、最短で立ち上げるための手順を改めて紹介したいと思います。
@@ -41,17 +41,21 @@ Sitecore OrderCloud の Sandbox は無料で利用することができます。
 
 ## OrderCloud にサンプルのデータをインポートする
 
-ここでコマンドラインに関する紹介をする
+今回は日本のデータセンターに OrderCloud のテナントを立ち上げるのをゴールとします。このため、日本のデータセンターに対して新規のマーケットプレースを作成していきます。実はこの手順はコマンドラインで実行できるようになっており、seeding というコマンドが用意されています。またサンプルのデータも GitHub にアップされているため、今回はこのデータをそのまま利用していきます。
 
 ```
-npx @ordercloud/seeding seed https://raw.githubusercontent.com/ordercloud-api/ordercloud-seed/main/seeds/Simple-B2C.yml -u={username} -p={password} -r=jpn
+npx @ordercloud/seeding seed https://raw.githubusercontent.com/ordercloud-api/ordercloud-seed/main/seeds/Simple-B2C.yml -n='Nextjs' -u={username} -p={password} -r=jpn
 ```
+
+ユーザー名とパスワードを先ほど作成したアカウントのデータとして合わせてください。以下の様に、データを元に必要となるデータが生成されます。
 
 ![OrderCloud](/static/images/2022/12/seeding01.png)
 
-マーケットプレースができているのを確認
+完了したところで、OrderCloud の管理画面にてマーケットプレースができているのを確認してください。
 
 ![OrderCloud](/static/images/2022/12/seeding02.png)
+
+これで日本のデータセンターで立ち上げる準備が完了しました。
 
 ## Next.js Commerce のプロジェクトを作成
 
@@ -77,55 +81,82 @@ Sitecore OrderCloud はこのタイミングでは無いため、Add Integration
 
 ## OrderCloud との連携をする
 
-サンプルのデータをとりあえず海外のデータセンターで起動する
+Integration をする上で、まずはアメリカのデータセンターに新規マーケットプレースを作成します。これはコネクタの管理画面ではデータセンターを選択することができないため、一度米国でマーケットプレースの作成、その後日本のマーケットプレースのデータに接続する、という形で手続きを進めていきます。
+
+まず Integration の管理画面で `sitecore` のキーワードで検索をして、Sitecore OrderCloud を選択してください。
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce05.png)
 
+クリックをすると下の画面が表示されて、Add Integration のボタンをクリックします。
+
 ![OrderCloud](/static/images/2022/12/nextjscommerce06.png)
+
+画面が切り替わり、以下の様なダイアログが表示されます（サンプルの環境はすでにインストールされているため、初回と画面は異なります）。
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce07.png)
 
+これで完了したあと、`Configure` のボタンをクリックすると以下の画面が表示されます。右側に表示されるリストに関しては、Seed new Marketplace の項目を選択したまま、`Apply Changes` をクリックします。
+
 ![OrderCloud](/static/images/2022/12/nextjscommerce08.png)
+
+画面でしばらく新しい Marketplace が生成されていることがわかります。
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce09.png)
 
+Integration の設定が完了しただけではまだ Build プロセスが動いていないため、サイトに関しては特に変更はありません。
+
 ![OrderCloud](/static/images/2022/12/nextjscommerce10.png)
 
+`Deployments` のメニューから `Redeploy` をクリックして、サイトをビルドします
+
 ![OrderCloud](/static/images/2022/12/nextjscommerce11.png)
+
+しばらくすると、ビルドが完了して以下のようにサイトが変更されます。
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce12.png)
 
 ## マーケットプレースを切り替える
 
-日本のマーケットプレースに切り替える
+すでに Next.js Commerce と OrderCloud が連携してサイトが起動している形ですが、データセンターとしては海外となっています。最後に、日本のマーケットプレースに切り替える手続きを進めていきます。
 
-Marketplace Identifier
-Marketplace Name
+まず、プロジェクトの Environment Variables の値を変更していきます。まず最初に、マーケットプレースに関する２つの情報を OrderCloud の以下のページから取得します。
+
+- ORDERCLOUD_MARKETPLACE_ID: Marketplace Identifier
+- ORDERCLOUD_MARKETPLACE_NAME: Marketplace Name
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce13.png)
 
-API Client
+続いて左側のメニューから `API Clients` を選択、また Sandbox に関しては `Nextjs` を選択します（名前が異なる場合は、その名前を選択してください）。
+
 ![OrderCloud](/static/images/2022/12/nextjscommerce14.png)
 
-Middleware Integrations
-Secret
+この画面画面からは、API Client を選択して値を取得していきます。まずは、 Middleware Integrations から以下の 2 つのキーを取得してください。
+
+- ORDERCLOUD_MIDDLEWARE_CLIENT_ID : Client ID
+- ORDERCLOUD_MIDDLEWARE_CLIENT_SECRET : Client Secret
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce15.png)
 
-ORDERCLOUD_BUYER_CLIENT_ID
+最後に Buyer の ID を取得するために、Storefront App に切り替えて ID を取得します。
+
+- ORDERCLOUD_BUYER_CLIENT_ID : Client ID
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce16.png)
+
+これで Vercel でセットアップしているプロジェクトの変数を変更することができました。ただしこれだけでは作業が完了しておらず、Next.js Commerce のプロジェクトが参照するデータセンターがアメリカになっているため、これを日本に切り替える必要があります。プロジェクトの以下のファイルを変更してください。
 
 ```typescript:packages\ordercloud\src\constants.ts
 export const API_URL = 'https://japaneast-sandbox.ordercloud.io'
 ```
 
-GitHub に反映させる
+このコードを変更して、GitHub に反映させるとリビルドが実行されます。
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce17.png)
+
+エラーになった場合は、Redeploy の画面で Redeploy with existing Build Chache のダイアログをクリックしてからサイドで展開することで完了します。以下がその画面となります。
 
 ![OrderCloud](/static/images/2022/12/nextjscommerce18.png)
 
 ## まとめ
 
-ここでまとめ
+今回は Next.js Commerce と Sitecore OrderCloud を連携させる手順、また日本のデータセンターを選択する際の手順まで紹介をしました。簡単にコマースサイトを立ち上げ流ことが可能なことがわかります。

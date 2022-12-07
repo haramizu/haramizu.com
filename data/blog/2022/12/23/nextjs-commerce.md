@@ -2,7 +2,7 @@
 title: Next.js Commerce と OrderCloud の連携
 date: '2022-12-23'
 tags: ['OrderCloud', 'Next.js']
-draft: true
+draft: false
 summary: Next.js Commerce との連携の手順を以前にも紹介していましたが、時間が経ったこともありアップデートがあります。今回は、最短で立ち上げるための手順を改めて紹介したいと思います。
 images: ['/static/images/2022/12/nextjscommerce18.png']
 ---

@@ -2,7 +2,7 @@
 title: XM Cloud - Sitecore Content Hub コネクタを有効にする
 date: '2022-12-13'
 tags: ['XM Cloud', 'Content Hub']
-draft: true
+draft: false
 summary: Sitecore Content Hub の DAM 機能を有効にするために、XM Cloud と連携させるためにはコネクタを有効にする必要があります。今回は、この手順に関して紹介をします。
 images: ['/static/images/2022/12/contenthub03.png']
 ---

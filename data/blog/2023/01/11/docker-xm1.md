@@ -1,7 +1,7 @@
 ---
 title: XM1 のプロジェクトを準備する
 date: '2023-01-11'
-tags: ['Next.js','Docker']
+tags: ['Docker', 'Next.js']
 draft: false
 summary: 前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、必要な設定を追加していきます。
 images: ['/static/images/2023/01/newproject01.png']
@@ -81,24 +81,24 @@ $workinDirectoryPath = ".\"
 また solution のファイルは同じフォルダにあるため、パスを以下のように変更してください。
 
 ```yaml
-    build:
-      context: .
+build:
+  context: .
 ```
 
 rendering の volumes のパスも以下のように書き換えます。
 
 ```yaml
-  rendering:
-    volumes:
-      - .\src\rendering:C:\app
+rendering:
+  volumes:
+    - .\src\rendering:C:\app
 ```
 
 最後に traefik が利用する証明書のパスを書き換えます。
 
 ```yaml
-  traefik:
-    volumes:
-      - ./docker/traefik:C:/etc/traefik
+traefik:
+  volumes:
+    - ./docker/traefik:C:/etc/traefik
 ```
 
 最後に up.ps1 のファイルを編集します。これも、トップレベルに .env ファイルなどを移動させたために必要となる作業です。ここはシンプルで、

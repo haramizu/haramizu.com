@@ -3,11 +3,11 @@ title: XM1 のプロジェクトを準備する
 date: '2023-01-11'
 tags: ['Docker', 'Next.js']
 draft: false
-summary: 前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、必要な設定を追加していきます。
+summary: 前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、調整の手順を進めていきます。
 images: ['/static/images/2023/01/newproject01.png']
 ---
 
-前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、必要な設定を追加していきます。
+前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、調整の手順を進めていきます。
 
 ## XM1 の docker-compose ファイルの配置
 
@@ -17,7 +17,7 @@ run\sitecore-xm1 のフォルダにある以下の 3 つのファイルをトッ
 - run\sitecore-xm1\docker-compose.override.yml
 - run\sitecore-xm1\docker-compose.yml
 
-他の構成は今回不要なため、run フォルダを削除します。ファイルの変更配下の通りです。
+他の構成は今回不要なため、run フォルダを削除します。ファイルの変更は以下の様な形となります。
 
 ![clean](/static/images/2023/01/clean01.png)
 
@@ -52,15 +52,20 @@ XP1 の構成が可能なイメージが多くありますが、XM1 では不要
 
 ## プロジェクトの初期化
 
-上記で一通り設定が完了したため、これまでと同じように以下のように .env ファイルなどを更新していきます。
+上記で一通り設定が完了したため、これまでと同じように以下のように .env ファイルなどを更新していきます。まず、プロジェクトの名前を変更します。
 
-まず init.ps1 のコードですが、今回は関連ファイルをトップレベルに移動しているため、以下のコードを書き換えます。
-
-```powershell:init.ps1
-$workinDirectoryPath = ".\run\sitecore-$Topology"
+```.env
+COMPOSE_PROJECT_NAME=sitecoredemo-docker
 ```
 
-変更後は以下の通りです。
+SQL や Solr のデータは違うパスに保存をする形となるため、以下の様に書き換えます。
+
+```.env
+LOCAL_DEPLOY_PATH=.\docker\deploy\
+LOCAL_DATA_PATH=.\docker\data\
+```
+
+続いて init.ps1 のファイルを変更します。今回は関連ファイルをトップレベルに移動しているため、`workinDirectoryPath` のパスを変更します。
 
 ```powershell:init.ps1
 $workinDirectoryPath = ".\"
@@ -74,7 +79,9 @@ $workinDirectoryPath = ".\"
 
 ![clean](/static/images/2023/01/clean03.png)
 
-続いて `docker-compose.override.yml` のファイルが移動しているため、docker ファイルへのパスを書き換えます。相対パスが `../../docker/build/` となっているところを `docker/build/` に変更する形です。
+## Docker-compose 関連の更新
+
+続いて `docker-compose.override.yml` のファイルが移動しているため、docker ファイルへのパスを書き換えます。相対パスが `../../docker/build/` となっているところを `docker/build/` に変更をします。
 
 ![clean](/static/images/2023/01/clean04.png)
 
@@ -130,13 +137,50 @@ if (-not $envCheck) {
 }
 ```
 
+## Next.js の設定を変更する
+
+Next.js をコンテナに展開する際に利用するために、jss setup を実行する必要があります。
+
+```
+cd src\rendering
+jss setup
+```
+
+以下のデータを設定していきます。
+
+| 質問項目                            | 設定                                                      |
+| ----------------------------------- | --------------------------------------------------------- |
+| Path to the Sitecore folder         | ..\\..\\docker\\deploy\\platform\\                        |
+| Sitecore hostname                   | https://cm.sitecoredemo.localhost                         |
+| Sitecore import service URL         | https://cm.sitecoredemo.localhost/sitecore/api/jss/import |
+| Sitecore API Key                    | src\items\api-key\DockerStarter.yml の ID                 |
+| Please enter your deployment secret | .env の JSS_DockerStarter_DEPLOYMENT_SECRET               |
+
+![clean](/static/images/2023/01/clean08.png)
+
+今回は DockerStarter でプロジェクトを作っているためパラメーターやファイル名に名前が入っています。別の名前で作成している場合は、上記の参照先を変更して値を設定してください。
+
 ## 実行する
 
-準備が完了しました。早速起動してみましょう。コマンドはシンプルで以下の通りです。
+コンテナを起動する前に、以下のフォルダの状況を確認します。まず、シリアライズする予定のデータはあまり準備されていません。
+
+![clean](/static/images/2023/01/clean05.png)
+
+それでは早速、最初の初期設定を実行していきます。コマンドはシンプルで以下の通りです。
 
 ```
 .\up.ps1
 ```
+
+しばらくすると、ログインの画面が表示されます。
+
+![clean](/static/images/2023/01/clean06.png)
+
+ログインをすると CLI でインポートをするための権限を付与するかどうかの確認画面が表示されます。
+
+![clean](/static/images/2023/01/clean07.png)
+
+ここではそのまま OK を押して進めていきます。
 
 ## まとめ
 

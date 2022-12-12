@@ -15,7 +15,7 @@ images: ['/static/images/2023/01/newproject01.png']
 
 - https://github.com/Sitecore/jss/tree/v21.0.0/packages/create-sitecore-jss/src/templates
 
-プロジェクトの現状を確認するためにフォルダを見ると、src の下には何も JavaScript のプロジェクトが作成されていません。
+まずコンテナを動かすために利用していた `src\rendering` のフォルダを削除します。この段階で、src の下には何もない状況なのを確認できます。
 
 ![newproject](/static/images/2023/01/nextjs01.png)
 

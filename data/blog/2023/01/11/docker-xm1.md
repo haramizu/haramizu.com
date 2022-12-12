@@ -1,7 +1,7 @@
 ---
 title: XM1 のプロジェクトを準備する
 date: '2023-01-11'
-tags: ['Docker', 'Next.js']
+tags: ['Docker', 'Next.js', 'XM']
 draft: false
 summary: 前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、調整の手順を進めていきます。
 images: ['/static/images/2023/01/newproject01.png']
@@ -136,29 +136,6 @@ if (-not $envCheck) {
     throw "$envCheckVariable does not have a value. Did you run 'init.ps1 -InitEnv'?"
 }
 ```
-
-## Next.js の設定を変更する
-
-Next.js をコンテナに展開する際に利用するために、jss setup を実行する必要があります。
-
-```
-cd src\rendering
-jss setup
-```
-
-以下のデータを設定していきます。
-
-| 質問項目                            | 設定                                                      |
-| ----------------------------------- | --------------------------------------------------------- |
-| Path to the Sitecore folder         | ..\..\docker\deploy\platform\                             |
-| Sitecore hostname                   | https://cm.sitecoredemo.localhost                         |
-| Sitecore import service URL         | https://cm.sitecoredemo.localhost/sitecore/api/jss/import |
-| Sitecore API Key                    | src\items\api-key\DockerStarter.yml の ID                 |
-| Please enter your deployment secret | .env の JSS_DockerStarter_DEPLOYMENT_SECRET               |
-
-![clean](/static/images/2023/01/clean08.png)
-
-今回は DockerStarter でプロジェクトを作っているためパラメーターやファイル名に名前が入っています。別の名前で作成している場合は、上記の参照先を変更して値を設定してください。
 
 ## 実行する
 

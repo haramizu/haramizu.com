@@ -58,15 +58,15 @@ dotnet new sitecore.nextjs.gettingstarted -n DockerStarter
 
 作成したプロジェクトがどういう構成になっているか確認をします。まず、フォルダとしては docker フォルダ、src フォルダなどがあり、src フォルダの中には Visual Studio のプロジェクトファイルなどが作成されているのがわかります。
 
-![newproject](/static/images/2023/01/newproject07.png)
+![newproject](/static/images/2023/01/newproject04.png)
 
 Docker フォルダの中には、Sitecore の多くのインスタンスに関する dockerfile が準備されているのがわかります。
 
-![newproject](/static/images/2023/01/newproject08.png)
+![newproject](/static/images/2023/01/newproject05.png)
 
 Run フォルダの下には、XM1 や XP1 で利用する docker-compose.xml ファイルが用意されているのがわかります。
 
-![newproject](/static/images/2023/01/newproject09.png)
+![newproject](/static/images/2023/01/newproject06.png)
 
 このテンプレートを利用することで、XM1 に限らず Docker を利用してローカルで起動するための必要なリソースが含まれていることがわかります。
 

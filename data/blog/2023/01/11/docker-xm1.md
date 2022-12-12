@@ -4,7 +4,7 @@ date: '2023-01-11'
 tags: ['Docker', 'Next.js', 'XM']
 draft: false
 summary: 前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、調整の手順を進めていきます。
-images: ['/static/images/2023/01/newproject01.png']
+images: ['/static/images/2023/01/clean09.png']
 ---
 
 前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、調整の手順を進めていきます。
@@ -143,6 +143,10 @@ if (-not $envCheck) {
 
 ![clean](/static/images/2023/01/clean05.png)
 
+Rendering で利用するコンテナが src\rendering のフォルダを必要とするため、フォルダを作成してください（このフォルダは後ほど Next.js のプロジェクトを作成します。
+
+![clean](/static/images/2023/01/clean06.png)
+
 それでは早速、最初の初期設定を実行していきます。コマンドはシンプルで以下の通りです。
 
 ```
@@ -151,14 +155,20 @@ if (-not $envCheck) {
 
 しばらくすると、ログインの画面が表示されます。
 
-![clean](/static/images/2023/01/clean06.png)
+![clean](/static/images/2023/01/clean07.png)
 
 ログインをすると CLI でインポートをするための権限を付与するかどうかの確認画面が表示されます。
 
-![clean](/static/images/2023/01/clean07.png)
+![clean](/static/images/2023/01/clean08.png)
 
-ここではそのまま OK を押して進めていきます。
+ここではそのまま OK を押して進めていきます。途中からヘッドレスのプロジェクトを今回作成していないためエラーになって止まりますが、この不足部分は後ほど補足するので問題ありません。Sitecore Experience Manager 10.3 にログインをして、起動してログインをすることができる様になりました。
+
+![clean](/static/images/2023/01/clean09.png)
+
+バージョンをコントロールパネルで確認をした画面は以下の通りです。
+
+![clean](/static/images/2023/01/clean10.png)
 
 ## まとめ
 
-プロジェクトのテンプレートから XM1 のイメージを立ち上げる手順を紹介紹介しました。特に XP のイメージなども削除するために、`init.ps1` や `docker-compose.override.yml` に定義しているパスなども変更することで、シンプルな XM1 のイメージの作成ができました。
+プロジェクトのテンプレートから XM1 のイメージを立ち上げる手順を紹介しました。特に XP のイメージなども削除するために、`init.ps1` や `docker-compose.override.yml` に定義しているパスなども変更することで、シンプルな XM1 のイメージの作成ができました。

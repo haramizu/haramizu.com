@@ -3,9 +3,11 @@ title: Next.js のプロジェクトを追加する
 date: '2023-01-13'
 tags: ['Docker', 'Next.js', 'XM']
 draft: false
-summary: 前回の記事でまずはテンプレートとなるプロジェクトを作成しました。今回は、一番シンプルな XM1 を実行するためのプロジェクトにするために、不要なものを削除、調整の手順を進めていきます。
+summary: プロジェクトの作成、XM1 の環境整備、そして前回は SXA のモジュールのインストールをしました。今回はこのプロジェクトに対して、Next.js で利用することができる Sitecore Experience Accelrator - Headless SXA のプロジェクトを追加したいと思います。
 images: ['/static/images/2023/01/newproject01.png']
 ---
+
+プロジェクトの作成、XM1 の環境整備、そして前回は SXA のモジュールのインストールをしました。今回はこのプロジェクトに対して、Next.js で利用することができる Sitecore Experience Accelrator - Headless SXA のプロジェクトを追加したいと思います。
 
 ## Next.js SXA のプロジェクトを作成する
 
@@ -15,7 +17,7 @@ images: ['/static/images/2023/01/newproject01.png']
 
 プロジェクトの現状を確認するためにフォルダを見ると、src の下には何も JavaScript のプロジェクトが作成されていません。
 
-![newproject](/static/images/2023/01/newproject04.png)
+![newproject](/static/images/2023/01/nextjs01.png)
 
 ここでバージョンを指定してテンプレートを作成するために、以下のようにコマンドを実行してください（以下の数字は GitHub のリポジトリの番号になります）。
 
@@ -35,11 +37,11 @@ CMS サーバーの名前を次に聞かれますが、 `cm.sitecoredemo.localho
 
 これでセットアップの手順が完了となります。自動的に `npm install` などが実行されます。
 
-![newproject](/static/images/2023/01/newproject05.png)
+![newproject](/static/images/2023/01/nextjs02.png)
 
 しばらくすると以下のようにプロジェクト作成完了となります。
 
-![newproject](/static/images/2023/01/newproject06.png)
+![newproject](/static/images/2023/01/nextjs03.png)
 
 これでプロジェクトが作成されました。
 
@@ -62,6 +64,6 @@ jss setup
 | Sitecore API Key                    | src\items\api-key\DockerStarter.yml の ID                 |
 | Please enter your deployment secret | .env の JSS_DockerStarter_DEPLOYMENT_SECRET               |
 
-![clean](/static/images/2023/01/clean08.png)
+![clean](/static/images/2023/01/nextjs04.png)
 
 今回は DockerStarter でプロジェクトを作っているためパラメーターやファイル名に名前が入っています。別の名前で作成している場合は、上記の参照先を変更して値を設定してください。

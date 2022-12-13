@@ -15,7 +15,7 @@ images: ['/static/images/2023/01/newproject01.png']
 
 - https://github.com/Sitecore/jss/tree/v21.0.0/packages/create-sitecore-jss/src/templates
 
-まずコンテナを動かすために利用していた `src\rendering` のフォルダを削除します。この段階で、src の下には何もない状況なのを確認できます。
+まずコンテナを動かすために利用していた `src\rendering` のフォルダを削除します。この段階で、src の下には何もない状況なのを確認してください。
 
 ![newproject](/static/images/2023/01/nextjs01.png)
 
@@ -25,15 +25,13 @@ images: ['/static/images/2023/01/newproject01.png']
 npx create-sitecore-jss@21.0.0 --templates nextjs,nextjs-sxa
 ```
 
-ここからは、普通に Next.js のプロジェクトの設定を入れていく形です。まずはインストール先のディレクトリの確認が表示されます。今回は、`C:\projects\DockerStarter\src\rendering` を指定します。
+ここからは、普通に Next.js のプロジェクトの設定を入れていく形です。
 
-続いてアプリの名前の確認が表示されます。アプリの名前は、今回は `sitecoredemo-jp` とします。
-
-CMS サーバーの名前を次に聞かれますが、 `cm.sitecoredemo.localhost` と設定します。
-
-続いて GraphQL か REST のどちらのプロジェクトにするかを確認してきます。今回は `GraphQL` を選択します。
-
-最後に SSG か SSR かの確認が表示されるため、`SSG` を選択します。
+1. インストール先のディレクトリの確認が表示されます。今回は、`C:\projects\DockerStarter\src\rendering` を指定します。
+2. アプリの名前の確認が表示されます。アプリの名前は、今回は `sitecoredemo-jp` とします。
+3. CMS サーバーの名前を次に聞かれますが、 `cm.sitecoredemo.localhost` と設定します。
+4. 続いて GraphQL か REST のどちらのプロジェクトにするかを確認してきます。今回は `GraphQL` を選択します。
+5. 最後に SSG か SSR かの確認が表示されるため、`SSG` を選択します。
 
 これでセットアップの手順が完了となります。自動的に `npm install` などが実行されます。
 
@@ -67,3 +65,7 @@ jss setup
 ![clean](/static/images/2023/01/nextjs04.png)
 
 今回は DockerStarter でプロジェクトを作っているためパラメーターやファイル名に名前が入っています。別の名前で作成している場合は、上記の参照先を変更して値を設定してください。
+
+準備としては、最後に jss deploy config を実行して
+
+## Sitecore 側でサイトを作成する

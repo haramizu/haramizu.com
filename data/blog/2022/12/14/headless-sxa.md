@@ -1,6 +1,6 @@
 ---
 title: Headless SXA の紹介
-date: '2022-12-15'
+date: '2022-12-14'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
 draft: false
 summary: Sitecore が提供する Web サイトのコンポーネント集となる Sitecore Experience Accelerator のヘッドレス版となる Headless SXA の提供を開始しました。このコンポーネントは Sitecore XM 10.3 でも利用できるようになっていますので、既存の Sitecore のサブスクリプションライセンスを利用の場合も同じように利用することが可能です。

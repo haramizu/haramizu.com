@@ -2,7 +2,7 @@
 title: Headless SXA - Variant の追加
 date: '2022-12-15'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: true
+draft: false
 summary: 前回は Headless SXA に関して簡単に紹介をしました。基本コンポーネントだけでは当然 Web サイトを作る上では色々なものが不足しています。今回は、既存のコンポーネントの表示形式を追加する方法を紹介します。
 images: ['/static/images/2022/12/promo03.png']
 ---

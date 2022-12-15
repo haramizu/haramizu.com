@@ -1,6 +1,6 @@
 ---
 title: Next.js のプロジェクトを追加する
-date: '2023-01-13'
+date: '2023-01-16'
 tags: ['Docker', 'Next.js', 'XM']
 draft: false
 summary: プロジェクトの作成、XM1 の環境整備、そして前回は SXA のモジュールのインストールをしました。今回はこのプロジェクトに対して、Next.js で利用することができる Sitecore Experience Accelrator - Headless SXA のプロジェクトを追加したいと思います。

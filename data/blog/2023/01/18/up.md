@@ -1,6 +1,6 @@
 ---
 title: 起動するためのスクリプトの調整
-date: '2023-01-17'
+date: '2023-01-18'
 tags: ['XM Cloud', 'XM', 'Vercel']
 draft: false
 summary: Sitecore XM Cloud で作成をした CMS のデリバリー環境として Vercel を選択することが可能ですが、この作業を簡単にするための Sitecore XM Cloud との連携機能を提供しています。今回は、この機能を利用して、Web サイトを Vercel に展開する手順を紹介します。

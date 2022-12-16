@@ -66,6 +66,52 @@ jss setup
 
 今回は DockerStarter でプロジェクトを作っているためパラメーターやファイル名に名前が入っています。別の名前で作成している場合は、上記の参照先を変更して値を設定してください。
 
-準備としては、最後に jss deploy config を実行して
+作成された設定ファイルに関しては微調整をします。これは、作成をしたサイトを SXA のテンプレートを利用して展開しているためです。
 
-## Sitecore 側でサイトを作成する
+まず、JSS EDITING SECRET の値を .env で定義されている `JSS_EDITING_SECRET` のキーに変更をしてください。またコメントアウトされているため、設定の値はコメントアウトから出してください。
+
+```xml:src\rendering\sitecore\config\sitecoredemo-jp.config
+      <!--
+        JSS EDITING SECRET
+        To secure the Sitecore editor endpoint exposed by your Next.js app (see `serverSideRenderingEngineEndpointUrl` below),
+        a secret token is used. This is taken from an env variable by default, but could be patched and set directly by uncommenting.
+        This (server-side) value must match your client-side value, which is configured by the JSS_EDITING_SECRET env variable (see the Next.js .env file).
+        We recommend an alphanumeric value of at least 16 characters.
+      -->
+
+        <setting name="JavaScriptServices.ViewEngine.Http.JssEditingSecret" value="Your Key" />
+```
+
+続いてサイトのパスが異なるため以下のように変更をします。
+
+```xml
+      <site patch:before="site[@name='website']"
+            inherits="website"
+            name="sitecoredemo-jp"
+            hostName="cm.sitecoredemo.localhost"
+            rootPath="/sitecore/content/sitecoredemo-jp/sitecoredemo-jp"
+            startItem="/home"
+            database="master" />
+```
+
+Appname のパスも変更をします。
+
+```xml
+        <app name="sitecoredemo-jp"
+            layoutServiceConfiguration="default"
+            sitecorePath="/sitecore/content/sitecoredemo-jp/sitecoredemo-jp"
+            useLanguageSpecificLayout="true"
+            graphQLEndpoint="/sitecore/api/graph/edge"
+            inherits="defaults"
+            serverSideRenderingEngine="http"
+            serverSideRenderingEngineEndpointUrl="http://localhost:3000/api/editing/render"
+            serverSideRenderingEngineApplicationUrl="http://localhost:3000"
+        />
+```
+
+上記の変更が終わったあと、以下のコマンドを実行してコンテナに反映させます。
+
+```
+jss deploy config
+```
+

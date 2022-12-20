@@ -69,7 +69,7 @@ seeding seed Simple-B2C -n='Headstart Japan' -u=username -p=password -r=jpn
 
 ![OrderCloud](/static/images/2022/02/seeding06.png)
 
-`ClientIDsWithAPIAccess` の項目は Postman で初期データを投入した後に確認をします。
+`ClientIDsWithAPIAccess` の項目は Postman で初期データを投入した後に確認をするためここではスキップします。
 
 今回は以下のように変更しました。
 

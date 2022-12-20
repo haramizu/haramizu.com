@@ -2,7 +2,7 @@
 title: Next.js Commerce と OrderCloud の連携
 date: '2022-12-23'
 tags: ['OrderCloud', 'Next.js']
-draft: true
+draft: false
 summary: Next.js Commerce との連携の手順を以前にも紹介していましたが、時間が経ったこともありアップデートがあります。今回は、最短で立ち上げるための手順を改めて紹介したいと思います。
 images: ['/static/images/2022/12/nextjscommerce18.png']
 ---
@@ -43,7 +43,7 @@ Sitecore OrderCloud の Sandbox は無料で利用することができます。
 
 今回は日本のデータセンターに OrderCloud のテナントを立ち上げるのをゴールとします。このため、日本のデータセンターに対して新規のマーケットプレースを作成していきます。
 
-事前準備として、サイトで利用をする画像を Azure のストレージにアップロードしておく必要があります。手順は以下の通りです（ストレージに関しては完了しているとします）。
+事前準備として、サイトで利用をする画像を Azure のストレージにアップロードしておく必要があります。手順は以下の通りです（ストレージに関しては作成が完了しているとします）。
 
 1. https://raw.githubusercontent.com/ordercloud-api/ordercloud-seed/main/seeds/Vercel-B2C.yml のファイルをダウンロードします。このファイルは一旦 assets/Seed のフォルダに保存をします。
 2. 上記の Yaml ファイルで記載されている画像を一通りダウンロードしてください。

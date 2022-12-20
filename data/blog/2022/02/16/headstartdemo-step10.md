@@ -83,7 +83,7 @@ node inject-appconfig defaultadmin-test
 
 ![OrderCloud](/static/images/2022/02/release14.png)
 
-続いて Deploy Azure App Service を選択して、スロットを Test に、ディレクトリを指定してください。
+続いて Deploy Azure App Service を選択して、スロットを Test に、 Seller のディレクトリを指定してください。
 
 ![OrderCloud](/static/images/2022/02/release15.png)
 

@@ -2,7 +2,7 @@
 title: Next.js のプロジェクトを追加する
 date: '2023-01-17'
 tags: ['Docker', 'Next.js', 'XM']
-draft: true
+draft: false
 summary: 前回作成をしたヘッドレスのサイトはまだサイトコアのアイテムがあるだけとなっています。今回はこれに Next.js のプロジェクトを追加して、ページの編集ができるところまでの紹介をします。
 images: ['/static/images/2023/01/nextjs03.png']
 ---

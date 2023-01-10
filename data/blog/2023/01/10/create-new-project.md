@@ -2,7 +2,7 @@
 title: 新しいプロジェクトを作成する
 date: '2023-01-10'
 tags: ['Docker', 'Next.js', 'XM']
-draft: true
+draft: false
 summary: 新年あけましておめでとうございます。今年も Sitecore に関する技術的な情報をブログで提供していきたいと思います。実は Sitecore の技術情報は日本語で多く提供しているのですが、いざ始めるとなるとどこから手を付けていいのか悩ましいですよね。ということで、新年最初の投稿は、新しいプロジェクトをサクッと作るところを紹介します。
 images: ['/static/images/2023/01/newproject03.png']
 ---

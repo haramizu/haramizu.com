@@ -2,7 +2,7 @@
 title: 日本語リソースの追加
 date: '2023-01-13'
 tags: ['Docker', 'XM']
-draft: false
+draft: true
 summary: すでに XM の環境が起動していますが、管理画面で表示される言語がデフォルトの英語になっています。今回は管理画面で日本語を利用することができるように、日本語のリソースを追加する手順を紹介していきます。
 images: ['/static/images/2023/01/jajp02.png']
 ---
@@ -14,7 +14,7 @@ images: ['/static/images/2023/01/jajp02.png']
 今回は XM1 および SXA の日本語リソースを適用します。このファイルは、下記の Web サイトからダウンロードが可能です。
 
 - Sitecore XM 日本語リソース
-https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/103/Sitecore_Experience_Platform_103.aspx
+  https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/103/Sitecore_Experience_Platform_103.aspx
 - Sitecore Experience Accelarator 日本語リソース
 
 ## 簡単に展開する

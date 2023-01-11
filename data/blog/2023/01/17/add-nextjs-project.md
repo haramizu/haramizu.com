@@ -22,7 +22,7 @@ images: ['/static/images/2023/01/nextjs03.png']
 ここでバージョンを指定してテンプレートを作成するために、以下のようにコマンドを実行してください（以下の数字は GitHub のリポジトリの番号になります）。
 
 ```
-npx create-sitecore-jss@21.0.0 --templates nextjs,nextjs-sxa
+npx create-sitecore-jss@21.0.2 --templates nextjs,nextjs-sxa
 ```
 
 ここからは、普通に Next.js のプロジェクトの設定を入れていく形です。ここから先のプロジェクトのフォルダは `C:\Projects\Sitecoredemo.Docker` としていますので、随時手元に合わせて実行してください。
@@ -114,3 +114,14 @@ Appname のパスも変更をします。
 ```
 jss deploy config
 ```
+
+```
+dotnet sitecore login --cm https://cm.sitecoredemo.localhost --auth https://id.sitecoredemo.localhost --allow-write true
+dotnet sitecore ser push
+```
+
+## まとめ
+
+## 関連サイト
+
+- [How To Setup Sitecore Headless SXA And Next.js](https://www.getfishtank.com/blog/how-to-setup-xm-cloud-sitecore-10-sxa-headless-and-nextj)s

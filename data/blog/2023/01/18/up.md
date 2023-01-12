@@ -51,23 +51,26 @@ dotnet sitecore login
 dotnet sitecore ser pull
 ```
 
-## 各種パラメーターの受け渡し
+これで Sitecore に展開していたデータをシリアライズして再利用しやすくしました。
 
-最後に up.ps1 のファイルを編集します。これも、トップレベルに .env ファイルなどを移動させたために必要となる作業です。ここはシンプルで、
+## up.ps1 のカスタマイズ
 
-```powershell:up.ps1
-$workingDirectoryPath;
-```
+続いて初期起動でシリアライズをしたアイテムをインポートできるように up.ps1 のファイルを編集します。これは、トップレベルに .env ファイルなどを移動させたために必要となる作業です。
+
+まず最初に `$workingDirectoryPath` に関しては以下のように変更してください。
 
 ここで以下のように設定します。
 
 ```powershell:up.ps1
-$workingDirectoryPath= ".\";
+$startDirectory = "";
 ```
 
 そして以下のコードを削除します。
 
 ```powershell:up.ps1
+$topologyArray = "xp0", "xp1", "xm1";
+
+
 foreach ($topology in $topologyArray)
 {
   $envCheck = Get-Content (Join-Path -Path ($startDirectory + $topology) -ChildPath .env) -Encoding UTF8 | Where-Object { $_ -imatch "^$envCheckVariable=.+" }
@@ -88,7 +91,17 @@ if (-not $envCheck) {
 
 ![clean](/static/images/2023/01/clean08.png)
 
-ここではそのまま OK を押して進めていきます。途中からヘッドレスのプロジェクトを今回作成していないためエラーになって止まりますが、この不足部分は後ほど補足するので問題ありません。Sitecore Experience Manager 10.3 にログインをして、起動してログインをすることができる様になりました。
+```
+if ($ByPass) {
+  dotnet sitecore login --cm https://cm.sitecoredemo.localhost/ --auth https://id.sitecoredemo.localhost/ --allow-write true --client-id "SitecoreCLIServer" --client-secret "testsecret" --client-credentials true
+}else {
+  dotnet sitecore login --cm https://cm.sitecoredemo.localhost/ --auth https://id.sitecoredemo.localhost/ --allow-write true
+}
+```
+
+```
+dotnet sitecore login --cm https://cm.sitecoredemo.localhost/ --auth https://id.sitecoredemo.localhost/ --allow-write true
+```
 
 ![clean](/static/images/2023/01/clean09.png)
 

@@ -56,7 +56,7 @@ jss setup
 
 | 質問項目                            | 設定                                                      |
 | ----------------------------------- | --------------------------------------------------------- |
-| Path to the Sitecore folder         | ..\..\docker\deploy\platform\                             |
+| Path to the Sitecore folder         | ..\\..\docker\deploy\platform\                            |
 | Sitecore hostname                   | https://cm.sitecoredemo.localhost                         |
 | Sitecore import service URL         | https://cm.sitecoredemo.localhost/sitecore/api/jss/import |
 | Sitecore API Key                    | src\items\api-key\DockerStarter.yml の ID                 |

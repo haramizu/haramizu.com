@@ -1,6 +1,6 @@
 ---
 title: Headstart と Next.js Commerce を連携させる
-date: '2022-12-26'
+date: '2023-01-31'
 tags: ['OrderCloud', 'Next.js', 'Headstart']
 draft: false
 summary: Next.js Commerce と OrderCloud を立ち上げただけでは EC サイトとしての機能は不足しており、管理画面として Headstart のプロジェクトを組み合わせるのが最適です。今回は、前回立ち上げた Next.js Commerce と連携する Headstart の管理画面を立ち上げていきます。

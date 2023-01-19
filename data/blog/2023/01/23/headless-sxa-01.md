@@ -1,5 +1,5 @@
 ---
-title: Headless SXA でデモサイトを構築する - Part 2
+title: Headless SXA でデモサイトを構築する - Part 1
 date: '2023-01-23'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
 draft: true

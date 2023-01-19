@@ -1,6 +1,6 @@
 ---
-title: Headless SXA でデモサイトを構築する - Part 3
-date: '2023-01-24'
+title: Headless SXA でデモサイトを構築する - Part 4
+date: '2023-01-26'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
 draft: true
 summary: Sitecore の新しいコンポーネント集として利用できる Headless で利用できる SXA を利用してサイト構築のポイントを紹介していきます。

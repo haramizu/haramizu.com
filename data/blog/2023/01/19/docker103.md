@@ -1,7 +1,7 @@
 ---
 title: Sitecore 10.3 で Headless SXA を簡単に起動する
 date: '2023-01-19'
-tags: ['Docker', 'Next.js', 'XM']
+tags: ['Docker', 'Next.js', 'XM', 'Headless SXA']
 draft: false
 summary: これまで数回に分けて Sitecore 10.3 のコンテナ環境、SXA の追加など手元で動かす方法を紹介してきました。毎回同じ手順を実施するのは大変なので、簡単に起動することができるリポジトリを作成しました。リポジトリを利用して起動する方法を今回は紹介します。
 images: ['/static/images/2023/01/103docker12.png']

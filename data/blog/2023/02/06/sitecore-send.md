@@ -2,7 +2,7 @@
 title: Sitecore Send で利用できるパーソナライズのタグ
 date: '2023-02-06'
 tags: ['Sitecore Send']
-draft: true
+draft: false
 summary: Sitecore Send のメールを作成するにあたって、文章の中にパーソナライズのタグを設定することが可能です。今回は、このパーソナライズのタグに関して紹介をしていきます。
 images: ['/static/images/2023/02/send01.png']
 ---

@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 1 ページ、パーシャルデザイン、プレースホルダー
 date: '2023-02-07'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: true
+draft: false
 summary: 今回から Headless SXA を利用した簡単なページを作る際の基本的なポイントを数回に分けて紹介をしていきます。今回はパーシャルデザインとページの考え方、プレースホルダーをどういう風に活用するのか、という基本的な考え方を取り上げます。
 images: ['/static/images/2023/02/design04.png']
 ---

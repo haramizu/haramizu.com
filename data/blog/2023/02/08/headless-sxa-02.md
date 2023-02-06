@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 2 パーシャルデザインの作成 - ヘッダーの作成 その１
 date: '2023-02-08'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: true
+draft: false
 summary: 今回はデモサイトを作る最初の第一歩として、ヘッダーのパーシャルデザインを作りたいと思います。ここで利用するのは標準のコンポーネントを配置して、少し見た目を変えるという感じの簡単な作り方で進めていきます。なお、作業環境としてあh XM Cloud のコンテナをローカルで起動して、作成をしていくのを前提とします。
 images: ['/static/images/2023/02/header01.png']
 ---

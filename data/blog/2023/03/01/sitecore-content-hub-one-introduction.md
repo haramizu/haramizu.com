@@ -4,7 +4,7 @@ date: '2023-03-01'
 tags: ['Content Hub ONE']
 draft: false
 summary: Sitecore の新しいヘッドレス CMS として新たにリリースされる Sitecore Content Hub ONE に関してブログで紹介をしていきます。今回は製品の機能に関して、ざっと紹介をしていきます。
-images: ['/static/images/2023/03/nextjs03.png']
+images: ['/static/images/2023/03/chone01.png']
 ---
 
 Sitecore の新しいヘッドレス CMS として新たにリリースされる Sitecore Content Hub ONE に関してブログで紹介をしていきます。今回は製品の機能に関して、ざっと紹介をしていきます。
@@ -17,7 +17,7 @@ Sitecore の新しいヘッドレス CMS として新たにリリースされる
 
 Sitecore Content Hub ONE の管理画面は以下の様になっています。
 
-![page](/static/images/2023/03/chone01.png)
+![management](/static/images/2023/03/chone01.png)
 
 この画面に出ている機能が主な機能となります。
 

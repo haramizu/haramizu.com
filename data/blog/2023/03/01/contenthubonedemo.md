@@ -4,7 +4,7 @@ date: '2023-02-16'
 tags: ['Content Hub ONE']
 draft: true
 summary: Sitecore の新しいヘッドレス CMS として新たにリリースされる Sitecore Content Hub ONE のデモが提供されました。これのセットアップの手順を今回まとめておきます。
-images: ['/static/images/2023/01/nextjs03.png']
+images: ['/static/images/2023/03/nextjs03.png']
 ---
 
 Sitecore の新しいヘッドレス CMS として新たにリリースされる Sitecore Content Hub ONE のデモが提供されました。これのセットアップの手順を今回まとめておきます。

@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 5 ヘッダーのスタイルシートの変更をする
 date: '2023-02-13'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: true
+draft: false
 summary: 作成をしたヘッダーに対して、スタイルシートで見た目をもう少し整えていきたいと思います。レイアウトの表示するコンポーネントは画面で設計する際に利用し、スタイルシートを変更してみための調整ができる、というのを今回は紹介します。
 images: ['/static/images/2023/01/nextjs03.png']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore Content Hub ONE - コンテンツ形式
 date: '2023-03-02'
 tags: ['Content Hub ONE']
-draft: false
+draft: true
 summary: Sitecore Content Hub ONE （以下 Content Hub ONE）の最初のステップはコンテンツの構造を決めるところです。コンテンツの構造で関係性を持たせることもできるため、最初のステップとして幾つかのコンテンツのタイプを今回は定義していきます。
 images: ['/static/images/2023/03/chone09.png']
 ---

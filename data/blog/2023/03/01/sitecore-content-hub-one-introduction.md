@@ -2,7 +2,7 @@
 title: Sitecore Content Hub ONE の紹介
 date: '2023-03-01'
 tags: ['Content Hub ONE']
-draft: false
+draft: true
 summary: Sitecore の新しいヘッドレス CMS として新たにリリースされる Sitecore Content Hub ONE に関してブログで紹介をしていきます。今回は製品の機能に関して、ざっと紹介をしていきます。
 images: ['/static/images/2023/03/chone01.png']
 ---

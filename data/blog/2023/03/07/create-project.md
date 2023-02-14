@@ -2,7 +2,7 @@
 title: Sitecore Content Hub ONE - プロジェクトの作成 - シリアライズ
 date: '2023-03-07'
 tags: ['Content Hub ONE']
-draft: false
+draft: true
 summary: まずは Content Hub ONE の画面でコンテンツ形式、コンテンツの登録、メディアの登録を実施しました。これらのデータに関して手元のデータとして持つことはできるでしょうか？今回はシリアライズに関して紹介をします。
 images: ['/static/images/2023/03/project09']
 ---

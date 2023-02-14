@@ -45,7 +45,7 @@ images: ['/static/images/2022/12/newcomponent13.png']
 
 アイコンに関してはこちらには `office/32x32/books.png` を設定しました。
 
-続いて `Rendering Parameters` のフォルダを `Custom` の下に作成をします。また、その下にアイテムとして `QandA` というアイテムを作成します。このアイテムのベーステンプレートを以下の４つとしてください。
+続いて `Rendering Parameters` のフォルダを `Custom` の下に作成をします。また、その下にアイテムとして `QandA` というアイテムを作成します。このアイテムのベーステンプレートを以下の４つとしてください。なお、１つ目の JSS Experience Accelerator のパスに関しては Display Name が `Headless Experience Accelerator` とコンテンツエディターでは表示されます。
 
 - /sitecore/templates/Foundation/JSS Experience Accelerator/Presentation/Rendering Parameters/BaseRenderingParameters
 - /sitecore/templates/Foundation/Experience Accelerator/Dynamic Placeholders/Rendering Parameters/IDynamicPlaceholder

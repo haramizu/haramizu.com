@@ -1,6 +1,6 @@
 ---
 title: Headless SXA でデモサイトを構築する - Part 8 YouTube コンポーネントを追加する（前編）
-date: '2023-02-16'
+date: '2023-02-20'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
 draft: false
 summary: 標準のコンポーネントだけではできることが限られてきます。そこで、新しいコンポーネントをサイトに追加していきます。今回はウィザードを利用して少し手間を省きます。
@@ -71,11 +71,70 @@ images: ['/static/images/2023/02/component03.png']
 
 ## サンプルコードの適用
 
-純粋なサンプルコードを入れる
+まず最初に、YouTube のデータを取得するためにテンプレートの定義を変更します。テンプレートは `/sitecore/templates/Feature/Demo/Data Source/YouTube` を変更します。
+
+作成したフィールドは、以下の通りです。
+
+- videoId : YouTube のビデオの ID を指定
+- thumbnail : メディアライブラリの画像を指定
+
+![component](/static/images/2023/02/component04.png)
+
+続いて、ファイルを作成します。以前に作成したサンプルをベースに、フィールド名などを変更して、`Youtube.tsx` を作成します。
+
+```javascript:src\sxastarter\src\components\YouTube.tsx
+import React from 'react';
+import { Field, Text, ImageField, Image as JssImage } from '@sitecore-jss/sitecore-jss-nextjs';
+
+interface Fields {
+  videoId: Field<string>;
+  thumbnail: ImageField;
+}
+type YoutubeProps = {
+  params: { [key: string]: string };
+  fields: Fields;
+};
+
+export const Default = (props: YoutubeProps): JSX.Element => {
+  return (
+    <>
+      <div className="youtube-container">
+        <JssImage field={props?.fields?.thumbnail} />
+      </div>
+      <Text field={props.fields.videoId} />
+    </>
+  );
+};
+```
+
+これでほとんど準備ができましたが、より使いやすくするために設定を追加していきます。
+
+## アイコンの設定
+
+コンテンツツリーやコンポーネントとしてわかりやすくするために、以下の２つのアイテムのアイコンを変更します。
+
+- /sitecore/layout/Renderings/Feature/Demo/YouTube
+- /sitecore/templates/Feature/Demo/Data Source/YouTube
+
+アイコンは以下のパスを指定します。今回は動画になるため、ビデオカメラのアイコンを設定しました。
+
+- office/32x32/video_camera.png
+
+![component](/static/images/2023/02/component07.png)
+
+## YouTube フォルダの作成
+
+データの保存としてはアイテムに紐づく Data フォルダに作成される形と、サイト内で共有することができるフォルダに保存と２つのタイプを選択できるようにします。この為のフォルダを作成します。
 
 ## コンポーネントの登録
 
-コンポーネントを表示できる様にする
+作成したコンポーネントを作成できるように、サイトの設定に作成したレンダリングを追加していきます。まず、`/sitecore/content/sitecoredemo-jp/sitecoredemo-jp/Presentation/Available Renderings` の下で Available Renderings を追加します。
+
+![component](/static/images/2023/02/component05.png)
+
+作成したレンダリング一覧に、上記で作成済みの YouTube のレンダリングを追加します。
+
+![component](/static/images/2023/02/component06.gif)
 
 ## まとめ
 

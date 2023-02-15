@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 8 YouTube コンポーネントを追加する（前編）
 date: '2023-02-16'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: true
+draft: false
 summary: 標準のコンポーネントだけではできることが限られてきます。そこで、新しいコンポーネントをサイトに追加していきます。今回はウィザードを利用して少し手間を省きます。
 images: ['/static/images/2023/02/component03.png']
 ---
@@ -46,7 +46,7 @@ images: ['/static/images/2023/02/component03.png']
 - /sitecore/templates/Feature/Demo/Data Source/YouTube
 - /sitecore/templates/Feature/Demo/Rendering Parameters/YouTube
 
-上記のファイルをシリアライズで取得できるように、対象として追加をします。
+今後はこの Demo フォルダに展開していきたいと思いますので、上記のファイルをシリアライズできるように既存の定義ファイルに以下のコードを追加しておきます。
 
 ```yaml:src\SitecoreDemo.module.json
             {
@@ -67,7 +67,7 @@ images: ['/static/images/2023/02/component03.png']
             },
 ```
 
-これで基本的なアイテムの準備ができました。
+これで基本的なコンポーネントを展開するためのアイテムの準備ができました。
 
 ## サンプルコードの適用
 

@@ -1,5 +1,5 @@
 ---
-title: Headless SXA でデモサイトを構築する - Part 9 YouTube コンポーネントを追加する（後編）
+title: Headless SXA でデモサイトを構築する - Part 10 YouTube コンポーネントを追加する（後編）
 date: '2023-02-21'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
 draft: false

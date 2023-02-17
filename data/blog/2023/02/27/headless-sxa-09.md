@@ -38,6 +38,8 @@ images: ['/static/images/2023/02/component03.png']
 
 - /sitecore/templates/Foundation/JavaScript Services/Json Rendering
 
+![component](/static/images/2023/02/component04.png)
+
 今回はこの形でウィザードを終了させます。すると以下のアイテムが作成されているのがわかります。
 
 - /sitecore/layout/Renderings/Feature/Demo/YouTube
@@ -78,7 +80,7 @@ images: ['/static/images/2023/02/component03.png']
 - videoId : YouTube のビデオの ID を指定
 - thumbnail : メディアライブラリの画像を指定
 
-![component](/static/images/2023/02/component04.png)
+![component](/static/images/2023/02/component05.png)
 
 続いて、ファイルを作成します。以前に作成したサンプルをベースに、フィールド名などを変更して、`Youtube.tsx` を作成します。
 
@@ -120,7 +122,7 @@ export const Default = (props: YoutubeProps): JSX.Element => {
 
 - office/32x32/video_camera.png
 
-![component](/static/images/2023/02/component07.png)
+![component](/static/images/2023/02/component06.png)
 
 ## YouTube フォルダの作成
 

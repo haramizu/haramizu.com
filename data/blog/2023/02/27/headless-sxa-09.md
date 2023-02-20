@@ -4,7 +4,7 @@ date: '2023-02-27'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
 draft: false
 summary: 標準のコンポーネントだけではできることが限られてきます。そこで、新しいコンポーネントをサイトに追加していきます。今回はウィザードを利用して少し手間を省きます。
-images: ['/static/images/2023/02/component03.png']
+images: ['/static/images/2023/02/component13.gif']
 ---
 
 標準のコンポーネントだけではできることが限られてきます。そこで、新しいコンポーネントをサイトに追加していきます。今回はウィザードを利用して少し手間を省きます。

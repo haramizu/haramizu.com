@@ -1,8 +1,8 @@
 ---
 title: Headless SXA でデモサイトを構築する - Part 10 YouTube コンポーネントを追加する（後編）
-date: '2023-02-28'
+date: '2023-03-14'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: false
+draft: true
 summary: 前回は新しいコンポーネントを追加するところまで作成しました。今回は、コンポーネントにコードを追加して、YouTube の動画を扱うことができるコンポーネントに仕上げていきます。
 images: ['/static/images/2023/02/component03.png']
 ---

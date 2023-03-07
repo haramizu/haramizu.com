@@ -1,6 +1,6 @@
 ---
 title: Sitecore Content Hub ONE - メディア
-date: '2023-03-06'
+date: '2023-03-24'
 tags: ['Content Hub ONE']
 draft: true
 summary: Sitecore の新しいヘッドレス CMS として新たにリリースされる Sitecore Content Hub ONE に関してブログで紹介をしていきます。ヘッドレス CMS の概念を理解していればシンプルな運用が可能なツールとなっています。今回はプロジェクトの作成、

@@ -1,6 +1,6 @@
 ---
 title: Sitecore Content Hub ONE - コンテンツの作成
-date: '2023-03-03'
+date: '2023-03-23'
 tags: ['Content Hub ONE']
 draft: true
 summary: 前回作成をしたコンテンツ形式を利用して、Content Hub ONE に対してコンテンツの追加していきます。まずは製品情報をいくつか登録して、そのあとブログ記事を登録します。

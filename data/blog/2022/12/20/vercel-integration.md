@@ -2,7 +2,7 @@
 title: Sitecore XM Cloud - Vercel との連携
 date: '2022-12-20'
 tags: ['XM Cloud', 'XM', 'Vercel']
-draft: false
+draft: true
 summary: Sitecore XM Cloud で作成をした CMS のデリバリー環境として Vercel を選択することが可能ですが、この作業を簡単にするための Sitecore XM Cloud との連携機能を提供しています。今回は、この機能を利用して、Web サイトを Vercel に展開する手順を紹介します。
 images: ['/static/images/2022/12/VercelIntegration09.png']
 ---

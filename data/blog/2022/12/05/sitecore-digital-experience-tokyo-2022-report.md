@@ -2,7 +2,7 @@
 title: Sitecore Digital Experience Tokyo 2022 レポート
 date: '2022-12-05'
 tags: ['イベント', 'Slack']
-draft: false
+draft: true
 summary: 先週、12月2日にサイトコアのイベント Sitecore Digital Experiece Tokyo 2022 を開催しました。今回、私が担当したのは Sitecore Developer Lunch ということで、お昼を食べながら Sitecore のパートナー、認定エンジニアの方に参加していただいた軽食付きのランチでした。そこで説明した内容をブログでも紹介します。
 images: ['/static/images/2022/12/slack01.png']
 ---

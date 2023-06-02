@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 7 ページテンプレートの制御をする
 date: '2023-02-15'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: false
+draft: true
 summary: ヘッダーとフッターが出来上がりましたが、これをデフォルトのページに必ず入れておく形にしていきたいと思います。これを実現する機能はページデザインとなりますので、今回はこれを紹介します。
 images: ['/static/images/2023/01/nextjs03.png']
 ---

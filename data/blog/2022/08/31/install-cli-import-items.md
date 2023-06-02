@@ -2,7 +2,7 @@
 title: Sitecore CLI を利用してアイテムのインポート
 date: '2022-08-31'
 tags: ['Headless', 'Next.js']
-draft: false
+draft: true
 summary: 前回は Next.js のテンプレートをプロジェクトに追加しましたが、この段階では Sitecore には何もデータが無いためエラーとなります。そこで、Sitecore CLI を利用して、サンプルデータをインポートしたいと思います。
 images: ['/static/images/2022/08/cli06.png']
 ---

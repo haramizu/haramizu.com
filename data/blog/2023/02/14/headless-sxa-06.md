@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 6 フッターの作成、メニューの制御
 date: '2023-02-14'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: false
+draft: true
 summary: ヘッダーが出来上がったので今回はフッターのエリアを作成したいと思います。フッターにはメニューの主な項目を表示する様な形としていきたいため、フッターの作り方だけでなくメニューの制御について学んでいきます。
 images: ['/static/images/2023/02/footer11.png']
 ---

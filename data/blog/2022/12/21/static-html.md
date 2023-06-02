@@ -2,7 +2,7 @@
 title: HTML のページを追加する
 date: '2022-12-21'
 tags: ['Next.js', 'XM Cloud']
-draft: false
+draft: true
 summary: すでに Web サイトのコンテンツがあって、HTML のデータがあるという際に、Next.js をベースのサイトの場合はどうすれば良いでしょうか？実は Next.js の基本的な機能を利用すれば、HTML ファイルなどを一通りサーバーにホストすることが可能です。
 images: ['/static/images/2022/12/test01.png']
 ---

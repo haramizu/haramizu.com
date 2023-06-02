@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 4 パーシャルデザインの作成 - ヘッダーの作成 その３
 date: '2023-02-10'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: false
+draft: true
 summary: コンテナを３つ配置して上から２つは完成させましたが、まだ3つ目のコンテナの実装をしていません。これは画面のサイズに合わせてメニューを変更するレスポンシブデザインに対応するためのものとして用意しています。それでは最後に3つ目の項目を実装していきましょう。
 images: ['/static/images/2023/02/header31.png']
 ---

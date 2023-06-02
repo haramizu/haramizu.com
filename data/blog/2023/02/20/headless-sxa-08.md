@@ -2,11 +2,12 @@
 title: Headless SXA でデモサイトを構築する - Part 8 日本語リソースの適用
 date: '2023-02-20'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: false
+draft: true
 summary: コンテナおよび XM Cloud の環境に対して日本語リソースを適用していきます。この手順は以前にブログで紹介していましたが、今回はその手順を改めてステップの中に入れていく形です。
 images: ['/static/images/2023/02/ja-jp02.png']
 ---
 
+このページは [](https://haramizu.com/blog/2023/02/20/headless-sxa-08)に移行しました。
 コンテナおよび XM Cloud の環境に対して日本語リソースを適用していきます。この手順は以前にブログで紹介していましたが、今回はその手順を改めてステップの中に入れていく形です。
 
 ## コンテナ環境への日本語リソースの適用

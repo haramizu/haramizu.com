@@ -2,7 +2,7 @@
 title: Next.js に Google Tag Manager を設定する - XM Cloud 編
 date: '2022-12-12'
 tags: ['XM Cloud', 'XM', 'Headless SXA', 'Next.js']
-draft: false
+draft: true
 summary: XM Cloud のサイトを外部に公開をしました。他のサービスと連携させるためにも、まずは Google Tag Manager を設定します。
 images: ['/static/images/2022/12/gtm08.png']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore Headless 開発、テスト環境の構築 Part 3 - コンテナにモジュールのインストール - Content Hub コネクタ
 date: '2022-08-26'
 tags: ['Headless', 'Docker','Content Hub']
-draft: false
+draft: true
 summary: コンテナの環境をサーバーと同じ環境に整えていくために、Docker でも各種モジュールを利用できるようにしていきます。現在利用している Docker のコンテナには SXA および Horizon までは設定されているため、不足している分を随時インストールしていきます。
 images: ['/static/images/2022/08/docker08.png']
 ---

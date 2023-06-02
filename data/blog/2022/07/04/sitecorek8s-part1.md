@@ -2,7 +2,7 @@
 title: Sitecore on Azure Kubernetes Service - 環境を整える
 date: '2022-07-04'
 tags: ['AKS', 'インストール']
-draft: false
+draft: true
 summary: これまで Sitecore を Docker で利用する形で説明をしてきましたが、今回は Kubernetes を利用して展開する方法を取り上げます。Docker はあくまで手元で動かすには便利な仕組みですが、コンテナを利用して運用をするとなると、Azure Kubernetes を利用するのが便利です。
 images: ['/static/images/2022/07/sitecoreaks05.png']
 ---

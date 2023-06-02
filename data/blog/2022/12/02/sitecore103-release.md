@@ -2,7 +2,7 @@
 title: Sitecore 10.3 がリリースされました
 date: '2022-12-02'
 tags: ['XM', 'XP']
-draft: false
+draft: true
 summary: Sitecore Experience Manager / Platform の最新版となる 10.3 のモジュールのダウンロードが可能となっています。モジュールも一緒に提供されていますので、まとめて紹介をします。
 images: ['/static/images/2022/12/sitecore103.png']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore on Azure Kubernetes Service - macOS からの展開
 date: '2022-08-23'
 tags: ['AKS', 'インストール']
-draft: false
+draft: true
 summary: Sitecore を Azure Kubernetes Service に展開する手順を紹介してきました。今回は、macOS において同様の処理ができる環境を整える手順を確認していきます。
 images: ['/static/images/2022/07/sitecoreaks27.png']
 ---

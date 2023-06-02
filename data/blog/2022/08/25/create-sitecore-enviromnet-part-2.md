@@ -2,7 +2,7 @@
 title: Sitecore Headless 開発、テスト環境の構築 Part 2 - サーバーの準備（コンテナ編）
 date: '2022-08-25'
 tags: ['Headless', 'Docker']
-draft: false
+draft: true
 summary: 前回はサーバーを用意しましたが、実際の作業をするのは手元でコンテナを動作させるのがポイントとなります。これまで数回に分けて実施してきた手順を整理しながら、手元で Docker ベースの Sitecore が起動する環境を準備していきたいと思います。
 images: ['/static/images/2022/08/docker06.png']
 ---

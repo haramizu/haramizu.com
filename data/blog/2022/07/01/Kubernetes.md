@@ -2,7 +2,7 @@
 title: Azure Kubernetes Service (AKS) - チュートリアル
 date: '2022-07-01'
 tags: ['AKS', 'Azure チュートリアル']
-draft: false
+draft: true
 summary: これまで数回に分けて Docker コンテナで Sitecore が動作する手順を紹介してきました。これまでの内容は手元で動かすための手順であって、実際にクラウドサービスに展開するための手順とは異なる形です。実際の運用という点では、 Azure Kubernetes Service と組み合わせた運用になってきます。今回は、Azure Kubernetes Service のチュートリアルのページを参照しながら、サンプルを動かしてみたいと思います。
 images: ['/static/images/2022/07/aks14.png']
 ---

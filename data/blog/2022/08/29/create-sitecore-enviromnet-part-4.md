@@ -2,7 +2,7 @@
 title: Sitecore Headless 開発、テスト環境の構築 Part 4 - 管理画面の日本語化
 date: '2022-08-29'
 tags: ['Headless', 'Docker']
-draft: false
+draft: true
 summary: コンテナの環境を設定したあと、管理画面が英語のままとなっているため、日本語化の手続きを今回紹介をします。今回は Docker のイメージを作成する時にファイルをコピーする形でリソースを展開する手順を紹介します。
 images: ['/static/images/2022/08/docker11.png']
 ---

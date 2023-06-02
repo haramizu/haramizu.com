@@ -2,7 +2,7 @@
 title: Vercel に XM Cloud のサイトを展開する
 date: '2022-12-09'
 tags: ['XM Cloud', 'Vercel']
-draft: false
+draft: true
 summary: XM Cloud をこれまで紹介してきましたが、これまで CMS の環境を操作しているだけでした。実際に Web サイトとして公開をする際には、ヘッドレスとして実装しているので別のサービスと連携させる必要があります。今回は、Vercel にサイトを展開する手順を紹介します。これまでも何度か Vercel に展開する手順を紹介してきましたが、今回はその XM Cloud 版です。
 images: ['/static/images/2022/12/vercel10.png']
 ---

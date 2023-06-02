@@ -2,7 +2,7 @@
 title: Headless SXA でデモサイトを構築する - Part 3 パーシャルデザインの作成 - ヘッダーの作成 その２
 date: '2023-02-09'
 tags: ['XM Cloud', 'XM', 'Headless SXA']
-draft: false
+draft: true
 summary: 前回はヘッダーエリアに３つのコンテナーを配置して、そのうち2つに関してのバックグランドの色を変更しました。今回は一番上に配置したコンテナーにメンニューの項目を配置していきたいと思います。
 images: ['/static/images/2023/02/header25.png']
 ---

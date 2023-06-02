@@ -2,7 +2,7 @@
 title: Next.js に Google Tag Manager を設定する
 date: '2022-02-25'
 tags: ['Next.js', 'Google Tag Manager']
-draft: false
+draft: true
 summary: 今回は少し趣向を変えて Sitecore ではなく Next.js で Google Tag Manager を適用するための手順を紹介します。テストも含めて、実施していきます。
 images: ['/static/images/2022/02/gtm01.png']
 ---

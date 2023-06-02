@@ -2,7 +2,7 @@
 title: 過去に訪問をした履歴を利用したパーソナライズ
 date: '2022-05-24'
 tags: ['Sitecore', 'パーソナライズ']
-draft: false
+draft: true
 summary: Sitecore XP のパーソナライズ機能を利用するにあたって、ページの参照に関しての行動履歴に合わせたパーソナライズの設定に関して、いくつかルールが提供されています。今回は、それぞれの設定方法と動作に関しての紹介をします。
 images: ['/static/images/2022/05/personalize01.png']
 ---

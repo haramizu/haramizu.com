@@ -2,7 +2,7 @@
 title: Headstart デモ環境を構築する - Part 1 環境を整備する
 date: '2022-02-01'
 tags: ['Sitecore', 'OrderCloud']
-draft: false
+draft: true
 summary: Sitecore OrderCloud のサンプルサイトでもある Headstart を立ち上げるための手順を紹介します。以前にも記事で紹介をしましたが、あまり説明もなく手順のみが記載されていたのでよくわからない形だったかと思います。実は日本のデータセンターも選択することができるようになったので、この部分も含めてもう少し細かいステップを含めた手順で紹介をしていきます。
 images: ['/static/images/2022/02/createaccount01.png']
 ---

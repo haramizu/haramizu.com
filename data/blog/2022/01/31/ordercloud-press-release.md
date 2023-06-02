@@ -2,7 +2,7 @@
 title: Sitecore OrderCloud に関するニュース一覧
 date: '2022-01-31'
 tags: ['Sitecore','OrderCloud']
-draft: false
+draft: true
 summary: 2022年1月27日に、Sitecore の新しいコマースソリューションとなる Sitecore OrderCloud の製品に関する発表を実施しました。このイベントを皮切りに日本でのビジネスをスタートすることになります。紹介をした内容はまた別途ブログで紹介をするとして、今回は掲載された記事一覧を紹介します。
 images: ['/static/images/2022/01/ordercloudevent.png']
 ---

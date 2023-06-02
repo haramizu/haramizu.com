@@ -2,7 +2,7 @@
 title: Sitecore とデザインツール Figma の連携
 date: '2022-05-25'
 tags: ['Figma', 'Headless']
-draft: false
+draft: true
 summary: 今回は少し趣向を凝らして、デザインツールの Figma との連携について紹介をします。このツールはブラウザ上で動作する Web サイトのデザインツールで、無料でも使うことができるようになっています。近々日本語版もリリースされるそうです。最初に Figma で簡単なコンポーネントを作成して、Sitecore のヘッドレスと連携して GraphQL からデータを取得、デザインに反映させるための手順を簡単に紹介します。
 images: ['/static/images/2022/05/figma16.png']
 ---

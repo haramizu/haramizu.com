@@ -2,7 +2,7 @@
 title: Sitecore Send オートメーションのアクション
 date: '2022-11-11'
 tags: ['Sitecore Send']
-draft: false
+draft: true
 summary: トリガーのアクションからスタートするオートメーションですが、それに対してのアクションを定義することで、ステップメールの送信、条件による分岐を作成することができます。今回は、このアクションに関して紹介をしていきます。
 images: ['/static/images/2022/11/action02.png']
 ---

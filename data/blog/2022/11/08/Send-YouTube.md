@@ -2,7 +2,7 @@
 title: Sitecore Send の YouTube 動画の紹介
 date: '2022-11-08'
 tags: ['Sitecore Send']
-draft: false
+draft: true
 summary: Sitecore Send の各機能に関してブログの記事で紹介をしようかと考えていましたが、機能を紹介する簡単な動画を多く作ってみました。文字ではわかりにくい雰囲気をお届けできているかと思います。簡単に使えるメールマーケティングツールはどういうものだろう？というのをぜひ確認してみてください。
 images: ['/static/images/2022/11/youtube.png']
 ---
@@ -19,7 +19,7 @@ Sitecore Send のサービスを紹介する動画を YouTube にアップして
 
 [![](https://img.youtube.com/vi/sLniW20osbQ/0.jpg)](https://www.youtube.com/watch?v=sLniW20osbQ)
 
-Sitecore Send と Moosend はほぼ同じ機能を提供しています。30日期間限定で評価することができるため、Sitecore Send に興味がある場合は Moosend を評価していただく形が最初のステップです。この動画では申し込みの手順を紹介しています。
+Sitecore Send と Moosend はほぼ同じ機能を提供しています。30 日期間限定で評価することができるため、Sitecore Send に興味がある場合は Moosend を評価していただく形が最初のステップです。この動画では申し込みの手順を紹介しています。
 
 [![](https://img.youtube.com/vi/KJ2yqzLUoHE/0.jpg)](https://www.youtube.com/watch?v=KJ2yqzLUoHE)
 

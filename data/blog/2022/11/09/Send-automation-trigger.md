@@ -2,7 +2,7 @@
 title: Sitecore Send オートメーションのトリガー
 date: '2022-11-09'
 tags: ['Sitecore Send']
-draft: false
+draft: true
 summary: Sitecore Send のオートメーションシナリオを利用することで、ステップメールのシナリオを柔軟憎むことが可能となっています。今回はそのオートメーションに関するシナリオをみていきましょう。
 images: ['/static/images/2022/11/trigger01.png']
 ---
@@ -41,7 +41,7 @@ Sitecore Send のオートメーションシナリオを利用することで、
 
 ![Trigger](/static/images/2022/11/trigger03.png)
 
-特定の日付に達した時、というトリガーがあります。これは詳細を見るとわかるのですが、メールを配信したあと、1年後とかそういったシナリオに使うことができます。
+特定の日付に達した時、というトリガーがあります。これは詳細を見るとわかるのですが、メールを配信したあと、1 年後とかそういったシナリオに使うことができます。
 
 ![Trigger](/static/images/2022/11/trigger04.png)
 

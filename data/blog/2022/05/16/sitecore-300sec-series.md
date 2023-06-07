@@ -2,7 +2,7 @@
 title: Sitecore 300 秒シリーズ 第二弾
 date: '2022-05-16'
 tags: ['Sitecore', 'Webinar']
-draft: false
+draft: true
 summary: Sitecore の YouTube チャンネルで多くの試聴をいただいている 300 秒シリーズに新しいコンテンツが追加されました。今回追加された４本のコンテンツを紹介します。
 images: ['/static/images/2022/05/youtube.jpg']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore XM1 を Docker で動かすための環境整備
 date: '2022-05-10'
 tags: ['Docker', 'Sitecore']
-draft: false
+draft: true
 summary: すでにこのブログでは Sitecore を Docker で動かすという記事を紹介していますが、もう一度最新版に合わせた手順を紹介ます。以前の記事も参考にしつつですが、今後はこの記事がベースになるように何かあれば更新するようにします。
 images: ['/static/images/2022/05/docker08.png']
 ---

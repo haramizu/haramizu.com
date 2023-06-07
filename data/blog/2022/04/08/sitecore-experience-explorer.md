@@ -2,7 +2,7 @@
 title: Sitecore エクスペリエンス エクスプローラーの活用
 date: '2022-04-08'
 tags: ['Sitecore']
-draft: false
+draft: true
 summary: Web サイトのデータとして重要になってくるのがコンテンツの次にリンクになります。この部分の記述をコンポーネントではどう言った形で記述するのかを今回は紹介していきます。
 images: ['/static/images/2022/04/template39.png']
 ---

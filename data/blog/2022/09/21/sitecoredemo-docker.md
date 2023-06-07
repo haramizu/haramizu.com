@@ -2,7 +2,7 @@
 title: Sitecore Headless 開発、テスト環境を起動する
 date: '2022-09-21'
 tags: ['Headless', 'Next.js']
-draft: false
+draft: true
 summary: 前々回に Next.js のテンプレートの準備を、前回はそれを利用するための Sitecore にアイテムをインポートする手順を紹介しました。今回は Next.js の設定を変更して、Sitecore のアイテムを参照してページが表示されるところまで紹介をします。
 images: ['/static/images/2022/09/project09.png']
 ---

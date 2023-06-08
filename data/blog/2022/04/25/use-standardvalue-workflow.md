@@ -2,7 +2,7 @@
 title: スタンダードバリュー - その３ ワークフローの設定
 date: '2022-04-25'
 tags: ['Sitecore', 'XM', 'Headless']
-draft: false
+draft: true
 summary: 作成をしたアイテムのワークフローをスタンダードバリューで設定することで、アイテムを作成後に指定したワークフローを利用して承認プロセスを動かすことができます。
 images: ['/static/images/2022/04/workflow10.png']
 ---

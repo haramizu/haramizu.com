@@ -2,7 +2,7 @@
 title: コンポーネントの作成とテンプレート連携 - 日付と数字編
 date: '2022-04-06'
 tags: ['Next.js', 'Headless']
-draft: false
+draft: true
 summary: 日付、数字に関してはテキストのフィールドを利用して管理することもできますが、Sitecore のフィールドとしては日付、時間、数字を設定することが可能です。今回はこれらの項目を利用してコンテンツを構成できるように、フィールドの使い方を紹介していきます。
 images: ['/static/images/2022/04/template27.png']
 ---

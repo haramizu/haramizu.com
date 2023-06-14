@@ -2,7 +2,7 @@
 title: Hero エリアの部品を作成する（前編）
 date: '2022-03-16'
 tags: ['Next.js', 'Headless']
-draft: false
+draft: true
 summary: 前回の記事でヘッダー、フッターのエリアを整理しました。今回はトップページで利用する Hero エリアのコンポーネントを新規に作成していきます。この手順を通じて、新しいコンポーネントの作り方を学んでいきます。
 images: ['/static/images/2022/03/Scaffold17.png']
 ---

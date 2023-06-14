@@ -2,7 +2,7 @@
 title: ナビゲーションを分離する
 date: '2022-03-15'
 tags: ['tailwind.css', 'Next.js', 'Headless']
-draft: false
+draft: true
 summary: 前回は Tailwind CSS を利用できるところまで実施しました。今回はこれを利用する前に、レイアウトの中に記載されているナビゲーションのコードを別のファイルに分離する手順を確認していきます。
 images: ['/static/images/2022/03/Navigation06.png']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore Connect for Content Hub 5.0 のインストール
 date: '2022-03-22'
 tags: ['Sitecore', 'Content Hub']
-draft: false
+draft: true
 summary: 以前にこのブログでも Sitecore の CMS と Content Hub を連携させるコネクタのインストールの手順を紹介しましたが、コネクタの新しいバージョンがリリースされました。このリリースからは Sitecore Install Framework を利用したインストールに対応をしているので、今回はこの手順を紹介します。
 images: ['/static/images/2022/03/Scaffold17.png']
 ---
@@ -66,7 +66,7 @@ param
 | $InstanceName             | sitecore                                    | インストールしているインスタンスの名前                        |
 | $SitecoreAdminPass        | b                                           | 管理者のパスワード                                            |
 | $SqlPass                  | Password12345                               | SQL Server のパスワード                                       |
-| $SqlInstanceName          | $InstanceName                               | データベースの Prefix を設定（ XM1 など）                      |
+| $SqlInstanceName          | $InstanceName                               | データベースの Prefix を設定（ XM1 など）                     |
 | $SkipDatabaseInstallation | $false                                      | 10.2 の場合は $true に設定                                    |
 
 上記の設定に問題なければ、PowerShell で実行してください。

@@ -2,7 +2,7 @@
 title: 多言語サイトのコンテンツに切り替える
 date: '2022-03-24'
 tags: ['Next.js', '多言語']
-draft: false
+draft: true
 summary: Next.js のテンプレートはすでに多言語対応のモジュールが入っているため、Sitecore 側の設定を追加することで比較的簡単に言語を増やすことができます。そこで今回は、日本語のリソースを追加したいと思います。
 images: ['/static/images/2022/03/language13.png']
 ---

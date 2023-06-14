@@ -2,7 +2,7 @@
 title: Tailwind.css を Next.js のサンプルに適用する
 date: '2022-03-14'
 tags: ['tailwind.css', 'Next.js', 'Headless']
-draft: false
+draft: true
 summary: Next.js のサンプルは CSS のスタイルシートとして bootstrap が標準で設定されています。CSS のスタイルシートはさまざまなものが提供されていますが、今回は Tailwind CSS を利用する形に切り替えていきます。
 images: ['/static/images/2022/03/tailwindcss05.png']
 ---

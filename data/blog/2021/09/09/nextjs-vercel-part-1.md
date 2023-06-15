@@ -2,7 +2,7 @@
 title: Sitecore ヘッドレス と Next.js でサイト構築 - Vercel 環境の構築
 date: '2021-09-09'
 tags: ['JSS','Next.js','Headless','Vercel']
-draft: false
+draft: true
 summary: これまで Next.js のサンプルの使い方を何回か紹介をしてきました。詳細に関しては過去の記事も参照していただく形となりますが、今回はサイト構築をする際の構成について、便利な機能 Vercel と組み合わせた場合どういう開発になるのかを紹介していきます。
 images: ['/static/images/2021/09/nextjs22.png']
 ---

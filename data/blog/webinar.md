@@ -3,7 +3,7 @@ title: Sitecore Webinar シリーズ
 date: '2021-06-08'
 lastmod: '2021-06-08'
 tags: ['Sitecore', 'イベント']
-draft: false
+draft: true
 summary: Sitecore はオンラインセミナーを実施しており、過去の Webinar に関しても参照することができます。ここでは参照できる Webinar のシリーズを一覧で紹介しており、新しいコンテンツが公開されたら随時追加しています。
 images: ['/static/images/sitecorewebinar.png']
 ---

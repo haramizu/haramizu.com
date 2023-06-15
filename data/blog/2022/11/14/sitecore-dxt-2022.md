@@ -2,7 +2,7 @@
 title: Sitecore Digital Experience Tokyo 2022
 date: '2022-11-14'
 tags: ['イベント']
-draft: false
+draft: true
 summary: サイトコアの自社イベント、Sitecore Experience Day Tokyo がリアルイベントとなって戻ってきます。2022年12月2日の開催が決まり、すでに登録が可能となっています。
 images: ['/static/images/2022/11/sitecoredxp2022.png']
 ---

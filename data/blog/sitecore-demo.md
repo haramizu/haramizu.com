@@ -3,7 +3,7 @@ title: Sitecore インストールシリーズ
 date: '2021-06-01'
 lastmod: '2021-06-11'
 tags: ['Sitecore', 'デモ', 'インストール']
-draft: false
+draft: true
 summary: この記事では Sitecore のデモ環境の構築、デモの手順などをまとめていきます。また各種インストールに関しても紹介をします。最新のデモに関連するコンテンツは、Demo のタグを参照すると見ることで確認ができます。
 images: ['/static/images/2021/05/docker10.png']
 ---

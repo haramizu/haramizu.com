@@ -2,7 +2,7 @@
 title: Sitecore XM シリーズ
 date: '2021-09-30'
 tags: ['Sitecore', 'XM']
-draft: false
+draft: true
 summary: Sitecore XM に関連する記事を公開しています。コンテナではなく仮想マシンの上で動かす手順に関して紹介をしている形です。参考にしてください。
 images: ['/static/images/2021/09/xm09.png']
 ---

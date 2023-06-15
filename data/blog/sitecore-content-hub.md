@@ -2,7 +2,7 @@
 title: Sitecore Content Hub クイックガイド 
 date: '2021-10-05'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: ここでは Sitecore Content Hub を利用するにあたって、基本的な手順に関して紹介をしています。今後も新しいトピックが随時掲載されていくため、最新情報を確認するためには Content Hub のタグを利用してください。
 images: ['/static/images/2020/03/sitecorecontenthub-default.png']
 ---

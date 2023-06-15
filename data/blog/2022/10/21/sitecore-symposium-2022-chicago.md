@@ -2,7 +2,7 @@
 title: Sitecore Symposium 2022 Chicago が開催されました
 date: '2022-10-21'
 tags: ['イベント']
-draft: false
+draft: true
 summary: 新型コロナ対策ということで2年連続オンラインイベントになった Sitecore Symposium が改めて 2022 年にシカゴで開催されました。このブログではやっぱり製品に関して紹介ができれば、ということもあり取り上げたいと思います。
 images: ['/static/images/2022/10/symposium.jpg']
 ---

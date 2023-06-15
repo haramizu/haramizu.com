@@ -3,7 +3,7 @@ title: Sitecore オンラインガイド
 date: '2021-05-26'
 lastmod: '2021-12-22'
 tags: ['Sitecore','Content Hub']
-draft: false
+draft: true
 summary: Sitecore に関連する情報をまとめているサイトに関して、オンラインガイドをいくつか提供しています。参考にしてください。
 images: ['/static/images/docsitecorecom.png']
 ---

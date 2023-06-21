@@ -2,7 +2,7 @@
 title: Lenovo s21e の BIOS を操作してみる
 date: '2016-03-27'
 tags: ['Gadget']
-draft: false
+draft: true
 summary: '色々と基本機能を評価した後は他の使い道を考えたいということで、Ubuntu でも動かしてみようか？ということでまずは USB からブートする環境を作りたいと思います。そのためには、BIOS の設定を変更する必要があります。'
 images: ['/static/images/2016/03/img_1897.jpg']
 ---
@@ -13,17 +13,17 @@ BIOS を立ち上げるには、電源が切れている状況で Fn キーと E
 
 ![Lenovo](/static/images/2016/03/img_1897.jpg)
 
-もちろん選択するのは BIOS setup の項目ですね。選んだら ENTER を押します。すると次の画面に。 
+もちろん選択するのは BIOS setup の項目ですね。選んだら ENTER を押します。すると次の画面に。
 
 ![Lenovo](/static/images/2016/03/img_1898.jpg)
 
-右のほうにある boot のメニューを開いて boot mode を選んでENTERを押すと、選択肢として legacy support の項目が出ます。
+右のほうにある boot のメニューを開いて boot mode を選んで ENTER を押すと、選択肢として legacy support の項目が出ます。
 
 ![Lenovo](/static/images/2016/03/img_1899.jpg)
 
-選択すると項目が変更されていることがわかります。これでexit を選択して設定を保存すれば普通のUSBブートもできるようになります。
+選択すると項目が変更されていることがわかります。これで exit を選択して設定を保存すれば普通の USB ブートもできるようになります。
 
-Fn キーを押しながら F12キーを押すと、以前と違ってブートのメニューが増えていることがわかります。
+Fn キーを押しながら F12 キーを押すと、以前と違ってブートのメニューが増えていることがわかります。
 
 ![Lenovo](/static/images/2016/03/img_1900.jpg)
 

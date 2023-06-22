@@ -2,7 +2,7 @@
 title: Headstart デモ環境を構築する - Part 7 Buyer および seller サイトの起動
 date: '2022-02-10'
 tags: ['Sitecore', 'OrderCloud']
-draft: false
+draft: true
 summary: ミドルウェアが起動して初期データの設定ができました。続いて、EC サイトのストアフロントとなる buyer およびEC サイトの管理画面となる seller のサイトをローカルで起動していきます。
 images: ['/static/images/2022/02/jssapp04.png']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore Headless - Sitecore First に変更する
 date: '2022-02-22'
 tags: ['Sitecore', 'Headless', 'Next.js']
-draft: false
+draft: true
 summary: これまで Sitecore の SDK のサンプルのコードを展開するところにフォーカスしていましたが、ここからは Sitecore で作業をしてコードで補完する形の開発をしていく手順に切り替えていきます。後半では以前に紹介をした空っぽのプロジェクトを作る手順を改めて確認して、実際につながるところまで進めていきます。
 images: ['/static/images/2022/02/sitecorefirst01.png']
 ---

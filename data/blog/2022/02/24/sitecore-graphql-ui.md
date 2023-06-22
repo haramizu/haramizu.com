@@ -2,7 +2,7 @@
 title: Sitecore Headless - GraphQL UI の利用
 date: '2022-02-24'
 tags: ['Sitecore', 'Headless']
-draft: false
+draft: true
 summary: Sitecore XM に対して Headless Service をインストールすることで、GraphQL を利用してデータの取得が可能となります。今回は、データをどういう形で取得することができるのか、というのを紹介します。
 images: ['/static/images/2022/02/graph01.png']
 ---

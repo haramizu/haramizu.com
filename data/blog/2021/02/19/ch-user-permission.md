@@ -2,7 +2,7 @@
 title: Sitecore Content Hub のユーザー権限について
 date: '2021-02-19'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: 今回は Sitecore Content Hub のユーザー権限について簡単に紹介をします。
 images: ['/static/images/2021/02/usergroup3.png']
 ---

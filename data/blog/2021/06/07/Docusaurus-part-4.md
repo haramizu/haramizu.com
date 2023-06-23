@@ -2,7 +2,7 @@
 title: Docusaurus - プラグインの追加とサイドバー
 date: '2021-06-07'
 tags: ['Docusaurus']
-draft: false
+draft: true
 summary: ここではサイトを運用していく上ではやっておいた方がいい手順、ということで Google Analytics およびサイトマップを追加するためのプラグイン実装について紹介しています。
 images: ['/static/images/docusause/sidebars.png']
 ---

@@ -2,7 +2,7 @@
 title: Docusaurus - サイトの設定について
 date: '2021-06-04'
 tags: ['Docusaurus']
-draft: false
+draft: true
 summary: サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。
 images: ['/static/images/docusause/tagline.png']
 ---
@@ -10,7 +10,7 @@ images: ['/static/images/docusause/tagline.png']
 サンプルサイトが立ち上がったあと、今度は自分で作りたいサイトにカスタマイズしていきます。ここではその最初の手順を紹介しています。
 
 ## サイトの構成ファイル
- 
+
 デフォルトの構成データは以下のファイルに記載されています。
 
 - `docusaurus.config.js`
@@ -28,23 +28,22 @@ organizationName: 'facebook', // Usually your GitHub org/user name.
 projectName: 'docusaurus', // Usually your repo name.
 ```
 
-この定義を、`src/pages/index.js` ファイルでは *siteConfig.tagline* を呼び出して、指定した値をページに表示しています。
+この定義を、`src/pages/index.js` ファイルでは _siteConfig.tagline_ を呼び出して、指定した値をページに表示しています。
 
 ```javascript
 <Layout
   title={`Hello from ${siteConfig.title}`}
-  description="Description will go into a meta tag in <head />">
+  description="Description will go into a meta tag in <head />"
+>
   <header className={clsx('hero hero--primary', styles.heroBanner)}>
     <div className="container">
       <h1 className="hero__title">{siteConfig.title}</h1>
       <p className="hero__subtitle">{siteConfig.tagline}</p>
       <div className={styles.buttons}>
         <Link
-          className={clsx(
-            'button button--outline button--secondary button--lg',
-            styles.getStarted,
-          )}
-          to={useBaseUrl('docs/')}>
+          className={clsx('button button--outline button--secondary button--lg', styles.getStarted)}
+          to={useBaseUrl('docs/')}
+        >
           Get Started
         </Link>
       </div>
@@ -75,7 +74,7 @@ projectName: 'docusaurus', // Usually your repo name.
 標準で提供されている主な値は以下の通りです。値は拡張することができ、また `src/pages/index.js` に要素を追加することで、ページの要素として利用できます。
 
 | パラメーター     | 値                                |
-|------------------|-----------------------------------|
+| ---------------- | --------------------------------- |
 | title            | サイトの名前                      |
 | tagline          | タグライン                        |
 | url              | サイトの URL                      |
@@ -93,7 +92,7 @@ projectName: 'docusaurus', // Usually your repo name.
 navbar の項目に関しては、ナビゲーションバーの項目を設定していきます。
 
 | パラメーター | 値                                   |
-|--------------|--------------------------------------|
+| ------------ | ------------------------------------ |
 | title        | サイトのタイトル名                   |
 | logo         | 左上に表示されるロゴ                 |
 | items        | ナビゲーションに配置するメニュー項目 |

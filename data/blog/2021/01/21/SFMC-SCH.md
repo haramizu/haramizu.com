@@ -2,7 +2,7 @@
 title: Salesforce Marketing Cloud と Sitecore Content Hub DAM の連携
 date: '2021-01-21'
 tags: ['Content Hub', 'Salesforce']
-draft: false
+draft: true
 summary: Salesforce Marketing Cloud を利用するために Sitecore Content Hub で管理しているアセットを直接利用できるように接続をする手順を紹介します。
 images: ['/static/images/2021/01/sfmcinch4.png']
 ---

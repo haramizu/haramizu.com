@@ -2,7 +2,7 @@
 title: Next.js のサンプルデータが含まれないプロジェクトの作成
 date: '2021-12-22'
 tags: ['Sitecore', 'Headless', 'Next.js']
-draft: false
+draft: true
 summary: サイトコアの新しいバージョンとなる 10.2 のリリースに合わせて Sitecore Headless Services のバージョンも 19.0.0 に変わりました。この際、Next.js のサンプルデータが入っていないプロジェクトの作成の手順が追加されました。毎回最初のステップでデータを削除するところを省略できるので、今回はこれについて紹介をします。
 images: ['/static/images/2021/12/nextjs01.png']
 ---

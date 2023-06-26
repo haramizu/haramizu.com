@@ -2,7 +2,7 @@
 title: Sitecore Content Hub – 一括アップロード
 date: '2020-03-18'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: ファイルをドラッグ＆ドロップでアップロードするだけでなく、一括でアップロードする方法があります。ここでは、その手順に関して紹介をします。
 images: ['/static/images/2020/03/excelimportresult.png']
 ---

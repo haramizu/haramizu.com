@@ -2,7 +2,7 @@
 title: Sitecore Content Hub CMP 概要
 date: '2020-03-25'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: Sitecore Content Hub を活用するシナリオとして、コンテンツマーケティングを実践する際の支援ツール、Content Management Platform – CMP（以下 CMP） を提供しています。この機能は、Sitecore Content Hub DAM の標準機能としては提供しておらず、別途契約をする必要があります。
 images: ['/static/images/2020/03/cmpmenu.png']
 ---

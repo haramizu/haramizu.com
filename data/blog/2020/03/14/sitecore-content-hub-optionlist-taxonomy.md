@@ -2,7 +2,7 @@
 title: Sitecore Content Hub – オプションリストとタクソノミー
 date: '2020-03-14'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: Sitecore Content Hub では定義済みのリストとしてはオプションリストとタクソノミーを提供しています。それぞれの仕組みに関して紹介をします。オプションリストとタクソノミーに関しては、管理画面からツールでアクセスすることができます。
 images: ['/static/images/2020/03/taxonomy.png']
 ---

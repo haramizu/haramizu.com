@@ -2,7 +2,7 @@
 title: Sitecore Content Hub – 翻訳
 date: '2020-03-14'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: 管理画面に「翻訳」というツールがあります。このツールは、ツール自体が翻訳をすることはありませんが、翻訳をしたデータを管理するためのツールとなっています。これを利用することで、管理画面で利用する様々なリソースを翻訳し、多言語展開をするためのベースとして利用できる形となっています。
 images: ['/static/images/2020/03/translations.gif']
 ---

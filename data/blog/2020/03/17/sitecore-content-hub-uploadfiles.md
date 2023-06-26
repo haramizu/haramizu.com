@@ -2,7 +2,7 @@
 title: Sitecore Content Hub – アップロード
 date: '2020-03-17'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: ここでは様々なメディアファイルを Sitecore Content Hub にアップロードをしていきます。アップロードの手順と合わせてアップロードを進めていきます。
 images: ['/static/images/2020/03/previewfiles.gif']
 ---

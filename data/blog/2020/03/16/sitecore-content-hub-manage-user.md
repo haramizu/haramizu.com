@@ -2,7 +2,7 @@
 title: Sitecore Content Hub – ユーザー管理
 date: '2020-03-16'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: 今回は Sitecore Content Hub を利用するためのアカウント設定について紹介をします。アカウントの管理方法としては、Sitecore Content Hub のローカルアカウントを作成、もしくはシングルサインオンで他のシステムとも連携は可能です。
 images: ['/static/images/2020/03/addpagepermission.gif']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore Content Hub – スキーマ定義について
 date: '2020-03-23'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: 今回は開発、テストをする際に便利な Postman を紹介します。このツールは、Sitecore Content Hub や Sitecore Experience Platform / Commerce でも Web サービス連携での開発の際に、非常に便利なツールとなっています。
 images: ['/static/images/2020/03/schemaaddmember.png']
 ---

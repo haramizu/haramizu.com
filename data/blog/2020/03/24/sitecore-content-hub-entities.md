@@ -2,7 +2,7 @@
 title: Sitecore Content Hub – エンティティ
 date: '2020-03-24'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: 前回、データの定義の方法ということで「スキーマの定義」に関して紹介をしました。今回はその定義を利用したデータ、エンティティに関して紹介をします。
 images: ['/static/images/2020/03/entityassetdetails.png']
 ---

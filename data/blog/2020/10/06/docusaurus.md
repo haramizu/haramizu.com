@@ -2,7 +2,7 @@
 title: Docusaurus に関するメモを公開
 date: '2020-10-06'
 tags: ['docusaurus']
-draft: false
+draft: true
 summary: このサイトは 2020年10月5日に Facebook が提供している文書生成ツールの Docusaurus に切り替え、またホスティングに関しても Netlify に切り替えました。これに伴い、Docusaurus に関してまとめている記事を掲載してみました。随時更新していきます。
 ---
 

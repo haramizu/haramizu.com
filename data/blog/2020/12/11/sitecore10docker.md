@@ -2,7 +2,7 @@
 title: Sitecore 10 を Docker で実行する
 date: '2020-12-11'
 tags: ['Sitecore containers', 'Docker']
-draft: false
+draft: true
 summary: Sitecore Experience Platform 10.0 からは Docker のサポートが標準となりました。今回は Sitecore Experience Platform 10.0 を Docker で動かすための手順を紹介します。
 images: ['/static/images/2020/12/launchpad.png']
 ---

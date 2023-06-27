@@ -2,7 +2,7 @@
 title: Content Hub - アクションに関連したボタンを作成する
 date: '2020-10-15'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: 今回は、Sitecore Content Hub のスクリプトを実行するために、ページにボタンを配置して、スクリプトを実行するための手順を紹介します。これにより、定型的なタスクをスクリプトで作成し、簡単に処理することができるようになります。
 images: ['/static/images/2020/10/publiclinkmassdialog.png']
 ---

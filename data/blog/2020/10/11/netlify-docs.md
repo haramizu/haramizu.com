@@ -2,7 +2,7 @@
 title: Netlify でサイトを立ち上げる最初のステップ
 date: '2020-10-11'
 tags: ['Netlify']
-draft: false
+draft: true
 summary: このサイトのホスティングで利用している Netlify に関する手順を技術メモにまとめてみました。より詳しい内容はリンク先を参照してください。
 ---
 

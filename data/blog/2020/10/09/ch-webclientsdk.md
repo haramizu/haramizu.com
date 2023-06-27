@@ -2,7 +2,7 @@
 title: Content Hub - Web Client SDK の設定
 date: '2020-10-09'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: Sitecore Content Hub の開発をする際に利用する Web Client SDK を利用できるように、Visual Studio の環境を整える手順を紹介します。
 images: ['/static/images/2020/10/addmyget.gif'] 
 ---

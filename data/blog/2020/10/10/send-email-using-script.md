@@ -2,7 +2,7 @@
 title: Content Hub - スクリプトを利用したメールの送信
 date: '2020-10-10'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: Sitecore Content Hub のメールテンプレートの利用して、スクリプトでメールを送信する手順を紹介しています。
 images: ['/static/images/2020/10/emailtemplatebuild.png']
 ---

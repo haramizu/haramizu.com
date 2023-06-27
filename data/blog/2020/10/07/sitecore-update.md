@@ -2,7 +2,7 @@
 title: Sitecore に関するブログの移行完了
 date: '2020-10-07'
 tags: ['Sitecore']
-draft: false
+draft: true
 summary: 以前に展開していた Wordpress のサイトで展開していたコンテンツを、すべて移行しました。合わせて Sitecore に関する情報を少し追加します。
 ---
 

@@ -2,7 +2,7 @@
 title: Sitecore Content Hub ドキュメント 日本語版公開について
 date: '2021-08-16'
 tags: ['Content Hub','Docs']
-draft: false
+draft: true
 summary: Sitecore のユーザー向けドキュメントとして、10.1 最新版に対する日本語のサイトが立ち上がりました。
 images: ['/static/images/2021/08/sch-doc.png']
 ---

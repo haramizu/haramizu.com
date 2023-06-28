@@ -2,7 +2,7 @@
 title: ライセンスファイルの更新
 date: '2021-10-04'
 tags: ['Sitecore']
-draft: false
+draft: true
 summary: ライセンスを変更した際に、ライセンスファイルを入れ替える必要が出てきます。今回は、ライセンスファイルの更新手順に関して、紹介をします。
 images: ['/static/images/2021/10/license.png']
 ---

@@ -2,7 +2,7 @@
 title: Sitecore のユーザー向けドキュメント 日本語版公開について
 date: '2021-08-13'
 tags: ['Sitecore','Docs']
-draft: false
+draft: true
 summary: Sitecore のユーザー向けドキュメントとして、10.1 最新版に対する日本語のサイトが立ち上がりました。
 images: ['/static/images/2021/08/docs01.png']
 ---

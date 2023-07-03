@@ -2,7 +2,7 @@
 title: Content Hub - Excel Export と Import の活用　
 date: '2021-11-23'
 tags: ['Content Hub']
-draft: false
+draft: true
 summary: ファイルをアップロードしたと、メタデータを付与する際にさまざまな項目を入力したいケースがあると思います。Excel Import で新規にアセットを登録する機能も便利ですが、今回は一括変更を Excel Import と Export を利用することで、更新する手順を紹介します。
 images: ['/static/images/2021/11/excel12.png']
 ---

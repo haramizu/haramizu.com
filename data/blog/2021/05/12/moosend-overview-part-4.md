@@ -2,7 +2,7 @@
 title: Moosend - 初期設定を進めていく 後編
 date: '2021-05-12'
 tags: ['Moosend']
-draft: false
+draft: true
 summary: 前回、送信者に関しての設定およびリストの作成まで進めました。今回はリストの作成、送信テストまで進めていきます。
 images: ['/static/images/2021/05/moosendoverview43.png']
 ---

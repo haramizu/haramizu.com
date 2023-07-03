@@ -2,7 +2,7 @@
 title: Sitecore Content Hub - DRM について
 date: '2021-08-06'
 tags: ['Sitecore','Content Hub','DRM']
-draft: false
+draft: true
 summary: Sitecore Content Hub には標準で DRM の機能が含まれています。今回は、この DRM の基本機能に関して、前回の記事で作成をしたユーザーグループを利用して、動作確認をしていきます。
 images: ['/static/images/2021/08/chwatermark15.png']
 ---

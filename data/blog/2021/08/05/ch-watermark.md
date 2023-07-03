@@ -2,7 +2,7 @@
 title: Sitecore Content Hub - ウォーターマークについて
 date: '2021-08-05'
 tags: ['Sitecore','Content Hub']
-draft: false
+draft: true
 summary: Sitecore Content Hub のアセット管理の機能で、ウォーターマークの機能を提供しています。この機能を検証する手順に関してまとめてみました。
 images: ['/static/images/2021/08/chwatermark15.png']
 ---

@@ -2,15 +2,15 @@
 title: Sitecore Demo Platform - デモの日本語化
 date: '2021-06-29'
 lastmod: '2021-06-29'
-tags: ['Sitecore','デモ']
-draft: false
+tags: ['Sitecore', 'デモ']
+draft: true
 summary: 以前に Sitecore のデモ環境を動かすための手順として、Sitecore Demo Platform を動かすを紹介しました。今回は日本語環境を整備する手順を紹介して行きます。
 images: ['/static/images/2021/06/jaresource14.png']
 ---
 
 以前に Sitecore のデモ環境を動かすための手順として、Sitecore Demo Platform を動かすを紹介しました。今回は日本語環境を整備する手順を紹介して行きます。今回の対象となるバージョンは 10.1 を対象としてまとめています。
 
-* [Sitecore Demo Platform を動かす](/blog/2021/05/28/sitecore-demo-platform)
+- [Sitecore Demo Platform を動かす](/blog/2021/05/28/sitecore-demo-platform)
 
 ![jaresource](/static/images/2021/06/jaresource01.png)
 
@@ -72,12 +72,12 @@ Restart-Application
 
 上記の画面でもまだリソースが不足していることがわかります。リソースがいくつか不足しているため、Github の以下のリポジトリからファイルをダウンロードしてください。
 
-* https://github.com/SitecoreJapan/InstallScript/
-    * 101/powershell-report-ja-jp.xml
-    * 101/horizon-ja-jp.xml
-    * 101/SXA-ja-JP-update.xml
-    * demo/LighthouseLifestyle/lighthouse-ja-jp.xml
-    * xGenerator/xGenerator-ja-jp.xml
+- https://github.com/SitecoreJapan/InstallScript/
+  - 101/powershell-report-ja-jp.xml
+  - 101/horizon-ja-jp.xml
+  - 101/SXA-ja-JP-update.xml
+  - demo/LighthouseLifestyle/lighthouse-ja-jp.xml
+  - xGenerator/xGenerator-ja-jp.xml
 
 上記のファイルをすべて temp にアップロードをして行きます。インポートの画面に切り替えて、/temp を指定してください。
 
@@ -93,11 +93,11 @@ Restart-Application
 
 この手順を以下のファイルに対して、順に進めてください。
 
-* 101/powershell-report-ja-jp.xml
-* 101/horizon-ja-jp.xml
-* 101/SXA-ja-JP-update.xml
-* demo/LighthouseLifestyle/lighthouse-ja-jp.xml
-* xGenerator/xGenerator-ja-jp.xml
+- 101/powershell-report-ja-jp.xml
+- 101/horizon-ja-jp.xml
+- 101/SXA-ja-JP-update.xml
+- demo/LighthouseLifestyle/lighthouse-ja-jp.xml
+- xGenerator/xGenerator-ja-jp.xml
 
 上記のリソースのインポートが完了すると、日本語リソースのインポートが完了となります。管理画面に戻ると以下のようになっています。
 

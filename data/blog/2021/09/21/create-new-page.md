@@ -1,31 +1,31 @@
 ---
 title: ページ作成の確認
 date: '2021-09-21'
-tags: ['Sitecore','デモ']
-draft: false
+tags: ['Sitecore', 'デモ']
+draft: true
 summary: 以前に Sitecore のデモ環境として Sitecore Demo Platform の立ち上げ方について紹介をしました。今回は、この環境を利用してページの作成、編集が可能なアカウントを作成して、確認をするための手順を紹介していきます。
 images: ['/static/images/2021/09/demo06.png']
 ---
 
 以前に Sitecore のデモ環境として Sitecore Demo Platform の立ち上げ方について紹介をしました。今回は、この環境を利用してページの作成、編集が可能なアカウントを作成して、確認をするための手順を紹介していきます。
 
-* [Sitecore Demo Platform を動かす](/blog/2021/05/28/sitecore-demo-platform)
+- [Sitecore Demo Platform を動かす](/blog/2021/05/28/sitecore-demo-platform)
 
 ## アカウントを作成する
 
 デモ環境にログインするアカウントを作成します。今回は以下のように作成をしました。
 
-| 項目 | 値 |
-|---|---|
-| ユーザー名 | demoeditor |
-| ドメイン | sitecore |
-| フルネーム | Demo Editor |
-| メールアドレス | demoeditor@sitecore.com |
-| パスワード | e |
-| パスワードの確認 | e |
-| ロール | Sitecore¥Author, Sitecore¥SitecoreDemo Guide Author |
-| ユーザープロファイル | Accounts |
-| $SqlAdminPassword | password |
+| 項目                 | 値                                                  |
+| -------------------- | --------------------------------------------------- |
+| ユーザー名           | demoeditor                                          |
+| ドメイン             | sitecore                                            |
+| フルネーム           | Demo Editor                                         |
+| メールアドレス       | demoeditor@sitecore.com                             |
+| パスワード           | e                                                   |
+| パスワードの確認     | e                                                   |
+| ロール               | Sitecore¥Author, Sitecore¥SitecoreDemo Guide Author |
+| ユーザープロファイル | Accounts                                            |
+| $SqlAdminPassword    | password                                            |
 
 ![demo](/static/images/2021/09/demo01.png)
 
@@ -53,7 +53,7 @@ images: ['/static/images/2021/09/demo06.png']
 
 ![demo](/static/images/2021/09/demo05.png)
 
-**記事** のアイテムを選択すると、右側のコンテンツエリアに *ロックおよび編集* の項目が表示されます。これはページの編集権限がある場合に出てくるメニューです。ロックをすることで、他のユーザーが編集をすることを防ぐ形となります。
+**記事** のアイテムを選択すると、右側のコンテンツエリアに _ロックおよび編集_ の項目が表示されます。これはページの編集権限がある場合に出てくるメニューです。ロックをすることで、他のユーザーが編集をすることを防ぐ形となります。
 
 ![demo](/static/images/2021/09/demo06.png)
 

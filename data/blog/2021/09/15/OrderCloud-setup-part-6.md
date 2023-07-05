@@ -2,7 +2,7 @@
 title: Sitecore OrderCloud Headstart - Part 6 展開後の調整
 date: '2021-09-15'
 tags: ['OrderCloud', 'デモ', 'Headstart']
-draft: false
+draft: true
 summary: 無事ローカルで動いていたアプリケーションが Azure の各インスタンスに展開されました。とはいえ、もう少しだけ設定を変更していく必要があります。今回はこの部分を進めていきます。
 images: ['/static/images/2021/09/ordercloud81.png']
 ---

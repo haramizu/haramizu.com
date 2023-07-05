@@ -2,7 +2,7 @@
 title: Sitecore の設定を変更する - ファイルの取り扱いについて
 date: '2021-08-11'
 tags: ['Sitecore']
-draft: false
+draft: true
 summary: 前回、メディアライブラリに関するポイントを紹介したのですが、実際にサイトコアの設定に関してよく聞かれる内容をいくつか定番のネタがあります。今回は設定ファイルの取り扱い、そして Sitecore で管理をしないファイルを展開する方法について紹介をします。
 images: ['/static/images/2021/08/config01.png']
 ---
@@ -15,7 +15,7 @@ images: ['/static/images/2021/08/config01.png']
 
 このため変更をした点を明確にするために、パッチファイルを作成してマージすることが可能です。これに関しては以下のドキュメントで紹介されています。
 
-* [設定パッチ ファイルの例](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/configuration-patch-file-examples.html)
+- [設定パッチ ファイルの例](https://doc.sitecore.com/ja/developers/101/platform-administration-and-architecture/configuration-patch-file-examples.html)
 
 設定ファイルに関しては、/App_Config/Include の下に差分の設定ファイルを配置して、起動時に設定を変更するという流れになります。
 
@@ -58,9 +58,9 @@ HTML に関して以下のように表示されていることがわかります
 
 Sitecore が動いているサーバーにおいて、基本的には Sitecore が管理しているコンテンツを処理するのですが、とはいえサーバーにファイルを配置したい、というケースもあると思います。例えば以下のようなシチュエーションです。
 
-* フェーズ分けをして、サブディレクトリごとに移行をしていく形を考えている
-* 既存の HTML ファイルは管理しなくていいが配置したい、ページとして表示したい
-* 頻度よく編集するエリアに関しては CMS 化を早める、そうではないファイルは全てそのまま展開しておく
+- フェーズ分けをして、サブディレクトリごとに移行をしていく形を考えている
+- 既存の HTML ファイルは管理しなくていいが配置したい、ページとして表示したい
+- 頻度よく編集するエリアに関しては CMS 化を早める、そうではないファイルは全てそのまま展開しておく
 
 この際、設定は **Sitecore.config** の **IgnoreUrlPrefixes** の項目に、対象となるディレクトリを指定するだけでいけます。デフォルトで複数設定されているので、 | を利用して追加します。以下のコードは最後に campaign を追加しており、そこに HTML のファイルを配置している場合です。
 

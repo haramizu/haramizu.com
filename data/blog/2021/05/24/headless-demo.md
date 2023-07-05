@@ -3,7 +3,7 @@ title: Headless デモを動かしてみる
 date: '2021-05-24'
 lastmod: '2021-05-24'
 tags: ['Sitecore', 'Docker', 'デモ']
-draft: false
+draft: true
 summary: 今回は、Microsoft Azure 上で展開する仮想環境にて、Docker が動く環境を整備していきます。Windows 10 Pro では Docker for Desktop を利用する形が一番シンプルですが、今回は Windows Server 2019 ベースでの環境を整えていきます。
 images: ['/static/images/2021/05/headless10.png']
 ---

@@ -2,48 +2,48 @@
 title: Sitecore JSS - Headless SSR - Part.3
 date: '2021-04-28'
 tags: ['JSS', 'React', 'Headless']
-draft: false
+draft: true
 summary: Headless SSR の動作に関して紹介をしていきました。これを手元で簡単に利用できるように、3回目としては Docker のコンテナを作成して利用する方法を紹介します。
 images: ['/static/images/2021/04/docker12.png']
 ---
 
-Headless SSR の動作に関して紹介をしていきました。これを手元で簡単に利用できるように、3回目としては Docker のコンテナを作成して利用する方法を紹介します。
+Headless SSR の動作に関して紹介をしていきました。これを手元で簡単に利用できるように、3 回目としては Docker のコンテナを作成して利用する方法を紹介します。
 
 ## Docker の環境を整える
 
 コンテナを動かすために、まずは Docker Desktop for Windows / macOS をインストールしてください。手元の環境は macOS のため、Docker Desktop for Mac で作業を進めていきます。
 
-* [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-![docker](/static/images/2021/04/docker01.png "docker")
+![docker](/static/images/2021/04/docker01.png 'docker')
 
 起動をすると、何度かダイアログが表示されますが、権限を与えるために必要となりますので、設定を続けてください。しばらくすると以下の画面が表示されます。
 
-![docker](/static/images/2021/04/docker02.png "docker")
+![docker](/static/images/2021/04/docker02.png 'docker')
 
 動作確認のためにチュートリアルを実行します。Start ボタンをクリックします。すると、右側にコマンドラインが、中央にチュートリアルのコマンドが表示されます。
 
-![docker](/static/images/2021/04/docker03.png "docker")
+![docker](/static/images/2021/04/docker03.png 'docker')
 
 中央にコマンドが表示されているところをクリックすると、右側のコマンドラインにコピーされて実行します。内容は、リポジトリのクローン、そしてイメージのダウンロードです。**Next Step** のボタンをクリックします。
 
-![docker](/static/images/2021/04/docker04.png "docker")
+![docker](/static/images/2021/04/docker04.png 'docker')
 
 新しいコマンドが中央に表示されるので、これをクリックします。しばらくすると処理が終わります。**Next Step** のボタンをクリックすると、以下の画面に切り替わります。
 
-![docker](/static/images/2021/04/docker05.png "docker")
+![docker](/static/images/2021/04/docker05.png 'docker')
 
 コマンドを見ると、コンテナを実行することがわかります。それでは、クリックして実行し、ブラウザで http://localhost にアクセスしてください。以下のようなサイトを参照することができます。
 
-![docker](/static/images/2021/04/docker06.png "docker")
+![docker](/static/images/2021/04/docker06.png 'docker')
 
 また、Done をクリックすると Docker コンテナが動いていることがわかります。
 
-![docker](/static/images/2021/04/docker07.png "docker")
+![docker](/static/images/2021/04/docker07.png 'docker')
 
 ダッシュボードに切り替えると、以下の様な画面になります。
 
-![docker](/static/images/2021/04/docker08.png "docker")
+![docker](/static/images/2021/04/docker08.png 'docker')
 
 不要であれば、作成したイメージは一番右側に表示されているゴミ箱のマークをクリックすると削除できます。これで、環境は整いました。
 
@@ -80,11 +80,11 @@ npm-debug.log
 docker build . -t reactappcd
 ```
 
-![docker](/static/images/2021/04/docker09.png "docker")
+![docker](/static/images/2021/04/docker09.png 'docker')
 
 docker のイメージを確認します。
 
-![docker](/static/images/2021/04/docker10.png "docker")
+![docker](/static/images/2021/04/docker10.png 'docker')
 
 作成したイメージを利用してコンテナを動かします。
 
@@ -92,11 +92,11 @@ docker のイメージを確認します。
 docker run -p 3000:3000 -d reactappcd
 ```
 
-![docker](/static/images/2021/04/docker11.png "docker")
+![docker](/static/images/2021/04/docker11.png 'docker')
 
 このあと、 http://localhost:3000 にアクセスしてページが見えればコンテナが正しく動いていることになります。
 
-![docker](/static/images/2021/04/docker12.png "docker")
+![docker](/static/images/2021/04/docker12.png 'docker')
 
 ## コンテナの実行環境を作成
 
@@ -145,11 +145,11 @@ services:
 docker-compose up -d
 ```
 
-![docker](/static/images/2021/04/docker13.png "docker")
+![docker](/static/images/2021/04/docker13.png 'docker')
 
 コンテナが起動していれば、 http://localhost:3000 にアクセスをするとページが表示されます。
 
-![docker](/static/images/2021/04/docker12.png "docker")
+![docker](/static/images/2021/04/docker12.png 'docker')
 
 ## まとめ
 

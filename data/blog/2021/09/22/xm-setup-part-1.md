@@ -2,7 +2,7 @@
 title: Sitecore XM シリーズ - セットアップ
 date: '2021-09-22'
 tags: ['Sitecore', 'インストール', 'XM']
-draft: false
+draft: true
 summary: これまで Sitecore Experience Platform （以下XP）のデモ環境のセットアップを紹介してきましたが、今回は CMS のみのインスタンスを立ち上げる Sitecore Experience Manager (以下 XM）の環境をセットアップしていきます。
 images: ['/static/images/2021/09/xm09.png']
 ---

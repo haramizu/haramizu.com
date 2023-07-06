@@ -2,7 +2,7 @@
 title: Sitecore XM シリーズ - Sitecore Experience Accelerator インストール
 date: '2021-09-27'
 tags: ['Sitecore','インストール','SXA','XM']
-draft: false
+draft: true
 summary: 以前に紹介をした Sitecore Experience Accelrator のインストールは、構成として XP0 ということで CM および CD サーバーを共有する形での運用となっていました。この記事の直前にインストールをした XM の構成は CM と CD と分かれています。この場合は、必要なモジュールを CD サーバーにもインストールする必要があります。今回は、このインストールの手順について紹介をします。
 images: ['/static/images/2021/09/xm14.png']
 ---

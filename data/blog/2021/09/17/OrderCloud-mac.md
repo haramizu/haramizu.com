@@ -1,8 +1,8 @@
 ---
 title: Sitecore OrderCloud Headstart - macOS で動作させる
 date: '2021-09-17'
-tags: ['OrderCloud','デモ','Headstart']
-draft: false
+tags: ['OrderCloud', 'デモ', 'Headstart']
+draft: true
 summary: これまで Sitecore OrderCloud の展開に関して、このブログでは Windows の環境で Visual Studio を動かして手順を紹介していました。これは macOS の上でも動くでしょうか？今回は、環境を macOS に変更をして、前回まで動かしていたリポジトリのソースコードを使いながら確認をしていきたいと思います。
 images: ['/static/images/2021/09/macos11.png']
 ---
@@ -13,10 +13,10 @@ images: ['/static/images/2021/09/macos11.png']
 
 今回は以下の環境を前提として説明をしていきます。
 
-* macOS Big Sur 11.5.2
-* Visual Studio for Mac 8.10.8
-* Visual Studio Code バージョン: 1.59.1
-* Node.js v14.17.0
+- macOS Big Sur 11.5.2
+- Visual Studio for Mac 8.10.8
+- Visual Studio Code バージョン: 1.59.1
+- Node.js v14.17.0
 
 また前回まで紹介をしていた環境を macOS で動かすというのが前提のため、Azure にセットアップする情報などは以前のブログ記事を参考にしてください。
 
@@ -44,7 +44,7 @@ Headstart.API を右クリックして、オプションを開きます。
 
 ![macos](/static/images/2021/09/macos05.png)
 
-Test の構成を開いて、環境変数に関しては *APP_CONFIG_CONNECTION* に変更し、Azure Portal の App Configuration から接続文字列を取得して値として設定します。また、ターミナルウィンドウで実行するもチェックします。
+Test の構成を開いて、環境変数に関しては _APP_CONFIG_CONNECTION_ に変更し、Azure Portal の App Configuration から接続文字列を取得して値として設定します。また、ターミナルウィンドウで実行するもチェックします。
 
 ![macos](/static/images/2021/09/macos06.png)
 

@@ -3,7 +3,7 @@ title: Sitecore ヘッドレス シリーズ
 date: '2021-05-25'
 lastmod: '2022-04-06'
 tags: ['JSS', 'Headless']
-draft: false
+draft: true
 summary: ここでは過去に紹介した Sitecore JavaScript Service に関して紹介をしている記事一覧を紹介しています。今後も新しいトピックが随時掲載されていくため、最新情報を確認するためには JSS のタグを利用してください。
 images: ['/static/images/2021/05/scaffold02.png']
 ---

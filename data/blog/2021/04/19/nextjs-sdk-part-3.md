@@ -2,7 +2,7 @@
 title: Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.3
 date: '2021-04-19'
 tags: ['JSS', 'Next.js']
-draft: false
+draft: true
 summary: これまで2回にわたって基本的なポイントを紹介していましたが、今回は Next.js で作っているページを Sitecore のみたまま編集ツールであるエクスペリエンスエディターと組み合わせて動かす手順を紹介します。
 images: ['/static/images/2021/04/experienceditor04.png']
 ---

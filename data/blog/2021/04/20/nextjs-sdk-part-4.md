@@ -2,7 +2,7 @@
 title: Sitecore JSS - Next.js SDK を利用してサンプルサイトを構築 - Part.4
 date: '2021-04-20'
 tags: ['JSS', 'Next.js']
-draft: false
+draft: true
 summary: 前回はエクスペリエンスエディターを利用した設定に関して紹介をしました。Next.js のアプリを作っていく際に、Sitecore で管理しているコンテンツを使いながら開発することはできるのでしょうか？今回は開発中に Sitecore のデータを参照する設定について、紹介します。
 images: ['/static/images/2021/04/localhost.png']
 ---
@@ -13,8 +13,8 @@ images: ['/static/images/2021/04/localhost.png']
 
 今回の設定をするにあたって、[前回](/blog/2021/04/19/nextjs-sdk-part-3)の環境まで整っていることとします。
 
-* Sitecore のインスタンスが起動している
-* Next.js のアプリを立ち上げることができる
+- Sitecore のインスタンスが起動している
+- Next.js のアプリを立ち上げることができる
 
 ## 動作環境を変更する
 
@@ -35,7 +35,7 @@ jss start
 
 しばらくすると、ローカルのコンテンツではなく Sitecore で管理しているコンテンツが表示されます。
 
-![localhost](/static/images/2021/04/localhost.png "localhost")
+![localhost](/static/images/2021/04/localhost.png 'localhost')
 
 ブラウザの URL のところが localhost になっている点、前回のエクスペリエンスエディターで編集した文字が表示されている点を確認することができます。
 

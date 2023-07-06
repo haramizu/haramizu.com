@@ -2,7 +2,7 @@
 title: Sitecore JSS - React SDK を利用してサンプルサイトを構築 - Part.4
 date: '2021-05-06'
 tags: ['JSS', 'React']
-draft: false
+draft: true
 summary: これまでサンプルのアプリケーションを作成して動作確認、という内容を紹介してきました。今回は実際に React のコンポーネントを追加したいと思います。
 images: ['/static/images/2021/05/scaffold03.png']
 ---

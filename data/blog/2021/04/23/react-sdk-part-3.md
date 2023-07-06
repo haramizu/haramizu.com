@@ -13,16 +13,16 @@ images: ['/static/images/2021/04/reactsample11.png']
 
 JSS で開発をする際のモードとして、4 つのモードを用意しています。今回はこのモードに関して説明をしていきます。詳しくは、以下のページで紹介しています。。
 
-* [Application modes](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/application-modes.html)
+- [Application modes](https://doc.sitecore.com/xp/en/developers/hd/190/sitecore-headless-development/application-modes.html)
 
 接続モードに関しては４つ、それぞれ必要な環境は以下の通りです。
 
-| 接続モード | 概要 | ローカル | Sitecore |
-|-|-|-|-|
-| Disconnected dev mode | ローカル環境だけで動作します | 必要 | 不要 |
-| Connected dev mode | ローカルの環境から Sitecore のコンテンツにアクセスします | 必要 | 必要 |
-| Integrated mode | Sitecore の環境で動作します | 不要 | 必要 |
-| API-only mode | Sitecore が Headless で動作します。JSON の知識が必要。 | 不要 | 必要 |
+| 接続モード            | 概要                                                     | ローカル | Sitecore |
+| --------------------- | -------------------------------------------------------- | -------- | -------- |
+| Disconnected dev mode | ローカル環境だけで動作します                             | 必要     | 不要     |
+| Connected dev mode    | ローカルの環境から Sitecore のコンテンツにアクセスします | 必要     | 必要     |
+| Integrated mode       | Sitecore の環境で動作します                              | 不要     | 必要     |
+| API-only mode         | Sitecore が Headless で動作します。JSON の知識が必要。   | 不要     | 必要     |
 
 それでは一つ一つの動作を見ていきます。
 
@@ -36,14 +36,14 @@ jss start
 
 しばらくすると、ローカルホストでアプリが起動します。もちろんこのモードでは、コンテンツ編集して保存したタイミングでリロードされたりと、ローカルの開発環境として動作する形となります。
 
-![jssmode](/static/images/2021/04/jsssetup05.png "jssmode")
+![jssmode](/static/images/2021/04/jsssetup05.png 'jssmode')
 
 ### Connected dev mode
 
 このモードは、JSS のアプリのアイテムの同期、レイアウトの同期が完了している状況となります。手元の JSS アプリを Sitecore 側に展開している状況です。コマンドとしては、
 
 ```
- jss deploy app -c -d 
+ jss deploy app -c -d
 ```
 
 もしくは以下の手順で同期した場合です（このシリーズは一貫してこれでやっています）
@@ -55,8 +55,7 @@ jss build
 
 build に含まれるファイルを Sitecore のインスタンスの /dist/appname のフォルダにコピーをすると、エクスペリエンスエディターも動作し、Sitecore だけで動作する形となります。
 
-![jssmode](/static/images/2021/04/reactsample11.png "jssmode")
-
+![jssmode](/static/images/2021/04/reactsample11.png 'jssmode')
 
 ### Integrated mode
 
@@ -75,7 +74,7 @@ build に含まれるファイルを Sitecore のインスタンスの /dist/app
     hostName="Sitecore ホスト名"
     rootPath="/sitecore/content/demo/react-app"
     startItem="/home"
-    language="ja-JP" 
+    language="ja-JP"
     database="master" />
 ```
 
@@ -95,20 +94,20 @@ build に含まれるファイルを Sitecore のインスタンスの /dist/app
 Sitecore に繋げる形で起動するため、いつもと若干異なる形で以下のコマンドを実行します。
 
 ```
-jss start:connected 
+jss start:connected
 ```
 
 前回までのサンプルであれば、以下の様な画面が立ち上がります。
 
-![jssmode](/static/images/2021/04/reactsample18.png "jssmode")
+![jssmode](/static/images/2021/04/reactsample18.png 'jssmode')
 
 連携している Sitecore にログインをして、ホームの下にあるアイテムを指定し、タイトルを変更して保存します。
 
-![jssmode](/static/images/2021/04/reactsample20.png "jssmode")
+![jssmode](/static/images/2021/04/reactsample20.png 'jssmode')
 
 保存したあと、先ほど立ち上げていたアプリのページを再読み込みしてください。
 
-![jssmode](/static/images/2021/04/reactsample21.png "jssmode")
+![jssmode](/static/images/2021/04/reactsample21.png 'jssmode')
 
 ページが更新されました。このように、JSS アプリを起動しつつ、Sitecore のコンテンツを参照するという動きを作ることができます。これが、Integrated mode です。
 

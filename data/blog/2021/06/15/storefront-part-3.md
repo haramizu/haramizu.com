@@ -2,8 +2,8 @@
 title: Storefront - Commerce Control Panel
 date: '2021-06-15'
 lastmod: '2021-06-15'
-tags: ['Sitecore','デモ','インストール','Commerce','Storefront']
-draft: false
+tags: ['Sitecore', 'デモ', 'インストール', 'Commerce', 'Storefront']
+draft: true
 summary: 前回は Storefront のホームページの表示まで紹介をしました。日本語のサイトで表示されていない部分を参照していきながら、不足しているリソースを追加して動かしていきます。
 images: ['/static/images/2021/06/storefront07.png']
 ---
@@ -22,7 +22,7 @@ Sitecore Experience Commerce をインストールすると、トップレベル
 
 通貨に関しては複数のセットを作ることができます。今回はデフォルトの設定で動いているため、以下のアイテムが対象となります。
 
-* /sitecore/Commerce/Commerce Control Panel/Shared Settings/Currency Settings/Currency Sets/Default
+- /sitecore/Commerce/Commerce Control Panel/Shared Settings/Currency Settings/Currency Sets/Default
 
 標準では日本円はこのセットに入っていないため、日本円を追加します。追加方法としては、リストから選択をして、右矢印をクリックすると選択ができ、アイテムを保存すると有効になります。
 
@@ -32,7 +32,7 @@ Sitecore Experience Commerce をインストールすると、トップレベル
 
 国情報は、以下のアイテムの配下で管理をしています。
 
-* /sitecore/Commerce/Commerce Control Panel/Shared Settings/Countries-Regions
+- /sitecore/Commerce/Commerce Control Panel/Shared Settings/Countries-Regions
 
 例えばアメリカの情報を見ると、United States のアイテムの下に、州のアイテムが並んでいることがわかります。
 
@@ -40,8 +40,8 @@ Sitecore Experience Commerce をインストールすると、トップレベル
 
 日本の場合、コードとしては都道府県コード（北海道 01）という感じでアイテムを作成するのが無難なため、アイテムを作成していきましょう。と、47 都道府県のアイテムを作るのは大変ですよね。ということで、パッケージを作成してみました。以下の zip ファイルをダウンロードしてください。
 
-* https://github.com/SitecoreJapan/InstallScript/tree/master/XC101
-    * SCJapanPrefecture.zip
+- https://github.com/SitecoreJapan/InstallScript/tree/master/XC101
+  - SCJapanPrefecture.zip
 
 ダウンロードをしたら、コントロールパネルを開いて、管理 - パッケージをインストールする を選択します。ダイアログが表示されるので、パッケージをアップロードしてください。
 

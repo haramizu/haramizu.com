@@ -588,6 +588,38 @@ Next.js Page Router において、App Router と混在させることができ�
   description="Sample - Next.js Pages Router with Auth0"
 />
 
+## カスタムドメインについて
+
+最近無料プランとして開放されたカスタムドメインの設定手順を確認します。この設定は、Settings のページの Custom Domain のタブを開くと設定ができます。
+
+<Steps>
+
+1. 最初は以下のような画面となっています。
+
+   ![Custom domain](../../../assets/tools/auth016.png)
+
+2. カスタムドメインを利用するにあたって、無料プランでも設定可能ですが、個人の認証としてクレジットカードが必要となります。請求されることはありませんので、クレジットカードでの認証を進めていきます。
+
+   クレジットカードの番号を入れて認証されると、画面は以下のように変わります。
+
+   ![Tenant Settings](../../../assets/tools/auth017.png)
+
+3. ドメイン名を入力すると、以下のように DNS の設定画面が表示されます。
+
+   ![DNS Record](../../../assets/tools/auth018.png)
+
+4. 提供された DNS のレコードを設定して、しばらくして Verify のボタンをクリックすると、DNS の設定が正しい場合は以下のように完了のダイアログが表示されます。
+
+   ![DNS Record Verified](../../../assets/tools/auth019.png)
+
+5. Custom Domain を追加することができました。
+
+   ![DNS Record Verified](../../../assets/tools/auth020.png)
+
+</Steps>
+
+Custom Domain を設定すると、環境変数などで使うドメインをカスタムドメインとして使うことができるようになります。
+
 ## 参考情報
 
 <LinkCard title="Pricing" href="https://auth0.com/pricing" target="_brank" />

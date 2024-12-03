@@ -1,0 +1,109 @@
+---
+title: サンプル - Alert Bar
+description: このページでは、Sitecore Personalize で提供している標準テンプレートの Alert Bar のデモを確認することができます。
+prev: false
+next: false
+publishDate: 2024-11-15
+lastUpdated: 2024-11-15
+---
+
+このページでは、Sitecore Personalize で提供している標準テンプレートの Alert Bar のデモを確認することができます。
+
+## 設定項目
+
+### 表示位置
+
+Alert Bar はページの上、および下に表示することができます。設定項目は `General` - `Position` にあります。
+
+![Alert Bar on top](../../../assets/personalize/alertbar01.png)
+
+![Alert Bar on top](../../../assets/personalize/alertbar02.png)
+
+### テキスト
+
+Alert Bar で利用するテキストを変更することができます。設定項目は、`Title` - `Title Text` です。
+
+### ボタン
+
+Alert Bar で利用するボタンの変更をすることができます。設定項目は `Button` - `Button Text` で表示をするテキスト、またリンク先としては `Button Link` を設定することができます。
+
+## コードの確認
+
+HTML の中に含まれる変数は以下の通りです
+
+| 変数 | 形式 | 概要 | 
+|------|-------|-------|
+| Title Text | string | タイトル |
+| Button Link | string | URL |
+| Button Text | string | ボタンラベル |
+
+### HTML コード
+
+Alert Bar の HTML は以下のように設定されています。
+
+```html
+// AlertBar.html
+<!-- Use dynamic Guest variables, type ctrl+space or guest to explore available entities.-->
+<!-- Type "d" to see decisioning helpers -->
+<div id="pers_TopBanner">
+    <div class="pers_TopBanner__banner">
+        <p class="pers_TopBanner__p">
+            <span class="pers_TopBanner__p--span" style="display: inline;">[[Title Text | string | For this bar, we recommend less than 50 characters|  {max: 50 , group: Title, groupOrder: 2, order: 1 }]]</span>
+            <a id="pers_TopBanner-button" class="pers_TopBanner__p--button" href="[[Button Link | string |https://www.example.com/ | { group: Button , required: false, order: 2 } ]]">[[Button Text | string | I accept | { group: Button, order: 1 }]]</a>
+        </p>
+        <div class="pers__btn-close"></div>
+    </div>
+</div>
+```
+
+### JavaScript コード
+
+Alert Bar の JavaScript は以下のように設定されています。
+
+```js
+// AlertBar.js
+// Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
+var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
+var styleTag = document.getElementById('style-' + variant.ref);
+if (styleTag) {
+    styleTag.innerHTML = compiledCSS;
+}
+// End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
+
+// make space in the body for the experience
+document.body.classList.add("show-TopBanner");
+insertHTMLBefore('body', 'pers-');
+
+
+// Declarations
+const persButton = document.querySelector("#pers-"+variant.ref+ ' #pers_TopBanner-button');
+const persCloseButton = document.querySelector("#pers-"+variant.ref+ ' .pers__btn-close');
+const persExperience = document.querySelector("#pers-"+variant.ref+ ' #pers_TopBanner');
+
+// Declare Pers function event
+const sendInteractionToPersonalize = function(interactionType){
+    const type = "[[ Experience ID | String | ALERT_BAR | {required: true}]]_" + interactionType;
+    const eventData = {
+        "channel": "WEB",
+        "pointOfSale": Engage.settings.pointOfSale,
+    };
+    window.engage.event(type, eventData);
+}
+
+//Listen on X button
+persCloseButton.addEventListener("click", function(){
+    persExperience.style.display = "none";
+    document.body.classList.remove("show-TopBanner");
+    sendInteractionToPersonalize("DISMISSED")
+});
+
+// Listen on CTA button
+persButton.onclick = function(){
+    sendInteractionToPersonalize("CLICKED")
+    location.href = "[[Button Link]]";
+};
+```
+
+## 参考情報
+
+- [サンプル一覧に戻る](/cdp-personalize/sample/)

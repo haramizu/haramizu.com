@@ -1,0 +1,127 @@
+---
+title: Cloud Portal に参加する
+description: このページでは実際に Sitecore Cloud Portal に招待された後、ポータルにログインするところまで紹介をしています。
+sidebar:
+  order: 2
+publishDate: 2024-11-12
+lastUpdated: 2024-11-12
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+ここでは Sitecore Cloud Portal の管理者から招待メールを受け取ったあと、どのような手順で参加をすることになるのかについて紹介をしています。
+
+## 招待メールを受け取る
+
+管理者から受け取るメールは、ログインをする時に利用をするメールアドレスに対して送信される形となります。実際に受け取ったメールのサンプルは以下のような画面となります。
+
+![Welcome to the team](../../../assets/cloud-portal/joinsitecore01.png)
+
+このメールは受け取ったあと 7 日以内に実行する必要があります。また、この招待メールの状況は、管理者は [Invitaions](/cloud-portal/overview/#invitations)の画面から状況を確認することが可能です。
+
+招待で受け取ったメールの `Go To Portal` をクリックして、ポータルにログインをする手続きを進めていきます。クリックをすると以下のようにログイン画面が表示されます。
+
+![Login to portal](../../../assets/cloud-portal/joinsitecore02.png)
+
+### 初めての利用
+
+初めて Sitecore Cloud Portal を利用する場合は、アクセスをした画面の Continue の下に記載されている `Sign up` をクリックしてアカウントの作成を進めていきます。
+
+![Create your account](../../../assets/cloud-portal/joinsitecore03.png)
+
+招待されたメールアドレスを入れた後、新しいアカウントのパスワードを設定する画面に切り替わります。
+
+![Create your account password](../../../assets/cloud-portal/joinsitecore04.png)
+
+パスワードのルールに関しては、以下の基準が設定されています。
+
+- 8 文字以上
+- 以下の3種類の以上の文字が含まれる
+  - 大文字 (A-Z)
+  - 小文字 (a-z)
+  - 数字 (0-9)
+  - 記号 (!@#$%^&\* など)
+
+このルールをクリアしたパスワードを設定したあと、`Continue` をクリックします。アカウントが作成されていれば、招待されている組織に関しての情報が表示されます。
+
+![Pending invitaion](../../../assets/cloud-portal/joinsitecore05.png)
+
+招待されている Organization に関して確認をして、`Accept` のボタンをクリックすると、確認メールが送信されます。
+
+![Confirm your email](../../../assets/cloud-portal/joinsitecore06.png)
+
+ログインをしているメールアドレスに対して確認のメールが届きます。
+
+![verify your account](../../../assets/cloud-portal/joinsitecore07.png)
+
+受け取ったメールに記載されている `Verify account` をクリックして、メールアドレスの確認を完了させます。
+
+![Email Verified](../../../assets/cloud-portal/joinsitecore08.png)
+
+最後の設定項目として、Sitecore Cloud Portal で表示される名前に関して入力をします。
+
+![Compolete your profile](../../../assets/cloud-portal/joinsitecore09.png)
+
+そして利用をするにあたっての Sitecore Terms and Conditions が表示されます。
+
+![Terms and Conditions](../../../assets/cloud-portal/joinsitecore10.png)
+
+最後まで確認をして Accept をすると Sitecore Cloud Portal にログインをすることができるようになります。
+
+![Login to Sitecore Cloud Portal](../../../assets/cloud-portal/joinsitecore11.png)
+
+### すでにアカウントを持っている場合
+
+すでに別の Organization でアカウントを持っている場合は、既存のアカウントでログインをしてください。
+
+![Enter your password](../../../assets/cloud-portal/joinsitecore12.png)
+
+ログインをすると、どの Organization から招待を受けているのかに関しての確認画面となります。
+
+![Pending invitaion](../../../assets/cloud-portal/joinsitecore05.png)
+
+この先の手順に関しては、新しいアカウントを作成したときと同じ形となるため、ここでは省略します。
+
+### パスワードを忘れた
+
+既にアカウントがあるがパスワードを忘れた場合は、ログイン画面に表示されている `Forgot password?` をクリックしてください。
+
+![Enter your password](../../../assets/cloud-portal/joinsitecore12.png)
+
+パスワードを忘れた場合の、パスワードリセットが可能となっています。リセットをする際には、該当するアカウントのメールアドレスを入力します。
+
+![Forgot your password?](../../../assets/cloud-portal/joinsitecore13.png)
+
+以下の画面に切り替わり、パスワードリセットのためのメールが指定したメールアドレスに送信されます。Resend email をクリックすると、新しいリセットのためのメールを受け取ることも可能です。
+
+![Resend email](../../../assets/cloud-portal/joinsitecore14.png)
+
+しばらくするとリセットをするためのメールが、指定したメールアドレスに対して送信されます。このメールに対して `Set a new password` のボタンがありますので、これをクリックしてください。
+
+![Resend email](../../../assets/cloud-portal/joinsitecore15.png)
+
+画面は新しいパスワードを設定する画面となります。パスワードのルールに沿って新しいパスワードを設定してください。
+
+![Change your password](../../../assets/cloud-portal/joinsitecore16.png)
+
+新しいパスワード、および確認のパスワードが合致すると、パスワードの変更が完了となります。
+
+![Password Changed](../../../assets/cloud-portal/joinsitecore17.png)
+
+## まとめ
+
+このページでは Sitecore Cloud Portal に対して招待メールを受け取ったときの手順をまとめました。最初に契約をした際には、Organization Owner のみとなっているため、他のユーザーを追加して利用できるようにしていきましょう。
+
+## 参考情報
+
+<LinkCard
+  title="Access the portal for the first time"
+  href="https://doc.sitecore.com/portal/en/developers/sitecore-cloud-portal/access-the-portal-for-the-first-time.html"
+  target="_blank"
+/>
+<LinkCard
+  title="Log in to the Sitecore Cloud Portal"
+  href="https://doc.sitecore.com/portal/en/developers/sitecore-cloud-portal/log-in-to-the-sitecore-cloud-portal.html"
+  target="_blank"
+/>
+

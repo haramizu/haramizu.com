@@ -1,0 +1,60 @@
+---
+title: Overview of Next.js
+description: Next.js is a React-based framework that supports server-side rendering (SSR) and static site generation (SSG). This enables high performance and excellent SEO.
+prev: false
+sidebar:
+  order: 1
+publishDate: 2024-12-02
+lastUpdated: 2024-12-02
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+Next.js is a React-based framework that supports server-side rendering (SSR) and static site generation (SSG). This enables high performance and excellent SEO.
+
+Sitecore XM Cloud provides a starter kit called Headless SXA, which is based on the Next.js Pages Router. Therefore, when building a website using XM Cloud, Next.js tips are directly applicable.
+
+### Main Features
+
+The main features of Next.js are as follows:
+
+- **Server-Side Rendering (SSR)**: Renders pages per request, providing dynamic content.
+- **Static Site Generation (SSG)**: Generates pages at build time, providing cacheable static files.
+- **Incremental Static Regeneration (ISR)**: Allows dynamic content updates while leveraging the benefits of static site generation (SSG). With ISR, statically generated pages can be regenerated in the background.
+- **API Routes**: Easily create API endpoints and integrate backend functionality.
+- **Automatic Code Splitting**: Loads only the necessary code for each page, reducing initial load time.
+- **TypeScript Support**: Natively supports TypeScript, enabling type-safe development.
+
+### Use Cases
+
+The above features are ideal for the following scenarios:
+
+- Websites requiring high performance
+- Websites prioritizing SEO
+- Web applications providing dynamic content
+- Blogs or documentation sites providing static content
+
+For sites with a large amount of content, generating content with SSG for each publication can result in a build occurring every time a page is published. Using ISR allows handling content generation with differences.
+
+By using Next.js, you can build web applications that maximize the benefits of React while providing excellent performance and SEO.
+
+## Samples Provided on This Site
+
+All the Next.js-related content introduced here is provided in the following GitHub repository:
+
+<LinkCard
+  title="haramizu / Next.js-sample"
+  href="https://github.com/haramizu/Next.js-sample"
+  target="_blank"
+  description="providing a sample using Next.js on GitHub."
+/>
+
+### Examples
+
+Following content is provided:
+
+- [Adding GTM (Google Tag Manager)](/en/nextjs/gtm/)
+- [Google Maps Library](/en/nextjs/googlemaps/)
+- [v0 by Vercel](/en/nextjs/v0/)
+- [Sitecore Search](/en/nextjs/sitecore-search/)
+

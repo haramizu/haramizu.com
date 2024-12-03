@@ -1,0 +1,91 @@
+---
+title: サンプル - Notification Widget
+description: このページでは、Sitecore Personalize で提供している標準テンプレートの Notification Widget のデモを確認することができます。
+prev: false
+next: false
+publishDate: 2024-11-15
+lastUpdated: 2024-11-15
+---
+
+このページでは、Sitecore Personalize で提供している標準テンプレートの Notification Widget のデモを確認することができます。
+
+## 設定項目
+
+### 表示位置とスライドの動き
+
+通知のウィジットに関して、表示位置を制御することができるようになっています。これは3つの項目で設定が可能です。
+
+- 縦位置： 上もしくは下に設定できます
+- 横位置： 右もしくは左に設定できます
+- 表示方向： 上下左右のどこから表示をするのか設定できます
+
+![Notification Right-Top](../../../assets/personalize/notification01.png)
+
+![Notification Right-Bottom](../../../assets/personalize/notification02.png)
+
+![Notification Left-Top](../../../assets/personalize/notification03.png)
+
+![Notification Left-Bottom](../../../assets/personalize/notification04.png)
+
+### 通知文章
+
+Notification Widget はテキストを一つ設定することができます。この項目は `General` - `Text` で変更できます。
+
+## コードの確認
+
+HTML の中に含まれる変数は以下の通りです
+
+| 変数 | 形式 | 概要 | 
+|------|-------|-------|
+| Text | string | 通知のタイトル |
+
+### HTML コード
+
+Notification Widget の HTML は以下のように設定されています。
+
+```html
+// Notification.html
+<div id="pers-transition-card" class="animate-[[ Slide In From ]] position-[[Horizontal Position]]-[[Vertical Position]]">
+<div class="pers-transition-card__body">
+  <p>
+    [[ Text | string | There are three other people booking right now | {required: true, group: General, groupOrder: 1, order: 3} ]]
+  </p>
+</div>
+<div class="pers__btn-close" id="pers-modal__btn-close-icon"></div>
+</div>
+```
+
+### JavaScript コード
+
+Notification Widget の JavaScript は以下のように設定されています。
+
+```js
+// Notification.js
+// Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
+var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
+var styleTag = document.getElementById('style-' + variant.ref);
+if (styleTag) {
+    styleTag.innerHTML = compiledCSS;
+}
+// End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
+
+// make space in the body for the experience
+insertHTMLAfter('body', 'pers-');
+var persContent = document.querySelector(
+  '#pers-' + variant.ref + ' #pers-transition-card'
+);
+setTimeout(function () {
+  persContent.classList.add('open');
+}, 10);
+
+var persCardClose = document.body.querySelector(
+  '#pers-' + variant.ref + ' #pers-modal__btn-close-icon'
+);
+persCardClose.onclick = function () {
+  persContent.classList.remove('open');
+};
+```
+
+## 参考情報
+
+- [サンプル一覧に戻る](/cdp-personalize/sample/)

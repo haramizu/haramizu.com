@@ -1,0 +1,181 @@
+---
+title: Data Type and Entity
+description: This document introduces Data Type and Entity, which are data structures managed as search targets in Sitecore Search. By learning about this structure, you can understand what kind of data can be handled by default and how to extend it for use.
+sidebar:
+  order: 3
+publishDate: 2024-12-02
+lastUpdated: 2024-12-02
+---
+
+This document introduces Data Type and Entity, which are data structures managed as search targets in Sitecore Search. By learning about this structure, you can understand what kind of data can be handled by default and how to extend it for use.
+
+## What is a Data Type?
+
+A Data Type defines the structure of data when saved by Sitecore Search's crawler or API integration. The following Data Types are provided:
+
+- Integer
+- Double
+- Array of Integer
+- Float
+- Array of Float
+- Boolean
+- String
+- Array of strings
+- GEO
+- Object
+- Array of objects
+- Timestamp
+
+Data Type affects which features this attribute can be used for. For example, integer attributes cannot be used for personalization. Similarly, object attributes cannot be used for facets, filters, personalization, or sorting. Options that cannot be used are grayed out in `Use For Features`.
+
+## What is an Entity?
+
+An Entity determines the structure of the content that Sitecore Search searches. The structure of an Entity consists of a list of attributes, each determined by a Data Type.
+
+To add an Entity, open Domain Settings - General Settings, click on Entities, and you will see the following screen.
+
+![Entities](../../../../assets/search/entity01.png)
+
+## Entity Template
+
+Sitecore Search provides several Entity templates, and it is also possible to customize Entities. Here, we will review the standard Entity templates provided by Sitecore Search.
+
+### Content
+
+This is a standard template used by Sitecore Search for crawling website content. The template name is `Content Search Preconfig Template`. The following attributes are provided when creating Content.
+
+| Display Name            | Attribute Name | Data Type           |
+| ----------------------- | -------------- | ------------------- |
+| Breadcrumbs             | breadcrumbs    | Array of strings    |
+| Content Type            | type           | String              |
+| Description             | description    | String              |
+| Document Activeness     | is_active      | Boolean             |
+| Id                      | id             | String              |
+| Image url               | image_url      | String              |
+| Name/Title              | name           | String              |
+| Questions and Answering | rfk_questions  | Array of composites |
+| Review rating           | review_rating  | Float               |
+| Source                  | rfk_source     | Composite           |
+| Stats                   | rfk_stats      | Composite           |
+| Tags                    | tags           | Array of strings    |
+| Url                     | url            | String              |
+
+### Product
+
+The name of this template is `Base Attributes Template for Product`. It includes attributes that can be used for e-commerce sites, allowing for the handling of a large amount of data.
+
+| Display Name                  | Attribute Name            | Data Type        |
+| ----------------------------- | ------------------------- | ---------------- |
+| Add to cart                   | add_to_cart               | String           |
+| Additional image SKU urls     | additional_sku_image_urls | String           |
+| Additional image urls         | additional_image_urls     | String           |
+| All category names            | all_category_names        | Array of strings |
+| Brand                         | brand                     | String           |
+| Brand code                    | brand_code                | String           |
+| Breadcrumbs                   | breadcrumbs               | String           |
+| Bundle SKUs                   | bundle_skus               | String           |
+| Category                      | all_category_ids          | Array of strings |
+| Category breadcrumbs          | category_breadcrumbs      | String           |
+| Category ids                  | category_ids              | Array of strings |
+| Category names                | category_names            | Array of strings |
+| Color                         | color                     | String           |
+| Color display name            | color_display_name        | String           |
+| Color rgb value               | color_rgb                 | String           |
+| Customer Category Identifiers | ccids                     | Array of strings |
+| Description                   | description               | String           |
+| Document Activeness           | is_active                 | Boolean          |
+| Expiration Date               | expiration_date           | String           |
+| Final Price                   | final_price               | Float            |
+| Hashed image url              | image_id                  | String           |
+| Id                            | id                        | String           |
+| Image url                     | image_url                 | String           |
+| Is in stock                   | is_in_stock               | Boolean          |
+| Margin                        | margin                    | Float            |
+| Mobile SKU image url          | mobile_sku_image_url      | String           |
+| Mobile SKU url                | mobile_sku_url            | String           |
+| Mobile image url              | mobile_image_url          | String           |
+| Mobile product url            | mobile_product_url        | String           |
+| Name                          | name                      | String           |
+| On sale                       | on_sale                   | Boolean          |
+| Price                         | price                     | Float            |
+| Product                       | product_group             | String           |
+| Product lookup field          | prod_lookup               | Array of strings |
+| Product type                  | product_type              | String           |
+| Product url                   | product_url               | String           |
+| Quick look                    | quick_look                | String           |
+| Quick view                    | quick_view                | String           |
+| RFK tags                      | rfk_tags                  | Object           |
+| Rank By 1                     | rankby1                   | Float            |
+| Rank By 2                     | rankby2                   | Float            |
+| Release Date                  | release_date              | String           |
+| Review Count                  | review_count              | Integer          |
+| Review link                   | review_link               | String           |
+| Review rating                 | review_rating             | Float            |
+| SKU                           | sku                       | String           |
+| SKU description               | sku_description           | String           |
+| SKU name                      | sku_name                  | String           |
+| Save off                      | save_off                  | Float            |
+| Search keywords               | search_keywords           | String           |
+| Set SKUs keywords             | set_skus                  | String           |
+| Short_description             | short_description         | String           |
+| Sku Lookup                    | sku_lookup                | Array of strings |
+| Sku image url                 | sku_image_url             | String           |
+| Sku sequence                  | sku_sequence              | Integer          |
+| Sku url                       | sku_url                   | String           |
+| Source                        | rfk_source                | Composite        |
+| Stats                         | rfk_stats                 | Composite        |
+| Stock quantity                | stock_quantity            | Integer          |
+| Stock unit                    | stock_unit                | String           |
+| prod_url_key                  | prod_url_key              | String           |
+| sku_url_key                   | sku_url_key               | String           |
+| swatch                        | swatch                    | Array of objects |
+
+### Category
+
+The name of this template is `Base Attributes Template for Category`. It provides basic attributes for using categories.
+
+| Display Name                         | Attribute Name | Data Type        |
+| ------------------------------------ | -------------- | ---------------- |
+| All Category Ids                     | all_ids        | Array of strings |
+| All Category Names                   | all_names      | Array of strings |
+| All Category URL Keys                | all_url_keys   | Array of strings |
+| All Category URL Paths               | all_url_paths  | Array of strings |
+| All Customer Category Identifiers    | all_ccids      | Array of strings |
+| Category Breadcrumbs                 | breadcrumb     | Array of strings |
+| Category Name                        | name           | String           |
+| Category Primary                     | is_primary     | Boolean          |
+| Category Primary URL                 | url_path       | String           |
+| Category Primary Url Key             | url_key        | String           |
+| Customer Category Identifier         | ccid           | String           |
+| Document Activeness                  | is_active      | Boolean          |
+| Id                                   | id             | String           |
+| Parent Category Ids                  | parent_ids     | Array of strings |
+| Parent Customer Category Identifiers | parent_ccids   | Array of strings |
+| Source                               | rfk_source     | Composite        |
+| Stats                                | rfk_stats      | Composite        |
+
+### Store
+
+This template is named `Store`.
+
+| Display Name                      | Attribute Name              | Data Type |
+| --------------------------------- | --------------------------- | --------- |
+| Citizenship required              | citizenship_required        | String    |
+| Group Id                          | group_id                    | String    |
+| Id                                | id                          | String    |
+| Job number of positions available | job_number                  | String    |
+| Job shift                         | job_shift                   | String    |
+| Location in lat long coordinates  | location                    | GEO       |
+| Security clearance required       | security_clearance_required | String    |
+| Used for searching address        | address                     | String    |
+
+## Summary
+
+This time, we focused on Data Type and Entity. For basic site search, it is sufficient to extend the Content Entity.
+
+## References
+
+- [Configure entities](https://doc.sitecore.com/search/en/users/search-user-guide/configure-entities.html)
+- [Entity templates](https://doc.sitecore.com/search/en/users/search-user-guide/entity-templates.html)
+- [Add or edit entities](https://doc.sitecore.com/search/en/users/search-user-guide/add-or-edit-entities.html)
+

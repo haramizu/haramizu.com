@@ -1,0 +1,32 @@
+---
+title: ようこそ Shinichi Haramizu ドキュメントサイトへ
+description: このサイトでは Sitecore の各種製品に関する Tips などをまとめています。
+template: splash
+hero:
+  title: |
+    ようこそ Shinichi Haramizu のドキュメントサイトへ
+  tagline: このサイトでは Sitecore の各種製品に関する Tips などをまとめています。
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: はじめる
+      link: /about/overview/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## おすすめコンテンツ
+
+<CardGrid stagger>
+  <Card title="Engagement" icon="pencil">
+    [Sitecore CDP + Personalize](/cdp-personalize/overview/) に関しての記事を掲載しています。
+  </Card>
+  <Card title="Sitecore Composable DXP" icon="add-document">
+    [Sitecore Cloud Portal](/cloud-portal/join-sitecore/) に関しての記事を掲載しています。
+  </Card>
+  <Card title="Astro" icon="setting">
+    このブログは Astro + Starlight + Starlight Blog で構成されています。
+  </Card>
+</CardGrid>
+

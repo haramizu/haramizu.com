@@ -1,0 +1,132 @@
+---
+title: Standard Templates
+description: In the Sitecore Personalize management screen, multiple templates can be selected. These templates are provided in two types - Boxever Library and Sitecore Library. Each template has different characteristics, and there are differences in HTML code and CSS descriptions. In this article, we will explain the differences between these templates in detail and how to use them properly.
+sidebar:
+    order: 2
+publishDate: 2024-11-15
+lastUpdated: 2024-11-15
+---
+
+In the Sitecore Personalize management screen, multiple templates can be selected. These templates are provided in two types: Boxever Library and Sitecore Library. Each template has different characteristics, and there are differences in HTML code and CSS descriptions. In this article, we will explain the differences between these templates in detail and how to use them properly.
+
+## Creating a New Experience
+
+This time, we will check this content in the process of creating a new Experience. First, log in to Sitecore Personalize and navigate to the Experiences screen, where a list of created Experiences will be displayed. Since this is a new environment, nothing has been provided yet.
+
+![Experiences list](../../../../assets/personalize/library01.png)
+
+When creating a new Experience, click the `Create` button in the upper right corner. Then, you will be prompted to select one of three types of Experiences.
+
+- **Web**: Create Personalize for websites
+- **Interactive**: API-based content delivery, app integration, etc.
+- **Triggered**: Specific events for emails or texts
+
+This site will mainly introduce Web samples. Therefore, select Web and name the Experience "Personalize Test".
+
+![Experience name](../../../../assets/personalize/library02.png)
+
+The settings for creating a Web Experience are as follows:
+
+- **Experience** (required): The web part to be displayed. This time, we will check this library.
+- **Page Targeting**: Set the rules for displaying. By default, it is set to `all pages`.
+- **Filter**: Describe the rules to be targeted.
+- **Decisioning**: Used when linking with Decisioning provided by Personalize.
+- **Goal** (required): Define what to set as the conversion goal.
+- **Notifications**: Settings related to notifications.
+
+![New experience](../../../../assets/personalize/library03.png)
+
+## Creating a New Variant
+
+Since nothing is defined in the newly created Experience, click the `Create variant` button to add a display method. When you click, a screen to select a template will be displayed as follows.
+
+![Select template](../../../../assets/personalize/library04.png)
+
+### Checking the Types of Templates
+
+The following samples are provided as standard templates:
+
+- Alert Bar
+- Corner Popup
+- Email Capture Bar
+- Email Capture Corner
+- Notification Widget
+- Popup takeover
+- Slidebar
+
+The design of the above templates will be introduced separately.
+
+### Checking the Types of Libraries
+
+Two types of libraries are provided for the above templates:
+
+- Boxever Library
+- Sitecore Library
+
+Originally, the templates provided to work with Sitecore Personalize were Boxever Library, but now Sitecore Library is used.
+
+## Checking the Differences
+
+We will actually check the differences between them. We will check the differences in the template code and how to use them.
+
+### Library Code
+
+We introduced that two types of libraries are set as templates, but let's check the contents. First,
+
+You can see the difference in the HTML code. The code is different as follows. The code for the Corner Popup in the Boxever Library is as follows. Let's check the code for the Corner Popup. First, the HTML code for the Boxever Library is as follows.
+
+```html title="HTML"
+<!-- Use dynamic Guest variables, type ctrl+space or guest to explore available entities.-->
+<!-- Type "d" to see decisioning helpers -->
+<div id="bx-transition-card">
+        <div class="img-container">
+                <div class="img-container__image"></div>
+        </div>
+        <div class="bx-transition-card__body">
+                <h3>[[Title | string | Title | {required:true, group: Title, order: 1}]]</h3>
+                <p>[[Description | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt | {required:true, group: Description, order: 1}]]</p>
+                <div class="options-container">
+                        <a id="bx-transition-card--secondary" class="options-container__secondary">[[Dismiss Text | string | No Thanks | {required:true, group: Secondary Button, order: 1}]]</a>
+                        <a id="bx-transition-card--primary" class="options-container__primary">[[CTA Text | string | Yes Please | {required:true, group: CTA Button, order: 1}]]</a>
+                </div>
+        </div>
+</div>
+```
+
+Next, check the code for the same type of template in the Sitecore Library.
+
+```html {3,7,11-12} title="HTML"
+<!-- Use dynamic Guest variables, type ctrl+space or guest to explore available entities.-->
+<!-- Type "d" to see decisioning helpers -->
+<div id="pers-transition-card">
+        <div class="img-container">
+                <div class="img-container__image"></div>
+        </div>
+        <div class="pers-transition-card__body">
+                <h3>[[Title | string | Title | {required:true, group: Title, order: 1}]]</h3>
+                <p>[[Description | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt | {required:true, group: Description, order: 1}]]</p>
+                <div class="options-container">
+                        <a id="pers-transition-card--secondary" class="options-container__secondary">[[Dismiss Text | string | No Thanks | {required:true, group: Secondary Button, order: 1}]]</a>
+                        <a id="pers-transition-card--primary" class="options-container__primary">[[CTA Text | string | Yes Please | {required:true, group: CTA Button, order: 1}]]</a>
+                </div>
+        </div>
+</div>
+```
+
+Regarding the id tags, they are written to start with bx- for the Boxever library, but they are written to start with pers- for the Sitecore Library. This is implemented differently not only in HTML but also in CSS.
+
+### Using JavaScript
+
+A major difference when using the Boxever library and Sitecore Library is that the JavaScript files used on the site are different. For example, when using the Boxever library, `https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.1.min.js` is used, but when using the Sitecore Library, `https://d1mj578wat5n4o.cloudfront.net/sitecore-engage-v.1.4.3.min.js` is called. The latter is used with the Sitecore Engage SDK.
+
+## Which One to Use?
+
+The realistic answer is that if you are newly introducing Sitecore Personalize, it is better to use the Sitecore Library. The reason for this is related to the SDK mentioned next.
+
+To make it easier to use Sitecore Personalize, Sitecore provides two SDKs. The structure of the Experience that corresponds to these two SDKs is the Sitecore Library. In fact, when implementing JavaScript, the implementation is different when using the Boxever Library and Sitecore Library.
+
+This documentation site will proceed on the premise of using the Sitecore Library.
+
+## Summary
+
+This time, we introduced the differences between the two types of templates provided. The next topic will introduce the SDK when implementing on a website.

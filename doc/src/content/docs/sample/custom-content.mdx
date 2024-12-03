@@ -1,0 +1,40 @@
+---
+title: コンテンツの変更
+description: このドキュメントでは、Sitecore Personalize を利用した時のテンプレートの動作確認ができます。
+next: false
+sidebar:
+  order: 30
+publishDate: 2024-11-15
+lastUpdated: 2024-11-15
+---
+
+```html
+<div id="pers-transition-card">
+  <div>
+    <p>
+      <img src="/img/apamembers/credit/mv01.png" alt="新規入会者限定" />
+    </p>
+  </div>
+</div>
+```
+
+```js
+// You can choose how you want to add your HTML by using insertHTMLBefore, insertHTMLAfter, or replaceHTML methods
+// e.g insertHTMLAfter('.someClassName'); or insertHTMLAfter('body'); or replaceHTML('#myPageId')
+
+var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
+var styleTag = document.getElementById('style-' + variant.ref);
+if (styleTag) {
+  styleTag.innerHTML = compiledCSS;
+}
+// End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
+
+// make space in the body for the experience
+insertHTMLAfter('#promotion', 'pers-');
+
+var persContent = document.querySelector('#pers-' + variant.ref + ' #pers-transition-card');
+if (persContent) {
+  persContent.classList.add('open');
+}
+```
+

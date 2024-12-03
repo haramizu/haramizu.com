@@ -1,0 +1,72 @@
+---
+title: Experients の作成
+description: このドキュメントでは、A/B テストを実施する場合の Sitecore Personalize の機能、Experiments について紹介をします。利用することができる Web テンプレートは Experience 同じ手順で作成することが可能です。このページでは、いくつかのテンプレートを１つのページに張り付けて、その結果がどのように出るのかを確認していきます。
+sidebar:
+  order: 21
+publishDate: 2024-11-25
+lastUpdated: 2024-11-25
+---
+
+このドキュメントでは、A/B テストを実施する場合の Sitecore Personalize の機能、Experiments について紹介をします。利用することができる Web テンプレートは Experience 同じ手順で作成することが可能です。このページでは、いくつかのテンプレートを１つのページに張り付けて、その結果がどのように出るのかを確認していきます。
+
+## Experiments を作成
+
+今回は新しい Experiments を作成して、その動作確認を行います。Sitecore Personalize にログインをしたあと、Experiments にアクセスをしてください。初めてアクセスをする際には、何も表示されていません。右上にある Create のボタンをクリックすると、何を作成するのか選択が可能です。ここでは Web を選択します。
+
+![Create Experiments](../../../assets/personalize/createexperiments01.png)
+
+今回は `Test Experiments` を作成します。作成する項目は、通常の Experience の作成と似た画面が表示されます。
+
+![New Experiments](../../../assets/personalize/createexperiments02.png)
+
+### Variant の追加
+
+Experience の時と同様に Variant の作成をします。今回は Slidebar (Sitecore Library)を選択します。作成をしたスライドバーの画面は以下のような形です。Variant の名前に `Sidebar - Right side` とします。
+
+![Sidebar - Right side](../../../assets/personalize/createexperiments03.png)
+
+作成をした後保存をして Experiments の設定の画面に戻ると、２つの Variant が設定されていることがわかります。
+
+![2nd variants](../../../assets/personalize/createexperiments04.png)
+
+`Original` に関しては作成をしていませんが、これは元のページのままでパーソナライズを実行しない表示という形になります。ここではもう一つ作成をして、Corner Popup ( Sitecore Library ) を利用して、右下に表示される `Corner Popup - Right bottom` も追加します。その後、それぞれの表示を 33% とします（ original を 34% と設定）。以下が設定完了の画面です。
+
+![3nd variants](../../../assets/personalize/createexperiments05.png)
+
+### ターゲットとゴールの設定
+
+プレビューを実行するにあたって、ターゲットとなるページおよびゴールの設定をしておきます。ターゲットに関しては URL で指定をして、該当するページが表示された時に動くようにします。
+
+ゴールに関しては今回は A/B テストの表示の確認のため設定を省略するために、Don't track performance を選択します。本来であれば、A/B テストにおいてはゴールを設定しておくことで、そのテストの結果を取得することができるため、この項目は必ず設定していただく必要があります。
+
+![Goal and Target](../../../assets/personalize/createexperiments06.png)
+
+## プレビュー
+
+作成をした Experiment を実際に公開する前に確認をします。プレビューで該当するページを表示したあと、しばらくすると左側から QA Tool のアイコンが表示さます。これを開いた画面で、現在どの Variant が表示されているのか？に関しては確認をすることができます。
+
+![Preview](../../../assets/personalize/createexperiments07.png)
+
+QA Toolbox の選択肢を `Sidebar - Right side` に切り替えて Reload を実行します。ページが再度読み込まれて、Sidebar が表示されます。QA Toolbox でもエラーは表示されてません。
+
+![Preview - Sidebar](../../../assets/personalize/createexperiments08.png)
+
+このように、A/B/n テストを Experiments を利用することで実現ができるようになっています。
+
+## 実行する
+
+作成をした Experiments を本番環境に反映させる場合は、Start ボタンをクリックします。開始日と終了日を指定することも可能です。
+
+![start](../../../assets/personalize/createexperiments09.png)
+
+## サンプルページ
+
+今回作成をした A/B テストに関しては以下のページで実際にサンプルとして動作させています。
+
+- [A/B テストサンプル](/sample/test-experiment/)
+
+## 参考情報
+
+- [Getting started with web experiments](https://doc.sitecore.com/personalize/en/users/sitecore-personalize/getting-started-with-web-experiments.html)
+- [Create a web experiment](https://doc.sitecore.com/personalize/en/users/sitecore-personalize/create-a-web-experiment.html)
+- [Create a variant for a web experiment using a web template](https://doc.sitecore.com/personalize/en/users/sitecore-personalize/create-a-variant-for-a-web-experiment-using-a-web-template.html)

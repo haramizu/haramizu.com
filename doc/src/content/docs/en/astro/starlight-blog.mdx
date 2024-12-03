@@ -3,32 +3,40 @@ title: Adding a Blog to Starlight
 description: This document introduces how to set up a customizable documentation site using Astro's Starlight template.
 next: false
 sidebar:
-   order: 2
+  order: 2
 publishDate: 2024-11-15
-lastUpdated: 2024-11-15
+lastUpdated: 2024-12-03
 ---
 
-import { Steps } from '@astrojs/starlight/components'
+import { Steps, LinkCard } from '@astrojs/starlight/components';
 
 This document introduces the steps to add a blog to a site set up with Starlight. The blog we are adopting this time uses a plugin provided by the community.
 
-- [Plugins and Integrations](https://starlight.astro.build/en/resources/plugins/)
+<LinkCard
+  title="Plugins and Integrations"
+  href="https://starlight.astro.build/en/resources/plugins/"
+  target="_blank"
+/>
 
 ## Installing the Plugin
 
 The installation steps are introduced on the following site.
 
-- [Starlight Blog - Getting Started](https://starlight-blog-docs.vercel.app/getting-started/)
+<LinkCard
+  title="Starlight Blog - Getting Started"
+  href="https://starlight-blog-docs.vercel.app/getting-started/"
+  target="_blank"
+/>
 
 <Steps>
 
-1. First, install the plugin for the Starlight documentation site.
+1.  First, install the plugin for the Starlight documentation site.
 
     ```bash title="Install Plugin"
     npm i starlight-blog
     ```
 
-2. Add the installed plugin to `astro.config.mjs`.
+2.  Add the installed plugin to `astro.config.mjs`.
 
     ```diff lang="js"
     // astro.config.mjs
@@ -46,7 +54,7 @@ The installation steps are introduced on the following site.
     })
     ```
 
-3. Next, add the blog schema to `src/content/config.ts`.
+3.  Next, add the blog schema to `src/content/config.ts`.
 
     ```diff lang="ts"
     // src/content/config.ts
@@ -63,19 +71,20 @@ The installation steps are introduced on the following site.
     };
     ```
 
-4. Finally, create the file `src/content/docs/blog/my-first-blog-post.md`.
+4.  Finally, create the file `src/content/docs/blog/my-first-blog-post.md`.
 
-    ```md
-    // src/content/docs/blog/my-first-blog-post.md
-    ---
-    title: My first blog post
-    date: 2023-07-24
-    ---
+        ```md
+        // src/content/docs/blog/my-first-blog-post.md
+        ---
+        title: My first blog post
+        date: 2023-07-24
+        ---
 
-    ## Hello
+        ## Hello
 
-    Hello world!
-    ```
+        Hello world!
+        ```
+
 </Steps>
 
 This completes the plugin installation. When you access the site, a Blog menu will be added at the top, allowing you to view blog posts.
@@ -86,11 +95,19 @@ This completes the plugin installation. When you access the site, a Blog menu wi
 
 Looking at the screen above, you can see that there are insufficient Japanese resources in the left menu. The method to address this is posted on the following page.
 
-- [Internationalization (i18n)](https://starlight-blog-docs.vercel.app/guides/i18n)
+<LinkCard
+  title="Internationalization (i18n)"
+  href="https://starlight-blog-docs.vercel.app/guides/i18n"
+  target="_blank"
+/>
 
 The procedure is to use the i18n managed by Starlight.
 
-- [Internationalization (i18n) - Translate Starlight’s UI](https://starlight.astro.build/guides/i18n/#translate-starlights-ui)
+<LinkCard
+  title="Internationalization (i18n) - Translate Starlight’s UI"
+  href="https://starlight.astro.build/guides/i18n/#translate-starlights-ui"
+  target="_blank"
+/>
 
 The steps to enable this feature are as follows.
 
@@ -98,40 +115,40 @@ The steps to enable this feature are as follows.
 
 1. Add `i18nSchema` to the configuration file `src/content/config.ts`.
 
-    ```diff lang="js" ins=/, (i18nSchema)/
-    // src/content/config.ts
-    import { defineCollection } from 'astro:content';
-    import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
+   ```diff lang="js" ins=/, (i18nSchema)/
+   // src/content/config.ts
+   import { defineCollection } from 'astro:content';
+   import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
 
-    export const collections = {
-    docs: defineCollection({ schema: docsSchema() }),
-    +	i18n: defineCollection({ type: 'data', schema: i18nSchema() }),
-    };
-    ```
+   export const collections = {
+   docs: defineCollection({ schema: docsSchema() }),
+   +	i18n: defineCollection({ type: 'data', schema: i18nSchema() }),
+   };
+   ```
 
 2. Create the directory `src/content/i18n` and create the file `ja.json`.
 
-    ```json
-    {
-       "starlightBlog.authors.count_one": "{{count}} 投稿 by {{author}}",
-       "starlightBlog.authors.count_other": "{{count}} 投稿 by {{author}}",
-       "starlightBlog.pagination.prev": "新しい投稿",
-       "starlightBlog.pagination.next": "古い投稿",
-       "starlightBlog.post.lastUpdate": " - 最終更新日: {{date}}",
-       "starlightBlog.post.draft": "下書き",
-       "starlightBlog.post.featured": "注目",
-       "starlightBlog.post.tags": "タグ:",
-       "starlightBlog.rss.imageFallback": "オリジナルの画像はブログに掲載",
-       "starlightBlog.sidebar.all": "全ての投稿",
-       "starlightBlog.sidebar.featured": "注目の投稿",
-       "starlightBlog.sidebar.recent": "最近の投稿",
-       "starlightBlog.sidebar.tags": "タグ",
-       "starlightBlog.sidebar.authors": "編集者",
-       "starlightBlog.sidebar.rss": "RSS",
-       "starlightBlog.tags.count_one": "“{{tag}}” の投稿: {{count}} 件",
-       "starlightBlog.tags.count_other": "{{tag}}” の投稿: {{count}} 件"
-    }
-    ```
+   ```json
+   {
+     "starlightBlog.authors.count_one": "{{count}} 投稿 by {{author}}",
+     "starlightBlog.authors.count_other": "{{count}} 投稿 by {{author}}",
+     "starlightBlog.pagination.prev": "新しい投稿",
+     "starlightBlog.pagination.next": "古い投稿",
+     "starlightBlog.post.lastUpdate": " - 最終更新日: {{date}}",
+     "starlightBlog.post.draft": "下書き",
+     "starlightBlog.post.featured": "注目",
+     "starlightBlog.post.tags": "タグ:",
+     "starlightBlog.rss.imageFallback": "オリジナルの画像はブログに掲載",
+     "starlightBlog.sidebar.all": "全ての投稿",
+     "starlightBlog.sidebar.featured": "注目の投稿",
+     "starlightBlog.sidebar.recent": "最近の投稿",
+     "starlightBlog.sidebar.tags": "タグ",
+     "starlightBlog.sidebar.authors": "編集者",
+     "starlightBlog.sidebar.rss": "RSS",
+     "starlightBlog.tags.count_one": "“{{tag}}” の投稿: {{count}} 件",
+     "starlightBlog.tags.count_other": "{{tag}}” の投稿: {{count}} 件"
+   }
+   ```
 
 </Steps>
 
@@ -143,11 +160,11 @@ Successfully added Japanese resources.
 
 By using the standard plugin, you can now write a blog within Starlight. The position of the blog on this site will be used to provide information about site updates rather than offering tips.
 
-The code and the blog added so far are as follows.
-
-- https://github.com/haramizu/doc.haramizu.com/tree/starlight
-
 ## References
 
-- [HiDeoo / starlight-blog](https://github.com/HiDeoo/starlight-blog)
+<LinkCard
+  title="HiDeoo / starlight-blog"
+  href="https://github.com/HiDeoo/starlight-blog"
+  target="_blank"
+/>
 

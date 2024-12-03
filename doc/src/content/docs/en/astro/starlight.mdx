@@ -5,10 +5,10 @@ prev: false
 sidebar:
   order: 1
 publishDate: 2024-11-11
-lastUpdated: 2024-11-11
+lastUpdated: 2024-12-03
 ---
 
-import { Steps } from '@astrojs/starlight/components'
+import { Steps, LinkCard } from '@astrojs/starlight/components';
 
 I created a blog using Next.js, but I wanted to create a documentation site that can be easily written in Markdown, published on GitHub, and receive feedback. Therefore, I considered several frameworks. In particular, I thought a framework that supports SSG and is easy to customize would be good, and I considered the following candidates:
 
@@ -20,7 +20,7 @@ After reconsidering various options, I decided to create this documentation site
 
 While referring to the Astro site, I thought it would be good to output in this document format, and I found that the following documentation site is provided:
 
-- [Starlight](https://starlight.astro.build)
+<LinkCard title="Starlight" href="https://starlight.astro.build" target="_blank" />
 
 As a result, I decided to create this site using Starlight.
 
@@ -41,9 +41,14 @@ This time, I will set it up using Tailwind CSS, which I am familiar with.
 
 Let's proceed with creating the project. Refer to the following page to start the creation.
 
-- [CSS and Styling - Tailwind CSS](https://starlight.astro.build/ja/guides/css-and-tailwind/#tailwind-css)
+<LinkCard
+  title="CSS and Styling - Tailwind CSS"
+  href="https://starlight.astro.build/ja/guides/css-and-tailwind/#tailwind-css"
+  target="_blank"
+/>
 
 <Steps>
+
 1. Create the project with the following command:
 
    ```bash title="Creating the project"
@@ -77,6 +82,7 @@ The project is complete. As shown on the screen, move to the path and start it, 
 Deploy the created project to GitHub and follow the steps to publish the site to Vercel. Assume that the project's code is already uploaded to GitHub.
 
 <Steps>
+
 1. Log in to Vercel
 
 2. Click New project, create a new project, and specify the GitHub repository where the code is uploaded.
@@ -102,6 +108,7 @@ npm i -g vercel
 If the CLI is available, log in with the following command at the project's top.
 
 <Steps>
+
 1. First, a confirmation screen will appear asking which account to log in with.
 
    ```bash title="Logging in with Vercel CLI"
@@ -119,7 +126,7 @@ If the CLI is available, log in with the following command at the project's top.
 
    Since we are using GitHub, the browser will launch, and logging in will complete the Vercel CLI login.
 
-3. Link with the Vercel project.
+2. Link with the Vercel project.
 
    ```bash title="Linking with Vercel project"
    doc.haramizu.com % vercel link
@@ -138,7 +145,11 @@ The `.vercel` is added to the `.gitignore` file, and you can now use `vercel env
 
 For providing information on this site, we plan to expand in Japanese and English (using machine translation). Since Starlight includes multilingual functionality, we will proceed with language settings.
 
-- [Internationalization (i18n)](https://starlight.astro.build/ja/guides/i18n/)
+<LinkCard
+  title="Internationalization (i18n)"
+  href="https://starlight.astro.build/ja/guides/i18n/"
+  target="_blank"
+/>
 
 This setting is added to the `astro.config.mjs` file. This time, the root will be Japanese, and English will be displayed at `/en`.
 
@@ -171,7 +182,11 @@ After deploying the files, a dropdown menu will appear, allowing you to switch l
 
 To make the created site's sitemap available, enable the Sitemap feature. This setting is introduced on the following page.
 
-- [Customizing Starlight - Enabling Sitemap](https://starlight.astro.build/ja/guides/customization/#サイトマップを有効化する)
+<LinkCard
+  title="Customizing Starlight - Enabling Sitemap"
+  href="https://starlight.astro.build/guides/customization/#enable-sitemap"
+  target="_blank"
+/>
 
 The setting is added to the `site` in the `astro.config.mjs` file.
 
@@ -301,12 +316,15 @@ This prepares Prettier to unify the code format.
 
 This time, we introduced the steps to set up a site using Astro / Starlight. Basically, we just followed the guidance on the official site.
 
-The code and the blog added so far are as follows.
-
-- https://github.com/haramizu/doc.haramizu.com/tree/starlight
-
 ## References
 
-- [Astro](https://astro.build/)
-- [Starlight](https://starlight.astro.build/)
-- [Starlight on GitHub](https://github.com/withastro/starlight)
+<LinkCard title="Astro" href="https://astro.build/" target="_blank" />
+
+<LinkCard title="Starlight" href="https://starlight.astro.build/" target="_blank" />
+
+<LinkCard
+  title="Starlight on GitHub"
+  href="https://github.com/withastro/starlight"
+  target="_blank"
+/>
+

@@ -4,10 +4,10 @@ description: This document demonstrates how to access and update guest informati
 sidebar:
   order: 3
 publishDate: 2024-11-25
-lastUpdated: 2024-11-25
+lastUpdated: 2024-12-03
 ---
 
-{/* https://blog.haramizu.com/ja-JP/blog/2023/08/22/cdp-update-profile-using-postman */}
+import { LinkCard } from '@astrojs/starlight/components';
 
 This document demonstrates how to access and update guest information using Postman. These steps can be referenced when integrating with external systems via API.
 
@@ -99,7 +99,11 @@ Postman setup is now complete.
 
 The API documentation for creating, updating, and deleting guests is available at:
 
-- [Sitecore CDP Guest REST API (v2.1)](https://api-docs.sitecore.com/cdp/guest-rest-api)
+<LinkCard
+  title="Sitecore CDP Guest REST API (v2.1)"
+  href="https://api-docs.sitecore.com/cdp/guest-rest-api"
+  target="_blank"
+/>
 
 We will use this to verify guest creation, updating, and deletion.
 
@@ -273,5 +277,15 @@ We used Postman to control guests via API. Understanding these basic operations 
 
 ## References
 
-- [Sitecore CDP Guest REST API (v2.1)](https://api-docs.sitecore.com/cdp/guest-rest-api)
+<LinkCard
+  title="Sitecore CDP Guest REST API (v2.1)"
+  href="https://api-docs.sitecore.com/cdp/guest-rest-api"
+  target="_blank"
+/>
+
+<LinkCard
+  title="SitecoreNA / Sitecore-CDP-Scripts"
+  href="https://github.com/SitecoreNA/Sitecore-CDP-Scripts"
+  target="_blank"
+/>
 

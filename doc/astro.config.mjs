@@ -16,10 +16,10 @@ export default defineConfig({
       title: 'Haramizu.com',
       defaultLocale: 'root',
       editLink: {
-        baseUrl: 'https://github.com/haramizu/doc.haramizu.com/edit/main/',
+        baseUrl: 'https://github.com/haramizu/haramizu.com/edit/main/doc/',
       },
       social: {
-        github: 'https://github.com/haramizu/doc.haramizu.com',
+        github: 'https://github.com/haramizu/haramizu.com',
       },
       locales: {
         root: {

@@ -35,8 +35,8 @@ Notification Widget はテキストを一つ設定することができます。
 
 HTML の中に含まれる変数は以下の通りです
 
-| 変数 | 形式 | 概要 | 
-|------|-------|-------|
+| 変数 | 形式   | 概要           |
+| ---- | ------ | -------------- |
 | Text | string | 通知のタイトル |
 
 ### HTML コード
@@ -45,13 +45,17 @@ Notification Widget の HTML は以下のように設定されています。
 
 ```html
 // Notification.html
-<div id="pers-transition-card" class="animate-[[ Slide In From ]] position-[[Horizontal Position]]-[[Vertical Position]]">
-<div class="pers-transition-card__body">
-  <p>
-    [[ Text | string | There are three other people booking right now | {required: true, group: General, groupOrder: 1, order: 3} ]]
-  </p>
-</div>
-<div class="pers__btn-close" id="pers-modal__btn-close-icon"></div>
+<div
+  id="pers-transition-card"
+  class="animate-[[ Slide In From ]] position-[[Horizontal Position]]-[[Vertical Position]]"
+>
+  <div class="pers-transition-card__body">
+    <p>
+      [[ Text | string | There are three other people booking right now | {required: true, group:
+      General, groupOrder: 1, order: 3} ]]
+    </p>
+  </div>
+  <div class="pers__btn-close" id="pers-modal__btn-close-icon"></div>
 </div>
 ```
 
@@ -65,15 +69,13 @@ Notification Widget の JavaScript は以下のように設定されています
 var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
 var styleTag = document.getElementById('style-' + variant.ref);
 if (styleTag) {
-    styleTag.innerHTML = compiledCSS;
+  styleTag.innerHTML = compiledCSS;
 }
 // End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
 
 // make space in the body for the experience
 insertHTMLAfter('body', 'pers-');
-var persContent = document.querySelector(
-  '#pers-' + variant.ref + ' #pers-transition-card'
-);
+var persContent = document.querySelector('#pers-' + variant.ref + ' #pers-transition-card');
 setTimeout(function () {
   persContent.classList.add('open');
 }, 10);
@@ -86,6 +88,4 @@ persCardClose.onclick = function () {
 };
 ```
 
-## 参考情報
-
-- [サンプル一覧に戻る](/cdp-personalize/sample/)
+- [サンプル一覧に戻る](/personalize/sample/)

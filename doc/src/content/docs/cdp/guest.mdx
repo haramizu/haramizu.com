@@ -8,6 +8,8 @@ publishDate: 2024-11-25
 lastUpdated: 2024-11-25
 ---
 
+import { LinkCard } from '@astrojs/starlight/components';
+
 このドキュメントでは Sitecore CDP と連携している Web サイトの訪問者の情報を、どのようにゲストとして追いかけているのか、ページを閲覧しながら確認をしていきます。
 
 ## Guest ゲストの確認
@@ -131,5 +133,9 @@ function sendInteractionToPersonalize(interactionType) {
 
 ## 参考情報
 
-- [Identifying guests in Sitecore CDP](https://doc.sitecore.com/cdp/en/users/sitecore-cdp/identifying-guests-in-sitecore-cdp.html)
+<LinkCard
+  title="Identifying guests in Sitecore CDP"
+  href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/identifying-guests-in-sitecore-cdp.html"
+  target="_blank"
+/>
 

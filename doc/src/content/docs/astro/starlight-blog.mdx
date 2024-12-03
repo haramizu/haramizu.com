@@ -8,7 +8,7 @@ publishDate: 2024-11-15
 lastUpdated: 2024-11-15
 ---
 
-import { Steps } from '@astrojs/starlight/components'
+import { Steps, LinkCard } from '@astrojs/starlight/components';
 
 このドキュメントでは、Starlight で立ち上げたサイトに対してブログを追加する手順を紹介しています。今回、採用をしているブログはコミュニティで提供されているプラグインを利用することにしました。
 
@@ -67,15 +67,16 @@ import { Steps } from '@astrojs/starlight/components'
 
    ```md
    // src/content/docs/blog/my-first-blog-post.md
-   ---
    title: My first blog post
    date: 2023-07-24
+
    ---
 
    ## Hello
 
    Hello world!
    ```
+
 </Steps>
 
 これでプラグインのインストールは完了です。実際にアクセスをすると、上に Blog のメニューが追加されて、ブログの記事を参照することができるようになります。
@@ -113,23 +114,23 @@ import { Steps } from '@astrojs/starlight/components'
 
    ```json
    {
-       "starlightBlog.authors.count_one": "{{count}} 投稿 by {{author}}",
-       "starlightBlog.authors.count_other": "{{count}} 投稿 by {{author}}",
-       "starlightBlog.pagination.prev": "新しい投稿",
-       "starlightBlog.pagination.next": "古い投稿",
-       "starlightBlog.post.lastUpdate": " - 最終更新日: {{date}}",
-       "starlightBlog.post.draft": "下書き",
-       "starlightBlog.post.featured": "注目",
-       "starlightBlog.post.tags": "タグ:",
-       "starlightBlog.rss.imageFallback": "オリジナルの画像はブログに掲載",
-       "starlightBlog.sidebar.all": "全ての投稿",
-       "starlightBlog.sidebar.featured": "注目の投稿",
-       "starlightBlog.sidebar.recent": "最近の投稿",
-       "starlightBlog.sidebar.tags": "タグ",
-       "starlightBlog.sidebar.authors": "編集者",
-       "starlightBlog.sidebar.rss": "RSS",
-       "starlightBlog.tags.count_one": "“{{tag}}” の投稿: {{count}} 件",
-       "starlightBlog.tags.count_other": "{{tag}}” の投稿: {{count}} 件"
+     "starlightBlog.authors.count_one": "{{count}} 投稿 by {{author}}",
+     "starlightBlog.authors.count_other": "{{count}} 投稿 by {{author}}",
+     "starlightBlog.pagination.prev": "新しい投稿",
+     "starlightBlog.pagination.next": "古い投稿",
+     "starlightBlog.post.lastUpdate": " - 最終更新日: {{date}}",
+     "starlightBlog.post.draft": "下書き",
+     "starlightBlog.post.featured": "注目",
+     "starlightBlog.post.tags": "タグ:",
+     "starlightBlog.rss.imageFallback": "オリジナルの画像はブログに掲載",
+     "starlightBlog.sidebar.all": "全ての投稿",
+     "starlightBlog.sidebar.featured": "注目の投稿",
+     "starlightBlog.sidebar.recent": "最近の投稿",
+     "starlightBlog.sidebar.tags": "タグ",
+     "starlightBlog.sidebar.authors": "編集者",
+     "starlightBlog.sidebar.rss": "RSS",
+     "starlightBlog.tags.count_one": "“{{tag}}” の投稿: {{count}} 件",
+     "starlightBlog.tags.count_other": "{{tag}}” の投稿: {{count}} 件"
    }
    ```
 
@@ -143,10 +144,11 @@ import { Steps } from '@astrojs/starlight/components'
 
 標準のプラグインを利用して、Starlight の中でもブログを書くことができるようになりました。このサイトでのブログの位置づけは Tips の提供というよりは、サイトの更新に関する情報をお届けする形で利用したいと思います。
 
-ここまでのコードおよび Blog を追加したコードは以下のようになります。
-
-- https://github.com/haramizu/doc.haramizu.com/tree/starlight
-
 ## 参考情報
 
-- [HiDeoo / starlight-blog](https://github.com/HiDeoo/starlight-blog)
+<LinkCard
+  title="HiDeoo / starlight-blog"
+  href="https://github.com/HiDeoo/starlight-blog"
+  target="_blank"
+/>
+

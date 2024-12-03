@@ -21,10 +21,10 @@ Slidebar は画像を一つ設定することができます。この項目は `
 
 HTML の中に含まれる変数は以下の通りです
 
-| 変数 | 形式 | 概要 | 
-|------|-------|-------|
-| Title Text | string | タイトル |
-| Button Link | string | URL |
+| 変数        | 形式   | 概要         |
+| ----------- | ------ | ------------ |
+| Title Text  | string | タイトル     |
+| Button Link | string | URL          |
 | Button Text | string | ボタンラベル |
 
 ### HTML コード
@@ -45,10 +45,13 @@ Slidebar の HTML は以下のように設定されています。
       [[Title Text | string | Title | {required:true, group: Title, groupOrder: 2, order: 1}]]
     </h3>
     <p>
-      [[Description Text | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. | {required:true, group: Description, groupOrder: 3, order: 1}]]
+      [[Description Text | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. | {required:true, group:
+      Description, groupOrder: 3, order: 1}]]
     </p>
     <a id="pers-sidebar__primary-action" class="body__button">
-      [[Button Text | string | Click Here | {required: true, group: Button, groupOrder: 4, order: 1}]]
+      [[Button Text | string | Click Here | {required: true, group: Button, groupOrder: 4, order:
+      1}]]
     </a>
   </div>
 </div>
@@ -64,7 +67,7 @@ Slidebar の JavaScript は以下のように設定されています。
 var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
 var styleTag = document.getElementById('style-' + variant.ref);
 if (styleTag) {
-    styleTag.innerHTML = compiledCSS;
+  styleTag.innerHTML = compiledCSS;
 }
 // End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
 
@@ -91,17 +94,15 @@ persSidebarCta.onclick = function () {
 };
 
 function sendInteractionToPersonalize(interactionType) {
-  const type = "INTERACTION";
+  const type = 'INTERACTION';
   const eventData = {
-      "channel": "WEB",
-      "pointOfSale": Engage.settings.pointOfSale,
-      "interactionID": "PERS_SIDEBAR",
-      "interactionType": interactionType
+    channel: 'WEB',
+    pointOfSale: Engage.settings.pointOfSale,
+    interactionID: 'PERS_SIDEBAR',
+    interactionType: interactionType,
   };
   window.engage.event(type, eventData);
 }
 ```
 
-## 参考情報
-
-- [サンプル一覧に戻る](/cdp-personalize/sample/)
+- [サンプル一覧に戻る](/personalize/sample/)

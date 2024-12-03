@@ -44,14 +44,14 @@ You can set the text displayed after input. Change the message in `Modal Title` 
 
 The variables included in the HTML are as follows:
 
-| Variable | Type | Description |
-|----------|------|-------------|
-| Title Text | string | Text displayed on the bar |
-| Input Ghost Text | string | Text displayed in the input box |
-| Button Text | string | Button label |
-| Privacy Text | string | Privacy display text |
-| Privacy Link | string | URL of the privacy link |
-| Modal Title Text | string | Text displayed after input |
+| Variable               | Type   | Description                       |
+| ---------------------- | ------ | --------------------------------- |
+| Title Text             | string | Text displayed on the bar         |
+| Input Ghost Text       | string | Text displayed in the input box   |
+| Button Text            | string | Button label                      |
+| Privacy Text           | string | Privacy display text              |
+| Privacy Link           | string | URL of the privacy link           |
+| Modal Title Text       | string | Text displayed after input        |
 | Modal Description Text | string | Description displayed after input |
 
 ### HTML Code
@@ -63,32 +63,55 @@ The HTML of the Email Capture Bar is set as follows.
 <!-- Use dynamic Guest variables, type ctrl+space or guest to explore available entities.-->
 <!-- Type "d" to see decisioning helpers -->
 <div id="pers_TopBanner">
-    <div class="pers_TopBanner__banner">
-        <div class="pers-banner_content_container">
-            <div class="pers-text_section">
-                <p>[[Title Text | string | For this bar, we recommend less than 50 characters | { max: 50, group: Title, groupOrder: 2, order: 1 }]]</p>
-            </div>
-            <div class="pers-email_section">
-                <input type="email" name="pers-email_input" class="pers-email_input input-box" id="pers-email_input" placeholder="[[ Input Ghost Text | string | Email | { required: true, group: Email Input, groupOrder: 3, order: 1 } ]]">
-                <div class="pers-modal_button-wrapper">
-                    <a class="pers-modal_button__primary" id="pers-modal_button">[[ Button Text | string | Submit | { required: true, group: Submit Button, groupOrder: 4, order: 1 } ]]</a>
-                    <a class="pers-modal_button__privacy-link" href="[[ Privacy Link | string | https://www.example.com/ | { required: true, group: Privacy Link, groupOrder: 5, order: 2 } ]]">[[ Privacy Text | string | Privacy Policy | { required: true, group: Privacy Link, order: 1 }]]</a>
-                </div>
-            </div>
+  <div class="pers_TopBanner__banner">
+    <div class="pers-banner_content_container">
+      <div class="pers-text_section">
+        <p>
+          [[Title Text | string | For this bar, we recommend less than 50 characters | { max: 50,
+          group: Title, groupOrder: 2, order: 1 }]]
+        </p>
+      </div>
+      <div class="pers-email_section">
+        <input
+          type="email"
+          name="pers-email_input"
+          class="pers-email_input input-box"
+          id="pers-email_input"
+          placeholder="[[ Input Ghost Text | string | Email | { required: true, group: Email Input, groupOrder: 3, order: 1 } ]]"
+        />
+        <div class="pers-modal_button-wrapper">
+          <a class="pers-modal_button__primary" id="pers-modal_button"
+            >[[ Button Text | string | Submit | { required: true, group: Submit Button, groupOrder:
+            4, order: 1 } ]]</a
+          >
+          <a
+            class="pers-modal_button__privacy-link"
+            href="[[ Privacy Link | string | https://www.example.com/ | { required: true, group: Privacy Link, groupOrder: 5, order: 2 } ]]"
+            >[[ Privacy Text | string | Privacy Policy | { required: true, group: Privacy Link,
+            order: 1 }]]</a
+          >
         </div>
-
-        <div class="pers__btn-close" id="pers_TopBanner-close"></div>
+      </div>
     </div>
+
+    <div class="pers__btn-close" id="pers_TopBanner-close"></div>
+  </div>
 </div>
 
 <div id="pers-thank_you_modal">
-    <div class="pers-modal_backdrop" id="pers-thank_you_backdrop"></div>
-    <div class="pers-modal_content">
-        <h3>[[ Modal Title Text | string | Thank You! | { required: true, group: Modal Title, groupOrder: 8, order: 1 } ]]</h3>
-        <p>[[ Modal Description Text | text | You're all signed up. | { required: true, group: Modal Description, groupOrder: 9, order: 1 } ]]</p>
+  <div class="pers-modal_backdrop" id="pers-thank_you_backdrop"></div>
+  <div class="pers-modal_content">
+    <h3>
+      [[ Modal Title Text | string | Thank You! | { required: true, group: Modal Title, groupOrder:
+      8, order: 1 } ]]
+    </h3>
+    <p>
+      [[ Modal Description Text | text | You're all signed up. | { required: true, group: Modal
+      Description, groupOrder: 9, order: 1 } ]]
+    </p>
 
-        <div class="pers__btn-close" id="pers-thank_you_close"></div>
-    </div>
+    <div class="pers__btn-close" id="pers-thank_you_close"></div>
+  </div>
 </div>
 ```
 
@@ -197,6 +220,5 @@ persThankYouBackdrop.onclick = function() {
 };
 ```
 
-## References
+- [Back to Sample List](/en/personalize/sample/)
 
-- [Back to Sample List](/en/cdp-personalize/sample/)

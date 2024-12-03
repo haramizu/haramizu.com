@@ -8,7 +8,7 @@ publishDate: 2024-11-25
 lastUpdated: 2024-11-25
 ---
 
-{/* https://blog.haramizu.com/ja-JP/blog/2023/08/22/cdp-update-profile-using-postman */}
+import { LinkCard } from '@astrojs/starlight/components';
 
 このドキュメントでは、Postman を利用してゲストに関する情報へのアクセス、更新をする方法を体験します。実際のこの手順は、外部システムと API 連携をする際の参考になります。
 
@@ -102,7 +102,11 @@ Client Key および API Token に関しては環境によって異なること�
 
 ゲストの作成や更新に関しては、API として以下のドキュメントが公開されています。
 
-- [Sitecore CDP Guest REST API (v2.1)](https://api-docs.sitecore.com/cdp/guest-rest-api)
+<LinkCard
+  title="Sitecore CDP Guest REST API (v2.1)"
+  href="https://api-docs.sitecore.com/cdp/guest-rest-api"
+  target="_blank"
+/>
 
 今回はこれを実際に利用して、ゲストの作成から更新、削除まで検証をしていきます。
 
@@ -276,6 +280,15 @@ Postman の動作検証の際には、CDP の管理画面から ID を取得し�
 
 ## 参考情報
 
-- [Sitecore CDP Guest REST API (v2.1)](https://api-docs.sitecore.com/cdp/guest-rest-api)
-- [SitecoreNA / Sitecore-CDP-Scripts](https://github.com/SitecoreNA/Sitecore-CDP-Scripts)
+<LinkCard
+  title="Sitecore CDP Guest REST API (v2.1)"
+  href="https://api-docs.sitecore.com/cdp/guest-rest-api"
+  target="_blank"
+/>
+
+<LinkCard
+  title="SitecoreNA / Sitecore-CDP-Scripts"
+  href="https://github.com/SitecoreNA/Sitecore-CDP-Scripts"
+  target="_blank"
+/>
 

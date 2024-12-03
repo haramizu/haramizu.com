@@ -8,7 +8,7 @@ publishDate: 2024-11-11
 lastUpdated: 2024-11-11
 ---
 
-import { Steps } from '@astrojs/starlight/components';
+import { Steps, LinkCard } from '@astrojs/starlight/components';
 
 ブログを Next.js を利用して作成しましたが、手軽に Markdown で記述ができ、GitHub に全て公開してフィードバックを貰うことができるドキュメントサイトを作りたいと考えました。このため、いくつかのフレームワークを検討しました。特に、手軽にカスタマイズができる SSG 対応のフレームワークが良いと考え、以下の候補を検討しました。
 
@@ -20,7 +20,7 @@ import { Steps } from '@astrojs/starlight/components';
 
 そして、Astro のサイトを参照している時に、実際にこの文書の形式で出せればいいのではないか？と思って確認をしたところ、以下のドキュメントサイトが提供されていることに気がつきました。
 
-- [Starlight](https://starlight.astro.build)
+<LinkCard title="Starlight" href="https://starlight.astro.build" target="_blank" />
 
 結果、このサイトは Starlight を利用して作ることにしました。
 
@@ -41,7 +41,11 @@ import { Steps } from '@astrojs/starlight/components';
 
 それでは実際にプロジェクトの作成を進めていきます。作成をするに当たって以下のページを参考にして開始します。
 
-- [CSS とスタイリング - Tailwind CSS](https://starlight.astro.build/ja/guides/css-and-tailwind/#tailwind-css)
+<LinkCard
+  title="CSS とスタイリング - Tailwind CSS"
+  href="https://starlight.astro.build/ja/guides/css-and-tailwind/#tailwind-css"
+  target="_blank"
+/>
 
 <Steps>
 
@@ -141,7 +145,11 @@ CLI が利用できるようになっている場合は、プロジェクトの�
 
 このサイトでの情報提供に関して、日本語と英語（機械翻訳を利用）で展開していく形で考えています。Starlight の基本機能に多言語機能が含まれているため、実際に言語の設定を進めていきます。
 
-- [国際化（i18n）](https://starlight.astro.build/ja/guides/i18n/)
+<LinkCard
+  title="国際化（i18n）"
+  href="https://starlight.astro.build/ja/guides/i18n/"
+  target="_blank"
+/>
 
 この設定は、`astro.config.mjs` のファイルに設定を追加する形となります。今回はルートを日本語、英語は `/en` というパスで表示するようにします。
 
@@ -174,7 +182,11 @@ export default defineConfig({
 
 作成したサイトのサイトマップを利用できるように、Sitemap の機能を有効にします。この設定は以下のページに紹介されています。
 
-- [Starlightのカスタマイズ - サイトマップを有効化する](https://starlight.astro.build/ja/guides/customization/#サイトマップを有効化する)
+<LinkCard
+  title="Starlightのカスタマイズ - サイトマップを有効化する"
+  href="https://starlight.astro.build/ja/guides/customization/#サイトマップを有効化する"
+  target="_blank"
+/>
 
 設定は、`astro.config.mjs` のファイルの `site` に対して URL を追加する形です。
 
@@ -304,12 +316,15 @@ npm install --save-dev prettier-plugin-tailwindcss
 
 今回は Astro / Starlight を利用してサイトを立ち上げる手順を紹介しました。基本的には公式サイトのガイダンスを参照しつつ進めただけです。
 
-ここまでのコードおよび Blog を追加したコードは以下のようになります。
-
-- https://github.com/haramizu/doc.haramizu.com/tree/starlight
-
 ## 参考情報
 
-- [Astro](https://astro.build/)
-- [Starlight](https://starlight.astro.build/)
-- [Starlight on GitHub](https://github.com/withastro/starlight)
+<LinkCard title="Astro" href="https://astro.build/" target="_blank" />
+
+<LinkCard title="Starlight" href="https://starlight.astro.build/" target="_blank" />
+
+<LinkCard
+  title="Starlight on GitHub"
+  href="https://github.com/withastro/starlight"
+  target="_blank"
+/>
+

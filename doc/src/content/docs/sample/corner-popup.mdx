@@ -29,17 +29,16 @@ Corner Popup は画像を一つ設定することができます。この項目�
 
 ポップアップのメッセージに対してアクションをするときのラベルを変更できます。 `CTA Button` - `CTA Text` で変更できます。
 
-
 ## コードの確認
 
 HTML の中に含まれる変数は以下の通りです
 
-| 変数 | 形式 | 概要 | 
-|------|-------|-------|
-| Title | string | タイトル |
-| Description | string | 概要 |
-| Dismiss Text | string | 実行しない場合のボタンラベル |
-| CTA Text | string | コンバージョンをするときのボタンラベル |
+| 変数         | 形式   | 概要                                   |
+| ------------ | ------ | -------------------------------------- |
+| Title        | string | タイトル                               |
+| Description  | string | 概要                                   |
+| Dismiss Text | string | 実行しない場合のボタンラベル           |
+| CTA Text     | string | コンバージョンをするときのボタンラベル |
 
 ### HTML コード
 
@@ -50,17 +49,25 @@ Alert Bar の HTML は以下のように設定されています。
 <!-- Use dynamic Guest variables, type ctrl+space or guest to explore available entities.-->
 <!-- Type "d" to see decisioning helpers -->
 <div id="pers-transition-card">
-    <div class="img-container">
-        <div class="img-container__image"></div>
+  <div class="img-container">
+    <div class="img-container__image"></div>
+  </div>
+  <div class="pers-transition-card__body">
+    <h3>[[Title | string | Title | {required:true, group: Title, order: 1}]]</h3>
+    <p>
+      [[Description | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt | {required:true, group: Description, order: 1}]]
+    </p>
+    <div class="options-container">
+      <a id="pers-transition-card--secondary" class="options-container__secondary"
+        >[[Dismiss Text | string | No Thanks | {required:true, group: Secondary Button, order:
+        1}]]</a
+      >
+      <a id="pers-transition-card--primary" class="options-container__primary"
+        >[[CTA Text | string | Yes Please | {required:true, group: CTA Button, order: 1}]]</a
+      >
     </div>
-    <div class="pers-transition-card__body">
-        <h3>[[Title | string | Title | {required:true, group: Title, order: 1}]]</h3>
-        <p>[[Description | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt | {required:true, group: Description, order: 1}]]</p>
-        <div class="options-container">
-            <a id="pers-transition-card--secondary" class="options-container__secondary">[[Dismiss Text | string | No Thanks | {required:true, group: Secondary Button, order: 1}]]</a>
-            <a id="pers-transition-card--primary" class="options-container__primary">[[CTA Text | string | Yes Please | {required:true, group: CTA Button, order: 1}]]</a>
-        </div>
-    </div>
+  </div>
 </div>
 ```
 
@@ -74,44 +81,46 @@ Alert Bar の JavaScript は以下のように設定されています。
 var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
 var styleTag = document.getElementById('style-' + variant.ref);
 if (styleTag) {
-    styleTag.innerHTML = compiledCSS;
+  styleTag.innerHTML = compiledCSS;
 }
 // End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
 
 // make space in the body for the experience
 insertHTMLAfter('body', 'pers-');
-var persContent = document.querySelector("#pers-"+variant.ref+ " #pers-transition-card");
+var persContent = document.querySelector('#pers-' + variant.ref + ' #pers-transition-card');
 
-setTimeout(function() {
-    persContent.classList.add("open");
-    sendInteractionToPersonalize("VIEWED");
+setTimeout(function () {
+  persContent.classList.add('open');
+  sendInteractionToPersonalize('VIEWED');
 });
 
-var persCardClose = document.body.querySelector("#pers-"+variant.ref+ " #pers-transition-card--secondary");
-persCardClose.onclick = function() {
-    sendInteractionToPersonalize("DISMISSED");
-    persContent.classList.remove("open");
-}
+var persCardClose = document.body.querySelector(
+  '#pers-' + variant.ref + ' #pers-transition-card--secondary'
+);
+persCardClose.onclick = function () {
+  sendInteractionToPersonalize('DISMISSED');
+  persContent.classList.remove('open');
+};
 
-var persCardCta = persContent.querySelector("#pers-"+variant.ref+ " #pers-transition-card--primary");
-persCardCta.onclick = function() {
-    sendInteractionToPersonalize("CLICKED");
-    window.location.href = "[[CTA destination URL | string || {required:true, group: CTA Button}]]";
-}
+var persCardCta = persContent.querySelector(
+  '#pers-' + variant.ref + ' #pers-transition-card--primary'
+);
+persCardCta.onclick = function () {
+  sendInteractionToPersonalize('CLICKED');
+  window.location.href = '[[CTA destination URL | string || {required:true, group: CTA Button}]]';
+};
 
 function sendInteractionToPersonalize(interactionType) {
-    const type = "[[ Experience ID | String | CORNER_POPUP | {required: true}]]_INTERACTION";
-    const eventData = {
-        "channel": "WEB",
-        "pointOfSale": Engage.settings.pointOfSale,
-        "interactionID": "PERS_CORNER_POPUP",
-        "interactionType": interactionType
-    };
+  const type = '[[ Experience ID | String | CORNER_POPUP | {required: true}]]_INTERACTION';
+  const eventData = {
+    channel: 'WEB',
+    pointOfSale: Engage.settings.pointOfSale,
+    interactionID: 'PERS_CORNER_POPUP',
+    interactionType: interactionType,
+  };
 
-    window.engage.event(type, eventData);
+  window.engage.event(type, eventData);
 }
 ```
 
-## 参考情報
-
-- [サンプル一覧に戻る](/cdp-personalize/sample/)
+- [サンプル一覧に戻る](/personalize/sample/)

@@ -7,6 +7,8 @@ publishDate: 2024-11-21
 lastUpdated: 2024-11-21
 ---
 
+import { LinkCard } from '@astrojs/starlight/components';
+
 Sitecore Personalize で様々なパーソナライズの体験を提供したい場合は、標準のテンプレート以外のパーソナライズのシナリオが出てくると思います。このドキュメントでは、テンプレートで作成しているコードの動作を確認しながら、最終的にはカスタムのテンプレートを作る手順を紹介しています。
 
 ## テンプレートを制御する
@@ -262,5 +264,9 @@ insertHTMLBefore('body > omission .sl-flex.copy.astro-jbfsktt5', 'pers-');
 
 ## 参考資料
 
-- [Inserting a web experience in your HTML](https://doc.sitecore.com/personalize/en/users/sitecore-personalize/inserting-a-web-experience-in-your-html.html)
+<LinkCard
+  title="Inserting a web experience in your HTML"
+  href="https://doc.sitecore.com/personalize/en/users/sitecore-personalize/inserting-a-web-experience-in-your-html.html"
+  target="_blank"
+/>
 

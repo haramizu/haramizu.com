@@ -1,0 +1,45 @@
+---
+title: Next.js + Tailwind CSS + Shadcn/UI
+description: Next.jsとTailwind CSSを使用してShadcn UIを活用する方法について学びます。このガイドでは、プロジェクトのセットアップからコンポーネントの使用方法まで、詳細に説明します。
+sidebar:
+  order: 6
+next: false
+publishDate: 2024-12-04
+lastUpdated: 2024-12-04
+---
+
+import { Steps, LinkCard } from '@astrojs/starlight/components';
+
+最近話題の、UI コンポーネントの shadcn/ui をこのドキュメントでは評価していきます。shadcn/ui は、UI コンポーネントライブラリとして提供されており、npm パッケージとして提供する形ではないため、使いやすく、カスタマイズ可能なコンポーネントが豊富に揃っています。
+
+主なメリットは以下のようになります。
+
+- **開発速度の向上**: 既存のコンポーネントを利用することで、UIの開発時間を短縮できます。
+- **一貫性のあるデザイン**: 統一されたデザインガイドラインに従うことで、アプリケーション全体のデザインの一貫性を保てます。
+- **メンテナンスの容易さ**: コンポーネントベースのアーキテクチャにより、コードの再利用性が高まり、メンテナンスが容易になります。
+
+このドキュメントでは、 Next.js のプロジェクトをベースに、 Pages Router としての利用を評価していきます。
+
+## プロジェクトを作成する
+
+まず最初に、Next.js のプロジェクトの作成をします。
+
+- **Next.js**: 14.2.18
+- **TypeScript**: Yes
+- **Tailwind CSS**: Yes
+- **App Router**: No
+
+作成されたプロジェクトは以下の通りです。
+
+![create-next-app](../../../assets/nextjs/shadcnui01.png)
+
+```bash
+npx shadcn@latest init
+```
+
+![npx shadcn@latest init](../../../assets/nextjs/shadcnui02.png)
+
+## 参考情報
+
+<LinkCard title="chadcn/ui" href="https://ui.shadcn.com/" target="_blank" />
+

@@ -35,8 +35,8 @@ The Notification Widget allows you to set one text. This item can be changed in 
 
 The variables included in the HTML are as follows:
 
-| Variable | Type | Description | 
-|----------|------|-------------|
+| Variable | Type   | Description        |
+| -------- | ------ | ------------------ |
 | Text     | string | Notification title |
 
 ### HTML Code
@@ -45,13 +45,17 @@ The HTML for the Notification Widget is set as follows:
 
 ```html
 // Notification.html
-<div id="pers-transition-card" class="animate-[[ Slide In From ]] position-[[Horizontal Position]]-[[Vertical Position]]">
-<div class="pers-transition-card__body">
+<div
+  id="pers-transition-card"
+  class="animate-[[ Slide In From ]] position-[[Horizontal Position]]-[[Vertical Position]]"
+>
+  <div class="pers-transition-card__body">
     <p>
-        [[ Text | string | There are three other people booking right now | {required: true, group: General, groupOrder: 1, order: 3} ]]
+      [[ Text | string | There are three other people booking right now | {required: true, group:
+      General, groupOrder: 1, order: 3} ]]
     </p>
-</div>
-<div class="pers__btn-close" id="pers-modal__btn-close-icon"></div>
+  </div>
+  <div class="pers__btn-close" id="pers-modal__btn-close-icon"></div>
 </div>
 ```
 
@@ -65,27 +69,24 @@ The JavaScript for the Notification Widget is set as follows:
 var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
 var styleTag = document.getElementById('style-' + variant.ref);
 if (styleTag) {
-        styleTag.innerHTML = compiledCSS;
+  styleTag.innerHTML = compiledCSS;
 }
 // End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
 
 // make space in the body for the experience
 insertHTMLAfter('body', 'pers-');
-var persContent = document.querySelector(
-    '#pers-' + variant.ref + ' #pers-transition-card'
-);
+var persContent = document.querySelector('#pers-' + variant.ref + ' #pers-transition-card');
 setTimeout(function () {
-    persContent.classList.add('open');
+  persContent.classList.add('open');
 }, 10);
 
 var persCardClose = document.body.querySelector(
-    '#pers-' + variant.ref + ' #pers-modal__btn-close-icon'
+  '#pers-' + variant.ref + ' #pers-modal__btn-close-icon'
 );
 persCardClose.onclick = function () {
-    persContent.classList.remove('open');
+  persContent.classList.remove('open');
 };
 ```
 
-## References
+- [Back to Sample List](/en/personalize/sample/)
 
-- [Back to Sample List](/en/cdp-personalize/sample/)

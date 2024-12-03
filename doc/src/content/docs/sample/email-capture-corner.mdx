@@ -47,17 +47,18 @@ Privacy に関するリンクの表示、およびリンクの設定ができま
 
 HTML の中に含まれる変数は以下の通りです
 
-| 変数 | 形式 | 概要 | 
-|------|-------|-------|
-| Title Text | string | ポップアップのタイトルテキスト |
-| Description Top | string | 入力ボックスの前の概要  |
-| Input Ghost Text | string | 入力ボックスに表示する文字 |
-| Button Text | string | ボタンラベル |
-| Description Bottom | string | 入力ボックスの後の概要 | 
-| Privacy Text | string | プライバシーの表示テキスト |
-| Privacy Link | string | プライバシーのリンク先の URL を設定する |
-| Modal Title Text | string | 入力後のテキストを設定します | 
-| Modal Description Text | string | 入力後の概要を設定します |
+| 変数                   | 形式   | 概要                                    |
+| ---------------------- | ------ | --------------------------------------- |
+| Title Text             | string | ポップアップのタイトルテキスト          |
+| Description Top        | string | 入力ボックスの前の概要                  |
+| Input Ghost Text       | string | 入力ボックスに表示する文字              |
+| Button Text            | string | ボタンラベル                            |
+| Description Bottom     | string | 入力ボックスの後の概要                  |
+| Privacy Text           | string | プライバシーの表示テキスト              |
+| Privacy Link           | string | プライバシーのリンク先の URL を設定する |
+| Modal Title Text       | string | 入力後のテキストを設定します            |
+| Modal Description Text | string | 入力後の概要を設定します                |
+
 ### HTML コード
 
 Email Capture Corner の HTML は以下のように設定されています。
@@ -67,30 +68,62 @@ Email Capture Corner の HTML は以下のように設定されています。
 <!-- Use dynamic Guest variables, type ctrl+space or guest to explore available entities.-->
 <!-- Type "d" to see decisioning helpers -->
 <div id="pers-transition-card">
-    <div class="pers-transition-card__body">
-        <div class="pers__btn-close"></div>
-        <div class="pers-email_capture_container" id="pers-email_capture_container">
-            <h3>[[ Title Text | string | Sign Up For Updates! | { required: true, group: Title, groupOrder: 2, order: 1 } ]]</h3>
-            <p>[[ Description Top | text | By providing your email address, we can keep you up to date and send you any carts you might want to return to.| { required: true ,group: Description, groupOrder: 3, order: 1 }]]</p>
+  <div class="pers-transition-card__body">
+    <div class="pers__btn-close"></div>
+    <div class="pers-email_capture_container" id="pers-email_capture_container">
+      <h3>
+        [[ Title Text | string | Sign Up For Updates! | { required: true, group: Title, groupOrder:
+        2, order: 1 } ]]
+      </h3>
+      <p>
+        [[ Description Top | text | By providing your email address, we can keep you up to date and
+        send you any carts you might want to return to.| { required: true ,group: Description,
+        groupOrder: 3, order: 1 }]]
+      </p>
 
-            <div class="options-container">
-                <input type="email" name="pers-email_input" class="pers-email_input input-box" id="pers-email_input" placeholder="[[ Input Ghost Text | string | Email | { required: true , group: Email Input, groupOrder: 4, order: 1 } ]]">
-                <a id="pers-transition-card--primary" class="options-container__primary">[[ Button Text | string | Submit | {required: true,max: 15, group: Submit Button, order: 1  } ]]</a>
-            </div>
-            <p>[[ Description Bottom | text |By completing this form you are signing up to receive our emails and can unsubscribe at any time.|{ required: true, group: Description, order: 2 }]]</p>
-            <p><a class="options-container__privacy-link" href="[[ Privacy Link | string | https://www.example.com/ | { required: true, group: Privacy Link, groupOrder: 5, order: 2 } ]]">[[ Privacy Text | string | Privacy Policy | { required: true, group: Privacy Link, order: 1 }]]</a></p>
-        </div>
+      <div class="options-container">
+        <input
+          type="email"
+          name="pers-email_input"
+          class="pers-email_input input-box"
+          id="pers-email_input"
+          placeholder="[[ Input Ghost Text | string | Email | { required: true , group: Email Input, groupOrder: 4, order: 1 } ]]"
+        />
+        <a id="pers-transition-card--primary" class="options-container__primary"
+          >[[ Button Text | string | Submit | {required: true,max: 15, group: Submit Button, order:
+          1 } ]]</a
+        >
+      </div>
+      <p>
+        [[ Description Bottom | text |By completing this form you are signing up to receive our
+        emails and can unsubscribe at any time.|{ required: true, group: Description, order: 2 }]]
+      </p>
+      <p>
+        <a
+          class="options-container__privacy-link"
+          href="[[ Privacy Link | string | https://www.example.com/ | { required: true, group: Privacy Link, groupOrder: 5, order: 2 } ]]"
+          >[[ Privacy Text | string | Privacy Policy | { required: true, group: Privacy Link, order:
+          1 }]]</a
+        >
+      </p>
     </div>
+  </div>
 </div>
 
 <div class="pers-thank_you_container" id="pers-thank_you_modal">
-    <div class="pers-modal_backdrop" id="pers-thank_you_backdrop"></div>
-    <div class="pers-modal_content">
-        <h3>[[ Modal Title Text | string | Thank You! | { required: true, group: Modal Title, groupOrder: 8, order: 1 } ]]</h3>
-        <p>[[ Modal Description Text | text | You're all signed up. | { required: true, group: Modal Description, groupOrder: 9, order: 1 } ]]</p>
+  <div class="pers-modal_backdrop" id="pers-thank_you_backdrop"></div>
+  <div class="pers-modal_content">
+    <h3>
+      [[ Modal Title Text | string | Thank You! | { required: true, group: Modal Title, groupOrder:
+      8, order: 1 } ]]
+    </h3>
+    <p>
+      [[ Modal Description Text | text | You're all signed up. | { required: true, group: Modal
+      Description, groupOrder: 9, order: 1 } ]]
+    </p>
 
-        <div class="pers__btn-close" id="pers-thank_you_close"></div>
-    </div>
+    <div class="pers__btn-close" id="pers-thank_you_close"></div>
+  </div>
 </div>
 ```
 
@@ -104,7 +137,7 @@ Email Capture Corner の JavaScript は以下のように設定されていま�
 var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
 var styleTag = document.getElementById('style-' + variant.ref);
 if (styleTag) {
-    styleTag.innerHTML = compiledCSS;
+  styleTag.innerHTML = compiledCSS;
 }
 //End
 
@@ -112,96 +145,101 @@ if (styleTag) {
 insertHTMLAfter('body', 'pers-');
 
 // ポップアップの表示
-let persContent = document.querySelector("#pers-transition-card");
-persContent.style.display = "flex";
+let persContent = document.querySelector('#pers-transition-card');
+persContent.style.display = 'flex';
 
 // モーダルの表示と非表示
 function showThankYou() {
-    document.querySelector("#pers-"+variant.ref+ " #pers-thank_you_modal").style.display = "flex";
+  document.querySelector('#pers-' + variant.ref + ' #pers-thank_you_modal').style.display = 'flex';
 }
 
 function dismissThankYou() {
-  document.querySelector("#pers-"+variant.ref+ " #pers-thank_you_modal").style.display = "none";
+  document.querySelector('#pers-' + variant.ref + ' #pers-thank_you_modal').style.display = 'none';
 }
 
 // 変数の宣言
-const persEmailCaptureContainer = document.getElementById("pers-email_capture_container");
-const persThankYouClose = document.querySelector("#pers-"+variant.ref+ " #pers-thank_you_close");
-const persThankYouBackdrop = document.querySelector("#pers-"+variant.ref+ " #pers-thank_you_backdrop");
-const persThankYouContainer = document.querySelector("#pers-"+variant.ref+ " #pers-thank_you_modal");
-const persClose = persContent.querySelector(".pers__btn-close");
+const persEmailCaptureContainer = document.getElementById('pers-email_capture_container');
+const persThankYouClose = document.querySelector('#pers-' + variant.ref + ' #pers-thank_you_close');
+const persThankYouBackdrop = document.querySelector(
+  '#pers-' + variant.ref + ' #pers-thank_you_backdrop'
+);
+const persThankYouContainer = document.querySelector(
+  '#pers-' + variant.ref + ' #pers-thank_you_modal'
+);
+const persClose = persContent.querySelector('.pers__btn-close');
 const persCTA = document.getElementById('pers-transition-card--primary');
 
-
 // イベントリスナーの設定
-persCTA.onclick = function(){
-    let persEmail = document.getElementById("pers-email_input").value;
-    let emailVerified = validateEmail(persEmail);
-    emailVerified ?
-        onSuccessValidation(persEmail)
-    :
-        //friendly error
-        document.getElementById("pers-email_input").style.backgroundColor = 'rgba(200,0,0,0.1)';
+persCTA.onclick = function () {
+  let persEmail = document.getElementById('pers-email_input').value;
+  let emailVerified = validateEmail(persEmail);
+  emailVerified
+    ? onSuccessValidation(persEmail)
+    : //friendly error
+      (document.getElementById('pers-email_input').style.backgroundColor = 'rgba(200,0,0,0.1)');
 };
 
 // バーナーのクローズボタンの処理
-persClose.onclick = function(){
-    persContent.style.display = "none";
-    sendInteractionToPersonalize("DISMISSED")
-}
+persClose.onclick = function () {
+  persContent.style.display = 'none';
+  sendInteractionToPersonalize('DISMISSED');
+};
 
 // モーダルのクローズボタンの処理
-persThankYouClose.onclick = function() {
+persThankYouClose.onclick = function () {
   dismissThankYou();
-}
+};
 
-persThankYouBackdrop.onclick = function() {
+persThankYouBackdrop.onclick = function () {
   dismissThankYou();
 };
 
 // インタラクションの送信関数
-const sendInteractionToPersonalize = function(interactionType) {
-    const type = "[[ Experience ID | String | SIDE_BAR | {required: true}]]_" + interactionType;
-    const eventData = {
-        "channel": "WEB",
-        "pointOfSale": Engage.settings.pointOfSale,
-    };
-    window.engage.event(type, eventData);
-}
+const sendInteractionToPersonalize = function (interactionType) {
+  const type = '[[ Experience ID | String | SIDE_BAR | {required: true}]]_' + interactionType;
+  const eventData = {
+    channel: 'WEB',
+    pointOfSale: Engage.settings.pointOfSale,
+  };
+  window.engage.event(type, eventData);
+};
 
 // メールアドレス検証成功時の処理
-const onSuccessValidation = function(email){
-    sendInteractionToPersonalize("IDENTITY");
+const onSuccessValidation = function (email) {
+  sendInteractionToPersonalize('IDENTITY');
 
-    const eventData = {
-        "channel": "WEB",
-        "pointOfSale": Engage.settings.pointOfSale,
-        "email": email,
-        "identifiers": [{
-          "id": email,
-          "provider": "email"
-        }]
-    };
-    window.engage.identity(eventData);
+  const eventData = {
+    channel: 'WEB',
+    pointOfSale: Engage.settings.pointOfSale,
+    email: email,
+    identifiers: [
+      {
+        id: email,
+        provider: 'email',
+      },
+    ],
+  };
+  window.engage.identity(eventData);
 
-
-    persEmailCaptureContainer.style.display = "none";
-    let X = document.querySelector(".pers__btn-close");
-    X.style.display = "none";
-    showThankYou();
-    // flash thank you message
-    setTimeout(function(){ document.querySelector('#pers-transition-card').style.display= 'none'; }, 100);
-}
+  persEmailCaptureContainer.style.display = 'none';
+  let X = document.querySelector('.pers__btn-close');
+  X.style.display = 'none';
+  showThankYou();
+  // flash thank you message
+  setTimeout(function () {
+    document.querySelector('#pers-transition-card').style.display = 'none';
+  }, 100);
+};
 
 // メールアドレスの検証関数
-const validateEmail = function(persEmail){
+const validateEmail = function (persEmail) {
   let validation = false;
-  let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/.test(persEmail);
-  mailformat ? validation = true: validation = false;
+  let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/.test(
+    persEmail
+  );
+  mailformat ? (validation = true) : (validation = false);
   return validation;
-}
+};
 ```
 
-## 参考情報
-
-- [サンプル一覧に戻る](/cdp-personalize/sample/)
+- [サンプル一覧に戻る](/personalize/sample/)

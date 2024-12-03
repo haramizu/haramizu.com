@@ -33,12 +33,12 @@ You can change the label for the action button in response to the popup message.
 
 The variables included in the HTML are as follows:
 
-| Variable | Type | Description |
-|----------|------|-------------|
-| Title | string | Title |
-| Description | string | Description |
+| Variable     | Type   | Description                  |
+| ------------ | ------ | ---------------------------- |
+| Title        | string | Title                        |
+| Description  | string | Description                  |
 | Dismiss Text | string | Label for the dismiss button |
-| CTA Text | string | Label for the CTA button |
+| CTA Text     | string | Label for the CTA button     |
 
 ### HTML Code
 
@@ -74,44 +74,47 @@ Alert Bar の JavaScript は以下のように設定されています。
 var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
 var styleTag = document.getElementById('style-' + variant.ref);
 if (styleTag) {
-    styleTag.innerHTML = compiledCSS;
+  styleTag.innerHTML = compiledCSS;
 }
 // End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
 
 // make space in the body for the experience
 insertHTMLAfter('body', 'pers-');
-var persContent = document.querySelector("#pers-"+variant.ref+ " #pers-transition-card");
+var persContent = document.querySelector('#pers-' + variant.ref + ' #pers-transition-card');
 
-setTimeout(function() {
-    persContent.classList.add("open");
-    sendInteractionToPersonalize("VIEWED");
+setTimeout(function () {
+  persContent.classList.add('open');
+  sendInteractionToPersonalize('VIEWED');
 });
 
-var persCardClose = document.body.querySelector("#pers-"+variant.ref+ " #pers-transition-card--secondary");
-persCardClose.onclick = function() {
-    sendInteractionToPersonalize("DISMISSED");
-    persContent.classList.remove("open");
-}
+var persCardClose = document.body.querySelector(
+  '#pers-' + variant.ref + ' #pers-transition-card--secondary'
+);
+persCardClose.onclick = function () {
+  sendInteractionToPersonalize('DISMISSED');
+  persContent.classList.remove('open');
+};
 
-var persCardCta = persContent.querySelector("#pers-"+variant.ref+ " #pers-transition-card--primary");
-persCardCta.onclick = function() {
-    sendInteractionToPersonalize("CLICKED");
-    window.location.href = "[[CTA destination URL | string || {required:true, group: CTA Button}]]";
-}
+var persCardCta = persContent.querySelector(
+  '#pers-' + variant.ref + ' #pers-transition-card--primary'
+);
+persCardCta.onclick = function () {
+  sendInteractionToPersonalize('CLICKED');
+  window.location.href = '[[CTA destination URL | string || {required:true, group: CTA Button}]]';
+};
 
 function sendInteractionToPersonalize(interactionType) {
-    const type = "[[ Experience ID | String | CORNER_POPUP | {required: true}]]_INTERACTION";
-    const eventData = {
-        "channel": "WEB",
-        "pointOfSale": Engage.settings.pointOfSale,
-        "interactionID": "PERS_CORNER_POPUP",
-        "interactionType": interactionType
-    };
+  const type = '[[ Experience ID | String | CORNER_POPUP | {required: true}]]_INTERACTION';
+  const eventData = {
+    channel: 'WEB',
+    pointOfSale: Engage.settings.pointOfSale,
+    interactionID: 'PERS_CORNER_POPUP',
+    interactionType: interactionType,
+  };
 
-    window.engage.event(type, eventData);
+  window.engage.event(type, eventData);
 }
 ```
 
-## References
+- [Back to Sample List](/en/personalize/sample/)
 
-- [Back to Sample List](/en/cdp-personalize/sample/)

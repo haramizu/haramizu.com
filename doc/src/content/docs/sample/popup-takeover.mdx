@@ -29,11 +29,11 @@ Popup takeover で表示するボタンのラベルを設定ができます。�
 
 HTML の中に含まれる変数は以下の通りです
 
-| 変数 | 形式 | 概要 | 
-|------|-------|-------|
-| Title Text | string | タイトル |
+| 変数             | 形式   | 概要                             |
+| ---------------- | ------ | -------------------------------- |
+| Title Text       | string | タイトル                         |
 | Description Text | string | ポップアップに表示をするテキスト |
-| Button title | string | ボタンのラベル |
+| Button title     | string | ボタンのラベル                   |
 
 ### HTML コード
 
@@ -45,13 +45,20 @@ Popup takeover の HTML は以下のように設定されています。
 <!-- Type "d" to see decisioning helpers -->
 <div id="pers-modal_overlay">
   <div class="pers-modal_content">
-    <h3>[[ Title Text | string | A Popup Takeover | { required: true, group: Title, groupOrder: 2, order: 1 } ]]</h3>
+    <h3>
+      [[ Title Text | string | A Popup Takeover | { required: true, group: Title, groupOrder: 2,
+      order: 1 } ]]
+    </h3>
     <p>
-      [[ Description Text | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. | {required: true, group: Description, groupOrder: 3, order: 1 }]]
+      [[ Description Text | text | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. | {required:
+      true, group: Description, groupOrder: 3, order: 1 }]]
     </p>
     <div class="pers-modal_button-wrapper">
       <a target="_blank" href="https://www.sitecore.com" class="pers-modal_button">
-      [[ Button title | string | Yes Please | {required:true, group: Button, groupOrder: 4, order: 1 }]]
+        [[ Button title | string | Yes Please | {required:true, group: Button, groupOrder: 4, order:
+        1 }]]
       </a>
     </div>
     <div class="pers-modal__btn-close-icon"></div>
@@ -69,7 +76,7 @@ Popup takeover の JavaScript は以下のように設定されています。
 var compiledCSS = Engage.templating.compile(variant.assets.css)(variant);
 var styleTag = document.getElementById('style-' + variant.ref);
 if (styleTag) {
-    styleTag.innerHTML = compiledCSS;
+  styleTag.innerHTML = compiledCSS;
 }
 // End Adds a unique variant identifier to CSS when deployed to ensure CSS does not impact styling of other elements.
 
@@ -83,6 +90,5 @@ persCardClose.onclick = function () {
 };
 ```
 
-## 参考情報
+- [サンプル一覧に戻る](/personalize/sample/)
 
-- [サンプル一覧に戻る](/cdp-personalize/sample/)

@@ -1,6 +1,6 @@
 ---
 title: Auth0 の活用
-description: ログイン、認証のサービスとして便利な Auth0 を利用する手順に関してここでは紹介をしています。
+description: 実際の Web サイトにて会員向け情報提供などを展開するにあたって、ログイン認証の仕組みを組み合わせてサイトを運用していくことがあります。ここでは、Auth0 の利用方法に関して紹介をしていきます。
 prev: false
 publishDate: 2024-12-03
 lastUpdated: 2024-12-03
@@ -360,6 +360,15 @@ node -e "console.log(crypto.randomBytes(32).toString('hex'))"
 
 これで Next.js App Router に基本的な Auth0 の機能を実装することができました。
 
+作成したサンプルは、以下のリポジトリで参照することができます。
+
+<LinkCard
+  title="haramizu / Next.js-sample"
+  href="https://github.com/haramizu/Next.js-sample/tree/main/examples/auth0-app"
+  target="_blank"
+  description="Sample - Next.js App Router with Auth0"
+/>
+
 ## Next.js Pages Router
 
 Next.js Page Router において、App Router と混在させることができるため、App Router の作業をそのまま再現しつつも、Pages router 固有の作業を含めた手順で進めていきます。
@@ -573,6 +582,15 @@ Next.js Page Router において、App Router と混在させることができ�
 ![Sign-up dialog](../../../assets/tools/auth015.png)
 
 これで Next.js App Router に基本的な Auth0 の機能を実装することができました。
+
+作成したサンプルは、以下のリポジトリで参照することができます。
+
+<LinkCard
+  title="haramizu / Next.js-sample"
+  href="https://github.com/haramizu/Next.js-sample/tree/main/examples/auth0-pages"
+  target="_blank"
+  description="Sample - Next.js Pages Router with Auth0"
+/>
 
 ## 参考情報
 

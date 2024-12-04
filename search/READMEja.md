@@ -23,7 +23,7 @@
 1. .env.example のファイルを .env.local に変更します
 2. 以下の 3 つの環境変数を指定してください
 
-```text
+```txt
 NEXT_PUBLIC_SEARCH_ENV=
 NEXT_PUBLIC_SEARCH_CUSTOMER_KEY=
 NEXT_PUBLIC_SEARCH_API_KEY=

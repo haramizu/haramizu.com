@@ -23,7 +23,7 @@ This sample has been tested with the following environment.
 1. Rename the `.env.example` file to `.env.local`
 2. Specify the following three environment variables
 
-```text
+```txt
 NEXT_PUBLIC_SEARCH_ENV=
 NEXT_PUBLIC_SEARCH_CUSTOMER_KEY=
 NEXT_PUBLIC_SEARCH_API_KEY=

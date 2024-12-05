@@ -50,28 +50,28 @@ export default defineConfig({
           label: `Content`,
           collapsed: true,
           items: [
-            // {
-            //   label: `XM Cloud`,
-            //   collapsed: true,
-            //   items: [
-            //     {
-            //       label: '基礎',
-            //       translations: {
-            //         en: 'Fundamentals',
-            //       },
-            //       collapsed: true,
-            //       autogenerate: { directory: 'xmc' },
-            //     },
-            //     {
-            //       label: '開発者',
-            //       translations: {
-            //         en: 'Developer',
-            //       },
-            //       collapsed: true,
-            //       autogenerate: { directory: 'xmcdeveloper' },
-            //     },
-            //   ],
-            // },
+            {
+              label: `XM Cloud`,
+              collapsed: true,
+              items: [
+                {
+                  label: '基礎',
+                  translations: {
+                    en: 'Fundamentals',
+                  },
+                  collapsed: true,
+                  autogenerate: { directory: 'xmc' },
+                },
+                // {
+                //   label: '開発者',
+                //   translations: {
+                //     en: 'Developer',
+                //   },
+                //   collapsed: true,
+                //   autogenerate: { directory: 'xmcdeveloper' },
+                // },
+              ],
+            },
             // {
             //   label: 'Content Hub',
             //   collapsed: true,

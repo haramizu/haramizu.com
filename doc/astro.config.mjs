@@ -62,14 +62,14 @@ export default defineConfig({
                   collapsed: true,
                   autogenerate: { directory: 'xmc' },
                 },
-                // {
-                //   label: '開発者',
-                //   translations: {
-                //     en: 'Developer',
-                //   },
-                //   collapsed: true,
-                //   autogenerate: { directory: 'xmcdeveloper' },
-                // },
+                {
+                  label: '開発者',
+                  translations: {
+                    en: 'Developer',
+                  },
+                  collapsed: true,
+                  autogenerate: { directory: 'xmcdeveloper' },
+                },
               ],
             },
             // {

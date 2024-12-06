@@ -86,6 +86,7 @@ export default defineConfig({
         },
         {
           label: `Engamenent`,
+          collapsed: true,
           items: [
             {
               label: 'CDP + Personalize 概要',

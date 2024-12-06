@@ -186,7 +186,7 @@ export default defineConfig({
         },
       ],
       customCss: ['./src/tailwind.css'],
-      plugins: [starlightImageZoom(), starlightBlog()],
+      plugins: [starlightBlog(), starlightImageZoom()],
     }),
     tailwind({ applyBaseStyles: false }),
   ],

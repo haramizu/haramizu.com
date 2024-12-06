@@ -1,0 +1,2 @@
+{/* https://blog.haramizu.com/ja-JP/blog/2024/06/26/xmcloud-tailwindcss-sample-part-4 */}
+{/* https://blog.haramizu.com/ja-JP/blog/2024/06/27/xmcloud-tailwindcss-sample-part-5 */}

@@ -1,0 +1,96 @@
+---
+title: Sitecore XM Cloud Overview
+description: This document introduces an overview of Sitecore XM Cloud, the SaaS version of the CMS provided by Sitecore. It introduces terms related to Sitecore products on this page, while various topics are introduced on separate pages.
+prev: false
+sidebar:
+  order: 1
+publishDate: 2024-12-06
+lastUpdated: 2024-12-06
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+This document introduces an overview of Sitecore XM Cloud, the SaaS version of the CMS provided by Sitecore. It introduces terms related to Sitecore products on this page, while various topics are introduced on separate pages.
+
+## Tools Provided by Sitecore XM Cloud
+
+Sitecore XM Cloud provides a powerful toolset for managing digital experiences. These tools include basic features such as content management, analytics, personalization, and A/B/n testing tools.
+
+### Content Management System (CMS)
+
+Personalization
+Sitecore XM Cloud offers the ability to personalize content based on user behavior data. This allows for optimized experiences for each visitor, improving engagement.
+
+By leveraging the provided tools, companies can efficiently manage website content. Sitecore XM Cloud offers fundamental solutions to meet the needs of modern digital marketing.
+
+It is also possible to use the following features provided by the traditional Sitecore CMS:
+
+- Content Editor
+- Experience Editor
+- Media Library
+- Access management tools
+
+### XM Cloud Deploy
+
+XM Cloud Deploy is a tool for launching the CMS provided by Sitecore XM Cloud. By using this tool, you can access various functions of the CMS. From XM Cloud Deploy, you can create XM Cloud projects using basic templates or existing code, and manage projects, environments, and deployments.
+
+XM Cloud Deploy allows you to manage the following:
+
+- Project
+  - Environment
+- Credentials: Create and manage certificates to access the APIs of the organization and environment.
+- Connections: Register services such as GitHub and Hosting.
+- System Status: View the status of various services of Sitecore XM Cloud.
+
+### Components
+
+XM Cloud Components is a front-end-as-a-service application that allows you to create a brand-specific style guide and build visual components with a WYSIWYG (What You See Is What You Get) editor.
+
+### Page Builder
+
+Sitecore's CMS makes it easy to create, edit, and publish content through an intuitive interface. Page Builder allows you to easily manage web pages and digital assets using drag-and-drop functionality.
+
+### Forms
+
+This tool allows you to create forms available in Sitecore XM Cloud. It provides drag-and-drop editing capabilities and also offers integration with external systems using Webhooks.
+
+### Analytics
+
+Sitecore Analytics provides tools to track website behavior history. By configuring this feature, you can review the history of the website for the past 30 days.
+
+### Personalize
+
+Sitecore XM Cloud comes standard with features that allow for anonymous-based personalization. This utilizes some features of the Sitecore Personalize product, and you can configure personalization using Page Builder.
+
+### A/B/n Testing
+
+You can check the A/B/n testing functionality based on the components used on the page. The results are also displayed in Analytics, making it usable as a marketing feature similar to Personalize.
+
+## Terms of XM Cloud
+
+To explain Sitecore XM Cloud, several terms are introduced here. Understanding these will help you quickly determine the role of the CMS and how to handle multiple CMSs if needed.
+
+### Project
+
+A project can deploy multiple CMS servers, and by default, one production environment and two non-production environments are provided. When you first launch XM Cloud Deploy, you create a Project.
+
+<LinkCard
+  title="Manage a project"
+  href="https://doc.sitecore.com/xmc/en/developers/xm-cloud/manage-a-project.html"
+  target="_blank"
+/>
+
+### Environment
+
+An environment is the name of an environment that can be created within a Project, and one CMS instance is provided for this Environment. You can also obtain information such as environment variables and endpoints necessary for using the CMS, and the values used when integrating with services like Vercel can also be obtained from the various settings of the Environment.
+
+<LinkCard
+  title="Manage an environment"
+  href="https://doc.sitecore.com/xmc/en/developers/xm-cloud/manage-an-environment.html"
+  target="_blank"
+/>
+
+## Sitecore CLI
+
+Sitecore CLI is a convenient command-line tool that can be used when developing websites with Sitecore XM Cloud. This tool is also available for Sitecore Experience Manager (Sitecore CMS), but it can also be used for the SaaS environment of XM Cloud.
+

@@ -1,0 +1,357 @@
+---
+title: Creating new Project
+description: We provide a template site called tailwind-starter that includes the information introduced on this site. This project applies some changes in addition to the standard template, so we will introduce those contents here.
+sidebar:
+  order: 1
+next: false
+publishDate: 2024-12-06
+lastUpdated: 2024-12-06
+---
+
+import { Steps, LinkCard, Aside, FileTree } from '@astrojs/starlight/components';
+import { YouTube } from 'astro-embed';
+
+We provide a template site called tailwind-starter that includes the information introduced on this site. This project applies some changes in addition to the standard template, so we will introduce those contents here.
+
+## Prerequisites
+
+The prerequisites for the contents introduced in this document are as follows.
+
+First, the base image was created using the following repository.
+
+<LinkCard
+  title="XM Cloud Next.js Starter Kit"
+  href="https://github.com/sitecorelabs/xmcloud-foundation-head"
+  target="_blank"
+/>
+
+The following environment has been confirmed to work.
+
+- Windows 11 Pro
+- Node.js 20.18.1
+- Docker Desktop 4.36.0
+
+Using the above template, we provide a new sample in the following repository.
+
+<LinkCard
+  title="XM Cloud Next.js Tailwind CSS Starter Kit"
+  href="https://github.com/haramizu/tailwind-starter"
+  target="_blank"
+/>
+
+## About Docker Environment
+
+The .env file that runs in the Docker environment will contain environment-specific information. If you use this file as it is, it will be shared along with that information when published on GitHub, etc. Therefore, we will change the settings here so that the .env file is not shared.
+
+The following YouTube video is helpful for this procedure.
+
+<YouTube id="https://youtu.be/uNkQQSC6n8o" title="XM Cloud Tutorials - Rename app #4" />
+
+The actual procedure is as follows.
+
+<Steps>
+
+1. Rename the `.env` file to `.env.template`
+
+2. Remove environment-specific keys from `env.template`
+
+   - SITECORE_ADMIN_PASSWORD
+   - SQL_SA_PASSWORD
+   - REPORTING_API_KEY
+   - TELERIK_ENCRYPTION_KEY
+   - MEDIA_REQUEST_PROTECTION_SHARED_SECRET
+   - JSS_DEPLOYMENT_SECRET_xmcloudpreview
+   - SITECORE_API_KEY_xmcloudpreview
+   - JSS_EDITING_SECRET
+
+3. Commit the changes to .env and .env.template to delete the .env file
+
+   ![Commit](../../../../assets/xmc/createproject01.png)
+
+4. Update .gitignore
+
+   ```txt
+   // .gitignore
+
+   # Environment file .env
+   .env
+   ```
+
+   This change ensures that the `.env` file will not be published on GitHub
+
+5. Modify the script to create `.env` from `.env.template` when running `init.ps1`.
+
+   ```ps1 {4-9}
+   // local-containers\scripts\init.ps1
+   $envFileLocation = "$RepoRoot/local-containers/.env"
+
+   ################################
+   # Create .env file
+   ################################
+
+   Write-Host "Create .env file." -ForegroundColor Green
+   Copy-Item ".\.env.template" ".\.env" -Force
+
+   ################################
+   # Add Windows hosts file entries
+   ################################
+   ```
+
+</Steps>
+
+With the above changes, the `.env` file is protected, and the local Docker environment is ready.
+
+Launch a Terminal with administrator privileges and start the local environment as follows.
+
+```ps1
+cd local-containers
+./scripts/init.ps1 -InitEnv -LicenseXmlPath "C:\license\license.xml" -AdminPassword "DesiredAdminPassword"
+```
+
+The .env file will be created, and the environment will be set up as shown below.
+
+![.env Copy](../../../../assets/xmc/createproject02.png)
+
+To start the container, run the following command in a Terminal with administrator privileges.
+
+```ps1
+./scripts/up.ps1
+```
+
+This will start the local Docker environment.
+
+## Changes to up.ps1
+
+The `local-containers\scripts\up.ps1` file provided by default requires administrator privileges. The code that requires these privileges is as follows.
+
+```ps1
+// local-containers\scripts\up.ps1
+#set nuget version
+$xmCloudBuild = Get-Content "$RepoRoot/xmcloud.build.json" | ConvertFrom-Json
+$nodeVersion = $xmCloudBuild.renderingHosts.nextjsstarter.nodeVersion
+if (![string]::IsNullOrWhitespace($nodeVersion)) {
+    Set-EnvFileVariable "NODEJS_VERSION" -Value $xmCloudBuild.renderingHosts.nextjsstarter.nodeVersion -Path $envFileLocation
+}
+```
+
+This code is used to retrieve the Node.js version information from the JSON file `xmcloud.build.json` that defines the environment variables for XM Cloud and set it as an environment variable. By commenting out this part, you can run `./scripts/up.ps1` without administrator privileges.
+
+## Adding Japanese Resources
+
+You can add Sitecore Experience Manager resources to the Sitecore XM Cloud environment and the local Docker environment. This allows you to import Japanese resources for common items.
+
+<Aside type="caution">This procedure is not officially supported.</Aside>
+
+### Preparing Resource Files
+
+This time, we will download and use the resource files of Sitecore Experience Manager from the official site. Download the following files.
+
+<LinkCard
+  title="Sitecore Experience Platform 10.4 - Client translations"
+  href="https://developers.sitecore.com/downloads/Sitecore_Experience_Platform/104/Sitecore_Experience_Platform_104#client-translations"
+  target="_blank"
+/>
+
+<LinkCard
+  title="Sitecore Experience Accelerator 10.4.0 - Client translations"
+  href="https://developers.sitecore.com/downloads/Sitecore_Experience_Accelerator/10x/Sitecore_Experience_Accelerator_1040#client-translations"
+  target="_blank"
+/>
+
+<LinkCard
+  title="Sitecore Headless Rendering 22.0.0 - Client translations"
+  href="https://developers.sitecore.com/downloads/Sitecore_Headless_Rendering/22x/Sitecore_Headless_Rendering_2200#client-translations"
+  target="_blank"
+/>
+
+<LinkCard
+  title="Sitecore Connect™ for Content Hub 5.2.0 - Client translations"
+  href="https://developers.sitecore.com/downloads/Sitecore_Connect_for_Content_Hub/5x/Sitecore_Connect_for_Content_Hub_520#client-translations"
+  target="_blank"
+/>
+
+Create a folder `local-containers\docker\build\cm\App_Data` and extract the downloaded files there. Note that web-related resources are not needed for XM Cloud, so they are omitted.
+
+<FileTree>
+
+- local-containers
+  - docker
+    - build
+      - cm
+        - **App_Data**
+          - items
+            - core
+              - localization
+                - cmp.items.core.ja-JP.dat
+                - dam.items.core.ja-JP.dat
+                - items.core.ja-JP.dat
+                - items.core.jss.ja-JP.dat
+                - items.core.sxa.ja-JP.dat
+            - master
+              - localization
+                - cmp.items.master.ja-JP.dat
+                - dam.items.master.ja-JP.dat
+                - items.master.ja-JP.dat
+                - items.master.jss.ja-JP.dat
+                - items.master.sxa.ja-JP.dat
+          - localization
+            - cmp.texts.ja-JP.xml
+            - dam.texts.ja-JP.xml
+            - texts.ja-JP.xml
+            - texts.sxa.ja-JP.xml
+
+</FileTree>
+
+The resource files are ready.
+
+### Applying to Docker Environment
+
+This time, we can apply the resource files by copying them to the cm instance, so add a copy command to the following file.
+
+```dockerfile title="local-containers/docker/build/cm/Dockerfile" {15}
+# escape=`
+
+ARG PARENT_IMAGE
+ARG SOLUTION_IMAGE
+ARG TOOLS_IMAGE
+
+FROM ${TOOLS_IMAGE} as tools
+FROM ${PARENT_IMAGE}
+
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+
+WORKDIR C:\inetpub\wwwroot
+
+# resource copy
+COPY .\App_Data\ .\App_Data
+
+# Copy developer tools and entrypoint
+COPY --from=tools C:\tools C:\tools
+```
+
+After changing the settings, apply and start the local environment.
+
+<Steps>
+
+1. Launch Desktop
+
+2. Click the icon in the lower right corner and switch to Core
+
+   ![core database](../../../../assets/xmc/createproject03.png)
+
+3. From the Control Panel, select Localization - `Add a new language`.
+
+4. Add Japanese - Japan
+
+   ![Add a new language](../../../../assets/xmc/createproject04.png)
+
+5. After adding the language, launch Desktop and switch the database back to master.
+
+</Steps>
+
+With the above steps, you can select Japanese resources. When you set the display language to Japanese in the user profile, the local environment will display data in Japanese.
+
+![Launchpad Japanese](../../../../assets/xmc/createproject05.png)
+
+### Applying to XM Cloud Environment
+
+To apply the resource files to the XM Cloud environment, you need to adjust the XM Cloud Deploy to include the resource files through the authoring project. The steps are as follows.
+
+<Steps>
+
+1. Create a folder `authoring\platform\App_Data` and copy the files with the same structure as `local-containers\docker\build\cm\App_Data`.
+
+   <FileTree>
+
+   - authoring
+     - platform
+       - **App_Data**
+         - items
+           - core
+             - localization
+               - cmp.items.core.ja-JP.dat
+               - dam.items.core.ja-JP.dat
+               - items.core.ja-JP.dat
+               - items.core.jss.ja-JP.dat
+               - items.core.sxa.ja-JP.dat
+           - master
+             - localization
+               - cmp.items.master.ja-JP.dat
+               - dam.items.master.ja-JP.dat
+               - items.master.ja-JP.dat
+               - items.master.jss.ja-JP.dat
+               - items.master.sxa.ja-JP.dat
+         - localization
+           - cmp.texts.ja-JP.xml
+           - dam.texts.ja-JP.xml
+           - texts.ja-JP.xml
+           - texts.sxa.ja-JP.xml
+
+   </FileTree>
+
+2. Add the following lines to include the above files in the project file `authoring\platform\Platform.csproj`.
+
+   ```xml title="authoring\platform\Platform.csproj" {2-16}
+     <ItemGroup>
+       <Content Include="App_Data\items\core\localization\cmp.items.core.ja-JP.dat" />
+       <Content Include="App_Data\items\core\localization\dam.items.core.ja-JP.dat" />
+       <Content Include="App_Data\items\core\localization\items.core.ja-JP.dat" />
+       <Content Include="App_Data\items\core\localization\items.core.jss.ja-JP.dat" />
+       <Content Include="App_Data\items\core\localization\items.core.sxa.ja-JP.dat" />
+       <Content Include="App_Data\items\master\localization\cmp.items.master.ja-JP.dat" />
+       <Content Include="App_Data\items\master\localization\dam.items.master.ja-JP.dat" />
+       <Content Include="App_Data\items\master\localization\items.master.ja-JP.dat" />
+       <Content Include="App_Data\items\master\localization\items.master.jss.ja-JP.dat" />
+       <Content Include="App_Data\items\master\localization\items.master.sxa.ja-JP.dat" />
+       <Content Include="App_Data\localization\cmp.texts.ja-JP.xml" />
+       <Content Include="App_Data\localization\dam.texts.ja-JP.xml" />
+       <Content Include="App_Data\localization\texts.ja-JP.xml" />
+       <Content Include="App_Data\localization\texts.jss.ja-JP.xml" />
+       <Content Include="App_Data\localization\texts.sxa.ja-JP.xml" />
+       <None Include="Platform.wpp.targets" />
+   ```
+
+</Steps>
+
+This allows you to start the XM Cloud instance with the resource files included.
+
+When you build the project with the above settings and deploy it with XM Cloud Deploy, you can confirm that it is deployed with the resource files included.
+
+![copy resource file](../../../../assets/xmc/createproject06.png)
+
+After the new environment is started, follow these steps to add Japanese resources.
+
+<Steps>
+
+1. From the Sites menu that displays the list of sites, select Settings.
+
+   ![Settings](../../../../assets/xmc/createproject07.png)
+
+2. Open Desktop from the left menu
+
+   ![Desktop](../../../../assets/xmc/createproject08.png)
+
+3. Click the icon in the lower right corner and switch to Core
+
+   ![core database](../../../../assets/xmc/createproject03.png)
+
+4. From the Control Panel, select Localization - `Add a new language`.
+
+5. Add Japanese - Japan
+
+   ![Add a new language](../../../../assets/xmc/createproject04.png)
+
+6. After adding the language, launch Desktop and switch the database back to master.
+
+</Steps>
+
+With the above steps, you can select Japanese resources.
+
+Although it does not apply to all resources in Sitecore XM Cloud, you can confirm that Japanese data is displayed in the Content Editor, which is a common tool. First, open Content Editor under Content in the Sites menu.
+
+![Content Editor](../../../../assets/xmc/createproject09.png)
+
+This time, to verify that the language is imported correctly, we will switch the language in the URL instead of switching the user's language. Change the last language in the URL accessing the CMS to `&sc_lang=ja-JP`. Then, it was displayed in Japanese resources as shown below.
+
+![Content Editor](../../../../assets/xmc/createproject10.png)
+

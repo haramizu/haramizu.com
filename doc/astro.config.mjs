@@ -20,6 +20,8 @@ export default defineConfig({
       },
       social: {
         github: 'https://github.com/haramizu/haramizu.com',
+        'x.com': 'https://x.com/haramizu',
+        linkedin: 'https://www.linkedin.com/in/haramizu/',
       },
       locales: {
         root: {

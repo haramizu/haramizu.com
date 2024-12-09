@@ -4,8 +4,9 @@ description: このドキュメントでは、Sitecore が提供する CMS の S
 prev: false
 sidebar:
   order: 1
-publishDate: 2024-12-06
-lastUpdated: 2024-12-06
+  badge:
+    text: 新着
+publishDate: 2024-12-09
 ---
 
 import { LinkCard } from '@astrojs/starlight/components';
@@ -16,12 +17,9 @@ import { LinkCard } from '@astrojs/starlight/components';
 
 Sitecore XM Cloud は、デジタルエクスペリエンスを管理するための強力なツールセットを提供します。これらのツールは、コンテンツ管理、アナリティクス、パーソナライゼーション、そして A/B/n テストツールが基本機能が含まれています。
 
-### コンテンツ管理システム (CMS)
+## コンテンツ管理システム (CMS)
 
-パーソナライゼーション
-Sitecore XM Cloud は、ユーザーの行動データに基づいてコンテンツをパーソナライズする機能を提供します。これにより、訪問者ごとに最適化されたエクスペリエンスを提供し、エンゲージメントを向上させることができます。
-
-提供されているツールを活用することで、企業は Web サイトのコンテンツ管理を効率よく管理することが可能となります。Sitecore XM Cloud は、現代のデジタルマーケティングのニーズに応えるための基本的なソリューションを提供します。
+Sitecore XM Cloud で提供されているツールを活用することで、企業は Web サイトのコンテンツ管理を効率よく管理することが可能となります。Sitecore XM Cloud は、現代のデジタルマーケティングのニーズに応えるための基本的なソリューションを提供します。
 
 そして従来から提供している Sitecore が提供している CMS と以下の機能をそのまま利用することが可能です。
 
@@ -29,6 +27,51 @@ Sitecore XM Cloud は、ユーザーの行動データに基づいてコンテ�
 - Experience Editor
 - Media Library
 - アクセス管理などのツール
+
+## 管理画面について
+
+システム管理者・開発者のみが利用するツールとなる XM Cloud Deploy および CMS の管理画面から各種ツールにアクセスするための画面を紹介します。
+
+### XM Cloud Deploy
+
+XM Cloud のサーバーを展開するためのツールとして提供しています。
+
+![XM Cloud Deploy](../../../assets/xmc/overview01.png)
+
+主に以下の機能を利用します。
+
+- プロジェクトの作成
+- プロジェクトの詳細を確認
+- 展開している環境の確認
+- XM Cloud と連携するための Credentials の管理
+- XM Cloud とシステム連携しているシステムの確認
+
+### Sites
+
+Sitecore XM Cloud のサーバーにアクセスをして参照する最初のツールになります。
+
+![Sites](../../../assets/xmc/overview02.png)
+
+上記の画面からは、以下のツールへのアクセスが可能です。
+
+- Design Library
+  - Components
+  - Forms
+- Content
+  - Explorer
+  - Content editor
+  - Media Library
+  - Analytics
+  - Settings
+  - Page Builder
+
+上記のツールへのリンク以外にも、環境を切り替える（本番、非本番など）メニューも用意しています。
+
+XM Cloud ではサイト間でコンテンツの共有をする可能性がある場合は Collection を作成して、その中に複数のサイトを管理することが出来ます。Collection を複数作ることが出来ますが、Collection を超えてコンテンツの共有はできませんので、完全に分離して管理をしたい場合に Collection を複数持つ形となります。
+
+## 各種ツールについて
+
+Sitecore XM Cloud が提供する各種ツールの概要は以下の通りです。
 
 ### XM Cloud Deploy
 
@@ -60,7 +103,7 @@ Sitecore Analytics は、ウェブサイトの行動履歴を取るためのツ�
 
 ### Personalize
 
-Sitecore XM Cloud には、標準で匿名ベースのパーソナライズが可能な機能が提供されています。これは Sitecore Personalize 製品の機能を一部埋め込んで利用しており、Page Builder を利用してパーソナライズの設定をすることができます。
+Sitecore XM Cloud は、ユーザーの行動データに基づいてコンテンツをパーソナライズする機能を提供します。これにより、訪問者ごとに最適化されたエクスペリエンスを提供し、エンゲージメントを向上させることができます。
 
 ### A/B/n テスト
 

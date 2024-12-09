@@ -74,11 +74,11 @@ export default defineConfig({
                 },
               ],
             },
-            // {
-            //   label: 'Content Hub',
-            //   collapsed: true,
-            //   autogenerate: { directory: 'ch' },
-            // },
+            {
+              label: 'Content Hub',
+              collapsed: true,
+              autogenerate: { directory: 'ch' },
+            },
             {
               label: 'Search',
               collapsed: true,

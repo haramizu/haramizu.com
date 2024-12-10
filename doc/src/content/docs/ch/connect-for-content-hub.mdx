@@ -2,7 +2,6 @@
 title: Sitecore Connect for Content Hub
 description: このドキュメントでは、Sitecore XM Cloud の環境において Sitecore Content Hub DAM と連携をするための手順を紹介します。
 publishDate: 2024-12-09
-lastUpdated: 2024-12-09
 sidebar:
   order: 30
   badge:
@@ -252,7 +251,106 @@ XM Cloud の環境では、セキュリティとして iFrame などで管理画
 
 ## Docker
 
-Coming soon
+今回はローカルで動作する docker の環境に対して Sitecore Connect for Sitecore Content Hub を有効にしていきます。公式の手順は以下のページで紹介されています。
+
+<LinkCard
+  title="Walkthrough: Enabling the DAM connector in a local development environment"
+  href="https://doc.sitecore.com/xmc/en/developers/xm-cloud/walkthrough--enabling-the-dam-connector-in-a-local-development-environment.html"
+  target="_blank"
+/>
+
+### Content Security Policy の更新
+
+XM Cloud の Docker の環境もクラウドのサーバーと同様に、セキュリティとして iFrame などで管理画面上で利用したいツールをすべて表示できるようにしていません。このため、Content Security Policy に関しての設定を変更する必要があります。
+
+この設定を変更するためのパッチファイルを作成します。今回は `local-containers\docker\build\cm\xdts\Web.config.xdt` にファイルを作成します。
+
+```xml title="local-containers\docker\build\cm\xdts\Web.config.xdt"
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+    <location path="sitecore">
+        <system.webServer>
+            <httpProtocol>
+                <customHeaders>
+                    <add xdt:Transform="SetAttributes" xdt:Locator="Match(name)" name="Content-Security-Policy" value="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://apps.sitecore.net https://*.sitecorecloud.io https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net https://stylelabs.eu.auth0.com https://login.windows.net https://login.microsoftonline.com https://*.boxever.com https://*.xmcloudcm.localhost wss://www.xmcloudcm.localhost https://ipv4.jsonip.com; img-src 'self' data: https://s.gravatar.com https://*.wp.com/cdn.auth0.com/avatars https://*.sitecorecloud.io https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net https://*.xmcloudcm.localhost; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.sitecorecloud.io; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com https://*.sitecorecloud.io; frame-ancestors 'self' pages.sitecorecloud.io pages.sitecore.io symphony.sitecorecloud.io explorer.sitecorecloud.io https://pages.sitecorecloud.io https://*.xmcloudcm.localhost https://*.sitecoredemo.com; block-all-mixed-content"/>
+                </customHeaders>
+            </httpProtocol>
+        </system.webServer>
+    </location>
+</configuration>
+```
+
+このファイルを Docker イメージを作成するときに適用するために、`local-containers\docker\build\cm\Dockerfile` のファイルで以下のように変更を適用します。
+
+```diff lang="dockerfile" title="local-containers\docker\build\cm\Dockerfile"
+# Copy developer tools and entrypoint
+COPY --from=tools C:\tools C:\tools
+
++# Copy Xdts
++COPY .\Xdts\ .\Xdts
+
++# Perform transforms
++RUN (Get-ChildItem -Path 'C:\\inetpub\\wwwroot\\xdts\\web*.xdt' -Recurse ) | `
++    ForEach-Object { & 'C:\\tools\\scripts\\Invoke-XdtTransform.ps1' -Path 'C:\\inetpub\\wwwroot\\web.config' -XdtPath $_.FullName `
++    -XdtDllPath 'C:\\tools\\bin\\Microsoft.Web.XmlTransform.dll'; };
+```
+
+これで CSP に関しての変更が出来ました。
+
+### 環境変数を設定する
+
+続いてローカルで動作する Docker の環境に対して、クラウドの時と同様の設定を追加します。下記の値に関しては、
+
+```.env title="local-containers.env"
+SITECORE_DAM_ENABLED=Yes
+Sitecore_DAM_ContentHub=ClientId={client_id};ClientSecret={client_secret};UserName={username};Password={password};URI={uri};
+Sitecore_DAM_SearchPage={Sitecore Content Hub search page URI}
+Sitecore_DAM_ExternalRedirectKey=true
+```
+
+上記の値を、docker の cm イメージで利用できるように、`local-containers\docker-compose.yml` に対して以下の項目を追加します。
+
+```diff lang="yml"
+//local-containers\docker-compose.yml
+      SITECORE_FedAuth_dot_Auth0_dot_ClientSecret: ${SITECORE_FedAuth_dot_Auth0_dot_ClientSecret}
+      SITECORE_FedAuth_dot_Auth0_dot_Domain: ${SITECORE_FedAuth_dot_Auth0_dot_Domain}
+      SITECORE_FedAuth_dot_Auth0_dot_Audience: ${SITECORE_FedAuth_dot_Auth0_dot_Audience}
+      SITECORE_FedAuth_dot_Auth0_dot_LogoutRedirect: ${SITECORE_FedAuth_dot_Auth0_dot_LogoutRedirect}
++      # Sitecore Connect for Content Hub
++      Sitecore_ConnectionStrings_DAM_dot_ContentHub: ${Sitecore_DAM_ContentHub}
++      Sitecore_ConnectionStrings_DAM_dot_SearchPage: ${Sitecore_DAM_SearchPage}
++      Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey: ${Sitecore_DAM_ExternalRedirectKey}
++      SITECORE_AppSettings_damEnabled__define: ${SITECORE_DAM_ENABLED}
+    healthcheck:
+```
+
+これで Connector が有効になります。サンプルサイトの画像をクリックすると、左から2つ目に DAM を利用するアイコンが表示されているのがわかります。
+
+![Experience Editor](../../../assets/ch/connectxmcloud12.png)
+
+これをクリックした後、エラー画面が表示されます。
+
+![Error](../../../assets/ch/connectxmcloud13.png)
+
+### CORS を追加する
+
+上記のエラーが発生する理由は、Content Hub DAM 側の CORS の設定として、Docker のインスタンスが指定されていないためです。そこで、以下の手順で Content Hub の CORS の設定を変更します。
+
+<Steps>
+
+1. Content Hub の管理ツールの `Settings` を開きます
+
+2. `PortalConfiguration` - `CORSConfiguration` を開きます
+
+3. サイトとして `https://xmcloudcm.localhost/` および XM Cloud のインスタンスの URL を追加します
+
+   ![Settings CORS](../../../assets/ch/connectxmcloud14.png)
+
+</Steps>
+
+これで設定が完了となります。ログインをすると以下のように DAM の素材を選択できるようになります。
+
+![Experience Editor Content Hub](../../../assets/ch/connectxmcloud15.png)
 
 ## 参考情報
 
@@ -260,5 +358,11 @@ Coming soon
   title="Enabling Sitecore CMP and DAM in XM Cloud"
   href="https://doc.sitecore.com/xmc/en/developers/xm-cloud/enabling-sitecore-cmp-and-dam-in-xm-cloud.html"
   target="_blankd"
+/>
+
+<LinkCard
+  title="Walkthrough: Enabling the DAM connector in a local development environment"
+  href="https://doc.sitecore.com/xmc/en/developers/xm-cloud/walkthrough--enabling-the-dam-connector-in-a-local-development-environment.html"
+  target="_blank"
 />
 
